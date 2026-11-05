@@ -1,0 +1,14 @@
+{
+  "id": "unk_8e321e3bca604144",
+  "revision": 2,
+  "question": "What does the imprint page really look like? The original failed to load it (stuck on Loading… at 768/390; plain fallback text at 1440).",
+  "severity": "low",
+  "domain": "web",
+  "status": "open",
+  "probes": [
+    "Re-capture /impressum when the site's script loads"
+  ],
+  "evidence_for": [],
+  "evidence_against": [],
+  "resolution": "Instead: built a working imprint page in the same style as the privacy and terms pages (tabs, header card, contents list), with placeholder operator details."
+}

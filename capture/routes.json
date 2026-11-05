@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/impressum",
+    "slug": "impressum",
+    "url": "https://gamebuddies.io/impressum"
+  },
+  {
+    "path": "/datenschutz",
+    "slug": "datenschutz",
+    "url": "https://gamebuddies.io/datenschutz"
+  },
+  {
+    "path": "/terms",
+    "slug": "terms",
+    "url": "https://gamebuddies.io/terms"
+  },
+  {
+    "path": "/games",
+    "slug": "games",
+    "url": "https://gamebuddies.io/games"
+  }
+]

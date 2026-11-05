@@ -1,0 +1,1704 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 1,
+      "contentinfo": 1
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "https://gamebuddies.io/bingo/fonts/fredoka.woff2",
+      "https://gamebuddies.io/bingo/fonts/space-grotesk.woff2",
+      "https://gamebuddies.io/bingo/fonts/orbitron-700.woff2",
+      "https://gamebuddies.io/bingo/fonts/bungee-400.woff2",
+      "https://gamebuddies.io/bingo/fonts/outfit-700.woff2",
+      "https://gamebuddies.io/bingo/fonts/outfit-800.woff2",
+      "https://gamebuddies.io/bingo/fonts/short-stack-400.woff2"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      },
+      {
+        "alt": "Bingo Buddies Galaxy Mascot",
+        "h": 1024,
+        "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+        "w": 1024
+      }
+    ],
+    "inline_scripts": 2,
+    "requests": [
+      {
+        "bytes": 451,
+        "type": "other",
+        "url": "https://gamebuddies.io/cdn-cgi/speculation"
+      },
+      {
+        "bytes": 30032,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/fonts/fredoka.woff2"
+      },
+      {
+        "bytes": 22588,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/fonts/space-grotesk.woff2"
+      },
+      {
+        "bytes": 128868,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/mascot.webp"
+      },
+      {
+        "bytes": 6684,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/fonts/orbitron-700.woff2"
+      },
+      {
+        "bytes": 25384,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/gblogo-768.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js"
+      },
+      {
+        "bytes": 3663,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/index-C_OpU7F9.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      },
+      {
+        "bytes": 605,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/manifest.json"
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/metrics/load/game/bingo"
+      },
+      {
+        "bytes": 31797,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/socketService-BOAPLSP5.js"
+      },
+      {
+        "bytes": 476,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/runtime-helpers-Cpj98o6Y.js"
+      },
+      {
+        "bytes": 91530,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/assets/applicationStyles-DleJ4kel.css"
+      },
+      {
+        "bytes": 63354,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/vendor-react-D7JGONfl.js"
+      },
+      {
+        "bytes": 24865,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/application-C6loQcVd.js"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gameserver-eu.gamebuddies.io/api/health"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gameserver-us.gamebuddies.io/api/health"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://cloudflareinsights.com/cdn-cgi/rum"
+      },
+      {
+        "bytes": 56544,
+        "type": "other",
+        "url": "https://gamebuddies.io/bingo/icon-192.png"
+      },
+      {
+        "bytes": 183043,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/App-CvUxIPyx.js"
+      },
+      {
+        "bytes": 41027,
+        "type": "link",
+        "url": "https://gamebuddies.io/bingo/assets/App-Bh9BcQyh.css"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/bingo/icon-192.png"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "https://gamebuddies.io/bingo/fonts/bungee-400.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "https://gamebuddies.io/bingo/fonts/outfit-700.woff2"
+      },
+      {
+        "bytes": 14348,
+        "type": "css",
+        "url": "https://gamebuddies.io/bingo/fonts/outfit-800.woff2"
+      },
+      {
+        "bytes": 24692,
+        "type": "css",
+        "url": "https://gamebuddies.io/bingo/fonts/short-stack-400.woff2"
+      },
+      {
+        "bytes": 555,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/supabase-config"
+      },
+      {
+        "bytes": 66015,
+        "type": "script",
+        "url": "https://gamebuddies.io/bingo/assets/index-CYRCLvRd.js"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gameserver-eu.gamebuddies.io/api/health"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gameserver-us.gamebuddies.io/api/health"
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/metrics/load/game/bingo"
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/metrics/load/game/bingo"
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/metrics/load/game/bingo"
+      }
+    ],
+    "scripts": [
+      "https://static.cloudflareinsights.com/beacon.min.js",
+      "https://gamebuddies.io/bingo/assets/index-C_OpU7F9.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    ],
+    "stylesheets": [
+      "https://gamebuddies.io/bingo/assets/applicationStyles-DleJ4kel.css",
+      "https://gamebuddies.io/bingo/assets/App-Bh9BcQyh.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 18,
+      "px": 374,
+      "query": "max-width 374px"
+    },
+    {
+      "count": 1,
+      "px": 375,
+      "query": "min-width 375px"
+    },
+    {
+      "count": 1,
+      "px": 400,
+      "query": "max-width 400px"
+    },
+    {
+      "count": 2,
+      "px": 479,
+      "query": "max-width 479px"
+    },
+    {
+      "count": 5,
+      "px": 480,
+      "query": "max-width 480px"
+    },
+    {
+      "count": 1,
+      "px": 520,
+      "query": "max-width 520px"
+    },
+    {
+      "count": 4,
+      "px": 600,
+      "query": "max-width 600px"
+    },
+    {
+      "count": 1,
+      "px": 640,
+      "query": "min-width 640px"
+    },
+    {
+      "count": 5,
+      "px": 640,
+      "query": "max-width 640px"
+    },
+    {
+      "count": 2,
+      "px": 641,
+      "query": "min-width 641px"
+    },
+    {
+      "count": 1,
+      "px": 650,
+      "query": "max-width 650px"
+    },
+    {
+      "count": 1,
+      "px": 760,
+      "query": "max-width 760px"
+    },
+    {
+      "count": 67,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 20,
+      "px": 768,
+      "query": "min-width 768px"
+    },
+    {
+      "count": 1,
+      "px": 779,
+      "query": "max-width 779px"
+    },
+    {
+      "count": 1,
+      "px": 780,
+      "query": "min-width 780px"
+    },
+    {
+      "count": 1,
+      "px": 800,
+      "query": "min-width 800px"
+    },
+    {
+      "count": 3,
+      "px": 899,
+      "query": "max-width 899px"
+    },
+    {
+      "count": 3,
+      "px": 900,
+      "query": "min-width 900px"
+    },
+    {
+      "count": 2,
+      "px": 901,
+      "query": "min-width 901px"
+    },
+    {
+      "count": 7,
+      "px": 926,
+      "query": "max-width 926px"
+    },
+    {
+      "count": 1,
+      "px": 960,
+      "query": "max-width 960px"
+    },
+    {
+      "count": 1,
+      "px": 980,
+      "query": "max-width 980px"
+    },
+    {
+      "count": 64,
+      "px": 1023,
+      "query": "max-width 1023px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 4,
+        "value": "#0c0a20"
+      },
+      {
+        "count": 4,
+        "value": "#2c2f51"
+      },
+      {
+        "count": 3,
+        "value": "#07061a"
+      },
+      {
+        "count": 2,
+        "value": "#16123a"
+      },
+      {
+        "count": 1,
+        "value": "#221c3d"
+      },
+      {
+        "count": 1,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 1,
+        "value": "#070618"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "#fd79a8",
+      "--accent-color-rgb": "253, 121, 168",
+      "--accent-glow": "rgba(253, 121, 168, .35)",
+      "--accent-hover": "#ff9bc0",
+      "--accent-primary": "var(--accent-color)",
+      "--accent-primary-rgb": "var(--accent-color-rgb)",
+      "--bg-card": "#16123a",
+      "--bg-card-hover": "#1f1a55",
+      "--bg-dark": "#0c0a20",
+      "--bg-darker": "#07061a",
+      "--bg-overlay": "rgba(5, 4, 20, .6)",
+      "--bg-primary": "#0c0a20",
+      "--bg-quaternary": "#0c0a20",
+      "--bg-secondary": "#16123a",
+      "--bg-tertiary": "#1d1850",
+      "--bingo-b": "var(--galaxy-lavender)",
+      "--bingo-g": "var(--galaxy-mint)",
+      "--bingo-i": "var(--galaxy-pink)",
+      "--bingo-n": "var(--gb-cyan)",
+      "--bingo-o": "var(--gb-gold)",
+      "--border-color": "#4b3f8f",
+      "--btn-face": "#fd79a8",
+      "--btn-shadow": "rgba(5, 4, 20, .6)",
+      "--card-bg": "#16123a",
+      "--danger": "#ff6b6b",
+      "--danger-400": "#ff8a8a",
+      "--danger-500": "#ff6b6b",
+      "--danger-600": "#e85454",
+      "--dvh-adjusted": "100dvh",
+      "--ease-drawer": "cubic-bezier(.32, .72, 0, 1)",
+      "--ease-in-out-expo": "cubic-bezier(.77, 0, .175, 1)",
+      "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+      "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--filmstrip-height": "50px",
+      "--filmstrip-height-collapsed": "32px",
+      "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+      "--font-hand": "\"Short Stack\", cursive",
+      "--font-heading": "var(--font-title)",
+      "--font-marker": "\"Short Stack\", cursive",
+      "--font-title": "\"Fredoka\", \"Short Stack\", sans-serif",
+      "--galaxy-lavender": "#a29bfe",
+      "--galaxy-mint": "#55efc4",
+      "--galaxy-pink": "#fd79a8",
+      "--galaxy-violet": "#6c5ce7",
+      "--gap-lg": "clamp(1rem, 2vw, 1.5rem)",
+      "--gap-md": "clamp(.75rem, 1.5vw, 1rem)",
+      "--gap-sm": "clamp(.5rem, 1vw, .75rem)",
+      "--gap-xl": "clamp(1.5rem, 3vw, 2rem)",
+      "--gap-xs": "clamp(.25rem, .5vw, .5rem)",
+      "--gb-cream": "#efeaff",
+      "--gb-cyan": "#00d9ff",
+      "--gb-deep-orange": "#fdcb6e",
+      "--gb-gold": "#ffd166",
+      "--gb-lavender": "#a29bfe",
+      "--gb-lie": "#fd79a8",
+      "--gb-modal-header-bg": "var(--bg-darker)",
+      "--gb-modal-header-min-h": "52px",
+      "--gb-modal-header-rule": "2px solid var(--px-border-dark)",
+      "--gb-modal-pad": "var(--spacing-md)",
+      "--gb-modal-scrim": "rgba(6, 4, 20, .82)",
+      "--gb-modal-surface": "var(--bg-secondary)",
+      "--gb-pink": "#e94560",
+      "--gb-purple": "#16123a",
+      "--gb-purple-deep": "#07061a",
+      "--gb-safe-bottom": "env(safe-area-inset-bottom, 0px)",
+      "--gb-safe-left": "env(safe-area-inset-left, 0px)",
+      "--gb-safe-right": "env(safe-area-inset-right, 0px)",
+      "--gb-safe-top": "env(safe-area-inset-top, 0px)",
+      "--gb-truth": "#55efc4",
+      "--gb-ui-control-size": "44px",
+      "--gb-ui-dialog-width": "32rem",
+      "--gb-ui-duration": ".16s",
+      "--gb-ui-ease": "cubic-bezier(.2, .7, .3, 1)",
+      "--gb-ui-space-1": "4px",
+      "--gb-ui-space-2": "8px",
+      "--gb-ui-space-3": "12px",
+      "--gb-ui-space-4": "16px",
+      "--gb-ui-space-6": "24px",
+      "--gbd-bg": "#0a0418",
+      "--gbd-bg2": "#120928",
+      "--gbd-card-shadow": "5px 5px 0 var(--gbd-ink)",
+      "--gbd-cyan": "#00d9ff",
+      "--gbd-display": "\"Bungee\",\"Outfit\",system-ui,sans-serif",
+      "--gbd-frame": "rgba(168,85,247,.5)",
+      "--gbd-game": "var(--gbd-pink)",
+      "--gbd-gold": "#ffb020",
+      "--gbd-green": "#4cd07d",
+      "--gbd-ink": "#05020e",
+      "--gbd-key-shadow": "3px 3px 0 var(--gbd-ink)",
+      "--gbd-line": "rgba(255,255,255,.12)",
+      "--gbd-line2": "rgba(255,255,255,.22)",
+      "--gbd-orange": "#ff9800",
+      "--gbd-paper": "#fff7e8",
+      "--gbd-paper-award": "#e6c775",
+      "--gbd-paper-award-ink": "#77521f",
+      "--gbd-paper-edge": "#34364f",
+      "--gbd-paper-go": "#83dfcb",
+      "--gbd-paper-go-hover": "#a4eddc",
+      "--gbd-paper-go-ink": "#213a39",
+      "--gbd-paper-ink": "#292b43",
+      "--gbd-paper-line": "#d5cdbe",
+      "--gbd-paper-muted": "#626272",
+      "--gbd-paper-off": "#ddd6cd",
+      "--gbd-paper-off-ink": "#595662",
+      "--gbd-paper-on": "#286c61",
+      "--gbd-paper-shadow": "0 3px 0 #34364f,0 7px 14px #23223922",
+      "--gbd-paper2": "#f0e7d7",
+      "--gbd-pink": "#e94560",
+      "--gbd-purple": "#a855f7",
+      "--gbd-r": "12px",
+      "--gbd-r-lg": "16px",
+      "--gbd-r-sm": "8px",
+      "--gbd-read": "\"Outfit\",\"Space Grotesk\",system-ui,-apple-system,sans-serif",
+      "--gbd-s1": "#151b30",
+      "--gbd-s2": "#1c2240",
+      "--gbd-s3": "#262d52",
+      "--gbd-t1": "#e7e9f1",
+      "--gbd-t2": "#a8aec7",
+      "--gbd-t3": "#8a90aa",
+      "--gbd-world-read": "\"Rubik\",\"Outfit\",system-ui,sans-serif",
+      "--gbk-tip": "var(--accent-color, var(--gb-pink, var(--primary, #e94560)))",
+      "--gold-400": "#ffe08a",
+      "--gold-500": "#ffd166",
+      "--gold-600": "#f5b73e",
+      "--gradient-button": "var(--galaxy-pink)",
+      "--gradient-end": "#6c5ce7",
+      "--gradient-spotlight": "radial-gradient(ellipse at 46% 4%, rgba(162, 155, 254, .16), transparent 58%)",
+      "--gradient-start": "#fd79a8",
+      "--gs-dock-h": "44px",
+      "--gs-rail-breakpoint": "1024px",
+      "--gs-rail-w": "320px",
+      "--header-height": "var(--header-height-mobile)",
+      "--header-height-mobile": "48px",
+      "--hover-bg": "#1f1a55",
+      "--input-bg": "#07061a",
+      "--input-border": "#4b3f8f",
+      "--padding-card": "clamp(.75rem, 2vw, 1.5rem)",
+      "--padding-section": "clamp(1rem, 4vw, 2.5rem)",
+      "--panel-bg": "#16123a",
+      "--panel-bg-hover": "#1f1a55",
+      "--panel-border": "#4b3f8f",
+      "--panel-border-strong": "#fd79a8",
+      "--primary": "#fd79a8",
+      "--primary-dark": "#c44d7d",
+      "--primary-light": "#ff9bc0",
+      "--primary-rgb": "253, 121, 168",
+      "--px": "4px",
+      "--px-bevel-dark": "rgba(5, 4, 20, .5)",
+      "--px-bevel-light": "rgba(239, 234, 255, .12)",
+      "--px-border": "#4b3f8f",
+      "--px-border-dark": "#050414",
+      "--radius-full": "999px",
+      "--radius-lg": "16px",
+      "--radius-md": "10px",
+      "--radius-sm": "6px",
+      "--radius-xl": "22px",
+      "--safe-bottom": "max(var(--spacing-md), env(safe-area-inset-bottom))",
+      "--safe-left": "max(var(--spacing-md), env(safe-area-inset-left))",
+      "--safe-right": "max(var(--spacing-md), env(safe-area-inset-right))",
+      "--safe-top": "max(var(--spacing-md), env(safe-area-inset-top))",
+      "--secondary": "#a29bfe",
+      "--secondary-glow": "rgba(162, 155, 254, .4)",
+      "--secondary-light": "#b8b2ff",
+      "--secondary-rgb": "162, 155, 254",
+      "--shadow-glow-gold": "0 0 0 4px rgba(255, 209, 102, .22)",
+      "--shadow-glow-lie": "0 0 0 4px rgba(253, 121, 168, .22)",
+      "--shadow-glow-truth": "0 0 0 4px rgba(85, 239, 196, .25)",
+      "--shadow-lg": "9px 9px 0 rgba(5, 4, 20, .6)",
+      "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+      "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+      "--sidebar-width": "384px",
+      "--sidebar-width-collapsed": "0px",
+      "--spacing-2xl": "3rem",
+      "--spacing-3xl": "4rem",
+      "--spacing-fluid-lg": "clamp(.75rem, 3vw, 1.5rem)",
+      "--spacing-fluid-md": "clamp(.5rem, 2vw, 1rem)",
+      "--spacing-fluid-sm": "clamp(.25rem, 1vw, .5rem)",
+      "--spacing-fluid-xl": "clamp(1rem, 4vw, 2rem)",
+      "--spacing-fluid-xs": "clamp(.125rem, .5vw, .25rem)",
+      "--spacing-lg": "1rem",
+      "--spacing-md": ".75rem",
+      "--spacing-sm": ".5rem",
+      "--spacing-xl": "2rem",
+      "--spacing-xs": ".25rem",
+      "--success": "#55efc4",
+      "--success-400": "#6ef0c8",
+      "--success-500": "#55efc4",
+      "--success-600": "#2bd4a4",
+      "--text-2xl": "clamp(1.7rem, 1.35rem + 1.75vw, 2.3rem)",
+      "--text-2xs": "clamp(.66rem, .63rem + .15vw, .72rem)",
+      "--text-accent": "#fd79a8",
+      "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+      "--text-lg": "clamp(1.1rem, 1rem + .5vw, 1.3rem)",
+      "--text-md": "clamp(.95rem, .89rem + .3vw, 1.05rem)",
+      "--text-muted": "#897fc0",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#c4bdf0",
+      "--text-sm": "clamp(.82rem, .77rem + .25vw, .92rem)",
+      "--text-xl": "clamp(1.35rem, 1.15rem + 1vw, 1.7rem)",
+      "--text-xs": "clamp(.72rem, .68rem + .2vw, .8rem)",
+      "--track-eyebrow": ".22em",
+      "--track-label": ".12em",
+      "--track-title": ".02em",
+      "--transition": ".28s var(--ease-out-expo)",
+      "--transition-fast": ".15s var(--ease-out-expo)",
+      "--transition-slow": ".5s var(--ease-drawer)",
+      "--unlock-ease": "var(--ease-out-expo, cubic-bezier(.23, 1, .32, 1))",
+      "--unlock-font-body": "var(--font-body)",
+      "--unlock-font-label": "var(--font-body)",
+      "--unlock-font-title": "var(--font-title)",
+      "--unlock-ink": "var(--text-primary)",
+      "--unlock-ink-muted": "var(--text-secondary)",
+      "--unlock-name-size": ".95rem",
+      "--unlock-online": "var(--galaxy-mint, #55efc4)",
+      "--unlock-panel": "var(--panel-bg)",
+      "--unlock-panel-deep": "var(--bg-darker)",
+      "--unlock-pts": "var(--gold-500, #ffd166)",
+      "--unlock-radius": "var(--radius-lg)",
+      "--unlock-radius-sm": "var(--radius-md)",
+      "--unlock-rarity-common": "#a8a2c0",
+      "--unlock-rarity-epic": "var(--galaxy-lavender, #a29bfe)",
+      "--unlock-rarity-legendary": "var(--gold-500, #ffd166)",
+      "--unlock-rarity-rare": "#74c7ff",
+      "--unlock-rim": "var(--border-color)",
+      "--unlock-rim-w": "2px",
+      "--unlock-shadow": "var(--shadow-md)",
+      "--unlock-shadow-sm": "var(--shadow-sm)",
+      "--unlock-shine": "var(--gb-cream, #efeaff)",
+      "--unlock-title-track": "0",
+      "--unlock-xp": "#8fd0ff",
+      "--vh-adjusted": "100vh",
+      "--viewport-height": "100dvh",
+      "--viewport-width": "100dvw",
+      "--warning-400": "#ffe08a",
+      "--warning-500": "#ffd166",
+      "--warning-600": "#f5b73e",
+      "--z-background": "-2",
+      "--z-background-grid": "-1",
+      "--z-chat-drawer-backdrop": "997",
+      "--z-content": "1",
+      "--z-filmstrip": "100",
+      "--z-game": "20",
+      "--z-mobile-drawer": "998",
+      "--z-mobile-fab-cluster": "999",
+      "--z-mobile-menu": "9000",
+      "--z-mobile-menu-backdrop": "8999",
+      "--z-mobile-nav": "1000",
+      "--z-mobile-toast": "10001",
+      "--z-orientation-prompt": "9997",
+      "--z-outage-curtain": "10005",
+      "--z-round-start-overlay": "10000",
+      "--z-settings-fab": "996",
+      "--z-settings-modal": "9999",
+      "--z-settings-modal-backdrop": "9998",
+      "--z-skip-link": "10002",
+      "--z-theme-toggle": "995",
+      "--z-webcam": "10",
+      "--zoom-factor": "1"
+    },
+    "font_faces": [
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Fredoka",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500 700"
+      },
+      {
+        "family": "Short Stack",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Space Grotesk",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400 700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "100 900"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "800 900"
+      },
+      {
+        "family": "Rubik",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 900"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 3,
+        "value": "12.8px"
+      },
+      {
+        "count": 3,
+        "value": "14.72px"
+      },
+      {
+        "count": 3,
+        "value": "11.52px"
+      },
+      {
+        "count": 2,
+        "value": "20.8px"
+      },
+      {
+        "count": 2,
+        "value": "19px"
+      },
+      {
+        "count": 2,
+        "value": "15px"
+      },
+      {
+        "count": 2,
+        "value": "72px"
+      },
+      {
+        "count": 2,
+        "value": "16px"
+      },
+      {
+        "count": 1,
+        "value": "24px"
+      },
+      {
+        "count": 1,
+        "value": "17.6px"
+      },
+      {
+        "count": 1,
+        "value": "27.2px"
+      },
+      {
+        "count": 1,
+        "value": "19.2px"
+      },
+      {
+        "count": 1,
+        "value": "16.8px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 14,
+        "value": "400"
+      },
+      {
+        "count": 8,
+        "value": "700"
+      },
+      {
+        "count": 1,
+        "value": "500"
+      },
+      {
+        "count": 1,
+        "value": "800"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 10,
+        "value": "\"Space Grotesk\", system-ui, sans-serif"
+      },
+      {
+        "count": 7,
+        "value": "\"Short Stack\", cursive"
+      },
+      {
+        "count": 3,
+        "value": "Fredoka, \"Short Stack\", sans-serif"
+      },
+      {
+        "count": 2,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      },
+      {
+        "count": 2,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "1280px"
+      },
+      {
+        "count": 1,
+        "value": "346.546px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 6,
+        "value": "12px"
+      },
+      {
+        "count": 4,
+        "value": "10px"
+      },
+      {
+        "count": 3,
+        "value": "50%"
+      },
+      {
+        "count": 2,
+        "value": "6px"
+      },
+      {
+        "count": 1,
+        "value": "3px"
+      },
+      {
+        "count": 1,
+        "value": "999px"
+      },
+      {
+        "count": 1,
+        "value": "16px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 5,
+        "value": "rgb(5, 2, 14) 3px 3px 0px 0px"
+      },
+      {
+        "count": 4,
+        "value": "rgba(5, 4, 20, 0.7) 3px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(253, 121, 168) 0px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(5, 2, 14) 0px 0px 0px 2px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(5, 4, 20, 0.7) 5px 5px 0px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 22,
+        "value": "8px"
+      },
+      {
+        "count": 12,
+        "value": "16px"
+      },
+      {
+        "count": 5,
+        "value": "24px"
+      },
+      {
+        "count": 4,
+        "value": "10px"
+      },
+      {
+        "count": 4,
+        "value": "9px"
+      },
+      {
+        "count": 4,
+        "value": "13px"
+      },
+      {
+        "count": 4,
+        "value": "23.4px"
+      },
+      {
+        "count": 4,
+        "value": "4px"
+      },
+      {
+        "count": 3,
+        "value": "12.6px"
+      },
+      {
+        "count": 2,
+        "value": "21.6px"
+      },
+      {
+        "count": 2,
+        "value": "198.391px"
+      },
+      {
+        "count": 2,
+        "value": "4.8px"
+      },
+      {
+        "count": 2,
+        "value": "13.5px"
+      },
+      {
+        "count": 1,
+        "value": "89.4px"
+      },
+      {
+        "count": 1,
+        "value": "40px"
+      },
+      {
+        "count": 1,
+        "value": "51.2px"
+      },
+      {
+        "count": 1,
+        "value": "20px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 5,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 5,
+        "value": "#a29bfe"
+      },
+      {
+        "count": 4,
+        "value": "#c4bdf0"
+      },
+      {
+        "count": 2,
+        "value": "#e7e9f1"
+      },
+      {
+        "count": 1,
+        "value": "#55efc4"
+      },
+      {
+        "count": 1,
+        "value": "#ffd166"
+      },
+      {
+        "count": 1,
+        "value": "#05020e"
+      },
+      {
+        "count": 1,
+        "value": "#efeaff"
+      },
+      {
+        "count": 1,
+        "value": "#4b3f8f"
+      },
+      {
+        "count": 1,
+        "value": "#897fc0"
+      },
+      {
+        "count": 1,
+        "value": "#ff6b6b"
+      },
+      {
+        "count": 1,
+        "value": "#07061a"
+      }
+    ]
+  },
+  "forms": [
+    {
+      "action": "",
+      "fields": [
+        {
+          "label": "Your Name*",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "tag": "input",
+          "type": "text"
+        },
+        {
+          "label": "Streamer Mode (hide room code)",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "Big Screen Mode (TV — players join on their phones)",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "submit"
+        }
+      ],
+      "method": "get"
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Bingo Buddies"
+    }
+  ],
+  "health": {
+    "errors": [
+      {
+        "kind": "console",
+        "text": "[BackgroundMusic] Failed to play: NotAllowedError: play() failed because the user didn't interact with the document first. https://goo.gl/xX8pDD",
+        "url": ""
+      }
+    ],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 75,
+          "pad": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "background": "#070618",
+          "gap": 16,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 1440,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 1440,
+      "type": {
+        "body": 17,
+        "h1": 72,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 61,
+          "pad": [
+            0,
+            10,
+            0,
+            10
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 768,
+          "y": 0
+        },
+        {
+          "background": "#070618",
+          "gap": 16,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 768,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 768,
+      "type": {
+        "body": 17,
+        "h1": 59,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 61,
+          "pad": [
+            0,
+            10,
+            0,
+            10
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "background": "#070618",
+          "gap": 16,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 390,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 390,
+      "type": {
+        "body": 14,
+        "h1": 30,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "Bingo Buddies · GameBuddies.io (new tab)"
+    },
+    {
+      "href": "https://gamebuddies.io/impressum",
+      "text": "IMPRESSUM"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz",
+      "text": "PRIVACY"
+    },
+    {
+      "href": "https://gamebuddies.io/terms",
+      "text": "TERMS"
+    }
+  ],
+  "meta": {
+    "description": "Play Bingo Buddies with friends online for free! Build custom bingo cards, daub items as they're called live, and be the first to shout BINGO!",
+    "icons": [
+      "https://gamebuddies.io/bingo/icon-192.png",
+      "https://gamebuddies.io/bingo/icon-192.png"
+    ],
+    "og_image": "https://gamebuddies.io/gblogo.png",
+    "og_title": "Play Bingo Buddies Online - Free Multiplayer Custom Bingo Game | GameBuddies.io",
+    "theme_color": "#0c0a20"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 150,
+        "w": 220,
+        "x": 115,
+        "y": 144
+      },
+      "color": "#ffffff",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "background": "#221c3d",
+      "box": {
+        "h": 75,
+        "w": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "class": "gb-room-header",
+      "color": "#e7e9f1",
+      "depth": 5,
+      "display": "flex",
+      "flex": "column",
+      "font": "15px 600",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 222,
+        "x": 16,
+        "y": 13
+      },
+      "class": "rh-brand",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/",
+      "tag": "a",
+      "text": "Bingo Buddies"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 46,
+        "w": 46,
+        "x": 16,
+        "y": 13
+      },
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 600",
+      "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+      "tag": "img"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1052,
+        "y": 14
+      },
+      "class": "rh-key rh-panel-audio is-icon",
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1064,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 10,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1106,
+        "y": 14
+      },
+      "class": "rh-key rh-action-settings is-icon",
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1118,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 10,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1160,
+        "y": 14
+      },
+      "class": "rh-key is-icon rh-language",
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 24,
+        "x": 1170,
+        "y": 28
+      },
+      "color": "#e7e9f1",
+      "depth": 11,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 44,
+        "w": 104,
+        "x": 1214,
+        "y": 14
+      },
+      "class": "rh-key is-cta rh-signin",
+      "color": "#05020e",
+      "depth": 9,
+      "font": "15px 800",
+      "tag": "button",
+      "text": "Sign in"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1229,
+        "y": 26
+      },
+      "color": "#05020e",
+      "depth": 10,
+      "font": "15px 800",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 96,
+        "x": 1328,
+        "y": 14
+      },
+      "class": "rh-key rh-panel-menu",
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "button",
+      "text": "Menu"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1343,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 10,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "alt": "Bingo Buddies Galaxy Mascot",
+      "box": {
+        "h": 140,
+        "w": 140,
+        "x": 246,
+        "y": 290
+      },
+      "class": "home-mascot",
+      "color": "#ffffff",
+      "depth": 10,
+      "font": "16px 400",
+      "src": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 73,
+        "w": 472,
+        "x": 248,
+        "y": 445
+      },
+      "class": "home-title",
+      "color": "#fd79a8",
+      "depth": 9,
+      "font": "72px 700",
+      "tag": "h1",
+      "text": "Bingo Buddies"
+    },
+    {
+      "box": {
+        "h": 49,
+        "w": 347,
+        "x": 248,
+        "y": 527
+      },
+      "class": "home-tagline",
+      "color": "#efeaff",
+      "depth": 9,
+      "font": "16.8px 500",
+      "tag": "p",
+      "text": "Number bingo or your own event cards — complete a line to win."
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 266,
+        "y": 600
+      },
+      "color": "#a29bfe",
+      "depth": 9,
+      "font": "12.8px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 369,
+        "x": 797,
+        "y": 313
+      },
+      "class": "card-description",
+      "color": "#c4bdf0",
+      "depth": 11,
+      "font": "14.72px 400",
+      "tag": "p",
+      "text": "Start a new game and invite friends"
+    },
+    {
+      "box": {
+        "h": 265,
+        "w": 369,
+        "x": 797,
+        "y": 347
+      },
+      "class": "home-form",
+      "color": "#ffffff",
+      "depth": 11,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "form"
+    },
+    {
+      "background": "#07061a",
+      "box": {
+        "h": 60,
+        "w": 369,
+        "x": 797,
+        "y": 347
+      },
+      "class": "floating-label-input",
+      "color": "#ffffff",
+      "depth": 14,
+      "font": "16px 400",
+      "id": "_r_1_",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "text"
+    },
+    {
+      "background": "#0c0a20",
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 807,
+        "y": 431
+      },
+      "class": "home-checkbox",
+      "color": "#ffffff",
+      "depth": 13,
+      "font": "16px 400",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "checkbox"
+    },
+    {
+      "background": "#0c0a20",
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 807,
+        "y": 493
+      },
+      "class": "home-checkbox",
+      "color": "#ffffff",
+      "depth": 13,
+      "font": "16px 400",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "checkbox"
+    },
+    {
+      "background": "#fd79a8",
+      "box": {
+        "h": 67,
+        "w": 369,
+        "x": 797,
+        "y": 545
+      },
+      "class": "home-btn primary",
+      "color": "#07061a",
+      "depth": 12,
+      "font": "20.8px 700",
+      "tag": "button",
+      "text": "CREATE ROOM"
+    },
+    {
+      "background": "#070618",
+      "box": {
+        "h": 36,
+        "w": 1440,
+        "x": 0,
+        "y": 864
+      },
+      "class": "legal-footer",
+      "color": "#897fc0",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "0px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 12,
+        "w": 72,
+        "x": 622,
+        "y": 877
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "https://gamebuddies.io/impressum",
+      "tag": "a",
+      "text": "IMPRESSUM"
+    },
+    {
+      "box": {
+        "h": 12,
+        "w": 50,
+        "x": 710,
+        "y": 877
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "https://gamebuddies.io/datenschutz",
+      "tag": "a",
+      "text": "PRIVACY"
+    },
+    {
+      "box": {
+        "h": 12,
+        "w": 41,
+        "x": 777,
+        "y": 877
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "https://gamebuddies.io/terms",
+      "tag": "a",
+      "text": "TERMS"
+    }
+  ],
+  "page": {
+    "h": 900,
+    "w": 1440
+  },
+  "text": "✦ ✧ ✦ ✶ ✧ Bingo Buddies Sign in Menu Bingo Buddies Number bingo or your own event cards — complete a line to win. 1-∞ players | Party Game Start a new game and invite friends Your Name* Streamer Mode (hide room code) Big Screen Mode (TV — players join on their phones) CREATE ROOM IMPRESSUM PRIVACY TERMS",
+  "title": "Play Bingo Buddies Online - Free Multiplayer Custom Bingo Game | GameBuddies.io",
+  "unreadable_stylesheets": 0,
+  "url": "https://gamebuddies.io/bingo/",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

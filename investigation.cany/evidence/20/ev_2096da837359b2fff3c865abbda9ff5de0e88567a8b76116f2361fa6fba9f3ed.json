@@ -1,0 +1,77 @@
+{
+  "id": "ev_2096da837359b2fff3c865abbda9ff5de0e88567a8b76116f2361fa6fba9f3ed",
+  "subject": {
+    "kind": "website",
+    "name": "https://gamebuddies.io/bingo/"
+  },
+  "operation": "web_page_states_capture",
+  "params": {
+    "max_states": 4,
+    "width": 1440
+  },
+  "result": {
+    "folder": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\capture\\states",
+    "found": 3,
+    "states": [
+      {
+        "changed": [
+          "expanded",
+          "dialog appeared"
+        ],
+        "file": "state-1.png",
+        "index": 0,
+        "kind": "dialog",
+        "label": "Game audio",
+        "sha256": "7e063b650f08938d9525c17bbb41ded60350a2f45b331a7ce82c52cee4bcae1e"
+      },
+      {
+        "changed": [
+          "expanded"
+        ],
+        "file": "state-2.png",
+        "index": 1,
+        "kind": "dialog",
+        "label": "Language: English",
+        "sha256": "3e75a0500bb271aff7bf3062074dedfee3b43c2040b228932b1bf02d5e780e8d"
+      },
+      {
+        "changed": [
+          "expanded"
+        ],
+        "file": "state-3.png",
+        "index": 2,
+        "kind": "dialog",
+        "label": "Menu",
+        "sha256": "2c5db0a203cacf77d38a908a1a88aeec6793f870ed29302d72364c0736087c95"
+      }
+    ],
+    "url": "https://gamebuddies.io/bingo/"
+  },
+  "summary": "Opened 3 of 3 control(s) on https://gamebuddies.io/bingo/; 3 pictured in D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\capture\\states.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "first_controls",
+      "message": "Only the first controls found are opened, one at a time; menus inside menus and hover-only menus are not."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "https://gamebuddies.io/bingo/"
+    }
+  ],
+  "links": []
+}

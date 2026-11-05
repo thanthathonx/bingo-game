@@ -1,0 +1,1252 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 1,
+      "contentinfo": 1,
+      "main": 1
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "http://127.0.0.1:56613/assets/short-stack-latin-400-normal-BJrJPFDw.woff2",
+      "http://127.0.0.1:56613/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2",
+      "http://127.0.0.1:56613/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:56613/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "h": 512,
+        "src": "http://127.0.0.1:56613/mascot.svg",
+        "w": 512
+      },
+      {
+        "alt": "Bingo Friends mascot",
+        "h": 512,
+        "src": "http://127.0.0.1:56613/mascot.svg",
+        "w": 512
+      }
+    ],
+    "inline_scripts": 0,
+    "requests": [
+      {
+        "bytes": 152765,
+        "type": "script",
+        "url": "http://127.0.0.1:56613/assets/icons-C99K4H_k.js"
+      },
+      {
+        "bytes": 53661,
+        "type": "script",
+        "url": "http://127.0.0.1:56613/assets/main-bingo-BhRmQxRQ.js"
+      },
+      {
+        "bytes": 3396,
+        "type": "link",
+        "url": "http://127.0.0.1:56613/assets/icons-DUzXT1Uj.css"
+      },
+      {
+        "bytes": 26787,
+        "type": "link",
+        "url": "http://127.0.0.1:56613/assets/main-bingo-CTSL1l5K.css"
+      },
+      {
+        "bytes": 2779,
+        "type": "img",
+        "url": "http://127.0.0.1:56613/mascot.svg"
+      },
+      {
+        "bytes": 24692,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/short-stack-latin-400-normal-BJrJPFDw.woff2"
+      },
+      {
+        "bytes": 22588,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/bungee-latin-400-normal-Dfnurram.woff2"
+      },
+      {
+        "bytes": 14348,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-800-normal-CQna6-G7.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 30032,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
+      },
+      {
+        "bytes": 2999,
+        "type": "other",
+        "url": "http://127.0.0.1:56613/favicon.ico"
+      }
+    ],
+    "scripts": [
+      "http://127.0.0.1:56613/assets/icons-C99K4H_k.js",
+      "http://127.0.0.1:56613/assets/main-bingo-BhRmQxRQ.js"
+    ],
+    "stylesheets": [
+      "http://127.0.0.1:56613/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:56613/assets/main-bingo-CTSL1l5K.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 4,
+      "px": 479,
+      "query": "max-width 479px"
+    },
+    {
+      "count": 1,
+      "px": 600,
+      "query": "min-width 600px"
+    },
+    {
+      "count": 1,
+      "px": 639,
+      "query": "max-width 639px"
+    },
+    {
+      "count": 1,
+      "px": 899,
+      "query": "max-width 899px"
+    },
+    {
+      "count": 3,
+      "px": 900,
+      "query": "min-width 900px"
+    },
+    {
+      "count": 2,
+      "px": 1024,
+      "query": "min-width 1024px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 4,
+        "value": "#2c2f51"
+      },
+      {
+        "count": 3,
+        "value": "#0c0a20"
+      },
+      {
+        "count": 3,
+        "value": "#16123a"
+      },
+      {
+        "count": 3,
+        "value": "#07061a"
+      },
+      {
+        "count": 1,
+        "value": "#6c5ce733"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a80f"
+      },
+      {
+        "count": 1,
+        "value": "#55efc40d"
+      },
+      {
+        "count": 1,
+        "value": "#221c3d"
+      },
+      {
+        "count": 1,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a8"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "#fd79a8",
+      "--accent-hover": "#ff9bc0",
+      "--bg-card": "#16123a",
+      "--bg-card-hover": "#1f1a55",
+      "--bg-dark": "#0c0a20",
+      "--bg-darker": "#07061a",
+      "--bg-tertiary": "#1d1850",
+      "--bingo-b": "var(--galaxy-lavender)",
+      "--bingo-g": "var(--galaxy-mint)",
+      "--bingo-i": "var(--galaxy-pink)",
+      "--bingo-n": "var(--gb-cyan)",
+      "--bingo-o": "var(--gb-gold)",
+      "--border-color": "#4b3f8f",
+      "--danger": "#ff6b6b",
+      "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+      "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+      "--font-display": "\"Bungee\", \"Outfit\", system-ui, sans-serif",
+      "--font-hand": "\"Short Stack\", cursive",
+      "--font-read": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif",
+      "--font-title": "Fredoka, \"Short Stack\", sans-serif",
+      "--galaxy-lavender": "#a29bfe",
+      "--galaxy-mint": "#55efc4",
+      "--galaxy-pink": "#fd79a8",
+      "--galaxy-violet": "#6c5ce7",
+      "--gb-cream": "#efeaff",
+      "--gb-cyan": "#00d9ff",
+      "--gb-gold": "#ffd166",
+      "--gbd-gold": "#ffb020",
+      "--gbd-ink": "#05020e",
+      "--gbd-purple": "#a855f7",
+      "--gbd-t1": "#e7e9f1",
+      "--gbd-t2": "#a8aec7",
+      "--header-bg": "#221c3d",
+      "--key-bg": "#2c2f51",
+      "--key-rim": "#454866",
+      "--panel-bg": "#29204a",
+      "--panel-rim": "#683ba1",
+      "--panel-row": "#2f274f",
+      "--panel-rule": "#433b60",
+      "--radius-full": "999px",
+      "--radius-lg": "16px",
+      "--radius-md": "10px",
+      "--radius-sm": "6px",
+      "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+      "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+      "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+      "--text-muted": "#897fc0",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#c4bdf0"
+    },
+    "font_faces": [
+      {
+        "family": "Space Grotesk",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Fredoka",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Short Stack",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "800 900"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 4,
+        "value": "15px"
+      },
+      {
+        "count": 3,
+        "value": "12.8px"
+      },
+      {
+        "count": 3,
+        "value": "11.52px"
+      },
+      {
+        "count": 2,
+        "value": "20.8px"
+      },
+      {
+        "count": 2,
+        "value": "18px"
+      },
+      {
+        "count": 2,
+        "value": "72px"
+      },
+      {
+        "count": 2,
+        "value": "16px"
+      },
+      {
+        "count": 1,
+        "value": "24px"
+      },
+      {
+        "count": 1,
+        "value": "17.6px"
+      },
+      {
+        "count": 1,
+        "value": "27.2px"
+      },
+      {
+        "count": 1,
+        "value": "19.2px"
+      },
+      {
+        "count": 1,
+        "value": "16.8px"
+      },
+      {
+        "count": 1,
+        "value": "14.72px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 14,
+        "value": "400"
+      },
+      {
+        "count": 8,
+        "value": "700"
+      },
+      {
+        "count": 1,
+        "value": "600"
+      },
+      {
+        "count": 1,
+        "value": "800"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 15,
+        "value": "\"Space Grotesk\", system-ui, sans-serif"
+      },
+      {
+        "count": 3,
+        "value": "Fredoka, \"Short Stack\", sans-serif"
+      },
+      {
+        "count": 2,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      },
+      {
+        "count": 2,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 2,
+        "value": "\"Short Stack\", cursive"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "1280px"
+      },
+      {
+        "count": 1,
+        "value": "346.546px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 9,
+        "value": "10px"
+      },
+      {
+        "count": 4,
+        "value": "50%"
+      },
+      {
+        "count": 2,
+        "value": "6px"
+      },
+      {
+        "count": 1,
+        "value": "3px"
+      },
+      {
+        "count": 1,
+        "value": "999px"
+      },
+      {
+        "count": 1,
+        "value": "16px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 5,
+        "value": "rgb(5, 2, 14) 0px 0px 0px 1px, rgb(5, 2, 14) 3px 3px 0px 0px"
+      },
+      {
+        "count": 2,
+        "value": "rgba(5, 4, 20, 0.7) 3px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(253, 121, 168) 0px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(5, 2, 14) 0px 0px 0px 2px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(5, 4, 20, 0.7) 5px 5px 0px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 23,
+        "value": "8px"
+      },
+      {
+        "count": 11,
+        "value": "24px"
+      },
+      {
+        "count": 10,
+        "value": "10px"
+      },
+      {
+        "count": 6,
+        "value": "16px"
+      },
+      {
+        "count": 3,
+        "value": "6px"
+      },
+      {
+        "count": 3,
+        "value": "13px"
+      },
+      {
+        "count": 2,
+        "value": "12px"
+      },
+      {
+        "count": 2,
+        "value": "9px"
+      },
+      {
+        "count": 2,
+        "value": "14px"
+      },
+      {
+        "count": 1,
+        "value": "53px"
+      },
+      {
+        "count": 1,
+        "value": "-13px"
+      },
+      {
+        "count": 1,
+        "value": "17px"
+      },
+      {
+        "count": 1,
+        "value": "18px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 5,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 5,
+        "value": "#a29bfe"
+      },
+      {
+        "count": 4,
+        "value": "#e7e9f1"
+      },
+      {
+        "count": 2,
+        "value": "#c4bdf0"
+      },
+      {
+        "count": 1,
+        "value": "#55efc4"
+      },
+      {
+        "count": 1,
+        "value": "#ffd166"
+      },
+      {
+        "count": 1,
+        "value": "#05020e"
+      },
+      {
+        "count": 1,
+        "value": "#efeaff"
+      },
+      {
+        "count": 1,
+        "value": "#4b3f8f"
+      },
+      {
+        "count": 1,
+        "value": "#897fc0"
+      },
+      {
+        "count": 1,
+        "value": "#ff6b6b"
+      },
+      {
+        "count": 1,
+        "value": "#07061a"
+      }
+    ]
+  },
+  "forms": [
+    {
+      "action": "",
+      "fields": [
+        {
+          "label": "Your Name*",
+          "name": "",
+          "placeholder": "",
+          "required": true,
+          "tag": "input",
+          "type": "text"
+        },
+        {
+          "label": "Streamer Mode (hide room code)",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "Big Screen Mode (TV — players join on their phones)",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "input",
+          "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "submit"
+        }
+      ],
+      "method": "get"
+    }
+  ],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Bingo Friends"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 75,
+          "pad": [
+            0,
+            16,
+            0,
+            16
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 1440,
+          "y": 0
+        },
+        {
+          "column": {
+            "max_w": 1280,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 1280,
+            "x": 80
+          },
+          "h": 789,
+          "heading": "Bingo Friends",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 1440,
+          "y": 75
+        },
+        {
+          "background": "#16123a",
+          "gap": 16,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 1440,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 1440,
+      "type": {
+        "body": 17,
+        "h1": 72,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 61,
+          "pad": [
+            0,
+            10,
+            0,
+            10
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 768,
+          "y": 0
+        },
+        {
+          "column": {
+            "max_w": 1280,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 736,
+            "x": 16
+          },
+          "h": 803,
+          "heading": "Bingo Friends",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 768,
+          "y": 61
+        },
+        {
+          "background": "#16123a",
+          "gap": 16,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 768,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 768,
+      "type": {
+        "body": 17,
+        "h1": 59,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#221c3d",
+          "h": 61,
+          "pad": [
+            0,
+            10,
+            0,
+            10
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "column": {
+            "max_w": 1280,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 358,
+            "x": 16
+          },
+          "h": 803,
+          "heading": "Bingo Friends",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 390,
+          "y": 61
+        },
+        {
+          "background": "#16123a",
+          "gap": 32,
+          "h": 36,
+          "pad": [
+            0,
+            8,
+            0,
+            8
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 390,
+          "y": 864
+        }
+      ],
+      "page_h": 900,
+      "page_w": 390,
+      "type": {
+        "body": 14,
+        "h1": 30,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "BINGO FRIENDS"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "IMPRESSUM"
+    },
+    {
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "text": "PRIVACY"
+    },
+    {
+      "href": "http://127.0.0.1:56613/terms",
+      "text": "TERMS"
+    }
+  ],
+  "meta": {
+    "description": "Play Bingo Friends for free: number bingo or your own event cards, daub items as they're called and be the first to shout BINGO!",
+    "icons": [
+      "http://127.0.0.1:56613/favicon.ico"
+    ],
+    "og_image": "",
+    "og_title": "",
+    "theme_color": "#221c3d"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 150,
+        "w": 220,
+        "x": 115,
+        "y": 144
+      },
+      "color": "#ffffff",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "background": "#221c3d",
+      "box": {
+        "h": 75,
+        "w": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "class": "rh",
+      "color": "#e7e9f1",
+      "depth": 5,
+      "display": "block",
+      "font": "15px 600",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 213,
+        "x": 16,
+        "y": 13
+      },
+      "class": "rh-brand",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a",
+      "text": "BINGO FRIENDS"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 46,
+        "w": 46,
+        "x": 16,
+        "y": 13
+      },
+      "class": "rh-logo",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 600",
+      "src": "http://127.0.0.1:56613/mascot.svg",
+      "tag": "img"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1052,
+        "y": 14
+      },
+      "class": "rh-key is-icon",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1064,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1106,
+        "y": 14
+      },
+      "class": "rh-key is-icon rh-settings",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1118,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 1160,
+        "y": 14
+      },
+      "class": "rh-key is-icon rh-language",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 24,
+        "x": 1170,
+        "y": 28
+      },
+      "color": "#e7e9f1",
+      "depth": 10,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 44,
+        "w": 104,
+        "x": 1214,
+        "y": 14
+      },
+      "class": "rh-key is-cta rh-signin",
+      "color": "#05020e",
+      "depth": 8,
+      "font": "15px 800",
+      "tag": "button",
+      "text": "Sign in"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1229,
+        "y": 26
+      },
+      "color": "#05020e",
+      "depth": 9,
+      "font": "15px 800",
+      "tag": "svg"
+    },
+    {
+      "background": "#2c2f51",
+      "box": {
+        "h": 44,
+        "w": 96,
+        "x": 1328,
+        "y": 14
+      },
+      "class": "rh-key is-icon rh-menu",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "button",
+      "text": "Menu"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1343,
+        "y": 26
+      },
+      "color": "#e7e9f1",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 789,
+        "w": 1440,
+        "x": 0,
+        "y": 75
+      },
+      "class": "stage-main",
+      "color": "#ffffff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "main"
+    },
+    {
+      "alt": "Bingo Friends mascot",
+      "box": {
+        "h": 144,
+        "w": 144,
+        "x": 244,
+        "y": 301
+      },
+      "class": "home-mascot",
+      "color": "#ffffff",
+      "depth": 11,
+      "font": "16px 400",
+      "src": "http://127.0.0.1:56613/mascot.svg",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 73,
+        "w": 450,
+        "x": 249,
+        "y": 454
+      },
+      "class": "home-title",
+      "color": "#fd79a8",
+      "depth": 10,
+      "font": "72px 700",
+      "tag": "h1",
+      "text": "Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 49,
+        "w": 347,
+        "x": 249,
+        "y": 536
+      },
+      "class": "home-tagline",
+      "color": "#efeaff",
+      "depth": 10,
+      "font": "16.8px 600",
+      "tag": "p",
+      "text": "Number bingo or your own event cards — complete a line to win."
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 267,
+        "y": 611
+      },
+      "color": "#a29bfe",
+      "depth": 10,
+      "font": "12.8px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 366,
+        "x": 800,
+        "y": 312
+      },
+      "class": "card-description",
+      "color": "#c4bdf0",
+      "depth": 10,
+      "font": "14.72px 400",
+      "tag": "p",
+      "text": "Start a new game and invite friends"
+    },
+    {
+      "box": {
+        "h": 269,
+        "w": 366,
+        "x": 800,
+        "y": 343
+      },
+      "class": "home-form",
+      "color": "#ffffff",
+      "depth": 10,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "form"
+    },
+    {
+      "background": "#07061a",
+      "box": {
+        "h": 60,
+        "w": 366,
+        "x": 800,
+        "y": 343
+      },
+      "class": "fl-input",
+      "color": "#ffffff",
+      "depth": 12,
+      "font": "16px 400",
+      "id": "player-name",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "text"
+    },
+    {
+      "background": "#0c0a20",
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 810,
+        "y": 426
+      },
+      "color": "#000000",
+      "depth": 12,
+      "font": "13.3333px 400",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "checkbox"
+    },
+    {
+      "background": "#0c0a20",
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 810,
+        "y": 491
+      },
+      "color": "#000000",
+      "depth": 12,
+      "font": "13.3333px 400",
+      "name": "",
+      "placeholder": "",
+      "tag": "input",
+      "type": "checkbox"
+    },
+    {
+      "background": "#fd79a8",
+      "box": {
+        "h": 67,
+        "w": 366,
+        "x": 800,
+        "y": 544
+      },
+      "class": "home-btn",
+      "color": "#07061a",
+      "depth": 11,
+      "font": "20.8px 700",
+      "tag": "button",
+      "text": "CREATE ROOM"
+    },
+    {
+      "background": "#16123a",
+      "box": {
+        "h": 36,
+        "w": 1440,
+        "x": 0,
+        "y": 864
+      },
+      "class": "legal-footer",
+      "color": "#ffffff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 70,
+        "x": 625,
+        "y": 876
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "http://127.0.0.1:56613/impressum",
+      "tag": "a",
+      "text": "IMPRESSUM"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 49,
+        "x": 711,
+        "y": 876
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "tag": "a",
+      "text": "PRIVACY"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 40,
+        "x": 775,
+        "y": 876
+      },
+      "class": "legal-link",
+      "color": "#a29bfe",
+      "depth": 6,
+      "font": "11.52px 700",
+      "href": "http://127.0.0.1:56613/terms",
+      "tag": "a",
+      "text": "TERMS"
+    }
+  ],
+  "page": {
+    "h": 900,
+    "w": 1440
+  },
+  "text": "✦ ✧ ✦ ✶ ✧ BINGO FRIENDS Sign in Menu Bingo Friends Number bingo or your own event cards — complete a line to win. 1-∞ players | Party Game Start a new game and invite friends Your Name* Streamer Mode (hide room code) Big Screen Mode (TV — players join on their phones) CREATE ROOM IMPRESSUM PRIVACY TERMS",
+  "title": "Play Bingo Friends Online - Free Custom Bingo Party Game",
+  "unreadable_stylesheets": 0,
+  "url": "http://127.0.0.1:56613/",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

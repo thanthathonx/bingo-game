@@ -1,0 +1,17 @@
+{
+  "id": "unk_31f1420451e345c8",
+  "revision": 2,
+  "question": "What do the original's lobby, card-building and calling screens look like (not photographed; only the start page and its menus were captured)?",
+  "severity": "medium",
+  "domain": "web",
+  "status": "open",
+  "probes": [
+    "Create a room on the live site and record a walkthrough of lobby -> playing",
+    "Capture states after CREATE ROOM"
+  ],
+  "evidence_for": [
+    "Script strings: phases lobby/input/review/playing/finished; modes classic/custom; card sizes; auto-call; interactive daub; win pattern any line; bingo wall with one-away flags"
+  ],
+  "evidence_against": [],
+  "resolution": "Estimated: lobby, card-building, calling and game-over screens designed in the original's style from its script's phase names and settings (classic/custom mode, 3-5 card sizes, auto-call, tap-to-daub, any-line win, bingo wall with 1-away flags). Visual details are not from the original."
+}

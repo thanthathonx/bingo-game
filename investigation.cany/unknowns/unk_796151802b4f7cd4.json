@@ -1,0 +1,17 @@
+{
+  "id": "unk_796151802b4f7cd4",
+  "revision": 2,
+  "question": "How should multiplayer rooms work without the original's game server?",
+  "severity": "high",
+  "domain": "scope",
+  "status": "blocked",
+  "probes": [
+    "Person chooses whether to add a real server later"
+  ],
+  "evidence_for": [
+    "ev_7304d179d6ac1e1cd3a5a3b7e9d0ea3d747575c04e25c006089b801d0adcf9a8",
+    "ev_0c22ee828c43b8e0ed7614b654847315581d4daf8690e08cd0b2d2612ecde2bb"
+  ],
+  "evidence_against": [],
+  "resolution": "Instead: one-device play against computer buddies (add/remove up to 11), plus Big Screen Mode where the host only calls. Real cross-phone rooms need a game server — a choice for the person."
+}

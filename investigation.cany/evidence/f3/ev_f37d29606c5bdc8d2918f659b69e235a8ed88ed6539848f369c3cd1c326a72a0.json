@@ -1,0 +1,293 @@
+{
+  "id": "ev_f37d29606c5bdc8d2918f659b69e235a8ed88ed6539848f369c3cd1c326a72a0",
+  "subject": {
+    "kind": "website",
+    "name": "https://gamebuddies.io/bingo/"
+  },
+  "operation": "web_page_watch",
+  "params": {
+    "endpoint": "http://127.0.0.1:62817",
+    "sensitive_value_declarations": 0
+  },
+  "result": {
+    "accessibility": null,
+    "console": {
+      "count": 5,
+      "entries": [
+        {
+          "level": "log",
+          "source": "console-api"
+        },
+        {
+          "level": "log",
+          "source": "console-api"
+        },
+        {
+          "level": "log",
+          "source": "console-api"
+        },
+        {
+          "level": "error",
+          "source": "console-api"
+        },
+        {
+          "level": "log",
+          "source": "console-api"
+        }
+      ],
+      "has_text": false
+    },
+    "dom": {
+      "attribute_names": [
+        "alt",
+        "aria-busy",
+        "aria-controls",
+        "aria-expanded",
+        "aria-haspopup",
+        "aria-hidden",
+        "aria-label",
+        "aria-live",
+        "as",
+        "charset",
+        "class",
+        "content",
+        "crossorigin",
+        "cx",
+        "cy",
+        "d",
+        "data-cf-beacon",
+        "data-collapse-stage",
+        "data-header-action",
+        "data-header-panel",
+        "data-stage",
+        "data-theme",
+        "data-world-ui",
+        "decoding",
+        "defer",
+        "disabled",
+        "fetchpriority",
+        "fill",
+        "for",
+        "height",
+        "href",
+        "http-equiv",
+        "id",
+        "imagesizes",
+        "imagesrcset",
+        "inert",
+        "integrity",
+        "lang",
+        "maxlength",
+        "name",
+        "placeholder",
+        "points",
+        "property",
+        "r",
+        "rel",
+        "required",
+        "role",
+        "src",
+        "stroke",
+        "stroke-linecap",
+        "stroke-linejoin",
+        "stroke-width",
+        "style",
+        "tabindex",
+        "target",
+        "title",
+        "type",
+        "value",
+        "viewbox",
+        "width",
+        "x1",
+        "x2",
+        "xmlns",
+        "y1",
+        "y2"
+      ],
+      "elements_by_name": {
+        "a": 13,
+        "b": 9,
+        "body": 1,
+        "button": 48,
+        "circle": 17,
+        "div": 57,
+        "footer": 1,
+        "form": 1,
+        "g": 20,
+        "h1": 1,
+        "head": 1,
+        "header": 1,
+        "html": 1,
+        "img": 11,
+        "input": 3,
+        "label": 3,
+        "line": 42,
+        "link": 20,
+        "meta": 19,
+        "noscript": 1,
+        "p": 2,
+        "path": 109,
+        "polyline": 10,
+        "script": 5,
+        "span": 56,
+        "style": 1,
+        "svg": 53,
+        "title": 1
+      },
+      "text_nodes": 54,
+      "total_nodes": 574,
+      "truncated": false
+    },
+    "dropped_events": 0,
+    "frame_origins": [
+      "https://gamebuddies.io"
+    ],
+    "network": {
+      "request_count": 0,
+      "requests": []
+    },
+    "origin": "https://gamebuddies.io/bingo/",
+    "resources": [
+      {
+        "mime_type": "audio/mpeg",
+        "type": "Media",
+        "url": "https://gamebuddies.io/bingo/music/background.mp3"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/short-stack-400.woff2"
+      },
+      {
+        "mime_type": "text/javascript",
+        "type": "Script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/orbitron-700.woff2"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/outfit-700.woff2"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/bungee-400.woff2"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/space-grotesk.woff2"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/outfit-800.woff2"
+      },
+      {
+        "mime_type": "image/webp",
+        "type": "Image",
+        "url": "https://gamebuddies.io/bingo/mascot.webp?v=gabu-v16"
+      },
+      {
+        "mime_type": "font/woff2",
+        "type": "Font",
+        "url": "https://gamebuddies.io/bingo/fonts/fredoka.woff2"
+      }
+    ],
+    "scripts": [
+      {
+        "length": 1366,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/"
+      },
+      {
+        "length": 31853,
+        "source_map_url": null,
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      },
+      {
+        "length": 6875,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/index-C_OpU7F9.js"
+      },
+      {
+        "length": 31853,
+        "source_map_url": null,
+        "url": "https://static.cloudflareinsights.com/beacon.min.js"
+      },
+      {
+        "length": 236,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/runtime-helpers-Cpj98o6Y.js"
+      },
+      {
+        "length": 92885,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/socketService-BOAPLSP5.js"
+      },
+      {
+        "length": 194398,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/vendor-react-D7JGONfl.js"
+      },
+      {
+        "length": 62707,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/application-C6loQcVd.js"
+      },
+      {
+        "length": 555666,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/App-CvUxIPyx.js"
+      },
+      {
+        "length": 239872,
+        "source_map_url": null,
+        "url": "https://gamebuddies.io/bingo/assets/index-CYRCLvRd.js"
+      }
+    ],
+    "scripts_truncated": false,
+    "secret_redactions": 0,
+    "storage_keys": null,
+    "watch_ms": 10000,
+    "websockets": {
+      "connections": [],
+      "frames": []
+    }
+  },
+  "summary": "Watched https://gamebuddies.io/bingo/ for 10000ms: 0 request outline(s), 5 console entr(y/ies).",
+  "confidence": "observed",
+  "authority": "earlier-record",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "passive_snapshot",
+      "message": "A passive observation of one moment in a live page; it shows what happened during the window, not everything the page can do."
+    },
+    {
+      "code": "values_not_kept",
+      "message": "Cookies, authorization headers and storage values are never kept; JSON bodies are reduced to outlines and declared secrets are redacted."
+    }
+  ],
+  "coverage": {
+    "status": "partial"
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "https://gamebuddies.io/bingo/"
+    }
+  ],
+  "links": []
+}

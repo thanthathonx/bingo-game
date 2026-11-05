@@ -1,0 +1,803 @@
+{
+  "id": "ev_d26ef697efd914bc5d30e90429c3c6deba2f1ec8d876d815601cad93cebeb1a5",
+  "subject": {
+    "kind": "website",
+    "name": "https://gamebuddies.io/games"
+  },
+  "operation": "web_site_capture",
+  "params": {
+    "include_html": false,
+    "max_height": 12000,
+    "noise_pass": true,
+    "visitor_view": false,
+    "widths": [
+      1440,
+      768,
+      390
+    ]
+  },
+  "result": {
+    "counts": {
+      "forms": 0,
+      "headings": 30,
+      "images": 32,
+      "links": 112,
+      "outline": 364
+    },
+    "design": {
+      "backgrounds": [
+        {
+          "count": 37,
+          "value": "#19162e"
+        },
+        {
+          "count": 27,
+          "value": "#2f2752"
+        },
+        {
+          "count": 22,
+          "value": "#00d9ff"
+        },
+        {
+          "count": 22,
+          "value": "#211b3f"
+        },
+        {
+          "count": 11,
+          "value": "#172943"
+        },
+        {
+          "count": 8,
+          "value": "#27305c"
+        },
+        {
+          "count": 2,
+          "value": "#100d25"
+        },
+        {
+          "count": 2,
+          "value": "#cf3c55"
+        },
+        {
+          "count": 1,
+          "value": "#100d29"
+        },
+        {
+          "count": 1,
+          "value": "#1b1433"
+        },
+        {
+          "count": 1,
+          "value": "#3a3063"
+        },
+        {
+          "count": 1,
+          "value": "#b5abd0"
+        },
+        {
+          "count": 1,
+          "value": "#0a0818"
+        }
+      ],
+      "css_variables": {
+        "--accent-color": "var(--color-accent)",
+        "--beta-banner-height": "48px",
+        "--border-chunky": "2px",
+        "--border-chunky-lg": "3px",
+        "--border-glow-cyan": "1px solid rgba(0, 217, 255, .15)",
+        "--border-glow-pink": "1px solid rgba(233, 69, 96, .15)",
+        "--brand-primary-border": "rgba(0, 217, 255, .34)",
+        "--brand-primary-border-hover": "rgba(0, 217, 255, .48)",
+        "--brand-primary-fill": "linear-gradient(180deg, #f15a74 0%, #e94560 58%, #cf3c55 100%)",
+        "--brand-primary-fill-active": "linear-gradient(180deg, #dc4761 0%, #cb3b54 100%)",
+        "--brand-primary-fill-hover": "linear-gradient(180deg, #f66d84 0%, #ee516b 58%, #da435c 100%)",
+        "--brand-primary-shadow": "rgba(233, 69, 96, .28)",
+        "--brand-primary-shadow-strong": "rgba(233, 69, 96, .36)",
+        "--brand-surface-border": "rgba(0, 217, 255, .28)",
+        "--brand-surface-border-hover": "rgba(0, 217, 255, .48)",
+        "--brand-surface-fill": "linear-gradient(180deg, rgba(6, 31, 50, .96) 0%, rgba(4, 21, 35, .96) 100%)",
+        "--brand-surface-fill-hover": "linear-gradient(180deg, rgba(8, 43, 68, .98) 0%, rgba(5, 28, 46, .98) 100%)",
+        "--brand-surface-text": "#dff8ff",
+        "--brand-wordmark-buddies": "#e94560",
+        "--brand-wordmark-game": "#ffffff",
+        "--brand-wordmark-io": "#00d9ff",
+        "--breakpoint-2xl": "1536px",
+        "--breakpoint-3xl": "1920px",
+        "--breakpoint-lg": "1024px",
+        "--breakpoint-md": "768px",
+        "--breakpoint-sm": "480px",
+        "--breakpoint-xl": "1400px",
+        "--breakpoint-xs": "320px",
+        "--card-bg": "var(--color-surface-1)",
+        "--card-hover-glow": "0 0 15px rgba(0, 217, 255, .08), 0 20px 50px rgba(0, 0, 0, .5)",
+        "--card-hover-shadow": "0 20px 50px rgba(0, 0, 0, .5), 0 10px 25px rgba(0, 0, 0, .3)",
+        "--card-shadow": "var(--shadow-md)",
+        "--chat-bottom-gap": "max(8px, env(safe-area-inset-bottom, 0px))",
+        "--chat-left-gap": "max(8px, env(safe-area-inset-left, 0px))",
+        "--chat-right-gap": "max(8px, env(safe-area-inset-right, 0px))",
+        "--chat-top-gap": "max(8px, env(safe-area-inset-top, 0px))",
+        "--color-accent": "#cf3c55",
+        "--color-bg-1": "#0a0418",
+        "--color-bg-2": "#120928",
+        "--color-border-strong": "rgba(255, 255, 255, .18)",
+        "--color-border-subtle": "rgba(255, 255, 255, .08)",
+        "--color-card": "var(--dialog-surface)",
+        "--color-danger": "#d90429",
+        "--color-discord": "#9563f7",
+        "--color-discord-base": "#7c3aed",
+        "--color-gold": "#FFD700",
+        "--color-gold-ui": "#ffb020",
+        "--color-primary": "#e94560",
+        "--color-purple": "#a855f7",
+        "--color-secondary": "#00d9ff",
+        "--color-success": "#4caf50",
+        "--color-surface-1": "#151b30",
+        "--color-surface-2": "#1c2240",
+        "--color-text-muted": "#8a90aa",
+        "--color-text-primary": "#e7e9f1",
+        "--color-text-secondary": "#a8aec7",
+        "--color-warning": "#ff9800",
+        "--control-secondary-bg": "color-mix(in srgb, var(--color-secondary) 7%, var(--color-surface-2))",
+        "--control-secondary-bg-hover": "color-mix(in srgb, var(--color-secondary) 13%, var(--color-surface-2))",
+        "--control-secondary-border": "color-mix(in srgb, var(--color-text-secondary) 58%, var(--color-surface-2))",
+        "--control-secondary-border-hover": "var(--color-secondary)",
+        "--control-secondary-focus": "var(--color-secondary)",
+        "--control-secondary-radius": "10px",
+        "--control-secondary-shadow": "0 3px 0 var(--look-ink, var(--ink-deep, #05020e))",
+        "--control-secondary-shadow-pressed": "0 1px 0 var(--look-ink, var(--ink-deep, #05020e))",
+        "--control-secondary-text": "var(--color-text-primary)",
+        "--dialog-border": "var(--color-border-subtle)",
+        "--dialog-raised": "var(--color-surface-2)",
+        "--dialog-shadow": "0 18px 64px rgb(0 0 0 / .34)",
+        "--dialog-surface": "var(--color-surface-1)",
+        "--ease-out-back": "cubic-bezier(.34, 1.56, .64, 1)",
+        "--ease-out-expo": "cubic-bezier(.16, 1, .3, 1)",
+        "--ease-out-quart": "cubic-bezier(.25, 1, .5, 1)",
+        "--ease-spring": "cubic-bezier(.175, .885, .32, 1.275)",
+        "--focus-ring": "0 0 0 3px rgba(0, 217, 255, .25)",
+        "--focus-ring-strong": "0 0 0 3px rgba(0, 217, 255, .3)",
+        "--font-body": "\"Bungee\", \"Outfit\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+        "--font-chunky": "\"Bungee\", \"Titan One\", \"Arial Black\", system-ui, sans-serif",
+        "--font-code": "ui-monospace, \"SF Mono\", \"Cascadia Mono\", \"Roboto Mono\", Consolas, Menlo, monospace",
+        "--font-display": "\"Bungee\", \"Orbitron\", \"Inter\", \"Segoe UI\", system-ui, sans-serif",
+        "--font-mono": "\"Bungee\", \"Outfit\", ui-monospace, monospace",
+        "--font-read": "\"Outfit\", \"Inter\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+        "--gb-aurora-1": "233, 69, 96",
+        "--gb-aurora-2": "0, 217, 255",
+        "--gb-bg-1": "#0a0418",
+        "--gb-bg-2": "#120928",
+        "--gb-bg-deep": "#05020e",
+        "--gb-star": "255, 255, 255",
+        "--glass-1": "rgba(255, 255, 255, .06)",
+        "--glass-2": "rgba(255, 255, 255, .1)",
+        "--glass-3": "rgba(255, 255, 255, .15)",
+        "--glow-cyan-medium": "0 0 20px rgba(0, 217, 255, .15), 0 0 40px rgba(0, 217, 255, .06)",
+        "--glow-cyan-soft": "0 0 15px rgba(0, 217, 255, .1)",
+        "--glow-cyan-strong": "0 0 20px rgba(0, 217, 255, .2), 0 0 40px rgba(0, 217, 255, .1)",
+        "--glow-green-medium": "0 0 20px rgba(0, 230, 118, .15), 0 0 40px rgba(0, 230, 118, .06)",
+        "--glow-green-soft": "0 0 15px rgba(0, 230, 118, .1)",
+        "--glow-pink-medium": "0 0 20px rgba(233, 69, 96, .15), 0 0 40px rgba(233, 69, 96, .06)",
+        "--glow-pink-soft": "0 0 15px rgba(233, 69, 96, .1)",
+        "--glow-pink-strong": "0 0 20px rgba(233, 69, 96, .2), 0 0 40px rgba(233, 69, 96, .1)",
+        "--gradient-primary": "var(--brand-primary-fill)",
+        "--gradient-screen": "linear-gradient(180deg, #0a0a18, #0d1020, #0a0a18)",
+        "--gradient-secondary": "linear-gradient(135deg, var(--color-secondary) 0%, #00b4d8 100%)",
+        "--gradient-surface": "linear-gradient(145deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .02))",
+        "--gradient-vignette": "radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, .4) 100%)",
+        "--header-height": "64px",
+        "--ink-deep": "#05020e",
+        "--is-touch-device": "0",
+        "--kit-border-strong": "#3a4166",
+        "--kit-card-gold": "#1b1830",
+        "--kit-cyan-soft": "#7deeff",
+        "--kit-danger": "#a8233a",
+        "--kit-ease-out": "cubic-bezier(.16, 1, .3, 1)",
+        "--kit-ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+        "--kit-error": "#ff6b81",
+        "--kit-error-text": "#ffb3c0",
+        "--kit-footer": "#07030f",
+        "--kit-fun-cyan": "var(--color-secondary, #00d9ff)",
+        "--kit-fun-cyan-soft": "color-mix(in srgb, var(--kit-fun-cyan) 14%, var(--color-surface-1, #151b30))",
+        "--kit-fun-gold": "var(--color-gold-ui, #ffb020)",
+        "--kit-fun-gold-soft": "color-mix(in srgb, var(--kit-fun-gold) 13%, var(--color-surface-1, #151b30))",
+        "--kit-fun-lime": "#a3e635",
+        "--kit-fun-lime-soft": "color-mix(in srgb, var(--kit-fun-lime) 12%, var(--color-surface-1, #151b30))",
+        "--kit-fun-orange": "var(--color-warning, #ff9800)",
+        "--kit-fun-orange-soft": "color-mix(in srgb, var(--kit-fun-orange) 14%, var(--color-surface-1, #151b30))",
+        "--kit-fun-pink": "var(--color-primary, #e94560)",
+        "--kit-fun-pink-soft": "color-mix(in srgb, var(--kit-fun-pink) 16%, var(--color-surface-1, #151b30))",
+        "--kit-fun-purple": "var(--color-purple, #a855f7)",
+        "--kit-fun-purple-soft": "color-mix(in srgb, var(--kit-fun-purple) 16%, var(--color-surface-1, #151b30))",
+        "--kit-gold-text": "#ffcf70",
+        "--kit-line": "rgba(255, 255, 255, .1)",
+        "--kit-line-strong": "rgba(255, 255, 255, .14)",
+        "--kit-on-cyan": "#041523",
+        "--kit-on-gold": "#2a1800",
+        "--kit-on-pink": "#ffffff",
+        "--kit-shadow-btn": "4px 4px 0 var(--ink-deep, #05020e)",
+        "--kit-sheet": "#10152a",
+        "--kit-success-text": "#6fe3a8",
+        "--kit-text-body": "#c9cde0",
+        "--kit-track": "#262b47",
+        "--kit-track-strong": "#2a2f4d",
+        "--kit-well": "#0f0826",
+        "--leading-normal": "1.5",
+        "--leading-relaxed": "1.625",
+        "--leading-snug": "1.25",
+        "--leading-tight": "1",
+        "--mobile-nav-height": "0px",
+        "--modal-w-lg": "1040px",
+        "--modal-w-md": "720px",
+        "--modal-w-sm": "480px",
+        "--neon-glow": "0 0 20px rgba(0, 217, 255, .25)",
+        "--page-gutter": "24px",
+        "--page-max": "100%",
+        "--panel-bg": "linear-gradient(135deg, rgba(8, 18, 32, 1), rgba(11, 24, 41, 1))",
+        "--panel-bg-hover": "linear-gradient(135deg, rgba(11, 24, 41, 1), rgba(14, 28, 48, 1))",
+        "--panel-border": "1px solid rgba(0, 217, 255, .18)",
+        "--panel-border-hover": "rgba(0, 217, 255, .35)",
+        "--panel-shadow": "0 20px 48px rgba(2, 8, 23, .35)",
+        "--primary-bg": "var(--color-bg-1)",
+        "--primary-color": "var(--color-primary)",
+        "--radius-lg": "16px",
+        "--radius-md": "12px",
+        "--radius-pill": "999px",
+        "--radius-sm": "8px",
+        "--radius-xl": "20px",
+        "--safe-area-bottom": "env(safe-area-inset-bottom, 0px)",
+        "--safe-area-left": "env(safe-area-inset-left, 0px)",
+        "--safe-area-right": "env(safe-area-inset-right, 0px)",
+        "--safe-area-top": "env(safe-area-inset-top, 0px)",
+        "--secondary-bg": "var(--color-bg-2)",
+        "--secondary-color": "var(--color-secondary)",
+        "--secondary-control-bg": "var(--control-secondary-bg)",
+        "--secondary-control-border": "var(--color-success)",
+        "--secondary-control-shadow": "none",
+        "--secondary-control-text": "var(--color-success)",
+        "--secondary-control-transform": "translateY(-50%)",
+        "--secondary-control-transform-pressed": "translateY( calc(-50% + 2px) )",
+        "--shadow-hard-lg": "8px 8px 0 var(--ink-deep)",
+        "--shadow-hard-md": "5px 5px 0 var(--ink-deep)",
+        "--shadow-hard-sm": "3px 3px 0 var(--ink-deep)",
+        "--shadow-inset": "inset 0 2px 6px rgba(0, 0, 0, .4)",
+        "--shadow-lg": "0 20px 60px rgba(0, 0, 0, .45)",
+        "--shadow-lifted": "0 8px 24px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .2)",
+        "--shadow-md": "0 10px 30px rgba(0, 0, 0, .35)",
+        "--shadow-sm": "0 6px 18px rgba(0, 0, 0, .25)",
+        "--space-2xl": "48px",
+        "--space-lg": "24px",
+        "--space-md": "16px",
+        "--space-sm": "8px",
+        "--space-xl": "32px",
+        "--space-xs": "4px",
+        "--text-2xl": "clamp(2rem, 1.85rem + .5vw, 3rem)",
+        "--text-3xl": "clamp(2.5rem, 2.3rem + .6vw, 3.75rem)",
+        "--text-4xl": "clamp(3rem, 2.75rem + .8vw, 4.5rem)",
+        "--text-base": "clamp(1rem, .92rem + .25vw, 1.375rem)",
+        "--text-glow-cyan": "0 0 8px rgba(0, 217, 255, .2)",
+        "--text-glow-pink": "0 0 8px rgba(233, 69, 96, .2)",
+        "--text-glow-white": "0 0 8px rgba(255, 255, 255, .15)",
+        "--text-lg": "clamp(1.25rem, 1.15rem + .3vw, 1.75rem)",
+        "--text-primary": "var(--color-text-primary)",
+        "--text-secondary": "var(--color-text-secondary)",
+        "--text-sm": ".875rem",
+        "--text-xl": "clamp(1.5rem, 1.35rem + .45vw, 2.25rem)",
+        "--text-xs": ".75rem",
+        "--total-top-offset": "calc(var(--header-height) + var(--beta-banner-height))",
+        "--touch-target-comfortable": "48px",
+        "--touch-target-min": "44px",
+        "--z-bottom-nav": "1000",
+        "--z-dropdown": "100",
+        "--z-fab": "900",
+        "--z-fixed": "300",
+        "--z-header": "1001",
+        "--z-modal": "2000",
+        "--z-overlay": "1500",
+        "--z-sticky": "200",
+        "--z-toast": "3000",
+        "--z-tooltip": "4000"
+      },
+      "font_faces": [
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "500"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Outfit",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "800"
+        },
+        {
+          "family": "Bungee",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Orbitron",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Orbitron",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Orbitron",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Space Grotesk",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "500"
+        },
+        {
+          "family": "Space Grotesk",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "700"
+        }
+      ],
+      "font_sizes": [
+        {
+          "count": 101,
+          "value": "15px"
+        },
+        {
+          "count": 77,
+          "value": "14px"
+        },
+        {
+          "count": 59,
+          "value": "13px"
+        },
+        {
+          "count": 25,
+          "value": "16px"
+        },
+        {
+          "count": 24,
+          "value": "12px"
+        },
+        {
+          "count": 19,
+          "value": "20px"
+        },
+        {
+          "count": 4,
+          "value": "24px"
+        },
+        {
+          "count": 3,
+          "value": "28px"
+        },
+        {
+          "count": 1,
+          "value": "34px"
+        },
+        {
+          "count": 1,
+          "value": "17px"
+        },
+        {
+          "count": 1,
+          "value": "22px"
+        }
+      ],
+      "font_weights": [
+        {
+          "count": 117,
+          "value": "400"
+        },
+        {
+          "count": 83,
+          "value": "600"
+        },
+        {
+          "count": 69,
+          "value": "500"
+        },
+        {
+          "count": 42,
+          "value": "700"
+        },
+        {
+          "count": 4,
+          "value": "650"
+        }
+      ],
+      "fonts": [
+        {
+          "count": 260,
+          "value": "Outfit, Inter, \"Segoe UI\", system-ui, -apple-system, sans-serif"
+        },
+        {
+          "count": 54,
+          "value": "Bungee, Orbitron, Inter, \"Segoe UI\", system-ui, sans-serif"
+        },
+        {
+          "count": 1,
+          "value": "Bungee, Outfit, \"Segoe UI\", system-ui, -apple-system, sans-serif"
+        }
+      ],
+      "max_widths": [
+        {
+          "count": 3,
+          "value": "732.816px"
+        },
+        {
+          "count": 3,
+          "value": "892.16px"
+        },
+        {
+          "count": 1,
+          "value": "825.248px"
+        },
+        {
+          "count": 1,
+          "value": "482.816px"
+        }
+      ],
+      "radii": [
+        {
+          "count": 36,
+          "value": "12px"
+        },
+        {
+          "count": 32,
+          "value": "999px"
+        },
+        {
+          "count": 22,
+          "value": "16px"
+        },
+        {
+          "count": 15,
+          "value": "14px"
+        },
+        {
+          "count": 9,
+          "value": "10px"
+        },
+        {
+          "count": 4,
+          "value": "24px"
+        },
+        {
+          "count": 2,
+          "value": "8px"
+        },
+        {
+          "count": 2,
+          "value": "3px"
+        },
+        {
+          "count": 2,
+          "value": "50%"
+        },
+        {
+          "count": 1,
+          "value": "0px 0px 12px 12px"
+        }
+      ],
+      "shadows": [
+        {
+          "count": 22,
+          "value": "rgb(7, 4, 20) 3px 3px 0px 0px"
+        },
+        {
+          "count": 19,
+          "value": "rgb(7, 4, 20) 4px 4px 0px 0px"
+        },
+        {
+          "count": 10,
+          "value": "rgb(7, 4, 20) 2px 2px 0px 0px"
+        },
+        {
+          "count": 8,
+          "value": "rgb(7, 4, 20) 0px 3px 0px 0px"
+        },
+        {
+          "count": 2,
+          "value": "rgba(217, 209, 235, 0.14) 0px 0px 0px 1px"
+        },
+        {
+          "count": 2,
+          "value": "rgb(7, 4, 20) 5px 5px 0px 0px"
+        },
+        {
+          "count": 1,
+          "value": "rgba(0, 217, 255, 0.4) 0px 4px 20px 0px"
+        },
+        {
+          "count": 1,
+          "value": "rgb(7, 4, 20) 4px 4px 0px 0px, rgba(255, 255, 255, 0.14) 0px 2px 0px 0px inset"
+        }
+      ],
+      "spacing": [
+        {
+          "count": 221,
+          "value": "18px"
+        },
+        {
+          "count": 158,
+          "value": "10px"
+        },
+        {
+          "count": 110,
+          "value": "15px"
+        },
+        {
+          "count": 90,
+          "value": "12px"
+        },
+        {
+          "count": 88,
+          "value": "14px"
+        },
+        {
+          "count": 82,
+          "value": "6px"
+        },
+        {
+          "count": 80,
+          "value": "5px"
+        },
+        {
+          "count": 78,
+          "value": "16px"
+        },
+        {
+          "count": 34,
+          "value": "8px"
+        },
+        {
+          "count": 23,
+          "value": "24px"
+        },
+        {
+          "count": 23,
+          "value": "20px"
+        },
+        {
+          "count": 16,
+          "value": "36px"
+        },
+        {
+          "count": 8,
+          "value": "7px"
+        },
+        {
+          "count": 7,
+          "value": "44px"
+        },
+        {
+          "count": 6,
+          "value": "28px"
+        },
+        {
+          "count": 4,
+          "value": "-1px"
+        },
+        {
+          "count": 4,
+          "value": "3px"
+        },
+        {
+          "count": 4,
+          "value": "21.75px"
+        },
+        {
+          "count": 3,
+          "value": "2px"
+        },
+        {
+          "count": 2,
+          "value": "32px"
+        },
+        {
+          "count": 2,
+          "value": "4px"
+        },
+        {
+          "count": 2,
+          "value": "3.25px"
+        },
+        {
+          "count": 2,
+          "value": "48px"
+        },
+        {
+          "count": 1,
+          "value": "88px"
+        }
+      ],
+      "text_colors": [
+        {
+          "count": 108,
+          "value": "#e4ddf3"
+        },
+        {
+          "count": 79,
+          "value": "#f8f5ff"
+        },
+        {
+          "count": 53,
+          "value": "#d9d1eb"
+        },
+        {
+          "count": 39,
+          "value": "#00d9ff"
+        },
+        {
+          "count": 21,
+          "value": "#041523"
+        },
+        {
+          "count": 4,
+          "value": "#ffffff"
+        },
+        {
+          "count": 4,
+          "value": "#b5abd0"
+        },
+        {
+          "count": 2,
+          "value": "#e94560"
+        },
+        {
+          "count": 1,
+          "value": "#000000"
+        },
+        {
+          "count": 1,
+          "value": "#ffcf70"
+        },
+        {
+          "count": 1,
+          "value": "#effcff"
+        },
+        {
+          "count": 1,
+          "value": "#a855f7"
+        },
+        {
+          "count": 1,
+          "value": "#ffb020"
+        }
+      ]
+    },
+    "files": [
+      "README.md",
+      "capture.json"
+    ],
+    "html_bytes": 0,
+    "output_directory": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\capture\\routes\\games",
+    "screenshots": [
+      {
+        "css_width": 1440,
+        "cut": false,
+        "file": "screenshot-1440.png",
+        "height": 5909,
+        "noise_file": "noise-1440.png",
+        "noise_tiles": 8547,
+        "sha256": "753cb47b813a57b8a73e5433b8c75a5110cc3e9a4f4850efdb813213e5eb71b6",
+        "width": 1440
+      },
+      {
+        "css_width": 768,
+        "cut": false,
+        "file": "screenshot-768.png",
+        "height": 8509,
+        "noise_file": "noise-768.png",
+        "noise_tiles": 33,
+        "sha256": "e84ce6160739568f26d865b4011322deb6c4ac4889bdf7d63ca9ae8c9f05db59",
+        "width": 768
+      },
+      {
+        "css_width": 390,
+        "cut": false,
+        "file": "screenshot-390.png",
+        "height": 9087,
+        "noise_file": "noise-390.png",
+        "noise_tiles": 23,
+        "sha256": "54d283db3122964d8a0bf32bcf7df22e401e601d030187ed5d715e32b3491551",
+        "width": 390
+      }
+    ],
+    "title": "Free Online Party Games to Play With Friends — All 21 | GameBuddies.io",
+    "url": "https://gamebuddies.io/games"
+  },
+  "summary": "Captured https://gamebuddies.io/games: 3 screenshot(s), 364 outline items, 30 headings, 32 images, 112 links, 0 forms → D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\capture\\routes\\games.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "one_state",
+      "message": "One state of the page: menus, dialogs and content behind interactions are not opened."
+    },
+    {
+      "code": "cross_origin_css",
+      "message": "CSS custom properties and breakpoints from cross-origin stylesheets can't be read."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "https://gamebuddies.io/games"
+    },
+    {
+      "kind": "path",
+      "value": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\capture\\routes\\games"
+    }
+  ],
+  "links": []
+}

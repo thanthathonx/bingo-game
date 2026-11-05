@@ -1,0 +1,3337 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 1,
+      "contentinfo": 1,
+      "main": 1,
+      "navigation": 1
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "https://gamebuddies.io/fonts/bungee-400.woff2",
+      "https://gamebuddies.io/fonts/outfit-400.woff2",
+      "https://gamebuddies.io/fonts/outfit-700.woff2",
+      "https://gamebuddies.io/fonts/outfit-600.woff2",
+      "https://gamebuddies.io/fonts/outfit-500.woff2"
+    ],
+    "images": [
+      {
+        "alt": "GameBuddies.io",
+        "h": 245,
+        "src": "https://gamebuddies.io/gblogo-768.webp",
+        "w": 480
+      }
+    ],
+    "inline_scripts": 7,
+    "requests": [
+      {
+        "bytes": 451,
+        "type": "other",
+        "url": "https://gamebuddies.io/cdn-cgi/speculation"
+      },
+      {
+        "bytes": 71632,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/i/pub-8974800579879060"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 1394,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWEKwjMdybHE3veyw86rpsC7-a04SYHwvBiRbmBcqnmVfQJY8TjUUYvHNH9fLiFmEDEE8ytDrlazVI0Yz7Rg7mYGR8bA7HSmp409m7CHGdmmG64Dr5LjZKncaE4JZ2b2b5skYMBzA=="
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/fonts/bungee-400.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/fonts/outfit-400.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index-BEu3FMsz.js"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/index-TL-L7pL2.css"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/vendor-icons-CtUPES5b.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/vendor-react-D0qe6vq1.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/HomePage-BDoGcnCz.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/en-DxuHO7BI.js"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/gblogo-768.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      },
+      {
+        "bytes": 300,
+        "type": "link",
+        "url": "https://gamebuddies.io/manifest.json"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-700.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxUaW5kMnzLaTR2BXJZzy1mwxiMpB5Pi7SsrCN8bx-8VP0PInAxv_Robq3UNrdqQwl-FxEMMNzFP9_KmUWy0wCjh6HgrN-3DD5C7eVIOn6vYU-Je2RGxSUWf-HpS2AmBTQwQjRu-BA=="
+      },
+      {
+        "bytes": 3806,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxVYMwQcMR_mrFLUphlEJ5tueLvEWrJDPA896Apvta9JZyTaVgK8m2bO5PZt9OeuXdiZYgISBTDnKp1mLZWJMKuK58oiznCdrz0jcu0qJECcxVzCNvSdNMfJ8K4NtpxVazL1HXCdjA=="
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/legalContent-BUVbfSPc.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 300,
+        "type": "beacon",
+        "url": "https://gamebuddies.io/api/metrics/load"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/motionFeatures-DMVeBlE4.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/create-visual-element-BGVNb_FG.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/scrape-motion-values-CEvHaCUX.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index-CYMCNheW.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/SVGVisualElement-DhH9kCvL.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/is-browser-Cc-On3RY.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/use-presence-DNCNm3z3.js"
+      },
+      {
+        "bytes": 300,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/Legal-B2LdL-5c.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/ToneIcon-Boa5N_cw.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/content-Ct1wFaev.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/kit-Dm84q0t_.js"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/content-BTwn-_9a.css"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/InstallPrompt-Dg9R-ROp.js"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/InstallPrompt-DAP8L5FF.css"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/PlatformAdventure-6JPOWq3n.js"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/brand/gamebuddies-lockup-v17.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/gblogo.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/assets/gb-ui-icons-CeGqCjl9.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-600.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-500.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/supabase-config"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index-CoiUojPt.js"
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/users/guest/b53c7ddf-fe00-4a20-87f5-bc7b76a0208c"
+      },
+      {
+        "bytes": 300,
+        "type": "beacon",
+        "url": "https://gamebuddies.io/api/metrics/visit"
+      },
+      {
+        "bytes": 316,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/moderation/ban-status"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://cloudflareinsights.com/cdn-cgi/rum"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/favicon.ico"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/icon-192.png"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWiBx9DbKsdfHOvvzfMXWm-BRb3rvR9-Ri47jJ8UANIptN4XjeCQ04P9UdpjFMusY7Xb10nJfWs2Z_OZx2PNhfMm3_FGbHT4LxHjGDH1JL2m2aOgQ5icr5gEnjIvIN8th8EIa8_DG0XTPgExlbEqPRwZObwFZf5tuKsTIWkH3M9m1pyx8oztJu9A3y_/_/ad600x330./brand-ad-_ad_vertical._dfp.php"
+      },
+      {
+        "bytes": 12438,
+        "type": "script",
+        "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      },
+      {
+        "bytes": 1621,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxW7f2LY40YjoHjwfmO68RU7wDeUHicaWZyAtxVAL8HZ-U-c_kZCGaIRTYGJZAQgmbvQtwmOq7XHeehGsB9SiR9CjSfmHIG75J7F66iTP7rwD0Ut6I191SoEPhubLbrUcjdN1Qg4ng=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV06uV2ESqhfVdDibRuzghFCm7fu9F72e-09uv_FNADQma0DWs7jZIBKHtwo8p0WAVlF8TmsopNnxTq4_UZuPoxtD_-wA96jb-9R-A_RhNPLDWEXP0y0ZscEFAcGaw8ZlF8LZmoBw=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxWkw_iFjIN4fSmRfFoN6PWtsNcwxOOMP7xSgqBVco3mKkobt3IKlbFHkINGaH8e_ttn7WgqgisU_lIQSX9tX_F8ElAk4TUYvR7EAc7mk-_v8A2leMy50KIMyHDn7GKAtVBmLltRIQ=="
+      }
+    ],
+    "scripts": [
+      "https://fundingchoicesmessages.google.com/i/pub-8974800579879060?ers=1",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxWEKwjMdybHE3veyw86rpsC7-a04SYHwvBiRbmBcqnmVfQJY8TjUUYvHNH9fLiFmEDEE8ytDrlazVI0Yz7Rg7mYGR8bA7HSmp409m7CHGdmmG64Dr5LjZKncaE4JZ2b2b5skYMBzA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzODk3OTk0LDgxMzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9nYW1lYnVkZGllcy5pby9pbXByZXNzdW0iLG51bGwsW1s4LCJhMGFqaGxEUjVDRSJdLFs5LCJlbi1VUyJdLFszNSwiMTc5Mzg5Nzk5MyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCJnYW1lYnVkZGllcy5pbyJdLFsyOSwiZmFsc2UiXV1d",
+      "https://gamebuddies.io/assets/index-BEu3FMsz.js",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxVYMwQcMR_mrFLUphlEJ5tueLvEWrJDPA896Apvta9JZyTaVgK8m2bO5PZt9OeuXdiZYgISBTDnKp1mLZWJMKuK58oiznCdrz0jcu0qJECcxVzCNvSdNMfJ8K4NtpxVazL1HXCdjA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzODk3OTk0LDg5MTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vZ2FtZWJ1ZGRpZXMuaW8vaW1wcmVzc3VtIixudWxsLFtbOCwiYTBhamhsRFI1Q0UiXSxbOSwiZW4tVVMiXSxbMzUsIjE3OTM4OTc5OTMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiZ2FtZWJ1ZGRpZXMuaW8iXSxbMjksImZhbHNlIl1dXQ",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxW7f2LY40YjoHjwfmO68RU7wDeUHicaWZyAtxVAL8HZ-U-c_kZCGaIRTYGJZAQgmbvQtwmOq7XHeehGsB9SiR9CjSfmHIG75J7F66iTP7rwD0Ut6I191SoEPhubLbrUcjdN1Qg4ng==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzODk3OTk1LDg1NTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly9nYW1lYnVkZGllcy5pby9pbXByZXNzdW0iLG51bGwsW1s4LCJhMGFqaGxEUjVDRSJdLFs5LCJlbi1VUyJdLFszNSwiMTc5Mzg5Nzk5MyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCJnYW1lYnVkZGllcy5pbyJdLFsyOSwiZmFsc2UiXV1d",
+      "https://static.cloudflareinsights.com/beacon.min.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    ],
+    "stylesheets": [
+      "https://gamebuddies.io/assets/index-TL-L7pL2.css",
+      "https://gamebuddies.io/assets/content-BTwn-_9a.css",
+      "https://gamebuddies.io/assets/InstallPrompt-DAP8L5FF.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 3,
+      "px": 40,
+      "query": "max-width 40px"
+    },
+    {
+      "count": 1,
+      "px": 72,
+      "query": "max-width 72px"
+    },
+    {
+      "count": 1,
+      "px": 300,
+      "query": "max-width 300px"
+    },
+    {
+      "count": 8,
+      "px": 359,
+      "query": "max-width 359px"
+    },
+    {
+      "count": 1,
+      "px": 420,
+      "query": "max-width 420px"
+    },
+    {
+      "count": 10,
+      "px": 479,
+      "query": "max-width 479px"
+    },
+    {
+      "count": 1,
+      "px": 480,
+      "query": "min-width 480px"
+    },
+    {
+      "count": 1,
+      "px": 559,
+      "query": "max-width 559px"
+    },
+    {
+      "count": 2,
+      "px": 560,
+      "query": "min-width 560px"
+    },
+    {
+      "count": 3,
+      "px": 600,
+      "query": "min-width 600px"
+    },
+    {
+      "count": 6,
+      "px": 640,
+      "query": "min-width 640px"
+    },
+    {
+      "count": 1,
+      "px": 720,
+      "query": "min-width 720px"
+    },
+    {
+      "count": 3,
+      "px": 760,
+      "query": "min-width 760px"
+    },
+    {
+      "count": 29,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 1,
+      "px": 768,
+      "query": "max-width 768px"
+    },
+    {
+      "count": 12,
+      "px": 768,
+      "query": "min-width 768px"
+    },
+    {
+      "count": 3,
+      "px": 820,
+      "query": "min-width 820px"
+    },
+    {
+      "count": 3,
+      "px": 900,
+      "query": "min-width 900px"
+    },
+    {
+      "count": 1,
+      "px": 901,
+      "query": "min-width 901px"
+    },
+    {
+      "count": 2,
+      "px": 1000,
+      "query": "min-width 1000px"
+    },
+    {
+      "count": 7,
+      "px": 1023,
+      "query": "max-width 1023px"
+    },
+    {
+      "count": 9,
+      "px": 1024,
+      "query": "min-width 1024px"
+    },
+    {
+      "count": 4,
+      "px": 1100,
+      "query": "max-width 1100px"
+    },
+    {
+      "count": 2,
+      "px": 1100,
+      "query": "min-width 1100px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 3,
+        "value": "#100d25"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "var(--color-accent)",
+      "--beta-banner-height": "48px",
+      "--border-chunky": "2px",
+      "--border-chunky-lg": "3px",
+      "--border-glow-cyan": "1px solid rgba(0, 217, 255, .15)",
+      "--border-glow-pink": "1px solid rgba(233, 69, 96, .15)",
+      "--brand-primary-border": "rgba(0, 217, 255, .34)",
+      "--brand-primary-border-hover": "rgba(0, 217, 255, .48)",
+      "--brand-primary-fill": "linear-gradient(180deg, #f15a74 0%, #e94560 58%, #cf3c55 100%)",
+      "--brand-primary-fill-active": "linear-gradient(180deg, #dc4761 0%, #cb3b54 100%)",
+      "--brand-primary-fill-hover": "linear-gradient(180deg, #f66d84 0%, #ee516b 58%, #da435c 100%)",
+      "--brand-primary-shadow": "rgba(233, 69, 96, .28)",
+      "--brand-primary-shadow-strong": "rgba(233, 69, 96, .36)",
+      "--brand-surface-border": "rgba(0, 217, 255, .28)",
+      "--brand-surface-border-hover": "rgba(0, 217, 255, .48)",
+      "--brand-surface-fill": "linear-gradient(180deg, rgba(6, 31, 50, .96) 0%, rgba(4, 21, 35, .96) 100%)",
+      "--brand-surface-fill-hover": "linear-gradient(180deg, rgba(8, 43, 68, .98) 0%, rgba(5, 28, 46, .98) 100%)",
+      "--brand-surface-text": "#dff8ff",
+      "--brand-wordmark-buddies": "#e94560",
+      "--brand-wordmark-game": "#ffffff",
+      "--brand-wordmark-io": "#00d9ff",
+      "--breakpoint-2xl": "1536px",
+      "--breakpoint-3xl": "1920px",
+      "--breakpoint-lg": "1024px",
+      "--breakpoint-md": "768px",
+      "--breakpoint-sm": "480px",
+      "--breakpoint-xl": "1400px",
+      "--breakpoint-xs": "320px",
+      "--card-bg": "var(--color-surface-1)",
+      "--card-hover-glow": "0 0 15px rgba(0, 217, 255, .08), 0 20px 50px rgba(0, 0, 0, .5)",
+      "--card-hover-shadow": "0 20px 50px rgba(0, 0, 0, .5), 0 10px 25px rgba(0, 0, 0, .3)",
+      "--card-shadow": "var(--shadow-md)",
+      "--color-accent": "#cf3c55",
+      "--color-bg-1": "#0a0418",
+      "--color-bg-2": "#120928",
+      "--color-border-strong": "rgba(255, 255, 255, .18)",
+      "--color-border-subtle": "rgba(255, 255, 255, .08)",
+      "--color-card": "var(--dialog-surface)",
+      "--color-danger": "#d90429",
+      "--color-discord": "#9563f7",
+      "--color-discord-base": "#7c3aed",
+      "--color-gold": "#FFD700",
+      "--color-gold-ui": "#ffb020",
+      "--color-primary": "#e94560",
+      "--color-purple": "#a855f7",
+      "--color-secondary": "#00d9ff",
+      "--color-success": "#4caf50",
+      "--color-surface-1": "#151b30",
+      "--color-surface-2": "#1c2240",
+      "--color-text-muted": "#8a90aa",
+      "--color-text-primary": "#e7e9f1",
+      "--color-text-secondary": "#a8aec7",
+      "--color-warning": "#ff9800",
+      "--control-secondary-bg": "color-mix(in srgb, var(--color-secondary) 7%, var(--color-surface-2))",
+      "--control-secondary-bg-hover": "color-mix(in srgb, var(--color-secondary) 13%, var(--color-surface-2))",
+      "--control-secondary-border": "color-mix(in srgb, var(--color-text-secondary) 58%, var(--color-surface-2))",
+      "--control-secondary-border-hover": "var(--color-secondary)",
+      "--control-secondary-focus": "var(--color-secondary)",
+      "--control-secondary-radius": "10px",
+      "--control-secondary-shadow": "0 3px 0 var(--look-ink, var(--ink-deep, #05020e))",
+      "--control-secondary-shadow-pressed": "0 1px 0 var(--look-ink, var(--ink-deep, #05020e))",
+      "--control-secondary-text": "var(--color-text-primary)",
+      "--dialog-border": "var(--color-border-subtle)",
+      "--dialog-raised": "var(--color-surface-2)",
+      "--dialog-shadow": "0 18px 64px rgb(0 0 0 / .34)",
+      "--dialog-surface": "var(--color-surface-1)",
+      "--ease-out-back": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--ease-out-expo": "cubic-bezier(.16, 1, .3, 1)",
+      "--ease-out-quart": "cubic-bezier(.25, 1, .5, 1)",
+      "--ease-spring": "cubic-bezier(.175, .885, .32, 1.275)",
+      "--focus-ring": "0 0 0 3px rgba(0, 217, 255, .25)",
+      "--focus-ring-strong": "0 0 0 3px rgba(0, 217, 255, .3)",
+      "--font-body": "\"Bungee\", \"Outfit\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+      "--font-chunky": "\"Bungee\", \"Titan One\", \"Arial Black\", system-ui, sans-serif",
+      "--font-code": "ui-monospace, \"SF Mono\", \"Cascadia Mono\", \"Roboto Mono\", Consolas, Menlo, monospace",
+      "--font-display": "\"Bungee\", \"Orbitron\", \"Inter\", \"Segoe UI\", system-ui, sans-serif",
+      "--font-mono": "\"Bungee\", \"Outfit\", ui-monospace, monospace",
+      "--font-read": "\"Outfit\", \"Inter\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+      "--gb-aurora-1": "233, 69, 96",
+      "--gb-aurora-2": "0, 217, 255",
+      "--gb-bg-1": "#0a0418",
+      "--gb-bg-2": "#120928",
+      "--gb-bg-deep": "#05020e",
+      "--gb-star": "255, 255, 255",
+      "--glass-1": "rgba(255, 255, 255, .06)",
+      "--glass-2": "rgba(255, 255, 255, .1)",
+      "--glass-3": "rgba(255, 255, 255, .15)",
+      "--glow-cyan-medium": "0 0 20px rgba(0, 217, 255, .15), 0 0 40px rgba(0, 217, 255, .06)",
+      "--glow-cyan-soft": "0 0 15px rgba(0, 217, 255, .1)",
+      "--glow-cyan-strong": "0 0 20px rgba(0, 217, 255, .2), 0 0 40px rgba(0, 217, 255, .1)",
+      "--glow-green-medium": "0 0 20px rgba(0, 230, 118, .15), 0 0 40px rgba(0, 230, 118, .06)",
+      "--glow-green-soft": "0 0 15px rgba(0, 230, 118, .1)",
+      "--glow-pink-medium": "0 0 20px rgba(233, 69, 96, .15), 0 0 40px rgba(233, 69, 96, .06)",
+      "--glow-pink-soft": "0 0 15px rgba(233, 69, 96, .1)",
+      "--glow-pink-strong": "0 0 20px rgba(233, 69, 96, .2), 0 0 40px rgba(233, 69, 96, .1)",
+      "--gradient-primary": "var(--brand-primary-fill)",
+      "--gradient-screen": "linear-gradient(180deg, #0a0a18, #0d1020, #0a0a18)",
+      "--gradient-secondary": "linear-gradient(135deg, var(--color-secondary) 0%, #00b4d8 100%)",
+      "--gradient-surface": "linear-gradient(145deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .02))",
+      "--gradient-vignette": "radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, .4) 100%)",
+      "--header-height": "64px",
+      "--ink-deep": "#05020e",
+      "--is-touch-device": "0",
+      "--kit-border-strong": "#3a4166",
+      "--kit-card-gold": "#1b1830",
+      "--kit-cyan-soft": "#7deeff",
+      "--kit-danger": "#a8233a",
+      "--kit-ease-out": "cubic-bezier(.16, 1, .3, 1)",
+      "--kit-ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--kit-error": "#ff6b81",
+      "--kit-error-text": "#ffb3c0",
+      "--kit-footer": "#07030f",
+      "--kit-fun-cyan": "var(--color-secondary, #00d9ff)",
+      "--kit-fun-cyan-soft": "color-mix(in srgb, var(--kit-fun-cyan) 14%, var(--color-surface-1, #151b30))",
+      "--kit-fun-gold": "var(--color-gold-ui, #ffb020)",
+      "--kit-fun-gold-soft": "color-mix(in srgb, var(--kit-fun-gold) 13%, var(--color-surface-1, #151b30))",
+      "--kit-fun-lime": "#a3e635",
+      "--kit-fun-lime-soft": "color-mix(in srgb, var(--kit-fun-lime) 12%, var(--color-surface-1, #151b30))",
+      "--kit-fun-orange": "var(--color-warning, #ff9800)",
+      "--kit-fun-orange-soft": "color-mix(in srgb, var(--kit-fun-orange) 14%, var(--color-surface-1, #151b30))",
+      "--kit-fun-pink": "var(--color-primary, #e94560)",
+      "--kit-fun-pink-soft": "color-mix(in srgb, var(--kit-fun-pink) 16%, var(--color-surface-1, #151b30))",
+      "--kit-fun-purple": "var(--color-purple, #a855f7)",
+      "--kit-fun-purple-soft": "color-mix(in srgb, var(--kit-fun-purple) 16%, var(--color-surface-1, #151b30))",
+      "--kit-gold-text": "#ffcf70",
+      "--kit-line": "rgba(255, 255, 255, .1)",
+      "--kit-line-strong": "rgba(255, 255, 255, .14)",
+      "--kit-on-cyan": "#041523",
+      "--kit-on-gold": "#2a1800",
+      "--kit-on-pink": "#ffffff",
+      "--kit-shadow-btn": "4px 4px 0 var(--ink-deep, #05020e)",
+      "--kit-sheet": "#10152a",
+      "--kit-success-text": "#6fe3a8",
+      "--kit-text-body": "#c9cde0",
+      "--kit-track": "#262b47",
+      "--kit-track-strong": "#2a2f4d",
+      "--kit-well": "#0f0826",
+      "--leading-normal": "1.5",
+      "--leading-relaxed": "1.625",
+      "--leading-snug": "1.25",
+      "--leading-tight": "1",
+      "--mobile-nav-height": "0px",
+      "--modal-w-lg": "1040px",
+      "--modal-w-md": "720px",
+      "--modal-w-sm": "480px",
+      "--neon-glow": "0 0 20px rgba(0, 217, 255, .25)",
+      "--page-gutter": "24px",
+      "--page-max": "100%",
+      "--panel-bg": "linear-gradient(135deg, rgba(8, 18, 32, 1), rgba(11, 24, 41, 1))",
+      "--panel-bg-hover": "linear-gradient(135deg, rgba(11, 24, 41, 1), rgba(14, 28, 48, 1))",
+      "--panel-border": "1px solid rgba(0, 217, 255, .18)",
+      "--panel-border-hover": "rgba(0, 217, 255, .35)",
+      "--panel-shadow": "0 20px 48px rgba(2, 8, 23, .35)",
+      "--primary-bg": "var(--color-bg-1)",
+      "--primary-color": "var(--color-primary)",
+      "--radius-lg": "16px",
+      "--radius-md": "12px",
+      "--radius-pill": "999px",
+      "--radius-sm": "8px",
+      "--radius-xl": "20px",
+      "--safe-area-bottom": "env(safe-area-inset-bottom, 0px)",
+      "--safe-area-left": "env(safe-area-inset-left, 0px)",
+      "--safe-area-right": "env(safe-area-inset-right, 0px)",
+      "--safe-area-top": "env(safe-area-inset-top, 0px)",
+      "--secondary-bg": "var(--color-bg-2)",
+      "--secondary-color": "var(--color-secondary)",
+      "--secondary-control-bg": "var(--control-secondary-bg)",
+      "--secondary-control-border": "var(--color-success)",
+      "--secondary-control-shadow": "none",
+      "--secondary-control-text": "var(--color-success)",
+      "--secondary-control-transform": "translateY(-50%)",
+      "--secondary-control-transform-pressed": "translateY( calc(-50% + 2px) )",
+      "--shadow-hard-lg": "8px 8px 0 var(--ink-deep)",
+      "--shadow-hard-md": "5px 5px 0 var(--ink-deep)",
+      "--shadow-hard-sm": "3px 3px 0 var(--ink-deep)",
+      "--shadow-inset": "inset 0 2px 6px rgba(0, 0, 0, .4)",
+      "--shadow-lg": "0 20px 60px rgba(0, 0, 0, .45)",
+      "--shadow-lifted": "0 8px 24px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .2)",
+      "--shadow-md": "0 10px 30px rgba(0, 0, 0, .35)",
+      "--shadow-sm": "0 6px 18px rgba(0, 0, 0, .25)",
+      "--space-2xl": "48px",
+      "--space-lg": "24px",
+      "--space-md": "16px",
+      "--space-sm": "8px",
+      "--space-xl": "32px",
+      "--space-xs": "4px",
+      "--text-2xl": "clamp(2rem, 1.85rem + .5vw, 3rem)",
+      "--text-3xl": "clamp(2.5rem, 2.3rem + .6vw, 3.75rem)",
+      "--text-4xl": "clamp(3rem, 2.75rem + .8vw, 4.5rem)",
+      "--text-base": "clamp(1rem, .92rem + .25vw, 1.375rem)",
+      "--text-glow-cyan": "0 0 8px rgba(0, 217, 255, .2)",
+      "--text-glow-pink": "0 0 8px rgba(233, 69, 96, .2)",
+      "--text-glow-white": "0 0 8px rgba(255, 255, 255, .15)",
+      "--text-lg": "clamp(1.25rem, 1.15rem + .3vw, 1.75rem)",
+      "--text-primary": "var(--color-text-primary)",
+      "--text-secondary": "var(--color-text-secondary)",
+      "--text-sm": ".875rem",
+      "--text-xl": "clamp(1.5rem, 1.35rem + .45vw, 2.25rem)",
+      "--text-xs": ".75rem",
+      "--total-top-offset": "calc(var(--header-height) + var(--beta-banner-height))",
+      "--touch-target-comfortable": "48px",
+      "--touch-target-min": "44px",
+      "--z-bottom-nav": "1000",
+      "--z-dropdown": "100",
+      "--z-fab": "900",
+      "--z-fixed": "300",
+      "--z-header": "1001",
+      "--z-modal": "2000",
+      "--z-overlay": "1500",
+      "--z-sticky": "200",
+      "--z-toast": "3000",
+      "--z-tooltip": "4000"
+    },
+    "font_faces": [
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "800"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "900"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 151,
+        "value": "16px"
+      },
+      {
+        "count": 30,
+        "value": "16.8px"
+      },
+      {
+        "count": 3,
+        "value": "24px"
+      },
+      {
+        "count": 1,
+        "value": "33.6px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 148,
+        "value": "400"
+      },
+      {
+        "count": 37,
+        "value": "700"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 181,
+        "value": "Outfit, system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 4,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "920px"
+      }
+    ],
+    "radii": [],
+    "shadows": [],
+    "spacing": [
+      {
+        "count": 84,
+        "value": "8.8px"
+      },
+      {
+        "count": 30,
+        "value": "23.52px"
+      },
+      {
+        "count": 30,
+        "value": "6.72px"
+      },
+      {
+        "count": 11,
+        "value": "20px"
+      },
+      {
+        "count": 3,
+        "value": "43.2px"
+      },
+      {
+        "count": 3,
+        "value": "14.4px"
+      },
+      {
+        "count": 1,
+        "value": "28px"
+      },
+      {
+        "count": 1,
+        "value": "40px"
+      },
+      {
+        "count": 1,
+        "value": "10px"
+      },
+      {
+        "count": 1,
+        "value": "22px"
+      },
+      {
+        "count": 1,
+        "value": "30.24px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 164,
+        "value": "#e7e9f1"
+      },
+      {
+        "count": 21,
+        "value": "#00d9ff"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "LEGAL INFORMATION — GAMEBUDDIES.IO"
+    },
+    {
+      "level": 2,
+      "text": "Impressum"
+    },
+    {
+      "level": 3,
+      "text": "Service Provider"
+    },
+    {
+      "level": 3,
+      "text": "Contact"
+    },
+    {
+      "level": 3,
+      "text": "Regulatory and Supervisory Authority"
+    },
+    {
+      "level": 3,
+      "text": "VAT ID"
+    },
+    {
+      "level": 3,
+      "text": "Consumer Dispute Resolution"
+    },
+    {
+      "level": 2,
+      "text": "Privacy Policy & Cookies"
+    },
+    {
+      "level": 3,
+      "text": "1. Data Controller"
+    },
+    {
+      "level": 3,
+      "text": "2. Data We Collect"
+    },
+    {
+      "level": 3,
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "level": 3,
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "level": 3,
+      "text": "5. International Data Transfers"
+    },
+    {
+      "level": 3,
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "7. Third-Party Services"
+    },
+    {
+      "level": 3,
+      "text": "8. Data Retention"
+    },
+    {
+      "level": 3,
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "level": 3,
+      "text": "10. Data Security"
+    },
+    {
+      "level": 3,
+      "text": "11. Children's Privacy"
+    },
+    {
+      "level": 3,
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "level": 3,
+      "text": "13. Contact"
+    },
+    {
+      "level": 2,
+      "text": "Terms of Service"
+    },
+    {
+      "level": 3,
+      "text": "1. Acceptance of Terms"
+    },
+    {
+      "level": 3,
+      "text": "2. Service Description"
+    },
+    {
+      "level": 3,
+      "text": "3. User Accounts"
+    },
+    {
+      "level": 3,
+      "text": "4. User Conduct"
+    },
+    {
+      "level": 3,
+      "text": "5. Intellectual Property & User-Generated Content"
+    },
+    {
+      "level": 3,
+      "text": "6. Disclaimer of Warranties"
+    },
+    {
+      "level": 3,
+      "text": "7. Limitation of Liability"
+    },
+    {
+      "level": 3,
+      "text": "8. Withdrawal Rights (Widerrufsbelehrung)"
+    },
+    {
+      "level": 3,
+      "text": "9. Modifications"
+    },
+    {
+      "level": 3,
+      "text": "10. Governing Law"
+    },
+    {
+      "level": 3,
+      "text": "11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)"
+    },
+    {
+      "level": 3,
+      "text": "12. Contact"
+    }
+  ],
+  "health": {
+    "errors": [
+      {
+        "kind": "console",
+        "text": "[BackgroundMusic] Failed to play: NotAllowedError: play() failed because the user didn't interact with the document first. https://goo.gl/xX8pDD",
+        "url": ""
+      },
+      {
+        "kind": "console",
+        "text": "TypeError: Failed to fetch dynamically imported module: https://gamebuddies.io/assets/Legal-B2LdL-5c.js",
+        "url": ""
+      }
+    ],
+    "failed_requests": [
+      {
+        "status": 404,
+        "type": "Script",
+        "url": "https://gamebuddies.io/assets/Legal-B2LdL-5c.js"
+      },
+      {
+        "status": 404,
+        "type": "Fetch",
+        "url": "https://gamebuddies.io/assets/Legal-B2LdL-5c.js"
+      },
+      {
+        "status": 404,
+        "type": "Script",
+        "url": "https://gamebuddies.io/assets/Legal-B2LdL-5c.js"
+      }
+    ]
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "h": 163,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 880,
+          "y": 38
+        },
+        {
+          "h": 8893,
+          "heading": "LEGAL INFORMATION — GAMEBUDDIES.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 880,
+          "y": 223
+        },
+        {
+          "h": 102,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 4,
+          "tag": "footer",
+          "w": 880,
+          "y": 9117
+        },
+        {
+          "h": 77,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 4,
+          "tag": "nav",
+          "w": 880,
+          "y": 9117
+        }
+      ],
+      "page_h": 10159,
+      "page_w": 1430,
+      "type": {
+        "body": 16,
+        "h1": 34,
+        "h2": 24,
+        "h3": 17
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [],
+      "page_h": 900,
+      "page_w": 758,
+      "type": {
+        "body": 0,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [],
+      "page_h": 900,
+      "page_w": 390,
+      "type": {
+        "body": 0,
+        "h1": 0,
+        "h2": 0,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "GameBuddies.io home"
+    },
+    {
+      "href": "https://gamebuddies.io/games",
+      "text": "Free online party games"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "GameBuddies.io home"
+    },
+    {
+      "href": "https://gamebuddies.io/games",
+      "text": "All free online party games"
+    },
+    {
+      "href": "https://gamebuddies.io/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://gamebuddies.io/about",
+      "text": "About GameBuddies.io"
+    },
+    {
+      "href": "https://gamebuddies.io/about#contact",
+      "text": "Contact"
+    },
+    {
+      "href": "https://gamebuddies.io/streamers",
+      "text": "GameBuddies.io for streamers"
+    },
+    {
+      "href": "https://gamebuddies.io/premium",
+      "text": "Premium membership"
+    },
+    {
+      "href": "https://gamebuddies.io/community",
+      "text": "Friends of GameBuddies"
+    },
+    {
+      "href": "https://gamebuddies.io/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://gamebuddies.io/terms",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "https://gamebuddies.io/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "https://gamebuddies.io/legal",
+      "text": "Legal notice, privacy & terms"
+    },
+    {
+      "href": "https://www.youtube.com/@GameBuddiesIO",
+      "text": "YouTube"
+    },
+    {
+      "href": "https://www.tiktok.com/@gamebuddies.io",
+      "text": "TikTok"
+    },
+    {
+      "href": "https://www.instagram.com/gamebuddies.io/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://discord.gg/PffCAzYMuF",
+      "text": "Discord"
+    }
+  ],
+  "meta": {
+    "description": "Impressum and legal disclosure for GameBuddies.io.",
+    "icons": [
+      "https://gamebuddies.io/favicon.png?v=gabu-v17",
+      "https://gamebuddies.io/favicon.ico?v=gabu-v17",
+      "https://gamebuddies.io/favicon.ico?v=gabu-v17",
+      "https://gamebuddies.io/apple-touch-icon.png?v=gabu-v17"
+    ],
+    "og_image": "https://gamebuddies.io/gblogo.webp",
+    "og_title": "Impressum | GameBuddies.io",
+    "theme_color": "#000000"
+  },
+  "outline": [
+    {
+      "box": {
+        "h": 163,
+        "w": 880,
+        "x": 275,
+        "y": 38
+      },
+      "color": "#e7e9f1",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "alt": "GameBuddies.io",
+      "box": {
+        "h": 163,
+        "w": 320,
+        "x": 555,
+        "y": 38
+      },
+      "class": "gb-seo-brand",
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "src": "https://gamebuddies.io/gblogo-768.webp",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 8893,
+        "w": 880,
+        "x": 275,
+        "y": 223
+      },
+      "color": "#e7e9f1",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 880,
+        "x": 275,
+        "y": 223
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "33.6px 400",
+      "tag": "h1",
+      "text": "LEGAL INFORMATION — GAMEBUDDIES.IO"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 880,
+        "x": 275,
+        "y": 307
+      },
+      "color": "#00d9ff",
+      "depth": 4,
+      "font": "24px 400",
+      "id": "impressum-seo",
+      "tag": "h2",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 350
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Legal Notice according to § 5 DDG (German Digital Services Act)"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 399
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Service Provider"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 433
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Gamebuddies - Sebastian Krol c/o Online-Impressum #6596 Europaring 90 53757 Sankt Augustin"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 559
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 592
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 641
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Regulatory and Supervisory Authority"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 675
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Landesanstalt für Medien Nordrhein-Westfalen Based in: Germany"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 750
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "VAT ID"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 783
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "A VAT identification number has not yet been assigned pursuant to § 27a of the German VAT Act (UStG)."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 832
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Consumer Dispute Resolution"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 866
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We are not obliged or willing to participate in dispute resolution proceedings before a consumer arbitration board."
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 892
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This impressum applies to all legal notice obligations pursuant to § 5 DDG, § 55 (2) RStV & MStV § 18, as well as all social media presences."
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 880,
+        "x": 275,
+        "y": 986
+      },
+      "color": "#00d9ff",
+      "depth": 4,
+      "font": "24px 400",
+      "id": "privacy-seo",
+      "tag": "h2",
+      "text": "Privacy Policy & Cookies"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1029
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Information about the processing of personal data — Last updated: 2026-11-04"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 1078
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "1. Data Controller"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1112
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Responsible for data processing on this website:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1137
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Gamebuddies - Sebastian Krol"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1163
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "c/o Online-Impressum #6596"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1189
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Europaring 90"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1214
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "53757 Sankt Augustin"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1240
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 1289
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "2. Data We Collect"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1322
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Account Data"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 1348
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "When you create an account (via email, Discord, or Google), we store your email address, username, and avatar selection. Authentication is handled by Supabase."
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1399
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Game Session Data"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1425
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We temporarily store game room participation, scores, and game state data to enable real-time multiplayer gameplay."
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1450
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Technical Data"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 1476
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "When you visit our website or use its online features, technical connection data such as your IP address, browser and device information is processed to deliver content, establish connections and prot"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1604
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Local Storage"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 1630
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use browser storage for language, audio and theme preferences, session tokens and privacy choices. Consent for optional analytics and consent for advertising are separate choices. The uses of cooki"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1706
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "box": {
+        "h": 154,
+        "w": 880,
+        "x": 275,
+        "y": 1732
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Player names, chat messages and text typed in games (for example answers, prompts or custom bingo squares) are automatically checked against a list of offensive words. This filter is a fixed word list"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 1886
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Lobby usage totals"
+    },
+    {
+      "box": {
+        "h": 256,
+        "w": 880,
+        "x": 275,
+        "y": 1911
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To improve the lobby, we count 2D/3D opens and switches, loading outcomes, Premium entry points and wardrobe actions, including when optional analytics is declined. Messages contain only the action an"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 2191
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 2224
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use your data exclusively to:"
+    },
+    {
+      "box": {
+        "h": 129,
+        "w": 880,
+        "x": 275,
+        "y": 2259
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 2396
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We also use advertising to finance the service. The processing of advertising data, including the possible disclosure of full IP addresses to advertising buyers, and your choices are explained in sect"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 2471
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 2504
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We process your data on the following legal bases under the GDPR:"
+    },
+    {
+      "box": {
+        "h": 171,
+        "w": 880,
+        "x": 275,
+        "y": 2539
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 2733
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "5. International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 2767
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Some of our third-party service providers are based in the United States:"
+    },
+    {
+      "box": {
+        "h": 120,
+        "w": 880,
+        "x": 275,
+        "y": 2801
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 2930
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Our website and our European game servers run at Hetzner Online GmbH in Nuremberg, Germany. In addition, we operate one game server at a Hetzner location in the United States (Ashburn, Virginia) so th"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 3033
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PostHog is hosted in the EU (Frankfurt, Germany) and does not transfer data outside the EU. It is used only with your consent for analytics and session recording."
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 3084
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "These transfers are safeguarded by the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs) as approved by the European Commission. You may request a copy of the applicable sa"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 3161
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Advertising buyers may also receive data outside the EEA. A transfer must have a basis under Chapter V GDPR: for example, an applicable adequacy decision, including the EU-US Data Privacy Framework on"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 3312
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 3346
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Google Analytics 4 also loads before you make a choice and when you decline analytics cookies (Advanced Consent Mode). In these cases, Google receives cookieless measurement pings with consent status,"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 3474
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io uses optional analytics cookies only with your explicit consent. When you accept analytics cookies, we use:"
+    },
+    {
+      "box": {
+        "h": 86,
+        "w": 880,
+        "x": 275,
+        "y": 3508
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 3602
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Optional analytics cookies require analytics consent. Advertising has separate consent settings; accepting analytics alone does not enable personalised advertising. You can refuse both optional uses i"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 3654
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We may show advertising through Google AdSense. Google and its partners may use advertising cookies to serve ads based on visits to this or other websites, subject to your consent where required. The "
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 3782
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We also use local storage (not cookies) for:"
+    },
+    {
+      "box": {
+        "h": 198,
+        "w": 880,
+        "x": 275,
+        "y": 3816
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 4022
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "You can change your cookie preference at any time by clearing your browser storage or clicking the cookie settings link in the footer. You can clear all local data at any time through your browser set"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 4073
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 700",
+      "tag": "h4",
+      "text": "Advertising, advertising partners and full IP addresses"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 4099
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use Google AdSense to finance the service through advertising. When advertising services are loaded, Google can receive your IP address and technical request information, such as browser and device"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 4201
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If full IP address sharing is enabled in AdSense, Google may include your complete, untruncated IP address in bid requests sent to advertising buyers through Authorized Buyers, Display & Video 360 and"
+    },
+    {
+      "box": {
+        "h": 154,
+        "w": 880,
+        "x": 275,
+        "y": 4329
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "For visitors in the EEA, the UK and Switzerland, consent for personalised advertising and the associated collection, sharing and use of personal data is obtained through Google Privacy & messaging. Th"
+    },
+    {
+      "box": {
+        "h": 154,
+        "w": 880,
+        "x": 275,
+        "y": 4483
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Google and the advertising partners shown in the consent dialog may receive and process these data. The partner list links to their privacy information and describes their purposes and retention perio"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 4637
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Your consent choices are stored by the consent platform so that they can be respected on later visits. Google states that its website consent cookie FCCDCF has a maximum lifetime of 390 days; you can "
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 4711
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "7. Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 4745
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use the following third-party services:"
+    },
+    {
+      "box": {
+        "h": 557,
+        "w": 880,
+        "x": 275,
+        "y": 4779
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 5345
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Transactional emails (sign-up confirmations, password resets, magic links, service notices) are sent from our own mail server in Germany; no third party is involved in those messages."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 5419
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "8. Data Retention"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 5453
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Account data is stored until you request deletion. Game session data is temporary and deleted shortly after the game ends. For advertising data held by Google and advertising partners, the relevant re"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 5579
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 5612
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Under the General Data Protection Regulation (GDPR), you have the following rights:"
+    },
+    {
+      "box": {
+        "h": 198,
+        "w": 880,
+        "x": 275,
+        "y": 5647
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 5853
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To exercise any of these rights, contact us at contact@gamebuddies.io. We will respond within 30 days."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 5902
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "10. Data Security"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 5936
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS/WSS), secure authentication via Supabase, and regular security reviews."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6011
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "11. Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 6044
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io does not intentionally collect personal data from children under the age of 16. If you believe a child under 16 has provided us with personal data, please contact us and we will delete "
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6119
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 6152
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We publish changes to this privacy policy here with an updated date. Continuing to use the service does not give or extend consent. If a planned processing activity requires consent that your previous"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6253
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "13. Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6286
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "For any questions about this privacy policy or your personal data, contact us at:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6312
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Sebastian Krol"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6338
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6363
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 880,
+        "x": 275,
+        "y": 6432
+      },
+      "color": "#00d9ff",
+      "depth": 4,
+      "font": "24px 400",
+      "id": "terms-seo",
+      "tag": "h2",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6475
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "General Terms and Conditions — Last updated: 2026-09-25"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6524
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "1. Acceptance of Terms"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 6558
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "By accessing or using GameBuddies.io (\"the Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use the Service."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6633
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "2. Service Description"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 6666
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io is a multiplayer browser game platform that connects users to play various online party games. The platform offers both free and premium features. Features may change over time, and tem"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6766
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "3. User Accounts"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 6800
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "You may use the Service as a guest or create an account. If you create an account, you are responsible for maintaining the security of your credentials. You may not share your account or use another p"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 6900
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "4. User Conduct"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 6934
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "When using the Service, you agree not to:"
+    },
+    {
+      "box": {
+        "h": 163,
+        "w": 880,
+        "x": 275,
+        "y": 6968
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 7155
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "5. Intellectual Property & User-Generated Content"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 7189
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "All content, design, code, and branding of GameBuddies.io are the property of their respective owners. You may not copy, modify, or distribute any part of the Service without permission."
+    },
+    {
+      "box": {
+        "h": 154,
+        "w": 880,
+        "x": 275,
+        "y": 7240
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "User-generated content (such as custom questions, drawings, audio recordings, text answers, and other creative submissions made during gameplay) remains your intellectual property. However, by creatin"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 7393
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This license survives termination of your account. You represent that you own or have the necessary rights to the content you submit, and that it does not infringe on any third party's rights. We may "
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 7470
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Drawings and other creative content created during gameplay may be stored on our servers for quality assurance, platform improvement, and potential display in galleries or promotional contexts."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 7545
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "6. Disclaimer of Warranties"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 7578
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not guarantee uptime, data persistence, or uninterrupted gameplay. Use the Service at your own risk."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 7653
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "7. Limitation of Liability"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 7687
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The operator is liable without limitation for damages caused by intent or gross negligence, as well as for injury to life, body, or health. For slight negligence, the operator is only liable in the ev"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 7813
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "8. Withdrawal Rights (Widerrufsbelehrung)"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 7846
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If you are a consumer in the EU/EEA, you have the right to withdraw from a premium subscription within 14 days of purchase without giving any reason."
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 7897
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To exercise your withdrawal right, please send a clear statement (e.g., by email) to:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 7923
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Sebastian Krol"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 7949
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 7974
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 8000
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Important exception for digital content: If you have expressly consented to the immediate provision of digital content (e.g., premium features) and acknowledged that you thereby lose your right of wit"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 8076
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "In the event of a valid withdrawal, we will reimburse all payments received from you within 14 days using the same payment method used for the original transaction."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 8151
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "9. Modifications"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 8185
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We reserve the right to modify these Terms or the Service at any time. Changes to the Terms will be posted on this page. Continued use of the Service after changes constitutes acceptance of the revise"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 8259
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "10. Governing Law"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 8293
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "These Terms are governed by the laws of the Federal Republic of Germany. Any disputes shall be subject to the jurisdiction of the courts in Germany."
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 8368
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 8401
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Point of contact: Our single point of contact under Articles 11 and 12 of the EU Digital Services Act (Regulation (EU) 2022/2065) — for users as well as for authorities of the EU Member States, the Eu"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 8504
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Reporting illegal content: If you come across content on GameBuddies.io that you believe is illegal — for example a player name, chat message, drawing, uploaded image or custom card — send a report to"
+    },
+    {
+      "box": {
+        "h": 129,
+        "w": 880,
+        "x": 275,
+        "y": 8564
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 8701
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We confirm receipt, review every report carefully and objectively, and tell you what we decided and why."
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 880,
+        "x": 275,
+        "y": 8727
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "How we moderate: Player names, room codes, chat messages and text typed in games pass through an automatic filter that compares them with a list of offensive words. It is a fixed word list, not an AI "
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 8855
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If we restrict your content or account: We tell you the reason and the facts behind the decision, as far as we can reach you (for registered accounts by email). You can object to any decision at conta"
+    },
+    {
+      "box": {
+        "h": 27,
+        "w": 880,
+        "x": 275,
+        "y": 8955
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "12. Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 8989
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "For questions about these Terms of Service, contact us at:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9014
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Sebastian Krol"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9040
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9066
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9091
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io home | Free online party games"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 160,
+        "x": 275,
+        "y": 9093
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/",
+      "tag": "a",
+      "text": "GameBuddies.io home"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 171,
+        "x": 447,
+        "y": 9093
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/games",
+      "tag": "a",
+      "text": "Free online party games"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 880,
+        "x": 275,
+        "y": 9117
+      },
+      "color": "#e7e9f1",
+      "depth": 3,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 880,
+        "x": 275,
+        "y": 9117
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 880,
+        "x": 275,
+        "y": 9117
+      },
+      "color": "#e7e9f1",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "GameBuddies.io home | All free online party games | Blog | About GameBuddies.io | Contact | GameBuddies.io for streamers | Premium membership | Friends of GameBuddies"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 160,
+        "x": 275,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/",
+      "tag": "a",
+      "text": "GameBuddies.io home"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 190,
+        "x": 446,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/games",
+      "tag": "a",
+      "text": "All free online party games"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 32,
+        "x": 647,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/blog",
+      "tag": "a",
+      "text": "Blog"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 164,
+        "x": 690,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/about",
+      "tag": "a",
+      "text": "About GameBuddies.io"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 57,
+        "x": 865,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/about#contact",
+      "tag": "a",
+      "text": "Contact"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 218,
+        "x": 933,
+        "y": 9119
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/streamers",
+      "tag": "a",
+      "text": "GameBuddies.io for streamers"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 156,
+        "x": 283,
+        "y": 9144
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/premium",
+      "tag": "a",
+      "text": "Premium membership"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 174,
+        "x": 449,
+        "y": 9144
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/community",
+      "tag": "a",
+      "text": "Friends of GameBuddies"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9168
+      },
+      "color": "#e7e9f1",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Privacy Policy | Terms of Service | Impressum | Legal notice, privacy & terms"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 98,
+        "x": 275,
+        "y": 9170
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/privacy",
+      "tag": "a",
+      "text": "Privacy Policy"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 117,
+        "x": 384,
+        "y": 9170
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/terms",
+      "tag": "a",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 77,
+        "x": 512,
+        "y": 9170
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 204,
+        "x": 600,
+        "y": 9170
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/legal",
+      "tag": "a",
+      "text": "Legal notice, privacy & terms"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 880,
+        "x": 275,
+        "y": 9194
+      },
+      "color": "#e7e9f1",
+      "depth": 4,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Find us on YouTube, TikTok, Instagram and Discord."
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 60,
+        "x": 348,
+        "y": 9196
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://www.youtube.com/@GameBuddiesIO",
+      "tag": "a",
+      "text": "YouTube"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 46,
+        "x": 416,
+        "y": 9196
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://www.tiktok.com/@gamebuddies.io",
+      "tag": "a",
+      "text": "TikTok"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 73,
+        "x": 470,
+        "y": 9196
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://www.instagram.com/gamebuddies.io/",
+      "tag": "a",
+      "text": "Instagram"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 54,
+        "x": 577,
+        "y": 9196
+      },
+      "color": "#00d9ff",
+      "depth": 5,
+      "font": "16px 400",
+      "href": "https://discord.gg/PffCAzYMuF",
+      "tag": "a",
+      "text": "Discord"
+    }
+  ],
+  "page": {
+    "h": 10159,
+    "w": 1430
+  },
+  "text": "LEGAL INFORMATION — GAMEBUDDIES.IO Impressum Legal Notice according to § 5 DDG (German Digital Services Act) Service Provider Gamebuddies - Sebastian Krol c/o Online-Impressum #6596 Europaring 90 53757 Sankt Augustin Contact Email: contact@gamebuddies.io Regulatory and Supervisory Authority Landesanstalt für Medien Nordrhein-Westfalen Based in: Germany VAT ID A VAT identification number has not yet been assigned pursuant to § 27a of the German VAT Act (UStG). Consumer Dispute Resolution We are not obliged or willing to participate in dispute resolution proceedings before a consumer arbitration board. This impressum applies to all legal notice obligations pursuant to § 5 DDG, § 55 (2) RStV & MStV § 18, as well as all social media presences. Privacy Policy & Cookies Information about the processing of personal data — Last updated: 2026-11-04 1. Data Controller Responsible for data processing on this website: Gamebuddies - Sebastian Krol c/o Online-Impressum #6596 Europaring 90 53757 Sankt Augustin Email: contact@gamebuddies.io 2. Data We Collect Account Data When you create an account (via email, Discord, or Google), we store your email address, username, and avatar selection. Authentication is handled by Supabase. Game Session Data We temporarily store game room participation, scores, and game state data to enable real-time multiplayer gameplay. Technical Data When you visit our website or use its online features, technical connection data such as your IP address, browser and device information is processed to deliver content, establish connections and protect the service. Our hosting provider Hetzner Online GmbH also processes connection data. Embedded analytics and advertising services can receive technical data directly from your browser; their purposes and your choices are described in sections 5 to 7. An IP address is personal data and is not anonymous merely because we do not store it in an account. Local Storage We use browser storage for language, audio and theme preferences, session tokens and privacy choices. Consent for optional analytics and consent for advertising are separate choices. The uses of cookies and similar storage are described in section 6. Moderation of Typed Text Player names, chat messages and text typed in games (for example answers, prompts or custom bingo squares) are automatically checked against a list of offensive words. This filter is a fixed word list, not an AI system. If it blocks a text, we store the blocked text together with the game, room code, player name, user ID and time, so that we can check the filter for mistakes and act against repeated abuse. Text that passes the filter is not stored for this purpose. We delete these entries after 12 months at the latest. Legal basis: Art. 6(1)(f) GDPR (our legitimate interest in keeping the games free of abusive content). Lobby usage totals To improve the lobby, we count 2D/3D opens and switches, loading outcomes, Premium entry points and wardrobe actions, including when optional analytics is declined. Messages contain only the action and a fixed category and travel over the existing game connection. Successful outfit changes are counted after saving. We check room access and limit excessive requests, then immediately combine the counts by calendar day. These statistics store no names, account, room or session identifiers, IP addresses, individual event times, item identifiers or personal activity histories. They do not set analytics cookies or create browser-storage identifiers. Daily totals are retained for up to 120 days. Connection data needed before aggregation is processed on the basis of Art. 6(1)(f) GDPR, for our legitimate interest in understanding feature usage and improving the lobby with minimal data. The ordinary connection and hosting processing described elsewhere in this policy still applies. Separate detailed UI analytics linked to a user identifier requires analytics consent. To object or ask about this processing, contact contact@gamebuddies.io. 3. How We Use Your Data We use your data exclusively to: Enable multiplayer gameplay and room management Manage your account and save your preferences Track achievements and game progress Improve the platform and fix bugs We also use advertising to finance the service. The processing of advertising data, including the possible disclosure of full IP addresses to advertising buyers, and your choices are explained in sections 6 and 7. 4. Legal Bases for Data Processing We process your data on the following legal bases under the GDPR: Art. 6(1)(b) — Contract fulfillment: Processing necessary to provide our services, including gameplay, account management, and room functionality. Art. 6(1)(f) — Legitimate interest: Processing for security purposes, fraud prevention, and infrastructure operation (e.g., hosting via Hetzner Online GmbH). Art. 6(1)(a) — Consent: Processing based on your explicit consent for optional features such as video chat (WebRTC), optional analytics, and advertising. 5. International Data Transfers Some of our third-party service providers are based in the United States: Supabase (database and authentication) Stripe (payment processing) Google LLC (Google Analytics 4 — cookies only with your consent; cookieless measurement also before or without consent; Google AdSense advertising — personalised only with your consent) Our website and our European game servers run at Hetzner Online GmbH in Nuremberg, Germany. In addition, we operate one game server at a Hetzner location in the United States (Ashburn, Virginia) so that players in the Americas get short response times. If you play through that server, the connection and gameplay data required for it are processed in the United States. PostHog is hosted in the EU (Frankfurt, Germany) and does not transfer data outside the EU. It is used only with your consent for analytics and session recording. These transfers are safeguarded by the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs) as approved by the European Commission. You may request a copy of the applicable safeguards by contacting us at contact@gamebuddies.io. Advertising buyers may also receive data outside the EEA. A transfer must have a basis under Chapter V GDPR: for example, an applicable adequacy decision, including the EU-US Data Privacy Framework only for recipients covered by an active certification, or appropriate safeguards such as Standard Contractual Clauses with any necessary supplementary measures. Consent to personalised advertising does not by itself replace these transfer requirements. The partner list in the privacy settings links to the recipients and their transfer information. 6. Cookies & Local Storage Google Analytics 4 also loads before you make a choice and when you decline analytics cookies (Advanced Consent Mode). In these cases, Google receives cookieless measurement pings with consent status, technical request information and a cleaned page address. No Analytics cookies are read or written while analytics storage is denied. Cookieless does not mean that no data is sent to Google. These signals can support aggregate reporting and modelling; they do not provide a complete count of individual visitors. Analytics cookies, our custom game events and PostHog require analytics consent. GameBuddies.io uses optional analytics cookies only with your explicit consent. When you accept analytics cookies, we use: PostHog — for usage analytics, session recordings, and heatmaps to improve the user experience (data processed in the EU) Google Analytics 4 — for traffic analysis and marketing attribution Optional analytics cookies require analytics consent. Advertising has separate consent settings; accepting analytics alone does not enable personalised advertising. You can refuse both optional uses in the privacy settings. We may show advertising through Google AdSense. Google and its partners may use advertising cookies to serve ads based on visits to this or other websites, subject to your consent where required. The following subsection explains advertising data, full IP address sharing, recipients and your choices. Google privacy policy: https://policies.google.com/privacy · How Google uses data from partner sites: https://policies.google.com/technologies/partner-sites · Google Ads Settings: https://www.google.com/settings/ads. Premium members see no ads. We also use local storage (not cookies) for: Authentication session tokens Language preference Audio/music volume settings Theme preference (dark/light) Guest player name Cookie consent preference You can change your cookie preference at any time by clearing your browser storage or clicking the cookie settings link in the footer. You can clear all local data at any time through your browser settings. Advertising, advertising partners and full IP addresses We use Google AdSense to finance the service through advertising. When advertising services are loaded, Google can receive your IP address and technical request information, such as browser and device information. Depending on your privacy choices and the permitted advertising mode, cookies or other identifiers may also be processed to select, deliver and measure ads. With the necessary consent, these data may be used to create advertising profiles and select personalised ads. If full IP address sharing is enabled in AdSense, Google may include your complete, untruncated IP address in bid requests sent to advertising buyers through Authorized Buyers, Display & Video 360 and Google Ads. A bid request offers an advertising placement to potential buyers; recipients can receive the data even if they do not ultimately show an ad. The full IP address can help estimate location and associate requests with a connection or device for advertising selection and measurement. Google restricts this sharing for non-personalised ads, limited ads and restricted data processing requests. For visitors in the EEA, the UK and Switzerland, consent for personalised advertising and the associated collection, sharing and use of personal data is obtained through Google Privacy & messaging. The legal basis for processing covered by this consent is Art. 6(1)(a) GDPR; consent-required storage or access on your device is based on section 25(1) TDDDG. Analytics consent alone does not authorise personalised advertising. You can refuse, select individual purposes and providers, or withdraw consent through the privacy settings on this page or in the footer. Withdrawal does not affect the lawfulness of earlier processing based on consent. Google and the advertising partners shown in the consent dialog may receive and process these data. The partner list links to their privacy information and describes their purposes and retention periods. Recipients may be located outside the EEA; see section 5 for international transfers. Refusing personalised advertising does not prevent you from using the games. Depending on your remaining choices and the applicable requirements, Google may serve non-personalised or limited ads, or no ad. Non-personalised does not automatically mean cookieless, and limited ads do not mean that no technical data is processed. Your consent choices are stored by the consent platform so that they can be respected on later visits. Google states that its website consent cookie FCCDCF has a maximum lifetime of 390 days; you can change your choices sooner at any time. 7. Third-Party Services We use the following third-party services: Supabase — for authentication and database hosting (their privacy policy applies) WebRTC — for peer-to-peer video chat (video/audio data flows directly between players and is not stored on our servers) Stripe — for payment processing of optional premium subscriptions (Stripe's privacy policy applies) Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Germany) — for website and server hosting. Our servers are located in Germany (EU); one additional game server runs at a Hetzner location in the United States. As our hosting provider, Hetzner may process technical data such as IP addresses at the infrastructure level for security and performance purposes (their privacy policy applies) PostHog — for usage analytics, session recordings, and heatmaps (only with your consent; their privacy policy applies) Google Analytics 4 — for traffic analysis and marketing attribution (cookies only with your consent; cookieless measurement also before or without consent; Google's privacy policy applies) Google AdSense (Google LLC, USA) — for advertising delivery and measurement; Google and its advertising partners use cookies to serve and measure ads, and personalised ads are shown only with your consent, collected via Google's certified consent platform. Opt out: https://www.google.com/settings/ads · https://www.aboutads.info/choices/ · Privacy policy: https://policies.google.com/privacy. Premium members see no ads Cloudflare — for passive web analytics and CDN services (no tracking cookies; their privacy policy applies) Brevo (Sendinblue SAS, 7 rue de Madrid, 75008 Paris, France) — for sending announcement emails to larger groups of recipients (e.g. new game launches) and as a fallback for transactional email. Data processed: your email address and delivery metadata (timestamp, delivery status). Processing takes place within the EU. Art. 28 GDPR data processing agreement accepted at registration. No open/click tracking pixels are embedded in our emails. Transactional emails (sign-up confirmations, password resets, magic links, service notices) are sent from our own mail server in Germany; no third party is involved in those messages. 8. Data Retention Account data is stored until you request deletion. Game session data is temporary and deleted shortly after the game ends. For advertising data held by Google and advertising partners, the relevant retention periods or criteria are described in the partner information available through the privacy settings. The lifetime of a consent cookie is not a general retention period for advertising data. 9. Your Rights Under GDPR Under the General Data Protection Regulation (GDPR), you have the following rights: Right of access — request a copy of your personal data Right to rectification — correct inaccurate personal data Right to erasure — request deletion of your personal data Right to data portability — receive your data in a structured format Right to object — object to the processing of your data Right to restriction — request limited processing of your data To exercise any of these rights, contact us at contact@gamebuddies.io. We will respond within 30 days. 10. Data Security We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS/WSS), secure authentication via Supabase, and regular security reviews. 11. Children's Privacy GameBuddies.io does not intentionally collect personal data from children under the age of 16. If you believe a child under 16 has provided us with personal data, please contact us and we will delete it promptly. 12. Changes to This Policy We publish changes to this privacy policy here with an updated date. Continuing to use the service does not give or extend consent. If a planned processing activity requires consent that your previous choice does not cover, we must obtain it before starting that activity. You can withdraw consent at any time with effect for the future. 13. Contact For any questions about this privacy policy or your personal data, contact us at: Sebastian Krol GameBuddies.io Email: contact@gamebuddies.io Terms of Service General Terms and Conditions — Last updated: 2026-09-25 1. Acceptance of Terms By accessing or using GameBuddies.io (\"the Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use the Service. 2. Service Description GameBuddies.io is a multiplayer browser game platform that connects users to play various online party games. The platform offers both free and premium features. Features may change over time, and temporary service interruptions may occur. 3. User Accounts You may use the Service as a guest or create an account. If you create an account, you are responsible for maintaining the security of your credentials. You may not share your account or use another person's account. We reserve the right to suspend or terminate accounts that violate these Terms. 4. User Conduct When using the Service, you agree not to: Cheat, exploit bugs, or use unauthorized tools to gain unfair advantages Harass, bully, or use hate speech against other players Use the Service for any illegal purpose or to transmit harmful content Impersonate other players, moderators, or staff Attempt to disrupt the Service or its infrastructure 5. Intellectual Property & User-Generated Content All content, design, code, and branding of GameBuddies.io are the property of their respective owners. You may not copy, modify, or distribute any part of the Service without permission. User-generated content (such as custom questions, drawings, audio recordings, text answers, and other creative submissions made during gameplay) remains your intellectual property. However, by creating or submitting content through the Service, you grant GameBuddies.io a worldwide, non-exclusive, royalty-free, perpetual, irrevocable, transferable, and sub-licensable license to use, reproduce, modify, adapt, publish, display, distribute, and create derivative works of your user-generated content for any purpose, including but not limited to operating, promoting, and improving the Service, as well as for marketing, social media, blog posts, and promotional materials. This license survives termination of your account. You represent that you own or have the necessary rights to the content you submit, and that it does not infringe on any third party's rights. We may remove any user-generated content at our sole discretion. Drawings and other creative content created during gameplay may be stored on our servers for quality assurance, platform improvement, and potential display in galleries or promotional contexts. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not guarantee uptime, data persistence, or uninterrupted gameplay. Use the Service at your own risk. 7. Limitation of Liability The operator is liable without limitation for damages caused by intent or gross negligence, as well as for injury to life, body, or health. For slight negligence, the operator is only liable in the event of a breach of a material contractual obligation (cardinal obligation), and in such cases liability is limited to the foreseeable, contract-typical damage. This does not affect liability under the German Product Liability Act (Produkthaftungsgesetz). All other liability for slight negligence is excluded. 8. Withdrawal Rights (Widerrufsbelehrung) If you are a consumer in the EU/EEA, you have the right to withdraw from a premium subscription within 14 days of purchase without giving any reason. To exercise your withdrawal right, please send a clear statement (e.g., by email) to: Sebastian Krol GameBuddies.io Email: contact@gamebuddies.io Important exception for digital content: If you have expressly consented to the immediate provision of digital content (e.g., premium features) and acknowledged that you thereby lose your right of withdrawal, the withdrawal right expires upon the start of the service. In the event of a valid withdrawal, we will reimburse all payments received from you within 14 days using the same payment method used for the original transaction. 9. Modifications We reserve the right to modify these Terms or the Service at any time. Changes to the Terms will be posted on this page. Continued use of the Service after changes constitutes acceptance of the revised Terms. 10. Governing Law These Terms are governed by the laws of the Federal Republic of Germany. Any disputes shall be subject to the jurisdiction of the courts in Germany. 11. Content Moderation & Reporting Illegal Content (EU Digital Services Act) Point of contact: Our single point of contact under Articles 11 and 12 of the EU Digital Services Act (Regulation (EU) 2022/2065) — for users as well as for authorities of the EU Member States, the European Commission and the European Board for Digital Services — is contact@gamebuddies.io. You can write to us in German or English. Every message is read and answered by a person, not by an automated system. Reporting illegal content: If you come across content on GameBuddies.io that you believe is illegal — for example a player name, chat message, drawing, uploaded image or custom card — send a report to contact@gamebuddies.io. Please include: why you believe the content is illegal where exactly it is (page address, game, room code, player name and, if possible, a screenshot) your name and email address (not required for reports of child sexual abuse material) a statement that you believe in good faith that the information in your report is accurate and complete We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: Player names, room codes, chat messages and text typed in games pass through an automatic filter that compares them with a list of offensive words. It is a fixed word list, not an AI system. If it finds a match, the text is not accepted and you see a notice in the game. Room hosts can remove players from their room. The operator reviews reports personally and may remove content, remove players from rooms, or restrict or delete accounts that break the law or these Terms. Account restrictions are always decided by a person. If we restrict your content or account: We tell you the reason and the facts behind the decision, as far as we can reach you (for registered accounts by email). You can object to any decision at contact@gamebuddies.io, and a person will review it again. Your right to take legal action is not affected. 12. Contact For questions about these Terms of Service, contact us at: Sebastian Krol GameBuddies.io Email: contact@gamebuddies.io GameBuddies.io home | Free online party games GameBuddies.io home | All free online party games | Blog | About GameBuddies.io | Contact | GameBuddies.io for streamers | Premium membership | Friends of GameBuddies Privacy Policy | Terms of Service | Impressum | Legal notice, privacy & terms Find us on YouTube, TikTok, Instagram and Discord.",
+  "title": "Impressum | GameBuddies.io",
+  "unreadable_stylesheets": 0,
+  "url": "https://gamebuddies.io/impressum",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

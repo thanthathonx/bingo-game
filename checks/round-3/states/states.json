@@ -1,0 +1,37 @@
+{
+  "states": [
+    {
+      "changed": [
+        "expanded",
+        "dialog appeared"
+      ],
+      "file": "state-1.png",
+      "index": 0,
+      "kind": "dialog",
+      "label": "Game audio",
+      "sha256": "5096c74b771aba3aaa431047400301b859a35636cbfdafbdffeb9455fe354f2c"
+    },
+    {
+      "changed": [
+        "expanded"
+      ],
+      "file": "state-2.png",
+      "index": 1,
+      "kind": "dialog",
+      "label": "Language: English",
+      "sha256": "5701824e32f080be988529bf3b2257de658bcf94d1b97248f00b0d13c47d4e62"
+    },
+    {
+      "changed": [
+        "expanded"
+      ],
+      "file": "state-3.png",
+      "index": 2,
+      "kind": "dialog",
+      "label": "Menu",
+      "sha256": "d2675cb6470f9426949c58c33447cd420e7ad5276d2930e6d90d2f43432deff7"
+    }
+  ],
+  "url": "http://127.0.0.1:49680/",
+  "width": 1440
+}

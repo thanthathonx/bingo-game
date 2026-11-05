@@ -1,0 +1,23 @@
+{
+  "name": "bingo-friends",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && node scripts/flat-pages.js",
+    "test": "node --test tests/engine.test.js tests/gameState.test.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/fredoka": "^5.1.0",
+    "@fontsource-variable/space-grotesk": "^5.1.0",
+    "@fontsource/bungee": "^5.1.0",
+    "@fontsource/outfit": "^5.1.0",
+    "@fontsource/short-stack": "^5.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

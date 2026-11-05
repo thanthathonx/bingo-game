@@ -1,0 +1,4138 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 2,
+      "contentinfo": 1,
+      "main": 1,
+      "navigation": 8
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "h": 40,
+        "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+        "w": 40
+      },
+      {
+        "alt": "",
+        "h": 96,
+        "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M98%2040%20l4%209%2010%201%20-8%206%203%2010%20-9%20-6%20-9%206%203%20-10%20-8%20-6%2010%20-1z%22%20fill%3D%22%23ffd166%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+        "w": 96
+      }
+    ],
+    "inline_scripts": 0,
+    "requests": [
+      {
+        "bytes": 152800,
+        "type": "script",
+        "url": "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js"
+      },
+      {
+        "bytes": 105179,
+        "type": "script",
+        "url": "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+      },
+      {
+        "bytes": 20310,
+        "type": "link",
+        "url": "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+      },
+      {
+        "bytes": 3396,
+        "type": "link",
+        "url": "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css"
+      },
+      {
+        "bytes": 14440,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14348,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2"
+      },
+      {
+        "bytes": 14332,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+      },
+      {
+        "bytes": 13828,
+        "type": "css",
+        "url": "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+      }
+    ],
+    "scripts": [
+      "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js",
+      "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+    ],
+    "stylesheets": [
+      "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 4,
+      "px": 599,
+      "query": "max-width 599px"
+    },
+    {
+      "count": 1,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 4,
+      "px": 899,
+      "query": "max-width 899px"
+    },
+    {
+      "count": 1,
+      "px": 967,
+      "query": "max-width 967px"
+    },
+    {
+      "count": 1,
+      "px": 1023,
+      "query": "max-width 1023px"
+    },
+    {
+      "count": 1,
+      "px": 1199,
+      "query": "max-width 1199px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 9,
+        "value": "#27305c"
+      },
+      {
+        "count": 2,
+        "value": "#100d25"
+      },
+      {
+        "count": 1,
+        "value": "#100d29"
+      },
+      {
+        "count": 1,
+        "value": "#123247"
+      },
+      {
+        "count": 1,
+        "value": "#1c365a"
+      },
+      {
+        "count": 1,
+        "value": "#1b1433"
+      },
+      {
+        "count": 1,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 1,
+        "value": "#0a0818"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "#fd79a8",
+      "--accent-hover": "#ff9bc0",
+      "--bg-card": "#16123a",
+      "--bg-card-hover": "#1f1a55",
+      "--bg-dark": "#0c0a20",
+      "--bg-darker": "#07061a",
+      "--bg-tertiary": "#1d1850",
+      "--bingo-b": "var(--galaxy-lavender)",
+      "--bingo-g": "var(--galaxy-mint)",
+      "--bingo-i": "var(--galaxy-pink)",
+      "--bingo-n": "var(--gb-cyan)",
+      "--bingo-o": "var(--gb-gold)",
+      "--border-color": "#4b3f8f",
+      "--danger": "#ff6b6b",
+      "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+      "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+      "--font-display": "\"Bungee\", \"Outfit\", system-ui, sans-serif",
+      "--font-hand": "\"Short Stack\", cursive",
+      "--font-read": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif",
+      "--font-title": "Fredoka, \"Short Stack\", sans-serif",
+      "--galaxy-lavender": "#a29bfe",
+      "--galaxy-mint": "#55efc4",
+      "--galaxy-pink": "#fd79a8",
+      "--galaxy-violet": "#6c5ce7",
+      "--gb-cream": "#efeaff",
+      "--gb-cyan": "#00d9ff",
+      "--gb-gold": "#ffd166",
+      "--gbd-gold": "#ffb020",
+      "--gbd-ink": "#05020e",
+      "--gbd-purple": "#a855f7",
+      "--gbd-t1": "#e7e9f1",
+      "--gbd-t2": "#a8aec7",
+      "--header-bg": "#221c3d",
+      "--key-bg": "#2c2f51",
+      "--key-rim": "#454866",
+      "--panel-bg": "#29204a",
+      "--panel-rim": "#683ba1",
+      "--panel-row": "#2f274f",
+      "--panel-rule": "#433b60",
+      "--radius-full": "999px",
+      "--radius-lg": "16px",
+      "--radius-md": "10px",
+      "--radius-sm": "6px",
+      "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+      "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+      "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+      "--text-muted": "#897fc0",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#c4bdf0"
+    },
+    "font_faces": [
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Fredoka",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Short Stack",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "800 900"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 56,
+        "value": "15px"
+      },
+      {
+        "count": 46,
+        "value": "17px"
+      },
+      {
+        "count": 16,
+        "value": "24px"
+      },
+      {
+        "count": 8,
+        "value": "18px"
+      },
+      {
+        "count": 7,
+        "value": "14px"
+      },
+      {
+        "count": 3,
+        "value": "22px"
+      },
+      {
+        "count": 2,
+        "value": "16px"
+      },
+      {
+        "count": 1,
+        "value": "36px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      },
+      {
+        "count": 1,
+        "value": "13px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 70,
+        "value": "400"
+      },
+      {
+        "count": 40,
+        "value": "700"
+      },
+      {
+        "count": 16,
+        "value": "500"
+      },
+      {
+        "count": 11,
+        "value": "600"
+      },
+      {
+        "count": 3,
+        "value": "800"
+      },
+      {
+        "count": 1,
+        "value": "650"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 133,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 8,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "482.816px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 21,
+        "value": "8px"
+      },
+      {
+        "count": 3,
+        "value": "10px"
+      },
+      {
+        "count": 1,
+        "value": "50%"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 3,
+        "value": "rgb(5, 2, 14) 3px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(255, 255, 255, 0.06) 0px 1px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(5, 2, 14) 0px 0px 0px 1px, rgba(168, 85, 247, 0.25) 0px 0px 30px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 101,
+        "value": "10px"
+      },
+      {
+        "count": 35,
+        "value": "4px"
+      },
+      {
+        "count": 35,
+        "value": "8px"
+      },
+      {
+        "count": 34,
+        "value": "14px"
+      },
+      {
+        "count": 19,
+        "value": "16px"
+      },
+      {
+        "count": 14,
+        "value": "6px"
+      },
+      {
+        "count": 13,
+        "value": "36px"
+      },
+      {
+        "count": 10,
+        "value": "24px"
+      },
+      {
+        "count": 6,
+        "value": "1px"
+      },
+      {
+        "count": 6,
+        "value": "22px"
+      },
+      {
+        "count": 5,
+        "value": "20px"
+      },
+      {
+        "count": 4,
+        "value": "28px"
+      },
+      {
+        "count": 4,
+        "value": "2px"
+      },
+      {
+        "count": 3,
+        "value": "12px"
+      },
+      {
+        "count": 2,
+        "value": "48px"
+      },
+      {
+        "count": 1,
+        "value": "64px"
+      },
+      {
+        "count": 1,
+        "value": "72px"
+      },
+      {
+        "count": 1,
+        "value": "56px"
+      },
+      {
+        "count": 1,
+        "value": "32px"
+      },
+      {
+        "count": 1,
+        "value": "18px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 49,
+        "value": "#f8f5ff"
+      },
+      {
+        "count": 47,
+        "value": "#e4ddf3"
+      },
+      {
+        "count": 18,
+        "value": "#d9d1eb"
+      },
+      {
+        "count": 14,
+        "value": "#b5abd0"
+      },
+      {
+        "count": 4,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 2,
+        "value": "#ffffff"
+      },
+      {
+        "count": 2,
+        "value": "#e94560"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 1,
+        "value": "#ffcf70"
+      },
+      {
+        "count": 1,
+        "value": "#041523"
+      },
+      {
+        "count": 1,
+        "value": "#a855f7"
+      },
+      {
+        "count": 1,
+        "value": "#ffb020"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "PRIVACY POLICY & COOKIES"
+    },
+    {
+      "level": 2,
+      "text": "CONTENTS"
+    },
+    {
+      "level": 2,
+      "text": "1. Data Controller"
+    },
+    {
+      "level": 2,
+      "text": "2. Data We Collect"
+    },
+    {
+      "level": 3,
+      "text": "Account Data"
+    },
+    {
+      "level": 3,
+      "text": "Game Session Data"
+    },
+    {
+      "level": 3,
+      "text": "Technical Data"
+    },
+    {
+      "level": 3,
+      "text": "Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "level": 3,
+      "text": "Custom Text About Others"
+    },
+    {
+      "level": 2,
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "level": 2,
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "level": 2,
+      "text": "5. International Data Transfers"
+    },
+    {
+      "level": 2,
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Analytics"
+    },
+    {
+      "level": 2,
+      "text": "7. Third-Party Services"
+    },
+    {
+      "level": 2,
+      "text": "8. Data Retention"
+    },
+    {
+      "level": 2,
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "level": 2,
+      "text": "10. Data Security"
+    },
+    {
+      "level": 2,
+      "text": "11. Children's Privacy"
+    },
+    {
+      "level": 2,
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "level": 2,
+      "text": "13. Contact"
+    },
+    {
+      "level": 2,
+      "text": "GAMES"
+    },
+    {
+      "level": 2,
+      "text": "HELP"
+    },
+    {
+      "level": 2,
+      "text": "COMPANY"
+    },
+    {
+      "level": 2,
+      "text": "LEGAL"
+    },
+    {
+      "level": 2,
+      "text": "Looking for more?"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 88,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1425,
+          "y": 0
+        },
+        {
+          "gap": 20,
+          "h": 48,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 287,
+          "y": 19
+        },
+        {
+          "h": 4070,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 1425,
+          "y": 88
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 1377,
+          "y": 88
+        },
+        {
+          "h": 3975,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 1377,
+          "y": 183
+        },
+        {
+          "background": "#1c365a",
+          "h": 168,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1377,
+          "y": 183
+        },
+        {
+          "h": 3735,
+          "heading": "CONTENTS",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 280,
+          "y": 379
+        },
+        {
+          "h": 187,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 379
+        },
+        {
+          "h": 884,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 602
+        },
+        {
+          "h": 183,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 1522
+        },
+        {
+          "h": 183,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 1740
+        },
+        {
+          "h": 128,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 1959
+        },
+        {
+          "h": 691,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2123
+        },
+        {
+          "h": 99,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2850
+        },
+        {
+          "h": 99,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2985
+        },
+        {
+          "h": 369,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3120
+        },
+        {
+          "h": 99,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3525
+        },
+        {
+          "h": 99,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3660
+        },
+        {
+          "h": 99,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3795
+        },
+        {
+          "h": 148,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3930
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 483,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 380,
+            "x": 24
+          },
+          "h": 464,
+          "heading": "GAMES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 5,
+          "tag": "footer",
+          "w": 1425,
+          "y": 4222
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "GAMES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 4279
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "HELP",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 4279
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "COMPANY",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 4279
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "LEGAL",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 4279
+        },
+        {
+          "gap": 24,
+          "h": 44,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 1377,
+          "y": 4511
+        }
+      ],
+      "page_h": 4686,
+      "page_w": 1425,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 12,
+        "h3": 18
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 112,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 753,
+          "y": 0
+        },
+        {
+          "gap": 32,
+          "h": 40,
+          "pad": [
+            0,
+            24,
+            0,
+            24
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 753,
+          "y": 70
+        },
+        {
+          "h": 4117,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 753,
+          "y": 112
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 705,
+          "y": 112
+        },
+        {
+          "h": 4022,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 705,
+          "y": 207
+        },
+        {
+          "background": "#1c365a",
+          "h": 168,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 705,
+          "y": 207
+        },
+        {
+          "h": 187,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 479
+        },
+        {
+          "h": 884,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 702
+        },
+        {
+          "h": 183,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1622
+        },
+        {
+          "h": 183,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1840
+        },
+        {
+          "h": 128,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2059
+        },
+        {
+          "h": 691,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2223
+        },
+        {
+          "h": 99,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2950
+        },
+        {
+          "h": 99,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3085
+        },
+        {
+          "h": 369,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3220
+        },
+        {
+          "h": 99,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3625
+        },
+        {
+          "h": 99,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3760
+        },
+        {
+          "h": 70,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3895
+        },
+        {
+          "h": 148,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4001
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 480,
+            "x": 24
+          },
+          "h": 687,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 753,
+          "y": 4293
+        },
+        {
+          "gap": 24,
+          "h": 44,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 705,
+          "y": 4752
+        }
+      ],
+      "page_h": 4980,
+      "page_w": 753,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 24,
+        "h3": 18
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 64,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "h": 4814,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 390,
+          "y": 64
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 358,
+          "y": 64
+        },
+        {
+          "h": 4727,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 358,
+          "y": 151
+        },
+        {
+          "background": "#1c365a",
+          "h": 205,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            18,
+            16,
+            18,
+            16
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 358,
+          "y": 151
+        },
+        {
+          "h": 169,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 460
+        },
+        {
+          "h": 1217,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 665
+        },
+        {
+          "h": 165,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1918
+        },
+        {
+          "h": 267,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 2119
+        },
+        {
+          "h": 165,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 2423
+        },
+        {
+          "h": 757,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 2623
+        },
+        {
+          "h": 139,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3417
+        },
+        {
+          "h": 139,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3592
+        },
+        {
+          "h": 386,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3767
+        },
+        {
+          "h": 139,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4189
+        },
+        {
+          "h": 139,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4364
+        },
+        {
+          "h": 88,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4540
+        },
+        {
+          "h": 134,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4664
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 342,
+            "x": 24
+          },
+          "h": 851,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 390,
+          "y": 4926
+        },
+        {
+          "gap": 24,
+          "h": 154,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 342,
+          "y": 5385
+        }
+      ],
+      "page_h": 5777,
+      "page_w": 390,
+      "type": {
+        "body": 15,
+        "h1": 25,
+        "h2": 21,
+        "h3": 18
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "PlayPals.io"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "href": "http://127.0.0.1:53311/terms",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "hello@example.com"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s1",
+      "text": "1 Data Controller"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s2",
+      "text": "2 Data We Collect"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s3",
+      "text": "3 How We Use Your Data"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s4",
+      "text": "4 Legal Bases for Data Processing"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s5",
+      "text": "5 International Data Transfers"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s6",
+      "text": "6 Cookies & Local Storage"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s7",
+      "text": "7 Third-Party Services"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s8",
+      "text": "8 Data Retention"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s9",
+      "text": "9 Your Rights Under GDPR"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s10",
+      "text": "10 Data Security"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s11",
+      "text": "11 Children's Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s12",
+      "text": "12 Changes to This Policy"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#s13",
+      "text": "13 Contact"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz#main",
+      "text": "Back to Top"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "All games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Email us"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:53311/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:53311/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo for parties"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Bingo for streams"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Classroom bingo"
+    },
+    {
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:53311/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:53311/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:53311/bingo/",
+      "text": "Sound and motion"
+    }
+  ],
+  "meta": {
+    "description": "Privacy policy and data protection information.",
+    "icons": [
+      "http://127.0.0.1:53311/favicon.ico"
+    ],
+    "og_image": "",
+    "og_title": "",
+    "theme_color": "#100d29"
+  },
+  "outline": [
+    {
+      "background": "#100d29",
+      "box": {
+        "h": 88,
+        "w": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "class": "pp-hdr",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 156,
+        "x": 24,
+        "y": 23
+      },
+      "class": "pp-logo",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:53311/games/",
+      "tag": "a",
+      "text": "PlayPals.io"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 40,
+        "w": 40,
+        "x": 24,
+        "y": 23
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 287,
+        "x": 200,
+        "y": 19
+      },
+      "class": "pp-nav",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 200,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/games/",
+      "tag": "a",
+      "text": "Games"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 39,
+        "x": 268,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Bingo"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 108,
+        "x": 327,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/games/#now",
+      "tag": "a",
+      "text": "Now Playing"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 327,
+        "y": 34
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 31,
+        "x": 455,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "tag": "a",
+      "text": "Help"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 111,
+        "x": 1090,
+        "y": 19
+      },
+      "class": "pp-premium",
+      "color": "#ffcf70",
+      "depth": 7,
+      "font": "16px 600",
+      "tag": "button",
+      "text": "Premium"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1100,
+        "y": 34
+      },
+      "color": "#ffcf70",
+      "depth": 8,
+      "font": "16px 600",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1211,
+        "y": 19
+      },
+      "class": "pp-keycap pp-lang",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1223,
+        "y": 35
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 132,
+        "x": 1269,
+        "y": 19
+      },
+      "class": "pp-login",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 650",
+      "tag": "button",
+      "text": "Log in"
+    },
+    {
+      "background": "#123247",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1369,
+        "y": 762
+      },
+      "class": "pp-fab",
+      "color": "#effcff",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1383,
+        "y": 776
+      },
+      "color": "#effcff",
+      "depth": 6,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 4070,
+        "w": 1425,
+        "x": 0,
+        "y": 88
+      },
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "id": "main",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 47,
+        "w": 1377,
+        "x": 24,
+        "y": 88
+      },
+      "class": "lg-tabs",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 180,
+        "x": 24,
+        "y": 88
+      },
+      "class": "is-active",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "tag": "a",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 40,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 170,
+        "x": 204,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/terms",
+      "tag": "a",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 220,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 132,
+        "x": 374,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:53311/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 390,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 3975,
+        "w": 1377,
+        "x": 24,
+        "y": 183
+      },
+      "class": "lg-doc",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "background": "#1c365a",
+      "box": {
+        "h": 168,
+        "w": 1377,
+        "x": 24,
+        "y": 183
+      },
+      "class": "lg-head is-blue",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 96,
+        "w": 96,
+        "x": 1277,
+        "y": 147
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2296%22%20height%3D%2296%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M98%2040%20l4%209%2010%201%20-8%206%203%2010%20-9%20-6%20-9%206%203%20-10%20-8%20-6%2010%20-1z%22%20fill%3D%22%23ffd166%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 1317,
+        "x": 54,
+        "y": 209
+      },
+      "class": "lg-title",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "36px 400",
+      "tag": "h1",
+      "text": "PRIVACY POLICY & COOKIES"
+    },
+    {
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 67,
+        "y": 222
+      },
+      "color": "#74c7ff",
+      "depth": 9,
+      "font": "36px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 1317,
+        "x": 54,
+        "y": 269
+      },
+      "class": "lg-sub",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Information about the processing of personal data"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 54,
+        "y": 307
+      },
+      "color": "#e94560",
+      "depth": 9,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 324,
+        "y": 307
+      },
+      "color": "#e94560",
+      "depth": 9,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 135,
+        "x": 430,
+        "y": 306
+      },
+      "color": "#00d9ff",
+      "depth": 9,
+      "font": "15px 600",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "hello@example.com"
+    },
+    {
+      "box": {
+        "h": 3735,
+        "w": 280,
+        "x": 24,
+        "y": 379
+      },
+      "class": "lg-contents-wide",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 280,
+        "x": 24,
+        "y": 379
+      },
+      "class": "lg-label",
+      "color": "#b5abd0",
+      "depth": 8,
+      "font": "12px 700",
+      "tag": "h2",
+      "text": "CONTENTS"
+    },
+    {
+      "box": {
+        "h": 520,
+        "w": 280,
+        "x": 24,
+        "y": 404
+      },
+      "class": "lg-toc",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ol"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 404
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s1",
+      "tag": "a",
+      "text": "1 Data Controller"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 444
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s2",
+      "tag": "a",
+      "text": "2 Data We Collect"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 484
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s3",
+      "tag": "a",
+      "text": "3 How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 524
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s4",
+      "tag": "a",
+      "text": "4 Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 564
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s5",
+      "tag": "a",
+      "text": "5 International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 604
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s6",
+      "tag": "a",
+      "text": "6 Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 644
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s7",
+      "tag": "a",
+      "text": "7 Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 684
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s8",
+      "tag": "a",
+      "text": "8 Data Retention"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 724
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s9",
+      "tag": "a",
+      "text": "9 Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 764
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s10",
+      "tag": "a",
+      "text": "10 Data Security"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 804
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s11",
+      "tag": "a",
+      "text": "11 Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 844
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s12",
+      "tag": "a",
+      "text": "12 Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 884
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:53311/datenschutz#s13",
+      "tag": "a",
+      "text": "13 Contact"
+    },
+    {
+      "box": {
+        "h": 187,
+        "w": 700,
+        "x": 376,
+        "y": 379
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s1",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 379
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "1. Data Controller"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 420
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Responsible for data processing on this website:"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 459
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 498
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Example Street 1, 12345 Sample City"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 537
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 884,
+        "w": 700,
+        "x": 376,
+        "y": 602
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s2",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 602
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "2. Data We Collect"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 647
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Account Data"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 674
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it."
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 746
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Game Session Data"
+    },
+    {
+      "box": {
+        "h": 116,
+        "w": 700,
+        "x": 376,
+        "y": 773
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are n"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 902
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Technical Data"
+    },
+    {
+      "box": {
+        "h": 144,
+        "w": 700,
+        "x": 376,
+        "y": 929
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is ne"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 1088
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Local Storage"
+    },
+    {
+      "box": {
+        "h": 144,
+        "w": 700,
+        "x": 376,
+        "y": 1115
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, "
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 1273
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 1300
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a w"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 1401
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Custom Text About Others"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 1428
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details."
+    },
+    {
+      "box": {
+        "h": 183,
+        "w": 700,
+        "x": 376,
+        "y": 1522
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s3",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 1522
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 1563
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use the data described above only to:"
+    },
+    {
+      "box": {
+        "h": 103,
+        "w": 700,
+        "x": 376,
+        "y": 1602
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 183,
+        "w": 700,
+        "x": 376,
+        "y": 1740
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s4",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 1740
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 1782
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Where data protection law applies, we process data on these legal bases:"
+    },
+    {
+      "box": {
+        "h": 103,
+        "w": 700,
+        "x": 376,
+        "y": 1820
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 700,
+        "x": 376,
+        "y": 1959
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s5",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 1959
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "5. International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 2000
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound"
+    },
+    {
+      "box": {
+        "h": 691,
+        "w": 700,
+        "x": 376,
+        "y": 2123
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s6",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2123
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 116,
+        "w": 700,
+        "x": 376,
+        "y": 2164
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. "
+    },
+    {
+      "box": {
+        "h": 250,
+        "w": 700,
+        "x": 376,
+        "y": 2290
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 2550
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again."
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 700,
+        "x": 376,
+        "y": 2647
+      },
+      "class": "lg-actions",
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Clear my saved settings"
+    },
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 40,
+        "w": 188,
+        "x": 376,
+        "y": 2647
+      },
+      "class": "lg-btn",
+      "color": "#041523",
+      "depth": 10,
+      "font": "14px 700",
+      "tag": "button",
+      "text": "Clear my saved settings"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 700,
+        "x": 376,
+        "y": 2701
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Analytics"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 2728
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and"
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 2850
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s7",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2850
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "7. Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 2892
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded."
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 2985
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s8",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2985
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "8. Data Retention"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3026
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days."
+    },
+    {
+      "box": {
+        "h": 369,
+        "w": 700,
+        "x": 376,
+        "y": 3120
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s9",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3120
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 3161
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Depending on where you live, you may have the following rights:"
+    },
+    {
+      "box": {
+        "h": 250,
+        "w": 700,
+        "x": 376,
+        "y": 3200
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 3461
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "To use any of these rights, contact hello@example.com."
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 3525
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s10",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3525
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "10. Data Security"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3567
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers."
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 3660
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s11",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3660
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "11. Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3702
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us."
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 3795
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s12",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3795
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3837
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We may update this policy when the site changes. The date at the top shows the latest version."
+    },
+    {
+      "box": {
+        "h": 148,
+        "w": 700,
+        "x": 376,
+        "y": 3930
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s13",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3930
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "13. Contact"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 3972
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Questions about privacy? Contact us at:"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 4010
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 4049
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 131,
+        "x": 24,
+        "y": 4114
+      },
+      "class": "lg-top",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "13px 700",
+      "href": "http://127.0.0.1:53311/datenschutz#main",
+      "tag": "a",
+      "text": "Back to Top"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 42,
+        "y": 4128
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "13px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#0a0818",
+      "box": {
+        "h": 464,
+        "w": 1425,
+        "x": 0,
+        "y": 4222
+      },
+      "class": "pp-foot",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 380,
+        "x": 24,
+        "y": 4326
+      },
+      "color": "#e4ddf3",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Party games with friends. Pick a game, share one screen, play together in the browser."
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 191,
+        "x": 24,
+        "y": 4396
+      },
+      "class": "pp-pill pp-wide",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 42,
+        "y": 4409
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 225,
+        "y": 4396
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:53311/games/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 237,
+        "y": 4408
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 279,
+        "y": 4396
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 291,
+        "y": 4408
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 333,
+        "y": 4396
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "mailto:hello@example.com",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 345,
+        "y": 4408
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 452,
+        "y": 4279
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 452,
+        "y": 4279
+      },
+      "color": "#e94560",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "GAMES"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 219,
+        "x": 452,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/games/",
+      "tag": "a",
+      "text": "All party games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 4351
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 4395
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/games/",
+      "tag": "a",
+      "text": "Free browser games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 4439
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Play on your TV"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 695,
+        "y": 4279
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 695,
+        "y": 4279
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "HELP"
+    },
+    {
+      "box": {
+        "h": 132,
+        "w": 219,
+        "x": 695,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/games/#faq",
+      "tag": "a",
+      "text": "How it works"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 4351
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "For streamers"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 4395
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Send feedback"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 939,
+        "y": 4279
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 939,
+        "y": 4279
+      },
+      "color": "#a855f7",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "COMPANY"
+    },
+    {
+      "box": {
+        "h": 88,
+        "w": 219,
+        "x": 939,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 939,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/impressum",
+      "tag": "a",
+      "text": "About us"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 939,
+        "y": 4351
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Contact us"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 1182,
+        "y": 4279
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 1182,
+        "y": 4279
+      },
+      "color": "#ffb020",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "LEGAL"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 219,
+        "x": 1182,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 4307
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/datenschutz",
+      "tag": "a",
+      "text": "Privacy"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 4351
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/terms",
+      "tag": "a",
+      "text": "Terms"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 4395
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 104,
+        "x": 1182,
+        "y": 4439
+      },
+      "class": "pp-foot-btn",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "tag": "button",
+      "text": "Privacy settings"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 1377,
+        "x": 24,
+        "y": 4511
+      },
+      "class": "pp-foot-more",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 116,
+        "x": 24,
+        "y": 4524
+      },
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "14px 600",
+      "tag": "h2",
+      "text": "Looking for more?"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 390,
+        "x": 164,
+        "y": 4511
+      },
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 112,
+        "x": 164,
+        "y": 4511
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Bingo for parties"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 119,
+        "x": 299,
+        "y": 4511
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Bingo for streams"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 112,
+        "x": 442,
+        "y": 4511
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Classroom bingo"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 147,
+        "x": 1056,
+        "y": 4622
+      },
+      "class": "pp-pill",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "button",
+      "text": "English"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1074,
+        "y": 4636
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 1169,
+        "y": 4636
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 188,
+        "x": 1213,
+        "y": 4622
+      },
+      "class": "pp-pill",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:53311/bingo/",
+      "tag": "a",
+      "text": "Sound and motion"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1231,
+        "y": 4635
+      },
+      "color": "#d9d1eb",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    }
+  ],
+  "page": {
+    "h": 4686,
+    "w": 1425
+  },
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Log in Privacy & Cookies Terms of Service Impressum PRIVACY POLICY & COOKIES Information about the processing of personal data Last updated: November 6, 2026 Questions: hello@example.com CONTENTS 1 Data Controller 2 Data We Collect 3 How We Use Your Data 4 Legal Bases for Data Processing 5 International Data Transfers 6 Cookies & Local Storage 7 Third-Party Services 8 Data Retention 9 Your Rights Under GDPR 10 Data Security 11 Children's Privacy 12 Changes to This Policy 13 Contact 1. Data Controller Responsible for data processing on this website: PlayPals demo team Example Street 1, 12345 Sample City Email: hello@example.com 2. Data We Collect Account Data This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it. Game Session Data The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are not sent to us. When you close the tab, the round ends; only your total wins and your settings are remembered on your device. Technical Data When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is needed to deliver the pages, to keep the service secure and to find technical faults. An IP address counts as personal data, so these logs are only used for those purposes and are deleted automatically after a short time. Local Storage We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, your name and any problem reports you wrote. This data never leaves your device and you can delete it at any time in your browser settings. Section 6 lists every item. Moderation of Typed Text Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a word is on the list, the text is not accepted and you see a short notice. Custom Text About Others Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details. 3. How We Use Your Data We use the data described above only to: Run the games and remember your preferences Deliver the pages securely Find and fix technical problems 4. Legal Bases for Data Processing Where data protection law applies, we process data on these legal bases: Performance of a contract — providing the games you choose to play Legitimate interests — secure and reliable delivery of the website Consent — any optional feature that asks for your permission first 5. International Data Transfers This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound by appropriate safeguards. 6. Cookies & Local Storage This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. Because nothing optional is stored, no consent banner is needed. You can clear them at any time: Language preference Audio volume and mute setting Whether calls are read out loud Reduced motion choice Your player name Last used game settings and custom bingo items Locally saved problem reports To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again. Clear my saved settings Analytics No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and this policy will be updated first. 7. Third-Party Services Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded. 8. Data Retention Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days. 9. Your Rights Under GDPR Depending on where you live, you may have the following rights: Right of access to the data we hold about you Right to correct inaccurate data Right to have data deleted Right to restrict processing Right to data portability Right to object to processing Right to complain to a data protection authority To use any of these rights, contact hello@example.com. 10. Data Security Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers. 11. Children's Privacy The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us. 12. Changes to This Policy We may update this policy when the site changes. The date at the top shows the latest version. 13. Contact Questions about privacy? Contact us at: PlayPals demo team Email: hello@example.com Back to Top PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "title": "Privacy Policy | PlayPals",
+  "unreadable_stylesheets": 0,
+  "url": "http://127.0.0.1:53311/datenschutz",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

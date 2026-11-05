@@ -1,0 +1,67 @@
+{
+  "id": "ev_b5750c6305ce518008c763e97e59b2e046c08f4c7e952a2dc487231fa23910d4",
+  "subject": {
+    "kind": "website",
+    "name": "https://gamebuddies.io/datenschutz"
+  },
+  "operation": "web_site_open",
+  "params": {
+    "height": 900,
+    "url": "https://gamebuddies.io/datenschutz",
+    "width": 1440
+  },
+  "result": {
+    "browser": "Chrome/156.0.8078.80",
+    "facts": {
+      "elements": 805,
+      "forms": 0,
+      "height": 8631,
+      "images": 14,
+      "lang": "en",
+      "links": 94,
+      "ready": "complete",
+      "title": "Privacy Policy | GameBuddies.io",
+      "url": "https://gamebuddies.io/datenschutz",
+      "width": 1430
+    },
+    "health": {
+      "errors": [
+        {
+          "kind": "console",
+          "text": "TypeError: Failed to fetch dynamically imported module: https://gamebuddies.io/assets/Legal-B2LdL-5c.js",
+          "url": ""
+        }
+      ],
+      "failed_requests": []
+    },
+    "title": "Privacy Policy | GameBuddies.io",
+    "url": "https://gamebuddies.io/datenschutz"
+  },
+  "summary": "Opened https://gamebuddies.io/datenschutz: \"Privacy Policy | GameBuddies.io\". While loading: 1 error(s), 0 failed request(s).",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "private_profile",
+      "message": "A fresh private browser: pages behind a login show their signed-out state."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "https://gamebuddies.io/datenschutz"
+    }
+  ],
+  "links": []
+}

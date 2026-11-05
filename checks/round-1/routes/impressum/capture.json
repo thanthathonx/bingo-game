@@ -1,0 +1,2938 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 2,
+      "contentinfo": 1,
+      "main": 1,
+      "navigation": 6
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "http://127.0.0.1:56613/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:56613/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:56613/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+    ],
+    "images": [],
+    "inline_scripts": 0,
+    "requests": [
+      {
+        "bytes": 152765,
+        "type": "script",
+        "url": "http://127.0.0.1:56613/assets/icons-C99K4H_k.js"
+      },
+      {
+        "bytes": 28512,
+        "type": "script",
+        "url": "http://127.0.0.1:56613/assets/main-portal-DEX3b0Eh.js"
+      },
+      {
+        "bytes": 3396,
+        "type": "link",
+        "url": "http://127.0.0.1:56613/assets/icons-DUzXT1Uj.css"
+      },
+      {
+        "bytes": 17069,
+        "type": "link",
+        "url": "http://127.0.0.1:56613/assets/main-portal-COsVg8GN.css"
+      },
+      {
+        "bytes": 14348,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-800-normal-CQna6-G7.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 14440,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/bungee-latin-400-normal-Dfnurram.woff2"
+      },
+      {
+        "bytes": 14332,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+      },
+      {
+        "bytes": 13828,
+        "type": "css",
+        "url": "http://127.0.0.1:56613/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+      }
+    ],
+    "scripts": [
+      "http://127.0.0.1:56613/assets/icons-C99K4H_k.js",
+      "http://127.0.0.1:56613/assets/main-portal-DEX3b0Eh.js"
+    ],
+    "stylesheets": [
+      "http://127.0.0.1:56613/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:56613/assets/main-portal-COsVg8GN.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 2,
+      "px": 599,
+      "query": "max-width 599px"
+    },
+    {
+      "count": 1,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 3,
+      "px": 899,
+      "query": "max-width 899px"
+    },
+    {
+      "count": 1,
+      "px": 1023,
+      "query": "max-width 1023px"
+    },
+    {
+      "count": 1,
+      "px": 1199,
+      "query": "max-width 1199px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 9,
+        "value": "#27305c"
+      },
+      {
+        "count": 2,
+        "value": "#100d25"
+      },
+      {
+        "count": 1,
+        "value": "#100d29"
+      },
+      {
+        "count": 1,
+        "value": "#123247"
+      },
+      {
+        "count": 1,
+        "value": "#173d47"
+      },
+      {
+        "count": 1,
+        "value": "#1b1433"
+      },
+      {
+        "count": 1,
+        "value": "#0a0818"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "#fd79a8",
+      "--accent-hover": "#ff9bc0",
+      "--bg-card": "#16123a",
+      "--bg-card-hover": "#1f1a55",
+      "--bg-dark": "#0c0a20",
+      "--bg-darker": "#07061a",
+      "--bg-tertiary": "#1d1850",
+      "--bingo-b": "var(--galaxy-lavender)",
+      "--bingo-g": "var(--galaxy-mint)",
+      "--bingo-i": "var(--galaxy-pink)",
+      "--bingo-n": "var(--gb-cyan)",
+      "--bingo-o": "var(--gb-gold)",
+      "--border-color": "#4b3f8f",
+      "--danger": "#ff6b6b",
+      "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+      "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+      "--font-display": "\"Bungee\", \"Outfit\", system-ui, sans-serif",
+      "--font-hand": "\"Short Stack\", cursive",
+      "--font-read": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif",
+      "--font-title": "Fredoka, \"Short Stack\", sans-serif",
+      "--galaxy-lavender": "#a29bfe",
+      "--galaxy-mint": "#55efc4",
+      "--galaxy-pink": "#fd79a8",
+      "--galaxy-violet": "#6c5ce7",
+      "--gb-cream": "#efeaff",
+      "--gb-cyan": "#00d9ff",
+      "--gb-gold": "#ffd166",
+      "--gbd-gold": "#ffb020",
+      "--gbd-ink": "#05020e",
+      "--gbd-purple": "#a855f7",
+      "--gbd-t1": "#e7e9f1",
+      "--gbd-t2": "#a8aec7",
+      "--header-bg": "#221c3d",
+      "--key-bg": "#2c2f51",
+      "--key-rim": "#454866",
+      "--panel-bg": "#29204a",
+      "--panel-rim": "#683ba1",
+      "--panel-row": "#2f274f",
+      "--panel-rule": "#433b60",
+      "--radius-full": "999px",
+      "--radius-lg": "16px",
+      "--radius-md": "10px",
+      "--radius-sm": "6px",
+      "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+      "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+      "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+      "--text-muted": "#897fc0",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#c4bdf0"
+    },
+    "font_faces": [
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Fredoka",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Short Stack",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "800 900"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 40,
+        "value": "15px"
+      },
+      {
+        "count": 11,
+        "value": "17px"
+      },
+      {
+        "count": 10,
+        "value": "24px"
+      },
+      {
+        "count": 5,
+        "value": "14px"
+      },
+      {
+        "count": 3,
+        "value": "22px"
+      },
+      {
+        "count": 2,
+        "value": "16px"
+      },
+      {
+        "count": 1,
+        "value": "36px"
+      },
+      {
+        "count": 1,
+        "value": "18px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      },
+      {
+        "count": 1,
+        "value": "13px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 29,
+        "value": "400"
+      },
+      {
+        "count": 20,
+        "value": "700"
+      },
+      {
+        "count": 12,
+        "value": "500"
+      },
+      {
+        "count": 10,
+        "value": "600"
+      },
+      {
+        "count": 3,
+        "value": "800"
+      },
+      {
+        "count": 1,
+        "value": "650"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 67,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 8,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      }
+    ],
+    "max_widths": [],
+    "radii": [
+      {
+        "count": 14,
+        "value": "8px"
+      },
+      {
+        "count": 3,
+        "value": "10px"
+      },
+      {
+        "count": 1,
+        "value": "50%"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 3,
+        "value": "rgb(5, 2, 14) 3px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(255, 255, 255, 0.06) 0px 1px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(5, 2, 14) 0px 0px 0px 1px, rgba(168, 85, 247, 0.25) 0px 0px 30px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 61,
+        "value": "10px"
+      },
+      {
+        "count": 17,
+        "value": "16px"
+      },
+      {
+        "count": 16,
+        "value": "4px"
+      },
+      {
+        "count": 15,
+        "value": "14px"
+      },
+      {
+        "count": 14,
+        "value": "6px"
+      },
+      {
+        "count": 10,
+        "value": "24px"
+      },
+      {
+        "count": 10,
+        "value": "22px"
+      },
+      {
+        "count": 7,
+        "value": "8px"
+      },
+      {
+        "count": 7,
+        "value": "36px"
+      },
+      {
+        "count": 6,
+        "value": "1px"
+      },
+      {
+        "count": 5,
+        "value": "20px"
+      },
+      {
+        "count": 4,
+        "value": "2px"
+      },
+      {
+        "count": 3,
+        "value": "28px"
+      },
+      {
+        "count": 3,
+        "value": "12px"
+      },
+      {
+        "count": 2,
+        "value": "48px"
+      },
+      {
+        "count": 1,
+        "value": "64px"
+      },
+      {
+        "count": 1,
+        "value": "72px"
+      },
+      {
+        "count": 1,
+        "value": "56px"
+      },
+      {
+        "count": 1,
+        "value": "32px"
+      },
+      {
+        "count": 1,
+        "value": "18px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 31,
+        "value": "#f8f5ff"
+      },
+      {
+        "count": 12,
+        "value": "#d9d1eb"
+      },
+      {
+        "count": 12,
+        "value": "#e4ddf3"
+      },
+      {
+        "count": 8,
+        "value": "#b5abd0"
+      },
+      {
+        "count": 4,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 2,
+        "value": "#ffffff"
+      },
+      {
+        "count": 2,
+        "value": "#e94560"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 1,
+        "value": "#ffcf70"
+      },
+      {
+        "count": 1,
+        "value": "#a855f7"
+      },
+      {
+        "count": 1,
+        "value": "#ffb020"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "IMPRESSUM"
+    },
+    {
+      "level": 2,
+      "text": "CONTENTS"
+    },
+    {
+      "level": 2,
+      "text": "1. Service Provider"
+    },
+    {
+      "level": 2,
+      "text": "2. Contact"
+    },
+    {
+      "level": 2,
+      "text": "3. Responsible for Content"
+    },
+    {
+      "level": 2,
+      "text": "4. VAT ID"
+    },
+    {
+      "level": 2,
+      "text": "5. Consumer Dispute Resolution"
+    },
+    {
+      "level": 2,
+      "text": "6. Liability for Content and Links"
+    },
+    {
+      "level": 2,
+      "text": "7. Copyright"
+    },
+    {
+      "level": 2,
+      "text": "GAMES"
+    },
+    {
+      "level": 2,
+      "text": "HELP"
+    },
+    {
+      "level": 2,
+      "text": "COMPANY"
+    },
+    {
+      "level": 2,
+      "text": "LEGAL"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 88,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1425,
+          "y": 0
+        },
+        {
+          "gap": 20,
+          "h": 48,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 287,
+          "y": 19
+        },
+        {
+          "h": 1442,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 1425,
+          "y": 88
+        },
+        {
+          "h": 1395,
+          "heading": "IMPRESSUM",
+          "pad": [
+            48,
+            24,
+            64,
+            24
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 1425,
+          "y": 135
+        },
+        {
+          "background": "#173d47",
+          "h": 168,
+          "heading": "IMPRESSUM",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1377,
+          "y": 183
+        },
+        {
+          "h": 1043,
+          "heading": "CONTENTS",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 280,
+          "y": 379
+        },
+        {
+          "h": 187,
+          "heading": "1. Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 379
+        },
+        {
+          "h": 109,
+          "heading": "2. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 602
+        },
+        {
+          "h": 70,
+          "heading": "3. Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 747
+        },
+        {
+          "h": 70,
+          "heading": "4. VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 853
+        },
+        {
+          "h": 99,
+          "heading": "5. Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 959
+        },
+        {
+          "h": 157,
+          "heading": "6. Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 1094
+        },
+        {
+          "h": 99,
+          "heading": "7. Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 1287
+        },
+        {
+          "background": "#0a0818",
+          "h": 372,
+          "heading": "GAMES",
+          "pad": [
+            56,
+            24,
+            20,
+            24
+          ],
+          "per_row": 5,
+          "tag": "footer",
+          "w": 1425,
+          "y": 1530
+        },
+        {
+          "gap": 22,
+          "h": 184,
+          "heading": "GAMES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 1587
+        },
+        {
+          "gap": 22,
+          "h": 184,
+          "heading": "HELP",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 1587
+        },
+        {
+          "gap": 22,
+          "h": 184,
+          "heading": "COMPANY",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 1587
+        },
+        {
+          "gap": 22,
+          "h": 184,
+          "heading": "LEGAL",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 1587
+        }
+      ],
+      "page_h": 1902,
+      "page_w": 1425,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 12,
+        "h3": 0
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 110,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 753,
+          "y": 0
+        },
+        {
+          "gap": 32,
+          "h": 40,
+          "pad": [
+            0,
+            24,
+            0,
+            24
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 753,
+          "y": 68
+        },
+        {
+          "h": 1518,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 753,
+          "y": 110
+        },
+        {
+          "h": 1471,
+          "heading": "IMPRESSUM",
+          "pad": [
+            48,
+            24,
+            64,
+            24
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 753,
+          "y": 157
+        },
+        {
+          "background": "#173d47",
+          "h": 168,
+          "heading": "IMPRESSUM",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 705,
+          "y": 205
+        },
+        {
+          "h": 187,
+          "heading": "1. Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 477
+        },
+        {
+          "h": 109,
+          "heading": "2. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 700
+        },
+        {
+          "h": 70,
+          "heading": "3. Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 845
+        },
+        {
+          "h": 70,
+          "heading": "4. VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 951
+        },
+        {
+          "h": 99,
+          "heading": "5. Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1057
+        },
+        {
+          "h": 157,
+          "heading": "6. Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1192
+        },
+        {
+          "h": 99,
+          "heading": "7. Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1385
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 480,
+            "x": 24
+          },
+          "h": 615,
+          "pad": [
+            36,
+            24,
+            20,
+            24
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 753,
+          "y": 1628
+        },
+        {
+          "gap": 18,
+          "h": 67,
+          "pad": [
+            24,
+            0,
+            24,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 705,
+          "y": 2059
+        }
+      ],
+      "page_h": 2243,
+      "page_w": 753,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 24,
+        "h3": 0
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 62,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "h": 1576,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 390,
+          "y": 62
+        },
+        {
+          "h": 1529,
+          "heading": "IMPRESSUM",
+          "pad": [
+            40,
+            16,
+            48,
+            16
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 390,
+          "y": 109
+        },
+        {
+          "background": "#173d47",
+          "h": 179,
+          "heading": "IMPRESSUM",
+          "pad": [
+            18,
+            16,
+            18,
+            16
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 358,
+          "y": 149
+        },
+        {
+          "h": 169,
+          "heading": "1. Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 432
+        },
+        {
+          "h": 124,
+          "heading": "2. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 637
+        },
+        {
+          "h": 63,
+          "heading": "3. Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 797
+        },
+        {
+          "h": 63,
+          "heading": "4. VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 896
+        },
+        {
+          "h": 114,
+          "heading": "5. Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 995
+        },
+        {
+          "h": 190,
+          "heading": "6. Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1144
+        },
+        {
+          "h": 139,
+          "heading": "7. Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1371
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 342,
+            "x": 24
+          },
+          "h": 669,
+          "pad": [
+            36,
+            24,
+            20,
+            24
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 390,
+          "y": 1638
+        },
+        {
+          "gap": 18,
+          "h": 67,
+          "pad": [
+            24,
+            0,
+            24,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 342,
+          "y": 2069
+        }
+      ],
+      "page_h": 2307,
+      "page_w": 390,
+      "type": {
+        "body": 15,
+        "h1": 25,
+        "h2": 21,
+        "h3": 0
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "PlayPals.io"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "href": "http://127.0.0.1:56613/terms",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "hello@example.com"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s1",
+      "text": "1 Service Provider"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s2",
+      "text": "2 Contact"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s3",
+      "text": "3 Responsible for Content"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s4",
+      "text": "4 VAT ID"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s5",
+      "text": "5 Consumer Dispute Resolution"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s6",
+      "text": "6 Liability for Content and Links"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#s7",
+      "text": "7 Copyright"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum#main",
+      "text": "Back to Top"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "All games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Email us"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:56613/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:56613/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:56613/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:56613/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:56613/bingo/",
+      "text": "Sound and motion"
+    }
+  ],
+  "meta": {
+    "description": "Legal disclosure for this website.",
+    "icons": [
+      "http://127.0.0.1:56613/favicon.ico"
+    ],
+    "og_image": "",
+    "og_title": "",
+    "theme_color": "#100d29"
+  },
+  "outline": [
+    {
+      "background": "#100d29",
+      "box": {
+        "h": 88,
+        "w": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "class": "pp-hdr",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 156,
+        "x": 24,
+        "y": 23
+      },
+      "class": "pp-logo",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a",
+      "text": "PlayPals.io"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 40,
+        "x": 24,
+        "y": 23
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 287,
+        "x": 200,
+        "y": 19
+      },
+      "class": "pp-nav",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 200,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a",
+      "text": "Games"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 39,
+        "x": 268,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "Bingo"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 108,
+        "x": 327,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/games/#now",
+      "tag": "a",
+      "text": "Now Playing"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 327,
+        "y": 34
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 31,
+        "x": 455,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "tag": "a",
+      "text": "Help"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 111,
+        "x": 1090,
+        "y": 19
+      },
+      "class": "pp-premium",
+      "color": "#ffcf70",
+      "depth": 7,
+      "font": "16px 600",
+      "tag": "button",
+      "text": "Premium"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1100,
+        "y": 34
+      },
+      "color": "#ffcf70",
+      "depth": 8,
+      "font": "16px 600",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1211,
+        "y": 19
+      },
+      "class": "pp-keycap pp-lang",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1223,
+        "y": 35
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 132,
+        "x": 1269,
+        "y": 19
+      },
+      "class": "pp-login",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 650",
+      "tag": "button",
+      "text": "Log in"
+    },
+    {
+      "background": "#123247",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1369,
+        "y": 762
+      },
+      "class": "pp-fab",
+      "color": "#effcff",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1383,
+        "y": 776
+      },
+      "color": "#effcff",
+      "depth": 6,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 1442,
+        "w": 1425,
+        "x": 0,
+        "y": 88
+      },
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "id": "main",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 47,
+        "w": 1377,
+        "x": 24,
+        "y": 88
+      },
+      "class": "lg-tabs",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "font": "16px 400",
+      "role": "tablist",
+      "tag": "div",
+      "text": "Privacy & Cookies Terms of Service Impressum"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 178,
+        "x": 24,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "role": "tab",
+      "tag": "a",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 40,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 170,
+        "x": 202,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:56613/terms",
+      "role": "tab",
+      "tag": "a",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 218,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 134,
+        "x": 372,
+        "y": 88
+      },
+      "class": "is-active",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:56613/impressum",
+      "role": "tab",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 388,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 1395,
+        "w": 1425,
+        "x": 0,
+        "y": 135
+      },
+      "class": "lg-doc",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "background": "#173d47",
+      "box": {
+        "h": 168,
+        "w": 1377,
+        "x": 24,
+        "y": 183
+      },
+      "class": "lg-head is-teal",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1277,
+        "y": 147
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1325,
+        "y": 147
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 1317,
+        "x": 54,
+        "y": 209
+      },
+      "class": "lg-title",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "36px 400",
+      "tag": "h1",
+      "text": "IMPRESSUM"
+    },
+    {
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 67,
+        "y": 222
+      },
+      "color": "#74c7ff",
+      "depth": 9,
+      "font": "36px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 1317,
+        "x": 54,
+        "y": 269
+      },
+      "class": "lg-sub",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Legal disclosure for this website"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 54,
+        "y": 307
+      },
+      "color": "#e94560",
+      "depth": 9,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 324,
+        "y": 307
+      },
+      "color": "#e94560",
+      "depth": 9,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 135,
+        "x": 430,
+        "y": 306
+      },
+      "color": "#00d9ff",
+      "depth": 9,
+      "font": "15px 600",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "hello@example.com"
+    },
+    {
+      "box": {
+        "h": 1043,
+        "w": 280,
+        "x": 24,
+        "y": 379
+      },
+      "class": "lg-contents-wide",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 15,
+        "w": 280,
+        "x": 24,
+        "y": 379
+      },
+      "class": "lg-label",
+      "color": "#b5abd0",
+      "depth": 8,
+      "font": "12px 700",
+      "tag": "h2",
+      "text": "CONTENTS"
+    },
+    {
+      "box": {
+        "h": 280,
+        "w": 280,
+        "x": 24,
+        "y": 404
+      },
+      "class": "lg-toc",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ol"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 404
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s1",
+      "tag": "a",
+      "text": "1 Service Provider"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 444
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s2",
+      "tag": "a",
+      "text": "2 Contact"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 484
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s3",
+      "tag": "a",
+      "text": "3 Responsible for Content"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 524
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s4",
+      "tag": "a",
+      "text": "4 VAT ID"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 564
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s5",
+      "tag": "a",
+      "text": "5 Consumer Dispute Resolution"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 604
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s6",
+      "tag": "a",
+      "text": "6 Liability for Content and Links"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 644
+      },
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 400",
+      "href": "http://127.0.0.1:56613/impressum#s7",
+      "tag": "a",
+      "text": "7 Copyright"
+    },
+    {
+      "box": {
+        "h": 187,
+        "w": 700,
+        "x": 376,
+        "y": 379
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s1",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 379
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "1. Service Provider"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 420
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 459
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Example Street 1"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 498
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "12345 Sample City"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 537
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Country"
+    },
+    {
+      "box": {
+        "h": 109,
+        "w": 700,
+        "x": 376,
+        "y": 602
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s2",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 602
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "2. Contact"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 643
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 682
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Please use email for all enquiries — we read every message."
+    },
+    {
+      "box": {
+        "h": 70,
+        "w": 700,
+        "x": 376,
+        "y": 747
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s3",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 747
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "3. Responsible for Content"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 788
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "PlayPals demo team, address as above."
+    },
+    {
+      "box": {
+        "h": 70,
+        "w": 700,
+        "x": 376,
+        "y": 853
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s4",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 853
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "4. VAT ID"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 894
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Not applicable for this demo."
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 959
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s5",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 959
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "5. Consumer Dispute Resolution"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 1000
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board."
+    },
+    {
+      "box": {
+        "h": 157,
+        "w": 700,
+        "x": 376,
+        "y": 1094
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s6",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 1094
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "6. Liability for Content and Links"
+    },
+    {
+      "box": {
+        "h": 116,
+        "w": 700,
+        "x": 376,
+        "y": 1135
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for cont"
+    },
+    {
+      "box": {
+        "h": 99,
+        "w": 700,
+        "x": 376,
+        "y": 1287
+      },
+      "class": "lg-section",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "s7",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 1287
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "7. Copyright"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 1328
+      },
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author."
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 131,
+        "x": 24,
+        "y": 1422
+      },
+      "class": "lg-top",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "13px 700",
+      "href": "http://127.0.0.1:56613/impressum#main",
+      "tag": "a",
+      "text": "Back to Top"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 42,
+        "y": 1436
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "13px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#0a0818",
+      "box": {
+        "h": 372,
+        "w": 1425,
+        "x": 0,
+        "y": 1530
+      },
+      "class": "pp-foot",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 380,
+        "x": 24,
+        "y": 1634
+      },
+      "color": "#e4ddf3",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Party games with friends. Pick a game, share one screen, play together in the browser."
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 191,
+        "x": 24,
+        "y": 1704
+      },
+      "class": "pp-pill pp-wide",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 42,
+        "y": 1717
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 225,
+        "y": 1704
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 237,
+        "y": 1716
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 279,
+        "y": 1704
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 291,
+        "y": 1716
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 333,
+        "y": 1704
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "mailto:hello@example.com",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 345,
+        "y": 1716
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 184,
+        "w": 219,
+        "x": 452,
+        "y": 1587
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 452,
+        "y": 1587
+      },
+      "color": "#e94560",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "GAMES"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 452,
+        "y": 1629
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a",
+      "text": "All party games"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 452,
+        "y": 1670
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 452,
+        "y": 1711
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/games/",
+      "tag": "a",
+      "text": "Free browser games"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 452,
+        "y": 1752
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "Play on your TV"
+    },
+    {
+      "box": {
+        "h": 184,
+        "w": 219,
+        "x": 695,
+        "y": 1587
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 695,
+        "y": 1587
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "HELP"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 695,
+        "y": 1629
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/games/#faq",
+      "tag": "a",
+      "text": "How it works"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 695,
+        "y": 1670
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "For streamers"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 695,
+        "y": 1711
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Send feedback"
+    },
+    {
+      "box": {
+        "h": 184,
+        "w": 219,
+        "x": 939,
+        "y": 1587
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 939,
+        "y": 1587
+      },
+      "color": "#a855f7",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "COMPANY"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 939,
+        "y": 1629
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/impressum",
+      "tag": "a",
+      "text": "About us"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 939,
+        "y": 1670
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Contact us"
+    },
+    {
+      "box": {
+        "h": 184,
+        "w": 219,
+        "x": 1182,
+        "y": 1587
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 1182,
+        "y": 1587
+      },
+      "color": "#ffb020",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "LEGAL"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 1182,
+        "y": 1629
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/datenschutz",
+      "tag": "a",
+      "text": "Privacy"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 1182,
+        "y": 1670
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/terms",
+      "tag": "a",
+      "text": "Terms"
+    },
+    {
+      "box": {
+        "h": 19,
+        "w": 219,
+        "x": 1182,
+        "y": 1711
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:56613/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 147,
+        "x": 1056,
+        "y": 1838
+      },
+      "class": "pp-pill",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "button",
+      "text": "English"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1074,
+        "y": 1851
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 1169,
+        "y": 1852
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 188,
+        "x": 1213,
+        "y": 1838
+      },
+      "class": "pp-pill",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:56613/bingo/",
+      "tag": "a",
+      "text": "Sound and motion"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1231,
+        "y": 1851
+      },
+      "color": "#d9d1eb",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    }
+  ],
+  "page": {
+    "h": 1902,
+    "w": 1425
+  },
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Log in Privacy & Cookies Terms of Service Impressum IMPRESSUM Legal disclosure for this website Last updated: November 6, 2026 Questions: hello@example.com CONTENTS 1 Service Provider 2 Contact 3 Responsible for Content 4 VAT ID 5 Consumer Dispute Resolution 6 Liability for Content and Links 7 Copyright 1. Service Provider PlayPals demo team Example Street 1 12345 Sample City Country 2. Contact Email: hello@example.com Please use email for all enquiries — we read every message. 3. Responsible for Content PlayPals demo team, address as above. 4. VAT ID Not applicable for this demo. 5. Consumer Dispute Resolution We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board. 6. Liability for Content and Links We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for content that changes later on those websites. If you notice a problem, please let us know and we will fix it promptly. 7. Copyright Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author. Back to Top PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "title": "Impressum | PlayPals",
+  "unreadable_stylesheets": 0,
+  "url": "http://127.0.0.1:56613/impressum",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

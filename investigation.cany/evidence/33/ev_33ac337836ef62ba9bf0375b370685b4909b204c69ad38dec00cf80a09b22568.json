@@ -1,0 +1,75 @@
+{
+  "id": "ev_33ac337836ef62ba9bf0375b370685b4909b204c69ad38dec00cf80a09b22568",
+  "subject": {
+    "kind": "web-capture",
+    "name": "https://gamebuddies.io/bingo/"
+  },
+  "operation": "web_scripts_save",
+  "params": {
+    "max_scripts": 5000,
+    "output_directory": "C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts"
+  },
+  "result": {
+    "bytes": 55,
+    "files_folder": "C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts\\files",
+    "manifest": "C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts\\manifest.json",
+    "output_directory": "C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts",
+    "scripts": [
+      {
+        "bytes": 11,
+        "path": "files/inline/script-0.js",
+        "sha256": "4b545924ac4999a6dd281bd50a4b92dda6489a6551b325a6a13f4626155a301f",
+        "url": ""
+      },
+      {
+        "bytes": 11,
+        "path": "files/inline/script-1.js",
+        "sha256": "4b545924ac4999a6dd281bd50a4b92dda6489a6551b325a6a13f4626155a301f",
+        "url": ""
+      },
+      {
+        "bytes": 11,
+        "path": "files/inline/script-2.js",
+        "sha256": "4b545924ac4999a6dd281bd50a4b92dda6489a6551b325a6a13f4626155a301f",
+        "url": ""
+      },
+      {
+        "bytes": 11,
+        "path": "files/inline/script-3.js",
+        "sha256": "4b545924ac4999a6dd281bd50a4b92dda6489a6551b325a6a13f4626155a301f",
+        "url": ""
+      },
+      {
+        "bytes": 11,
+        "path": "files/inline/script-4.js",
+        "sha256": "4b545924ac4999a6dd281bd50a4b92dda6489a6551b325a6a13f4626155a301f",
+        "url": ""
+      }
+    ],
+    "skipped": []
+  },
+  "summary": "Exported 5 script(s) (55 bytes) to C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts.",
+  "confidence": "derived",
+  "authority": "original-files",
+  "environment": {
+    "clean_room": false,
+    "engine": "builtin",
+    "engine_version": "0.3.0",
+    "host": "windows-x86_64"
+  },
+  "limitations": [],
+  "coverage": {
+    "status": "complete",
+    "examined": 5,
+    "total": 5
+  },
+  "locations": [
+    {
+      "kind": "path",
+      "value": "C:\\Users\\thanthatsa\\AppData\\Local\\Temp\\gb_scripts"
+    }
+  ],
+  "links": [
+    "ev_f37d29606c5bdc8d2918f659b69e235a8ed88ed6539848f369c3cd1c326a72a0"
+  ]
+}

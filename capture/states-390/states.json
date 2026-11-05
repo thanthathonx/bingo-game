@@ -1,0 +1,36 @@
+{
+  "states": [
+    {
+      "changed": [
+        "expanded"
+      ],
+      "file": "state-1.png",
+      "index": 0,
+      "kind": "dialog",
+      "label": "Game audio",
+      "sha256": "f405b6f0682a1dfbf0acc2836e48aa8ff956287463436087d2c928d776975523"
+    },
+    {
+      "changed": [
+        "expanded"
+      ],
+      "file": "state-2.png",
+      "index": 1,
+      "kind": "dialog",
+      "label": "Language: English",
+      "sha256": "95ee30d830606ff84040785fd2fda693ae77c8f843bfcfb493186b7dd396ad79"
+    },
+    {
+      "changed": [
+        "expanded"
+      ],
+      "file": "state-3.png",
+      "index": 2,
+      "kind": "dialog",
+      "label": "Menu",
+      "sha256": "80e62c367e1351a4aab7214d05342ae67a94baaa713bbd9f0afc94a7abc98d81"
+    }
+  ],
+  "url": "https://gamebuddies.io/bingo/",
+  "width": 390
+}

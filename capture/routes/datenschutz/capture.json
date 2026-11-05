@@ -1,0 +1,5768 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 2,
+      "contentinfo": 1,
+      "main": 1,
+      "navigation": 7
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [
+      "https://gamebuddies.io/assets/gb-ui-icons-CeGqCjl9.webp"
+    ],
+    "fonts": [
+      "https://gamebuddies.io/fonts/bungee-400.woff2",
+      "https://gamebuddies.io/fonts/outfit-400.woff2",
+      "https://gamebuddies.io/fonts/outfit-600.woff2",
+      "https://gamebuddies.io/fonts/outfit-700.woff2",
+      "https://gamebuddies.io/fonts/outfit-500.woff2"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eRandom%20game%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cg%20transform='rotate(-9%2032%2032)'%3e%3crect%20x='12'%20y='12'%20width='41'%20height='42'%20rx='7'%20fill='%237265b2'%20/%3e%3crect%20x='8'%20y='7'%20width='41'%20height='42'%20rx='7'%20fill='%23a39bea'%20/%3e%3cpath%20d='M16%2014h9'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3ccircle%20cx='18'%20cy='18'%20r='3'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='38'%20cy='18'%20r='3'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='28'%20cy='28'%20r='3'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='18'%20cy='38'%20r='3'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='38'%20cy='38'%20r='3'%20fill='%23fff2d9'%20/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eGames%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M20%2020q-9%200-12%2011L5%2045q-1%208%206%209q4%201%2012-10h18q8%2011%2013%2010q7-1%205-9l-3-14q-3-11-12-11q-12%205-24%200Z'%20fill='%23248696'%20/%3e%3cpath%20d='M20%2016q-9%200-12%2011L5%2041q-1%208%206%209q4%201%2012-10h18q8%2011%2013%2010q7-1%205-9l-3-14q-3-11-12-11q-12%205-24%200Z'%20fill='%2340bfc9'%20/%3e%3cpath%20d='M13%2025q2-5%206-5'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3cpath%20d='M19%2026v12M13%2032h12'%20fill='none'%20stroke='%23202940'%20stroke-width='3'/%3e%3ccircle%20cx='44'%20cy='28'%20r='2.7'%20fill='%23ec718c'%20/%3e%3ccircle%20cx='50'%20cy='34'%20r='2.7'%20fill='%23ffc454'%20/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eAchievements%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M18%2015H7v10q0%2013%2015%2013M46%2015h11v10q0%2013-15%2013'%20fill='none'%20stroke='%23202940'%20stroke-width='7'/%3e%3cpath%20d='M18%2015H7v10q0%2013%2015%2013M46%2015h11v10q0%2013-15%2013'%20fill='none'%20stroke='%23ffc454'%20stroke-width='3'/%3e%3cpath%20d='M17%208h30v16q0%2016-15%2018-15-2-15-18Z'%20fill='%23ffc454'%20/%3e%3cpath%20d='M32%209v31q14-2%2014-17V9Z'%20fill='%23dc893e'%20stroke='none'/%3e%3cpath%20d='M32%2042v11'%20fill='none'%20stroke='%23ffc454'%20stroke-width='7'/%3e%3crect%20x='19'%20y='52'%20width='26'%20height='7'%20rx='2'%20fill='%2340bfc9'%20/%3e%3cpolygon%20points='32.00,14.00%2034.43,19.65%2040.56,20.22%2035.94,24.28%2037.29,30.28%2032.00,27.14%2026.71,30.28%2028.06,24.28%2023.44,20.22%2029.57,19.65'%20fill='%23fff2d9'/%3e%3cpath%20d='M22%2013v8'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eSpecial%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M28%208q1%2021%2022%2022q-21%201%20-22%2022q-1%20-21%20-22%20-22q21%20-1%2022%20-22'%20fill='%23a39bea'%20/%3e%3cpath%20d='M28%208v44q4-18%2022-22-18-4-22-22Z'%20fill='%237265b2'%20stroke='none'/%3e%3cpath%20d='M51%205q1%205%206%206q-5%201%20-6%206q-1%20-5%20-6%20-6q5%20-1%206%20-6'%20fill='%23ffc454'%20/%3e%3cpath%20d='M11%2047q1%204%205%205q-4%201%20-5%205q-1%20-4%20-5%20-5q4%20-1%205%20-5'%20fill='%2340bfc9'%20/%3e%3cpath%20d='M27%2022l-3%205'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eQuick%20start%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M34%205%209%2036h20l-3%2024%2029-35H35l6-20Z'%20fill='%23ffc454'%20/%3e%3cpath%20d='M41%205%2035%2025h20L26%2060l11-29h-9Z'%20fill='%23dc893e'%20stroke='none'/%3e%3cpath%20d='m24%2024%207-9'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eChat%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M15%208h34q9%200%209%209v23q0%209-9%209H29L15%2058V49q-9%200-9-9V17q0-9%209-9Z'%20fill='%2340bfc9'%20/%3e%3cpath%20d='M45%209h4q8%200%208%209v22q0%208-9%208H30l-14%209v-8h25q8%200%208-9V18Z'%20fill='%23248696'%20stroke='none'/%3e%3ccircle%20cx='20'%20cy='29'%20r='2.5'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='32'%20cy='29'%20r='2.5'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='44'%20cy='29'%20r='2.5'%20fill='%23fff2d9'%20/%3e%3cpath%20d='M13%2020q0-5%205-5'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eExperience%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cg%20transform=''%3e%3cpolygon%20points='32.00,7.00%2039.30,23.95%2057.68,25.66%2043.81,37.84%2047.87,55.84%2032.00,46.42%2016.13,55.84%2020.19,37.84%206.32,25.66%2024.70,23.95'%20fill='%23dc893e'/%3e%3c/g%3e%3cpolygon%20points='32.00,2.00%2039.30,18.95%2057.68,20.66%2043.81,32.84%2047.87,50.84%2032.00,41.42%2016.13,50.84%2020.19,32.84%206.32,20.66%2024.70,18.95'%20fill='%23ffc454'/%3e%3cpath%20d='M32%203v26l16%2019-4-18%2013-12-19-1Z'%20fill='%23dc893e'%20stroke='none'/%3e%3cpath%20d='m25%2018%203-7'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3ePuzzles%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M7%209h18q-6%2013%206%2013%2011%200%206-13h18v18q-13-6-13%206%200%2011%2013%206v18H37q6-13-6-13-11%200-6%2013H7V39q13%206%2013-6%200-11-13-6Z'%20fill='%23a39bea'%20/%3e%3cpath%20d='M12%2015h7'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3eCreative%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='M9%2030Q0%2012%2021%207q26-5%2035%2012%209%2018-6%2023-13-4-13%204%205%2014-8%2013Q13%2057%209%2030Z'%20fill='%23fff2d9'%20/%3e%3ccircle%20cx='19'%20cy='20'%20r='5'%20fill='%23ec718c'%20/%3e%3ccircle%20cx='35'%20cy='17'%20r='5'%20fill='%23ffc454'%20/%3e%3ccircle%20cx='48'%20cy='28'%20r='5'%20fill='%2340bfc9'%20/%3e%3ccircle%20cx='20'%20cy='38'%20r='5'%20fill='%23a39bea'%20/%3e%3ccircle%20cx='27'%20cy='49'%20r='3'%20fill='%23202940'%20stroke='none'/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "",
+        "h": 150,
+        "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%20fill='none'%20role='img'%20aria-labelledby='title'%3e%3ctitle%20id='title'%3ePremium%3c/title%3e%3cg%20stroke='%23202940'%20stroke-width='3'%20stroke-linejoin='round'%20stroke-linecap='round'%3e%3cpath%20d='m7%2016%2014%2010L32%209l11%2017%2014-10-7%2035H14Z'%20fill='%23ffc454'%20/%3e%3cpath%20d='m32%209%205%2029h16l-3%2013H14l-2-10h23Z'%20fill='%23dc893e'%20stroke='none'/%3e%3crect%20x='13'%20y='46'%20width='38'%20height='10'%20rx='3'%20fill='%23ffc454'%20/%3e%3ccircle%20cx='32'%20cy='35'%20r='5'%20fill='%23ec718c'%20/%3e%3cpath%20d='M15%2025l3%2012'%20fill='none'%20stroke='%23fff2d9'%20stroke-width='3'/%3e%3ccircle%20cx='7'%20cy='14'%20r='3'%20fill='%23fff0b0'%20/%3e%3ccircle%20cx='32'%20cy='8'%20r='3'%20fill='%23fff0b0'%20/%3e%3ccircle%20cx='57'%20cy='14'%20r='3'%20fill='%23fff0b0'%20/%3e%3c/g%3e%3c/svg%3e",
+        "w": 150
+      },
+      {
+        "alt": "GameBuddies.io",
+        "h": 224,
+        "src": "https://gamebuddies.io/brand/gamebuddies-lockup-v17.webp?v=gabu-v17",
+        "w": 1160
+      },
+      {
+        "alt": "",
+        "h": 96,
+        "src": "https://gamebuddies.io/icons/gabu/gabu-rarity-rare.webp?v=gabu-v17",
+        "w": 96
+      },
+      {
+        "alt": "",
+        "h": 96,
+        "src": "https://gamebuddies.io/icons/gabu/gabu-category-social.webp?v=gabu-v17",
+        "w": 96
+      },
+      {
+        "alt": "",
+        "h": 96,
+        "src": "https://gamebuddies.io/icons/gabu/gabu-tier-admin.webp?v=gabu-v17",
+        "w": 96
+      }
+    ],
+    "inline_scripts": 7,
+    "requests": [
+      {
+        "bytes": 451,
+        "type": "other",
+        "url": "https://gamebuddies.io/cdn-cgi/speculation"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/fonts/bungee-400.woff2"
+      },
+      {
+        "bytes": 71632,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/i/pub-8974800579879060"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/index-TL-L7pL2.css"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/fonts/outfit-400.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/assets/vendor-icons-CtUPES5b.js"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/assets/vendor-react-D0qe6vq1.js"
+      },
+      {
+        "bytes": 16233,
+        "type": "other",
+        "url": "https://gamebuddies.io/assets/HomePage-BDyR6pqx.js"
+      },
+      {
+        "bytes": 204414,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index-Djq8fPqB.js"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/assets/en-DxuHO7BI.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+      },
+      {
+        "bytes": 300,
+        "type": "link",
+        "url": "https://gamebuddies.io/manifest.json"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/legalContent-BUVbfSPc.js"
+      },
+      {
+        "bytes": 300,
+        "type": "beacon",
+        "url": "https://gamebuddies.io/api/metrics/load"
+      },
+      {
+        "bytes": 17638,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/create-visual-element-BPT2gC5Q.js"
+      },
+      {
+        "bytes": 593,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/motionFeatures-D1P-6leq.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index-CYMCNheW.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/scrape-motion-values-CEvHaCUX.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/is-browser-Cc-On3RY.js"
+      },
+      {
+        "bytes": 17162,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/SVGVisualElement-Co-Aw6TF.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/use-presence-DNCNm3z3.js"
+      },
+      {
+        "bytes": 538,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/ToneIcon-WpEBqC8C.js"
+      },
+      {
+        "bytes": 5547,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/Legal-BHQxWcYx.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/kit-Dm84q0t_.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/content-Ct1wFaev.js"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/content-BTwn-_9a.css"
+      },
+      {
+        "bytes": 1892,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/InstallPrompt-BYOoETj5.js"
+      },
+      {
+        "bytes": 0,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/InstallPrompt-DAP8L5FF.css"
+      },
+      {
+        "bytes": 1762,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/PlatformAdventure-CEysUQKC.js"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/brand/gamebuddies-lockup-v17.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/gblogo.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/assets/gb-ui-icons-CeGqCjl9.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-600.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-700.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "css",
+        "url": "https://gamebuddies.io/fonts/outfit-500.woff2"
+      },
+      {
+        "bytes": 0,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/supabase-config"
+      },
+      {
+        "bytes": 32310,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/index--nus87mz.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 1392,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxU2S00mtUdZ6_edy3kLYz-p4hh6COL5RbPmYrlQHPN-iS92stgnw8qYi-mgBOhimi_uoPQP-5oIB76dBbNduk01CxeeJGDjXC9-EiRHLFY5UyoDIHcF03RIxiSxVb4msagbsppWAg=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVYBYMlr5hzkPuUDVgr2iiOVH7mo7mE-defZzYUsSMtx0HYUn7146bynPJjw5ibccrcUiN_lhS478BSomd7s6WeIqG33QXu8oCVFelww4VmieYrU9JLiCN-TgynmK1tWwarIUiiqA=="
+      },
+      {
+        "bytes": 3806,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUAfs83BHqEaQQOf4_AArbAlq1ROUQ_lHOdutm4DX87zwGCAE6HZkh1JpYHmdEHu3gGRwQLU6kMJWSDKMoK5LNVEAI2KFOE5-8ZCNdrCOj_Sdkdp1lyw-1JHBJz6ng1aklHaiXwlA=="
+      },
+      {
+        "bytes": 300,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/users/guest/b53c7ddf-fe00-4a20-87f5-bc7b76a0208c"
+      },
+      {
+        "bytes": 300,
+        "type": "beacon",
+        "url": "https://gamebuddies.io/api/metrics/visit"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://cloudflareinsights.com/cdn-cgi/rum"
+      },
+      {
+        "bytes": 0,
+        "type": "other",
+        "url": "https://gamebuddies.io/icon-192.png"
+      },
+      {
+        "bytes": 316,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/moderation/ban-status"
+      },
+      {
+        "bytes": 300,
+        "type": "beacon",
+        "url": "https://gamebuddies.io/api/metrics/load"
+      },
+      {
+        "bytes": 9868,
+        "type": "img",
+        "url": "https://gamebuddies.io/icons/gabu/gabu-rarity-rare.webp"
+      },
+      {
+        "bytes": 1847,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/AnimatedStarfield-BBukeI1s.js"
+      },
+      {
+        "bytes": 2084,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/useDailyLoginBonus-BnTrJZoP.js"
+      },
+      {
+        "bytes": 3132,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/DailyLoginModal-TxEqDO0u.js"
+      },
+      {
+        "bytes": 568,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/RewardedAdButton-LH9GJn2m.js"
+      },
+      {
+        "bytes": 3518,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/DailyLoginModal-z3fUAKx1.css"
+      },
+      {
+        "bytes": 2159,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/DailyChallengesModal-DSPStwfH.js"
+      },
+      {
+        "bytes": 494,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/hapticService-BTabVWNj.js"
+      },
+      {
+        "bytes": 1293,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/BottomSheetWrapper-ChPVMi_A.js"
+      },
+      {
+        "bytes": 394,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/proxy-mBUI1_SU.js"
+      },
+      {
+        "bytes": 3776,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/create-factory-B9tiYnlh.js"
+      },
+      {
+        "bytes": 1112,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/BottomSheetWrapper-CX6anNNh.css"
+      },
+      {
+        "bytes": 1965,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/DailyChallengesModal-BXVoD7zI.css"
+      },
+      {
+        "bytes": 1405,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/SurveyBanner-rqpmLbw_.js"
+      },
+      {
+        "bytes": 1638,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/useSurvey-OPO1dFjn.js"
+      },
+      {
+        "bytes": 1272,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/SurveyBanner-DhrQqyiW.css"
+      },
+      {
+        "bytes": 848,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/pendingCheckout-p6hs4alf.js"
+      },
+      {
+        "bytes": 4871,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/AuthModal-CEN-RtOQ.js"
+      },
+      {
+        "bytes": 2588,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/auth-Bh6rXITo.css"
+      },
+      {
+        "bytes": 669,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/authErrors-cysVzCuO.js"
+      },
+      {
+        "bytes": 861,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/PremiumOverlay-DdLNTtwU.js"
+      },
+      {
+        "bytes": 1143,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/FullScreenOverlay-B-Q0tBDN.js"
+      },
+      {
+        "bytes": 1615,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/FullScreenOverlay-BrTRVbRC.css"
+      },
+      {
+        "bytes": 9555,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/Premium-U_ynXHfN.js"
+      },
+      {
+        "bytes": 748,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/security-CZoSCqOd.js"
+      },
+      {
+        "bytes": 1002,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/usePremiumConfirmation-BvMGnuRP.js"
+      },
+      {
+        "bytes": 582,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/stripeEmbedded-sOhYhXbt.js"
+      },
+      {
+        "bytes": 1439,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/SEO-CE5-vdZP.js"
+      },
+      {
+        "bytes": 1745,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/useCosmetics-qr6q1tsh.js"
+      },
+      {
+        "bytes": 2810,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/cosmeticPreview-DjFc4wXd.js"
+      },
+      {
+        "bytes": 6756,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/HalloweenBannerScene-DkxzOBDm.js"
+      },
+      {
+        "bytes": 688,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/ProfileBanner-BuW4xjeb.js"
+      },
+      {
+        "bytes": 1469,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/cosmeticKindLabel-CAztZcJS.js"
+      },
+      {
+        "bytes": 3278,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/HalloweenBannerScene-DLRfNWU0.css"
+      },
+      {
+        "bytes": 2005,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/RedeemCodeCard-BL-3lSFF.js"
+      },
+      {
+        "bytes": 5292,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/collection-B_PTrkuS.css"
+      },
+      {
+        "bytes": 9963,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/money-DBto_SGc.css"
+      },
+      {
+        "bytes": 740,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/GabuArt-Bl_N0qFX.js"
+      },
+      {
+        "bytes": 918,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/paymentReturn-7pYQEuEU.js"
+      },
+      {
+        "bytes": 338,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/party-C8M6suyW.js"
+      },
+      {
+        "bytes": 1436,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/Premium-CC-orYME.css"
+      },
+      {
+        "bytes": 4854,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/premium-experience-D5fi4-4c.css"
+      },
+      {
+        "bytes": 2122,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/DisplayNamePickerModal-DrYARML1.js"
+      },
+      {
+        "bytes": 5387,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/FriendList-CVXoKqr6.js"
+      },
+      {
+        "bytes": 780,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/useFriendPresence-BBjqmhOn.js"
+      },
+      {
+        "bytes": 2256,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/ChatWindow-DScc69an.js"
+      },
+      {
+        "bytes": 1433,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/LobbyChatChannels-Cs0uZqRX.js"
+      },
+      {
+        "bytes": 804,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/LobbyChatChannels-D0akjSbH.css"
+      },
+      {
+        "bytes": 3388,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/ChatWindow-DModM7NG.css"
+      },
+      {
+        "bytes": 648,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/UsernameTitle-CgFDgpFD.js"
+      },
+      {
+        "bytes": 2998,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/ProfilePeekModal-D-KRQYWj.js"
+      },
+      {
+        "bytes": 2712,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/ProfilePeekModal-DbrgjGSa.css"
+      },
+      {
+        "bytes": 2423,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/social-EnUR0Qe6.css"
+      },
+      {
+        "bytes": 6181,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/FriendList-DpTg2Nqn.css"
+      },
+      {
+        "bytes": 668,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/fx-DpLIU_3_.js"
+      },
+      {
+        "bytes": 1342,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/FeedbackFab-Aniw2Xtj.css"
+      },
+      {
+        "bytes": 704,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/FeedbackFab-CE98e_96.js"
+      },
+      {
+        "bytes": 910,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/GameInviteToast-BGypKKoq.js"
+      },
+      {
+        "bytes": 1858,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/GameInviteToast-BUkd4BxY.css"
+      },
+      {
+        "bytes": 1542,
+        "type": "link",
+        "url": "https://gamebuddies.io/assets/FriendOnlineToast-CQ-7SIqP.css"
+      },
+      {
+        "bytes": 1537,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/FriendOnlineToast-OtchFm5z.js"
+      },
+      {
+        "bytes": 0,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWaFMzqc2Lzx1kNDE1VDcrQDd3U1feNN6P4oq_VjDFvoLe14kU3Fhop-fHyoRCESGr8dqiewhxUvEDDCAyXh2oSK_EeTTkwmGEWan8cl2Pyraop42jaG4UE8ZPTO7nabttrJvN-pegkk9njxhXYptA3HZeVyx7745bdgpRZn5j8fiYKhSJQO2r8ArAD/_-book-ad-_affiliate/banners/.net/ad_/ads468x60_/adservices."
+      },
+      {
+        "bytes": 342,
+        "type": "script",
+        "url": "https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 1272,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/NotificationPoller-CQwqUP29.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 1621,
+        "type": "script",
+        "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUdYWr9ghk0S3WbCyeHPm_VoYHu3pviyD2nDSWgJqcvAXOEzi_RMM7PwB9UBGZ6fzE5bY0g0ZXpWajhysuK9iD_PIOm8Vr711r4CZElS5cZQefB9_80zegWf8cSO2BacbK0FbC2lw=="
+      },
+      {
+        "bytes": 1152,
+        "type": "script",
+        "url": "https://gamebuddies.io/assets/GameNightClaimHandler-BGvOcSO2.js"
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV8NTudn_x-28GccNkvja5pqIUdo6BUBFf9ykdk0FNPdIqKh8KhSyF_QvvcWvA4LnQskfGcMVuu--2BCU_UQL17RudB3SCdZc9XFlbxGftQ_FBuIkB6-87Ws87Y1QWVQ-QNhP9XFw=="
+      },
+      {
+        "bytes": 0,
+        "type": "xmlhttprequest",
+        "url": "https://fundingchoicesmessages.google.com/el/AGSKWxV3l1mihiEZeTRXwuk9aRLe1V29v-TSTcZFmiJuN1LxcHwEHvjyJvbez-KPsFN0xOkOwV4KS8kuEDvIkm7ywpmAN0iARawWyadjrj-pFag_w9IjzjNYas_-ZO6yvYm0jcOIgD1Bag=="
+      },
+      {
+        "bytes": 12161,
+        "type": "fetch",
+        "url": "https://gamebuddies.io/api/games"
+      },
+      {
+        "bytes": 18508,
+        "type": "img",
+        "url": "https://gamebuddies.io/brand/gabu-mark-v17.webp"
+      },
+      {
+        "bytes": 0,
+        "type": "img",
+        "url": "https://gamebuddies.io/brand/gamebuddies-lockup-v17.webp"
+      },
+      {
+        "bytes": 9872,
+        "type": "img",
+        "url": "https://gamebuddies.io/icons/gabu/gabu-category-social.webp"
+      },
+      {
+        "bytes": 10042,
+        "type": "img",
+        "url": "https://gamebuddies.io/icons/gabu/gabu-tier-admin.webp"
+      }
+    ],
+    "scripts": [
+      "https://fundingchoicesmessages.google.com/i/pub-8974800579879060?ers=1",
+      "https://gamebuddies.io/assets/index-Djq8fPqB.js",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxU2S00mtUdZ6_edy3kLYz-p4hh6COL5RbPmYrlQHPN-iS92stgnw8qYi-mgBOhimi_uoPQP-5oIB76dBbNduk01CxeeJGDjXC9-EiRHLFY5UyoDIHcF03RIxiSxVb4msagbsppWAg==?fccs=W1siQUtzUm9sX2doR0w2d2lBTjh2UVBQLTVVSXJMTllHVmJkcnF2WFVXY2twQkEwbE9rZ3U5bENwaDJLV3FwX08xSGNNWWdtN1FJY0VXNGVnbVpsak05b3NWaE5OMEhoSEVCVlE9PSJdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbMTc5Mzg5ODAxMSw3MzcwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3XV0sImh0dHBzOi8vZ2FtZWJ1ZGRpZXMuaW8vZGF0ZW5zY2h1dHoiLG51bGwsW1s4LCJhMGFqaGxEUjVDRSJdLFs5LCJlbi1VUyJdLFszNSwiMTc5Mzg5Nzk5MyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxUAfs83BHqEaQQOf4_AArbAlq1ROUQ_lHOdutm4DX87zwGCAE6HZkh1JpYHmdEHu3gGRwQLU6kMJWSDKMoK5LNVEAI2KFOE5-8ZCNdrCOj_Sdkdp1lyw-1JHBJz6ng1aklHaiXwlA==?fccs=W1siQUtzUm9sX2doR0w2d2lBTjh2UVBQLTVVSXJMTllHVmJkcnF2WFVXY2twQkEwbE9rZ3U5bENwaDJLV3FwX08xSGNNWWdtN1FJY0VXNGVnbVpsak05b3NWaE5OMEhoSEVCVlE9PSJdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbMTc5Mzg5ODAxMSw4MTAwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3LDldLG51bGwsMixudWxsLCJlbiJdLCJodHRwczovL2dhbWVidWRkaWVzLmlvL2RhdGVuc2NodXR6IixudWxsLFtbOCwiYTBhamhsRFI1Q0UiXSxbOSwiZW4tVVMiXSxbMzUsIjE3OTM4OTc5OTMiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+      "https://fundingchoicesmessages.google.com/f/AGSKWxUdYWr9ghk0S3WbCyeHPm_VoYHu3pviyD2nDSWgJqcvAXOEzi_RMM7PwB9UBGZ6fzE5bY0g0ZXpWajhysuK9iD_PIOm8Vr711r4CZElS5cZQefB9_80zegWf8cSO2BacbK0FbC2lw==?fccs=W1siQUtzUm9sX2doR0w2d2lBTjh2UVBQLTVVSXJMTllHVmJkcnF2WFVXY2twQkEwbE9rZ3U5bENwaDJLV3FwX08xSGNNWWdtN1FJY0VXNGVnbVpsak05b3NWaE5OMEhoSEVCVlE9PSJdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxbMTc5Mzg5ODAxMiw4NDYwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3LDksNl0sbnVsbCwyLG51bGwsImVuIixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vZ2FtZWJ1ZGRpZXMuaW8vZGF0ZW5zY2h1dHoiLG51bGwsW1s4LCJhMGFqaGxEUjVDRSJdLFs5LCJlbi1VUyJdLFszNSwiMTc5Mzg5Nzk5MyJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+      "https://static.cloudflareinsights.com/beacon.min.js",
+      "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+    ],
+    "stylesheets": [
+      "https://gamebuddies.io/assets/index-TL-L7pL2.css",
+      "https://gamebuddies.io/assets/content-BTwn-_9a.css",
+      "https://gamebuddies.io/assets/InstallPrompt-DAP8L5FF.css",
+      "https://gamebuddies.io/assets/DailyLoginModal-z3fUAKx1.css",
+      "https://gamebuddies.io/assets/BottomSheetWrapper-CX6anNNh.css",
+      "https://gamebuddies.io/assets/DailyChallengesModal-BXVoD7zI.css",
+      "https://gamebuddies.io/assets/SurveyBanner-DhrQqyiW.css",
+      "https://gamebuddies.io/assets/auth-Bh6rXITo.css",
+      "https://gamebuddies.io/assets/FullScreenOverlay-BrTRVbRC.css",
+      "https://gamebuddies.io/assets/HalloweenBannerScene-DLRfNWU0.css",
+      "https://gamebuddies.io/assets/money-DBto_SGc.css",
+      "https://gamebuddies.io/assets/collection-B_PTrkuS.css",
+      "https://gamebuddies.io/assets/Premium-CC-orYME.css",
+      "https://gamebuddies.io/assets/premium-experience-D5fi4-4c.css",
+      "https://gamebuddies.io/assets/LobbyChatChannels-D0akjSbH.css",
+      "https://gamebuddies.io/assets/ChatWindow-DModM7NG.css",
+      "https://gamebuddies.io/assets/ProfilePeekModal-DbrgjGSa.css",
+      "https://gamebuddies.io/assets/FriendList-DpTg2Nqn.css",
+      "https://gamebuddies.io/assets/social-EnUR0Qe6.css",
+      "https://gamebuddies.io/assets/FeedbackFab-Aniw2Xtj.css",
+      "https://gamebuddies.io/assets/GameInviteToast-BUkd4BxY.css",
+      "https://gamebuddies.io/assets/FriendOnlineToast-CQ-7SIqP.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 3,
+      "px": 40,
+      "query": "max-width 40px"
+    },
+    {
+      "count": 1,
+      "px": 72,
+      "query": "max-width 72px"
+    },
+    {
+      "count": 1,
+      "px": 300,
+      "query": "max-width 300px"
+    },
+    {
+      "count": 9,
+      "px": 359,
+      "query": "max-width 359px"
+    },
+    {
+      "count": 3,
+      "px": 360,
+      "query": "max-width 360px"
+    },
+    {
+      "count": 1,
+      "px": 420,
+      "query": "max-width 420px"
+    },
+    {
+      "count": 1,
+      "px": 430,
+      "query": "max-width 430px"
+    },
+    {
+      "count": 18,
+      "px": 479,
+      "query": "max-width 479px"
+    },
+    {
+      "count": 2,
+      "px": 480,
+      "query": "min-width 480px"
+    },
+    {
+      "count": 1,
+      "px": 559,
+      "query": "max-width 559px"
+    },
+    {
+      "count": 2,
+      "px": 560,
+      "query": "min-width 560px"
+    },
+    {
+      "count": 3,
+      "px": 600,
+      "query": "min-width 600px"
+    },
+    {
+      "count": 1,
+      "px": 600,
+      "query": "max-width 600px"
+    },
+    {
+      "count": 6,
+      "px": 640,
+      "query": "min-width 640px"
+    },
+    {
+      "count": 2,
+      "px": 650,
+      "query": "max-width 650px"
+    },
+    {
+      "count": 1,
+      "px": 700,
+      "query": "min-width 700px"
+    },
+    {
+      "count": 1,
+      "px": 700,
+      "query": "max-width 700px"
+    },
+    {
+      "count": 2,
+      "px": 720,
+      "query": "min-width 720px"
+    },
+    {
+      "count": 1,
+      "px": 740,
+      "query": "max-width 740px"
+    },
+    {
+      "count": 3,
+      "px": 760,
+      "query": "min-width 760px"
+    },
+    {
+      "count": 41,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 1,
+      "px": 768,
+      "query": "max-width 768px"
+    },
+    {
+      "count": 20,
+      "px": 768,
+      "query": "min-width 768px"
+    },
+    {
+      "count": 3,
+      "px": 820,
+      "query": "min-width 820px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 10,
+        "value": "#27305c"
+      },
+      {
+        "count": 2,
+        "value": "#100d25"
+      },
+      {
+        "count": 1,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 1,
+        "value": "#100d29"
+      },
+      {
+        "count": 1,
+        "value": "#1c365a"
+      },
+      {
+        "count": 1,
+        "value": "#1b3d62"
+      },
+      {
+        "count": 1,
+        "value": "#cf3c55"
+      },
+      {
+        "count": 1,
+        "value": "#0a0818"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "var(--color-accent)",
+      "--beta-banner-height": "48px",
+      "--border-chunky": "2px",
+      "--border-chunky-lg": "3px",
+      "--border-glow-cyan": "1px solid rgba(0, 217, 255, .15)",
+      "--border-glow-pink": "1px solid rgba(233, 69, 96, .15)",
+      "--brand-primary-border": "rgba(0, 217, 255, .34)",
+      "--brand-primary-border-hover": "rgba(0, 217, 255, .48)",
+      "--brand-primary-fill": "linear-gradient(180deg, #f15a74 0%, #e94560 58%, #cf3c55 100%)",
+      "--brand-primary-fill-active": "linear-gradient(180deg, #dc4761 0%, #cb3b54 100%)",
+      "--brand-primary-fill-hover": "linear-gradient(180deg, #f66d84 0%, #ee516b 58%, #da435c 100%)",
+      "--brand-primary-shadow": "rgba(233, 69, 96, .28)",
+      "--brand-primary-shadow-strong": "rgba(233, 69, 96, .36)",
+      "--brand-surface-border": "rgba(0, 217, 255, .28)",
+      "--brand-surface-border-hover": "rgba(0, 217, 255, .48)",
+      "--brand-surface-fill": "linear-gradient(180deg, rgba(6, 31, 50, .96) 0%, rgba(4, 21, 35, .96) 100%)",
+      "--brand-surface-fill-hover": "linear-gradient(180deg, rgba(8, 43, 68, .98) 0%, rgba(5, 28, 46, .98) 100%)",
+      "--brand-surface-text": "#dff8ff",
+      "--brand-wordmark-buddies": "#e94560",
+      "--brand-wordmark-game": "#ffffff",
+      "--brand-wordmark-io": "#00d9ff",
+      "--breakpoint-2xl": "1536px",
+      "--breakpoint-3xl": "1920px",
+      "--breakpoint-lg": "1024px",
+      "--breakpoint-md": "768px",
+      "--breakpoint-sm": "480px",
+      "--breakpoint-xl": "1400px",
+      "--breakpoint-xs": "320px",
+      "--card-bg": "var(--color-surface-1)",
+      "--card-hover-glow": "0 0 15px rgba(0, 217, 255, .08), 0 20px 50px rgba(0, 0, 0, .5)",
+      "--card-hover-shadow": "0 20px 50px rgba(0, 0, 0, .5), 0 10px 25px rgba(0, 0, 0, .3)",
+      "--card-shadow": "var(--shadow-md)",
+      "--chat-bottom-gap": "max(8px, env(safe-area-inset-bottom, 0px))",
+      "--chat-left-gap": "max(8px, env(safe-area-inset-left, 0px))",
+      "--chat-right-gap": "max(8px, env(safe-area-inset-right, 0px))",
+      "--chat-top-gap": "max(8px, env(safe-area-inset-top, 0px))",
+      "--color-accent": "#cf3c55",
+      "--color-bg-1": "#0a0418",
+      "--color-bg-2": "#120928",
+      "--color-border-strong": "rgba(255, 255, 255, .18)",
+      "--color-border-subtle": "rgba(255, 255, 255, .08)",
+      "--color-card": "var(--dialog-surface)",
+      "--color-danger": "#d90429",
+      "--color-discord": "#9563f7",
+      "--color-discord-base": "#7c3aed",
+      "--color-gold": "#FFD700",
+      "--color-gold-ui": "#ffb020",
+      "--color-primary": "#e94560",
+      "--color-purple": "#a855f7",
+      "--color-secondary": "#00d9ff",
+      "--color-success": "#4caf50",
+      "--color-surface-1": "#151b30",
+      "--color-surface-2": "#1c2240",
+      "--color-text-muted": "#8a90aa",
+      "--color-text-primary": "#e7e9f1",
+      "--color-text-secondary": "#a8aec7",
+      "--color-warning": "#ff9800",
+      "--control-secondary-bg": "color-mix(in srgb, var(--color-secondary) 7%, var(--color-surface-2))",
+      "--control-secondary-bg-hover": "color-mix(in srgb, var(--color-secondary) 13%, var(--color-surface-2))",
+      "--control-secondary-border": "color-mix(in srgb, var(--color-text-secondary) 58%, var(--color-surface-2))",
+      "--control-secondary-border-hover": "var(--color-secondary)",
+      "--control-secondary-focus": "var(--color-secondary)",
+      "--control-secondary-radius": "10px",
+      "--control-secondary-shadow": "0 3px 0 var(--look-ink, var(--ink-deep, #05020e))",
+      "--control-secondary-shadow-pressed": "0 1px 0 var(--look-ink, var(--ink-deep, #05020e))",
+      "--control-secondary-text": "var(--color-text-primary)",
+      "--dialog-border": "var(--color-border-subtle)",
+      "--dialog-raised": "var(--color-surface-2)",
+      "--dialog-shadow": "0 18px 64px rgb(0 0 0 / .34)",
+      "--dialog-surface": "var(--color-surface-1)",
+      "--ease-out-back": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--ease-out-expo": "cubic-bezier(.16, 1, .3, 1)",
+      "--ease-out-quart": "cubic-bezier(.25, 1, .5, 1)",
+      "--ease-spring": "cubic-bezier(.175, .885, .32, 1.275)",
+      "--focus-ring": "0 0 0 3px rgba(0, 217, 255, .25)",
+      "--focus-ring-strong": "0 0 0 3px rgba(0, 217, 255, .3)",
+      "--font-body": "\"Bungee\", \"Outfit\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+      "--font-chunky": "\"Bungee\", \"Titan One\", \"Arial Black\", system-ui, sans-serif",
+      "--font-code": "ui-monospace, \"SF Mono\", \"Cascadia Mono\", \"Roboto Mono\", Consolas, Menlo, monospace",
+      "--font-display": "\"Bungee\", \"Orbitron\", \"Inter\", \"Segoe UI\", system-ui, sans-serif",
+      "--font-mono": "\"Bungee\", \"Outfit\", ui-monospace, monospace",
+      "--font-read": "\"Outfit\", \"Inter\", \"Segoe UI\", system-ui, -apple-system, sans-serif",
+      "--gb-aurora-1": "233, 69, 96",
+      "--gb-aurora-2": "0, 217, 255",
+      "--gb-bg-1": "#0a0418",
+      "--gb-bg-2": "#120928",
+      "--gb-bg-deep": "#05020e",
+      "--gb-star": "255, 255, 255",
+      "--glass-1": "rgba(255, 255, 255, .06)",
+      "--glass-2": "rgba(255, 255, 255, .1)",
+      "--glass-3": "rgba(255, 255, 255, .15)",
+      "--glow-cyan-medium": "0 0 20px rgba(0, 217, 255, .15), 0 0 40px rgba(0, 217, 255, .06)",
+      "--glow-cyan-soft": "0 0 15px rgba(0, 217, 255, .1)",
+      "--glow-cyan-strong": "0 0 20px rgba(0, 217, 255, .2), 0 0 40px rgba(0, 217, 255, .1)",
+      "--glow-green-medium": "0 0 20px rgba(0, 230, 118, .15), 0 0 40px rgba(0, 230, 118, .06)",
+      "--glow-green-soft": "0 0 15px rgba(0, 230, 118, .1)",
+      "--glow-pink-medium": "0 0 20px rgba(233, 69, 96, .15), 0 0 40px rgba(233, 69, 96, .06)",
+      "--glow-pink-soft": "0 0 15px rgba(233, 69, 96, .1)",
+      "--glow-pink-strong": "0 0 20px rgba(233, 69, 96, .2), 0 0 40px rgba(233, 69, 96, .1)",
+      "--gradient-primary": "var(--brand-primary-fill)",
+      "--gradient-screen": "linear-gradient(180deg, #0a0a18, #0d1020, #0a0a18)",
+      "--gradient-secondary": "linear-gradient(135deg, var(--color-secondary) 0%, #00b4d8 100%)",
+      "--gradient-surface": "linear-gradient(145deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .02))",
+      "--gradient-vignette": "radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, .4) 100%)",
+      "--header-height": "64px",
+      "--ink-deep": "#05020e",
+      "--is-touch-device": "0",
+      "--kit-border-strong": "#3a4166",
+      "--kit-card-gold": "#1b1830",
+      "--kit-cyan-soft": "#7deeff",
+      "--kit-danger": "#a8233a",
+      "--kit-ease-out": "cubic-bezier(.16, 1, .3, 1)",
+      "--kit-ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--kit-error": "#ff6b81",
+      "--kit-error-text": "#ffb3c0",
+      "--kit-footer": "#07030f",
+      "--kit-fun-cyan": "var(--color-secondary, #00d9ff)",
+      "--kit-fun-cyan-soft": "color-mix(in srgb, var(--kit-fun-cyan) 14%, var(--color-surface-1, #151b30))",
+      "--kit-fun-gold": "var(--color-gold-ui, #ffb020)",
+      "--kit-fun-gold-soft": "color-mix(in srgb, var(--kit-fun-gold) 13%, var(--color-surface-1, #151b30))",
+      "--kit-fun-lime": "#a3e635",
+      "--kit-fun-lime-soft": "color-mix(in srgb, var(--kit-fun-lime) 12%, var(--color-surface-1, #151b30))",
+      "--kit-fun-orange": "var(--color-warning, #ff9800)",
+      "--kit-fun-orange-soft": "color-mix(in srgb, var(--kit-fun-orange) 14%, var(--color-surface-1, #151b30))",
+      "--kit-fun-pink": "var(--color-primary, #e94560)",
+      "--kit-fun-pink-soft": "color-mix(in srgb, var(--kit-fun-pink) 16%, var(--color-surface-1, #151b30))",
+      "--kit-fun-purple": "var(--color-purple, #a855f7)",
+      "--kit-fun-purple-soft": "color-mix(in srgb, var(--kit-fun-purple) 16%, var(--color-surface-1, #151b30))",
+      "--kit-gold-text": "#ffcf70",
+      "--kit-line": "rgba(255, 255, 255, .1)",
+      "--kit-line-strong": "rgba(255, 255, 255, .14)",
+      "--kit-on-cyan": "#041523",
+      "--kit-on-gold": "#2a1800",
+      "--kit-on-pink": "#ffffff",
+      "--kit-shadow-btn": "4px 4px 0 var(--ink-deep, #05020e)",
+      "--kit-sheet": "#10152a",
+      "--kit-success-text": "#6fe3a8",
+      "--kit-text-body": "#c9cde0",
+      "--kit-track": "#262b47",
+      "--kit-track-strong": "#2a2f4d",
+      "--kit-well": "#0f0826",
+      "--leading-normal": "1.5",
+      "--leading-relaxed": "1.625",
+      "--leading-snug": "1.25",
+      "--leading-tight": "1",
+      "--mobile-nav-height": "0px",
+      "--modal-w-lg": "1040px",
+      "--modal-w-md": "720px",
+      "--modal-w-sm": "480px",
+      "--neon-glow": "0 0 20px rgba(0, 217, 255, .25)",
+      "--page-gutter": "24px",
+      "--page-max": "100%",
+      "--panel-bg": "linear-gradient(135deg, rgba(8, 18, 32, 1), rgba(11, 24, 41, 1))",
+      "--panel-bg-hover": "linear-gradient(135deg, rgba(11, 24, 41, 1), rgba(14, 28, 48, 1))",
+      "--panel-border": "1px solid rgba(0, 217, 255, .18)",
+      "--panel-border-hover": "rgba(0, 217, 255, .35)",
+      "--panel-shadow": "0 20px 48px rgba(2, 8, 23, .35)",
+      "--primary-bg": "var(--color-bg-1)",
+      "--primary-color": "var(--color-primary)",
+      "--radius-lg": "16px",
+      "--radius-md": "12px",
+      "--radius-pill": "999px",
+      "--radius-sm": "8px",
+      "--radius-xl": "20px",
+      "--safe-area-bottom": "env(safe-area-inset-bottom, 0px)",
+      "--safe-area-left": "env(safe-area-inset-left, 0px)",
+      "--safe-area-right": "env(safe-area-inset-right, 0px)",
+      "--safe-area-top": "env(safe-area-inset-top, 0px)",
+      "--secondary-bg": "var(--color-bg-2)",
+      "--secondary-color": "var(--color-secondary)",
+      "--secondary-control-bg": "var(--control-secondary-bg)",
+      "--secondary-control-border": "var(--color-success)",
+      "--secondary-control-shadow": "none",
+      "--secondary-control-text": "var(--color-success)",
+      "--secondary-control-transform": "translateY(-50%)",
+      "--secondary-control-transform-pressed": "translateY( calc(-50% + 2px) )",
+      "--shadow-hard-lg": "8px 8px 0 var(--ink-deep)",
+      "--shadow-hard-md": "5px 5px 0 var(--ink-deep)",
+      "--shadow-hard-sm": "3px 3px 0 var(--ink-deep)",
+      "--shadow-inset": "inset 0 2px 6px rgba(0, 0, 0, .4)",
+      "--shadow-lg": "0 20px 60px rgba(0, 0, 0, .45)",
+      "--shadow-lifted": "0 8px 24px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .2)",
+      "--shadow-md": "0 10px 30px rgba(0, 0, 0, .35)",
+      "--shadow-sm": "0 6px 18px rgba(0, 0, 0, .25)",
+      "--space-2xl": "48px",
+      "--space-lg": "24px",
+      "--space-md": "16px",
+      "--space-sm": "8px",
+      "--space-xl": "32px",
+      "--space-xs": "4px",
+      "--text-2xl": "clamp(2rem, 1.85rem + .5vw, 3rem)",
+      "--text-3xl": "clamp(2.5rem, 2.3rem + .6vw, 3.75rem)",
+      "--text-4xl": "clamp(3rem, 2.75rem + .8vw, 4.5rem)",
+      "--text-base": "clamp(1rem, .92rem + .25vw, 1.375rem)",
+      "--text-glow-cyan": "0 0 8px rgba(0, 217, 255, .2)",
+      "--text-glow-pink": "0 0 8px rgba(233, 69, 96, .2)",
+      "--text-glow-white": "0 0 8px rgba(255, 255, 255, .15)",
+      "--text-lg": "clamp(1.25rem, 1.15rem + .3vw, 1.75rem)",
+      "--text-primary": "var(--color-text-primary)",
+      "--text-secondary": "var(--color-text-secondary)",
+      "--text-sm": ".875rem",
+      "--text-xl": "clamp(1.5rem, 1.35rem + .45vw, 2.25rem)",
+      "--text-xs": ".75rem",
+      "--total-top-offset": "calc(var(--header-height) + var(--beta-banner-height))",
+      "--touch-target-comfortable": "48px",
+      "--touch-target-min": "44px",
+      "--z-bottom-nav": "1000",
+      "--z-dropdown": "100",
+      "--z-fab": "900",
+      "--z-fixed": "300",
+      "--z-header": "1001",
+      "--z-modal": "2000",
+      "--z-overlay": "1500",
+      "--z-sticky": "200",
+      "--z-toast": "3000",
+      "--z-tooltip": "4000"
+    },
+    "font_faces": [
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "800"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Orbitron",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "900"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Inter",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "700"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 68,
+        "value": "17px"
+      },
+      {
+        "count": 62,
+        "value": "15px"
+      },
+      {
+        "count": 16,
+        "value": "24px"
+      },
+      {
+        "count": 8,
+        "value": "18px"
+      },
+      {
+        "count": 7,
+        "value": "14px"
+      },
+      {
+        "count": 3,
+        "value": "16px"
+      },
+      {
+        "count": 3,
+        "value": "13px"
+      },
+      {
+        "count": 1,
+        "value": "36px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 95,
+        "value": "400"
+      },
+      {
+        "count": 37,
+        "value": "700"
+      },
+      {
+        "count": 22,
+        "value": "500"
+      },
+      {
+        "count": 9,
+        "value": "600"
+      },
+      {
+        "count": 6,
+        "value": "650"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 158,
+        "value": "Outfit, Inter, \"Segoe UI\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 10,
+        "value": "Bungee, Orbitron, Inter, \"Segoe UI\", system-ui, sans-serif"
+      },
+      {
+        "count": 1,
+        "value": "Bungee, Outfit, \"Segoe UI\", system-ui, -apple-system, sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "700px"
+      },
+      {
+        "count": 1,
+        "value": "482.816px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 23,
+        "value": "10px"
+      },
+      {
+        "count": 2,
+        "value": "3px"
+      },
+      {
+        "count": 1,
+        "value": "0px 0px 12px 12px"
+      },
+      {
+        "count": 1,
+        "value": "8px"
+      },
+      {
+        "count": 1,
+        "value": "999px"
+      },
+      {
+        "count": 1,
+        "value": "20px"
+      },
+      {
+        "count": 1,
+        "value": "14px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 10,
+        "value": "rgb(7, 4, 20) 0px 3px 0px 0px"
+      },
+      {
+        "count": 2,
+        "value": "rgba(217, 209, 235, 0.14) 0px 0px 0px 1px"
+      },
+      {
+        "count": 2,
+        "value": "rgb(7, 4, 20) 5px 5px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(0, 217, 255, 0.4) 0px 4px 20px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(7, 4, 20) 2px 2px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgb(7, 4, 20) 4px 4px 0px 0px, rgba(255, 255, 255, 0.14) 0px 2px 0px 0px inset"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 79,
+        "value": "10px"
+      },
+      {
+        "count": 26,
+        "value": "5px"
+      },
+      {
+        "count": 23,
+        "value": "8px"
+      },
+      {
+        "count": 21,
+        "value": "6px"
+      },
+      {
+        "count": 12,
+        "value": "24px"
+      },
+      {
+        "count": 11,
+        "value": "16px"
+      },
+      {
+        "count": 11,
+        "value": "14px"
+      },
+      {
+        "count": 9,
+        "value": "20px"
+      },
+      {
+        "count": 8,
+        "value": "7px"
+      },
+      {
+        "count": 7,
+        "value": "20.8px"
+      },
+      {
+        "count": 6,
+        "value": "12px"
+      },
+      {
+        "count": 4,
+        "value": "28px"
+      },
+      {
+        "count": 3,
+        "value": "48px"
+      },
+      {
+        "count": 3,
+        "value": "36px"
+      },
+      {
+        "count": 2,
+        "value": "32px"
+      },
+      {
+        "count": 2,
+        "value": "2px"
+      },
+      {
+        "count": 2,
+        "value": "18px"
+      },
+      {
+        "count": 1,
+        "value": "88px"
+      },
+      {
+        "count": 1,
+        "value": "64px"
+      },
+      {
+        "count": 1,
+        "value": "110px"
+      },
+      {
+        "count": 1,
+        "value": "72px"
+      },
+      {
+        "count": 1,
+        "value": "4px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 91,
+        "value": "#e4ddf3"
+      },
+      {
+        "count": 34,
+        "value": "#f8f5ff"
+      },
+      {
+        "count": 18,
+        "value": "#d9d1eb"
+      },
+      {
+        "count": 14,
+        "value": "#b5abd0"
+      },
+      {
+        "count": 3,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 2,
+        "value": "#ffffff"
+      },
+      {
+        "count": 2,
+        "value": "#e94560"
+      },
+      {
+        "count": 1,
+        "value": "#000000"
+      },
+      {
+        "count": 1,
+        "value": "#ffcf70"
+      },
+      {
+        "count": 1,
+        "value": "#effcff"
+      },
+      {
+        "count": 1,
+        "value": "#a855f7"
+      },
+      {
+        "count": 1,
+        "value": "#ffb020"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "Privacy Policy & Cookies"
+    },
+    {
+      "level": 2,
+      "text": "CONTENTS"
+    },
+    {
+      "level": 2,
+      "text": "1. Data Controller"
+    },
+    {
+      "level": 2,
+      "text": "2. Data We Collect"
+    },
+    {
+      "level": 3,
+      "text": "Account Data"
+    },
+    {
+      "level": 3,
+      "text": "Game Session Data"
+    },
+    {
+      "level": 3,
+      "text": "Technical Data"
+    },
+    {
+      "level": 3,
+      "text": "Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "level": 3,
+      "text": "Lobby usage totals"
+    },
+    {
+      "level": 2,
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "level": 2,
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "level": 2,
+      "text": "5. International Data Transfers"
+    },
+    {
+      "level": 2,
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Advertising, advertising partners and full IP addresses"
+    },
+    {
+      "level": 2,
+      "text": "7. Third-Party Services"
+    },
+    {
+      "level": 2,
+      "text": "8. Data Retention"
+    },
+    {
+      "level": 2,
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "level": 2,
+      "text": "10. Data Security"
+    },
+    {
+      "level": 2,
+      "text": "11. Children's Privacy"
+    },
+    {
+      "level": 2,
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "level": 2,
+      "text": "13. Contact"
+    },
+    {
+      "level": 1,
+      "text": "Terms of Service"
+    },
+    {
+      "level": 2,
+      "text": "Contents"
+    },
+    {
+      "level": 2,
+      "text": "1. Acceptance of Terms"
+    },
+    {
+      "level": 2,
+      "text": "2. Service Description"
+    },
+    {
+      "level": 2,
+      "text": "3. User Accounts"
+    },
+    {
+      "level": 2,
+      "text": "4. User Conduct"
+    },
+    {
+      "level": 2,
+      "text": "5. Intellectual Property & User-Generated Content"
+    },
+    {
+      "level": 2,
+      "text": "6. Disclaimer of Warranties"
+    },
+    {
+      "level": 2,
+      "text": "7. Limitation of Liability"
+    },
+    {
+      "level": 2,
+      "text": "8. Withdrawal Rights (Widerrufsbelehrung)"
+    },
+    {
+      "level": 2,
+      "text": "9. Modifications"
+    },
+    {
+      "level": 2,
+      "text": "10. Governing Law"
+    },
+    {
+      "level": 2,
+      "text": "11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)"
+    },
+    {
+      "level": 2,
+      "text": "12. Contact"
+    },
+    {
+      "level": 1,
+      "text": "Impressum"
+    },
+    {
+      "level": 2,
+      "text": "Service Provider"
+    },
+    {
+      "level": 2,
+      "text": "Contact"
+    },
+    {
+      "level": 2,
+      "text": "Regulatory and Supervisory Authority"
+    },
+    {
+      "level": 2,
+      "text": "VAT ID"
+    },
+    {
+      "level": 2,
+      "text": "Consumer Dispute Resolution"
+    },
+    {
+      "level": 2,
+      "text": "Games"
+    },
+    {
+      "level": 2,
+      "text": "Help"
+    },
+    {
+      "level": 2,
+      "text": "Company"
+    },
+    {
+      "level": 2,
+      "text": "Looking for an alternative?"
+    },
+    {
+      "level": 2,
+      "text": "Legal"
+    }
+  ],
+  "health": {
+    "errors": [
+      {
+        "kind": "console",
+        "text": "TypeError: Failed to fetch dynamically imported module: https://gamebuddies.io/assets/Legal-B2LdL-5c.js",
+        "url": ""
+      }
+    ],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 88,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1430,
+          "y": 0
+        },
+        {
+          "gap": 20,
+          "h": 48,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 335,
+          "y": 19
+        },
+        {
+          "h": 8030,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "main",
+          "w": 1430,
+          "y": 88
+        },
+        {
+          "h": 7791,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 1382,
+          "y": 183
+        },
+        {
+          "background": "#1c365a",
+          "gap": 8,
+          "h": 192,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1382,
+          "y": 183
+        },
+        {
+          "h": 572,
+          "heading": "CONTENTS",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 280,
+          "y": 403
+        },
+        {
+          "gap": 10,
+          "h": 215,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 403
+        },
+        {
+          "gap": 10,
+          "h": 1327,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 654
+        },
+        {
+          "gap": 10,
+          "h": 310,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2017
+        },
+        {
+          "gap": 10,
+          "h": 265,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2363
+        },
+        {
+          "gap": 10,
+          "h": 768,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2665
+        },
+        {
+          "gap": 10,
+          "h": 2142,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3468
+        },
+        {
+          "gap": 10,
+          "h": 1005,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 5647
+        },
+        {
+          "gap": 10,
+          "h": 186,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 6688
+        },
+        {
+          "gap": 10,
+          "h": 351,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 6909
+        },
+        {
+          "gap": 10,
+          "h": 128,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7296
+        },
+        {
+          "gap": 10,
+          "h": 128,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7460
+        },
+        {
+          "gap": 10,
+          "h": 157,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7624
+        },
+        {
+          "gap": 10,
+          "h": 157,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7817
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 483,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 380,
+            "x": 24
+          },
+          "h": 514,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "footer",
+          "w": 1430,
+          "y": 8118
+        },
+        {
+          "h": 292,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 203,
+          "y": 8169
+        },
+        {
+          "h": 292,
+          "heading": "Help",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 203,
+          "y": 8169
+        },
+        {
+          "h": 292,
+          "heading": "Company",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 203,
+          "y": 8169
+        },
+        {
+          "gap": 24,
+          "h": 44,
+          "heading": "Looking for an alternative?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 1382,
+          "y": 8488
+        },
+        {
+          "h": 292,
+          "heading": "Legal",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 203,
+          "y": 8169
+        }
+      ],
+      "page_h": 8631,
+      "page_w": 1430,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 12,
+        "h3": 18
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 112,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 758,
+          "y": 0
+        },
+        {
+          "gap": 32,
+          "h": 40,
+          "pad": [
+            0,
+            24,
+            0,
+            24
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 758,
+          "y": 69
+        },
+        {
+          "h": 8085,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 758,
+          "y": 112
+        },
+        {
+          "h": 7846,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "section",
+          "w": 710,
+          "y": 207
+        },
+        {
+          "background": "#1c365a",
+          "gap": 8,
+          "h": 259,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            24,
+            28,
+            24,
+            28
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 710,
+          "y": 207
+        },
+        {
+          "gap": 10,
+          "h": 215,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 554
+        },
+        {
+          "gap": 10,
+          "h": 1327,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 799
+        },
+        {
+          "gap": 10,
+          "h": 310,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2156
+        },
+        {
+          "gap": 10,
+          "h": 265,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2496
+        },
+        {
+          "gap": 10,
+          "h": 768,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 2792
+        },
+        {
+          "gap": 10,
+          "h": 2142,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 3589
+        },
+        {
+          "gap": 10,
+          "h": 1005,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 5762
+        },
+        {
+          "gap": 10,
+          "h": 186,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 6797
+        },
+        {
+          "gap": 10,
+          "h": 351,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7012
+        },
+        {
+          "gap": 10,
+          "h": 128,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7394
+        },
+        {
+          "gap": 10,
+          "h": 128,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7551
+        },
+        {
+          "gap": 10,
+          "h": 157,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7709
+        },
+        {
+          "gap": 10,
+          "h": 157,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 700,
+          "y": 7896
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 483,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 483,
+            "x": 24
+          },
+          "h": 596,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 758,
+          "y": 8197
+        },
+        {
+          "h": 53,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 710,
+          "y": 8399
+        },
+        {
+          "h": 53,
+          "heading": "Help",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 710,
+          "y": 8452
+        },
+        {
+          "h": 53,
+          "heading": "Company",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 710,
+          "y": 8505
+        },
+        {
+          "h": 53,
+          "heading": "Compare",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 710,
+          "y": 8558
+        },
+        {
+          "h": 44,
+          "heading": "Legal",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 710,
+          "y": 8623
+        }
+      ],
+      "page_h": 8793,
+      "page_w": 758,
+      "type": {
+        "body": 18,
+        "h1": 36,
+        "h2": 24,
+        "h3": 18
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 64,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "h": 11350,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 390,
+          "y": 64
+        },
+        {
+          "h": 11115,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 155
+        },
+        {
+          "background": "#1c365a",
+          "gap": 8,
+          "h": 268,
+          "heading": "Privacy Policy & Cookies",
+          "pad": [
+            18,
+            16,
+            18,
+            16
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 358,
+          "y": 155
+        },
+        {
+          "gap": 10,
+          "h": 196,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 511
+        },
+        {
+          "gap": 10,
+          "h": 1996,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 736
+        },
+        {
+          "gap": 10,
+          "h": 392,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 2762
+        },
+        {
+          "gap": 10,
+          "h": 429,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3184
+        },
+        {
+          "gap": 10,
+          "h": 1129,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3642
+        },
+        {
+          "gap": 10,
+          "h": 3161,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4801
+        },
+        {
+          "gap": 10,
+          "h": 1557,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 7992
+        },
+        {
+          "gap": 10,
+          "h": 275,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 9579
+        },
+        {
+          "gap": 10,
+          "h": 536,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 9884
+        },
+        {
+          "gap": 10,
+          "h": 169,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 10450
+        },
+        {
+          "gap": 10,
+          "h": 169,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 10649
+        },
+        {
+          "gap": 10,
+          "h": 222,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 10848
+        },
+        {
+          "gap": 10,
+          "h": 169,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 11100
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 483,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 358,
+            "x": 16
+          },
+          "h": 596,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 390,
+          "y": 11414
+        },
+        {
+          "h": 53,
+          "heading": "Games",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 358,
+          "y": 11616
+        },
+        {
+          "h": 53,
+          "heading": "Help",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 358,
+          "y": 11669
+        },
+        {
+          "h": 53,
+          "heading": "Company",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 358,
+          "y": 11722
+        },
+        {
+          "h": 53,
+          "heading": "Compare",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 358,
+          "y": 11775
+        },
+        {
+          "h": 44,
+          "heading": "Legal",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 358,
+          "y": 11840
+        }
+      ],
+      "page_h": 12010,
+      "page_w": 390,
+      "type": {
+        "body": 15,
+        "h1": 25,
+        "h2": 21,
+        "h3": 17
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "https://gamebuddies.io/datenschutz#main-content",
+      "text": "Skip to main content"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "GameBuddies.io home"
+    },
+    {
+      "href": "https://gamebuddies.io/games",
+      "text": "Games"
+    },
+    {
+      "href": "https://gamebuddies.io/clicker",
+      "text": "Gabu Clicker"
+    },
+    {
+      "href": "https://gamebuddies.io/now-playing",
+      "text": "Now Playing"
+    },
+    {
+      "href": "https://gamebuddies.io/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://gamebuddies.io/premium?src=header",
+      "text": "Premium"
+    },
+    {
+      "href": "https://gamebuddies.io/login",
+      "text": "Log in"
+    },
+    {
+      "href": "https://gamebuddies.io/games",
+      "text": "Games"
+    },
+    {
+      "href": "https://gamebuddies.io/clicker",
+      "text": "Gabu Clicker"
+    },
+    {
+      "href": "https://gamebuddies.io/now-playing",
+      "text": "Now Playing"
+    },
+    {
+      "href": "https://gamebuddies.io/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://gamebuddies.io/privacy",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "href": "https://gamebuddies.io/terms",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "https://gamebuddies.io/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "mailto:contact@gamebuddies.io",
+      "text": "contact@gamebuddies.io"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-1",
+      "text": "1 Data Controller"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-2",
+      "text": "2 Data We Collect"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-3",
+      "text": "3 How We Use Your Data"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-4",
+      "text": "4 Legal Bases for Data Processing"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-5",
+      "text": "5 International Data Transfers"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-6",
+      "text": "6 Cookies & Local Storage"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-7",
+      "text": "7 Third-Party Services"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-8",
+      "text": "8 Data Retention"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-9",
+      "text": "9 Your Rights Under GDPR"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-10",
+      "text": "10 Data Security"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-11",
+      "text": "11 Children's Privacy"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-12",
+      "text": "12 Changes to This Policy"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-13",
+      "text": "13 Contact"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-1",
+      "text": "1Data Controller"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-2",
+      "text": "2Data We Collect"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-3",
+      "text": "3How We Use Your Data"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-4",
+      "text": "4Legal Bases for Data Processing"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-5",
+      "text": "5International Data Transfers"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-6",
+      "text": "6Cookies & Local Storage"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-7",
+      "text": "7Third-Party Services"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-8",
+      "text": "8Data Retention"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-9",
+      "text": "9Your Rights Under GDPR"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-10",
+      "text": "10Data Security"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-11",
+      "text": "11Children's Privacy"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-12",
+      "text": "12Changes to This Policy"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#privacy-13",
+      "text": "13Contact"
+    },
+    {
+      "href": "mailto:contact@gamebuddies.io",
+      "text": "contact@gamebuddies.io"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-1",
+      "text": "1Acceptance of Terms"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-2",
+      "text": "2Service Description"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-3",
+      "text": "3User Accounts"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-4",
+      "text": "4User Conduct"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-5",
+      "text": "5Intellectual Property & User-Generated Content"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-6",
+      "text": "6Disclaimer of Warranties"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-7",
+      "text": "7Limitation of Liability"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-8",
+      "text": "8Withdrawal Rights (Widerrufsbelehrung)"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-9",
+      "text": "9Modifications"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-10",
+      "text": "10Governing Law"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#dsa",
+      "text": "11Content Moderation & Reporting Illegal Content (EU Digital Services Act)"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-12",
+      "text": "12Contact"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-1",
+      "text": "1Acceptance of Terms"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-2",
+      "text": "2Service Description"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-3",
+      "text": "3User Accounts"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-4",
+      "text": "4User Conduct"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-5",
+      "text": "5Intellectual Property & User-Generated Content"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-6",
+      "text": "6Disclaimer of Warranties"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-7",
+      "text": "7Limitation of Liability"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-8",
+      "text": "8Withdrawal Rights (Widerrufsbelehrung)"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-9",
+      "text": "9Modifications"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-10",
+      "text": "10Governing Law"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#dsa",
+      "text": "11Content Moderation & Reporting Illegal Content (EU Digital Services Act)"
+    },
+    {
+      "href": "https://gamebuddies.io/datenschutz#terms-12",
+      "text": "12Contact"
+    },
+    {
+      "href": "mailto:contact@gamebuddies.io",
+      "text": "contact@gamebuddies.io"
+    },
+    {
+      "href": "mailto:contact@gamebuddies.io",
+      "text": "contact@gamebuddies.io"
+    },
+    {
+      "href": "https://gamebuddies.io/",
+      "text": "GameBuddies.io"
+    },
+    {
+      "href": "https://discord.gg/PffCAzYMuF",
+      "text": "Join our Discord"
+    },
+    {
+      "href": "https://www.youtube.com/@GameBuddiesIO",
+      "text": "GameBuddies.io on YouTube"
+    },
+    {
+      "href": "https://www.tiktok.com/@gamebuddies.io",
+      "text": "GameBuddies.io on TikTok"
+    },
+    {
+      "href": "https://www.instagram.com/gamebuddies.io/",
+      "text": "GameBuddies.io on Instagram"
+    },
+    {
+      "href": "https://gamebuddies.io/games",
+      "text": "All 20 party games"
+    },
+    {
+      "href": "https://gamebuddies.io/rooms",
+      "text": "Open rooms"
+    },
+    {
+      "href": "https://gamebuddies.io/free-browser-games",
+      "text": "Free browser games"
+    },
+    {
+      "href": "https://gamebuddies.io/games-with-video-chat",
+      "text": "Games with video chat"
+    },
+    {
+      "href": "https://gamebuddies.io/tv",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "https://gamebuddies.io/clicker",
+      "text": "Gabu Clicker"
+    },
+    {
+      "href": "https://gamebuddies.io/#how-it-works",
+      "text": "How it works"
+    },
+    {
+      "href": "https://gamebuddies.io/streamers",
+      "text": "For streamers"
+    },
+    {
+      "href": "https://gamebuddies.io/about#contact",
+      "text": "Contact us"
+    },
+    {
+      "href": "https://gamebuddies.io/about",
+      "text": "About us"
+    },
+    {
+      "href": "https://gamebuddies.io/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://gamebuddies.io/now-playing",
+      "text": "Watch streams"
+    },
+    {
+      "href": "https://gamebuddies.io/premium?src=footer",
+      "text": "Premium"
+    },
+    {
+      "href": "https://gamebuddies.io/community",
+      "text": "Friends of GameBuddies"
+    },
+    {
+      "href": "https://gamebuddies.io/jackbox-alternative",
+      "text": "Jackbox alternative"
+    },
+    {
+      "href": "https://gamebuddies.io/kahoot-alternative",
+      "text": "Kahoot alternative"
+    },
+    {
+      "href": "https://gamebuddies.io/gartic-phone-alternative",
+      "text": "Gartic Phone alternative"
+    },
+    {
+      "href": "https://gamebuddies.io/privacy",
+      "text": "Privacy"
+    },
+    {
+      "href": "https://gamebuddies.io/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "https://gamebuddies.io/impressum",
+      "text": "Impressum"
+    }
+  ],
+  "meta": {
+    "description": "Privacy policy and data protection information for GameBuddies.io.",
+    "icons": [
+      "https://gamebuddies.io/favicon.png?v=gabu-v17",
+      "https://gamebuddies.io/favicon.ico?v=gabu-v17",
+      "https://gamebuddies.io/favicon.ico?v=gabu-v17",
+      "https://gamebuddies.io/apple-touch-icon.png?v=gabu-v17"
+    ],
+    "og_image": "https://gamebuddies.io/gblogo.webp",
+    "og_title": "Privacy Policy | GameBuddies.io",
+    "theme_color": "#000000"
+  },
+  "outline": [
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 56,
+        "w": 264,
+        "x": 583,
+        "y": -900
+      },
+      "class": "skip-link",
+      "color": "#000000",
+      "depth": 4,
+      "font": "16px 700",
+      "href": "https://gamebuddies.io/datenschutz#main-content",
+      "tag": "a",
+      "text": "Skip to main content"
+    },
+    {
+      "background": "#100d29",
+      "box": {
+        "h": 88,
+        "w": 1430,
+        "x": 0,
+        "y": 0
+      },
+      "class": "gb rd-hdr",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 41,
+        "w": 208,
+        "x": 24,
+        "y": 22
+      },
+      "class": "rd-hdr__logo",
+      "color": "#0000ee",
+      "depth": 7,
+      "font": "16px 400",
+      "href": "https://gamebuddies.io/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 41,
+        "w": 208,
+        "x": 24,
+        "y": 22
+      },
+      "color": "#0000ee",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "picture"
+    },
+    {
+      "alt": "GameBuddies.io",
+      "box": {
+        "h": 41,
+        "w": 208,
+        "x": 24,
+        "y": 22
+      },
+      "color": "#0000ee",
+      "depth": 9,
+      "font": "16px 400",
+      "src": "https://gamebuddies.io/brand/gamebuddies-lockup-v17.webp?v=gabu-v17",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 335,
+        "x": 252,
+        "y": 19
+      },
+      "class": "gb-nav rd-hdr__nav",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 252,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/games",
+      "tag": "a",
+      "text": "Games"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 87,
+        "x": 320,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/clicker",
+      "tag": "a",
+      "text": "Gabu Clicker"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 109,
+        "x": 428,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/now-playing",
+      "tag": "a",
+      "text": "Now Playing"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 428,
+        "y": 34
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 30,
+        "x": 557,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/blog",
+      "tag": "a",
+      "text": "Blog"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 97,
+        "x": 1099,
+        "y": 19
+      },
+      "class": "gb-link rd-hdr__premium",
+      "color": "#ffcf70",
+      "depth": 7,
+      "font": "16px 600",
+      "href": "https://gamebuddies.io/premium?src=header",
+      "tag": "a",
+      "text": "Premium"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1216,
+        "y": 19
+      },
+      "class": "gb-keycap",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "13.3333px 650",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1228,
+        "y": 34
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "13.3333px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 132,
+        "x": 1274,
+        "y": 19
+      },
+      "class": "gb-btn gb-btn--secondary rd-hdr__login",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 650",
+      "href": "https://gamebuddies.io/login",
+      "tag": "a",
+      "text": "Log in"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1374,
+        "y": 762
+      },
+      "class": "feedback-fab",
+      "color": "#effcff",
+      "depth": 4,
+      "font": "14px 700",
+      "tag": "button",
+      "text": "Feedback"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1388,
+        "y": 776
+      },
+      "color": "#effcff",
+      "depth": 5,
+      "font": "14px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 8030,
+        "w": 1430,
+        "x": 0,
+        "y": 88
+      },
+      "color": "#ffffff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "id": "main-content",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 47,
+        "w": 1382,
+        "x": 24,
+        "y": 88
+      },
+      "class": "gb-tabs rd-legal-tabs",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "16px 400",
+      "role": "tablist",
+      "tag": "div",
+      "text": "Privacy & Cookies Terms of Service Impressum"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 180,
+        "x": 24,
+        "y": 88
+      },
+      "class": "gb-tab rd-legal-tab",
+      "color": "#f8f5ff",
+      "depth": 10,
+      "font": "15px 700",
+      "href": "https://gamebuddies.io/privacy",
+      "id": "rd-legal-tab-privacy",
+      "role": "tab",
+      "tag": "a",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 170,
+        "x": 204,
+        "y": 88
+      },
+      "class": "gb-tab rd-legal-tab",
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/terms",
+      "id": "rd-legal-tab-terms",
+      "role": "tab",
+      "tag": "a",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 132,
+        "x": 374,
+        "y": 88
+      },
+      "class": "gb-tab rd-legal-tab",
+      "color": "#d9d1eb",
+      "depth": 10,
+      "font": "15px 600",
+      "href": "https://gamebuddies.io/impressum",
+      "id": "rd-legal-tab-impressum",
+      "role": "tab",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 7791,
+        "w": 1382,
+        "x": 24,
+        "y": 183
+      },
+      "class": "rd-legal-doc",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "display": "block",
+      "font": "16px 400",
+      "id": "privacy",
+      "role": "tabpanel",
+      "tag": "section"
+    },
+    {
+      "background": "#1c365a",
+      "box": {
+        "h": 192,
+        "w": 1382,
+        "x": 24,
+        "y": 183
+      },
+      "class": "gb-panel gb-panel--cyan rd-legal-head",
+      "color": "#f8f5ff",
+      "depth": 10,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 96,
+        "w": 96,
+        "x": 1284,
+        "y": 145
+      },
+      "class": "gb-g gb-g-rarity-rare gb-g--96",
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "16px 400",
+      "src": "https://gamebuddies.io/icons/gabu/gabu-rarity-rare.webp?v=gabu-v17",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 549,
+        "x": 114,
+        "y": 213
+      },
+      "class": "gb-h1 rd-legal-title",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "font": "36px 400",
+      "tag": "h1",
+      "text": "Privacy Policy & Cookies"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 1322,
+        "x": 54,
+        "y": 265
+      },
+      "class": "gb-lead rd-legal-subtitle",
+      "color": "#d9d1eb",
+      "depth": 11,
+      "font": "18px 400",
+      "tag": "p",
+      "text": "Information about the processing of personal data"
+    },
+    {
+      "box": {
+        "h": 23,
+        "w": 171,
+        "x": 427,
+        "y": 316
+      },
+      "class": "gb-link",
+      "color": "#00d9ff",
+      "depth": 13,
+      "font": "15px 600",
+      "href": "mailto:contact@gamebuddies.io",
+      "tag": "a",
+      "text": "contact@gamebuddies.io"
+    },
+    {
+      "background": "#cf3c55",
+      "box": {
+        "h": 44,
+        "w": 192,
+        "x": 1184,
+        "y": 305
+      },
+      "class": "gb-btn gb-btn--primary gb-btn--sm rd-legal-cookies",
+      "color": "#ffffff",
+      "depth": 12,
+      "font": "13px 400",
+      "tag": "button",
+      "text": "Cookie settings"
+    },
+    {
+      "box": {
+        "h": 572,
+        "w": 280,
+        "x": 24,
+        "y": 403
+      },
+      "class": "rd-legal-contents-wide",
+      "color": "#f8f5ff",
+      "depth": 11,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 280,
+        "x": 24,
+        "y": 403
+      },
+      "class": "gb-label rd-section-label",
+      "color": "#b5abd0",
+      "depth": 12,
+      "font": "12px 700",
+      "id": "rd-legal-contents-privacy",
+      "tag": "h2",
+      "text": "CONTENTS"
+    },
+    {
+      "box": {
+        "h": 544,
+        "w": 280,
+        "x": 24,
+        "y": 431
+      },
+      "class": "rd-legal-toc",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ol"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 431
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-1",
+      "tag": "a",
+      "text": "1 Data Controller"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 473
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-2",
+      "tag": "a",
+      "text": "2 Data We Collect"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 515
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-3",
+      "tag": "a",
+      "text": "3 How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 557
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-4",
+      "tag": "a",
+      "text": "4 Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 599
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-5",
+      "tag": "a",
+      "text": "5 International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 641
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-6",
+      "tag": "a",
+      "text": "6 Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 683
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-7",
+      "tag": "a",
+      "text": "7 Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 725
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-8",
+      "tag": "a",
+      "text": "8 Data Retention"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 767
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-9",
+      "tag": "a",
+      "text": "9 Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 809
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-10",
+      "tag": "a",
+      "text": "10 Data Security"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 851
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-11",
+      "tag": "a",
+      "text": "11 Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 893
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-12",
+      "tag": "a",
+      "text": "12 Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 280,
+        "x": 24,
+        "y": 935
+      },
+      "color": "#d9d1eb",
+      "depth": 14,
+      "font": "15px 400",
+      "href": "https://gamebuddies.io/datenschutz#privacy-13",
+      "tag": "a",
+      "text": "13 Contact"
+    },
+    {
+      "box": {
+        "h": 215,
+        "w": 700,
+        "x": 376,
+        "y": 403
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-1",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 403
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "1. Data Controller"
+    },
+    {
+      "box": {
+        "h": 173,
+        "w": 700,
+        "x": 376,
+        "y": 444
+      },
+      "class": "rd-legal-address",
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Responsible for data processing on this website: Gamebuddies - Sebastian Krol c/o Online-Impressum #6596 Europaring 90 53757 Sankt Augustin Email: contact@gamebuddies.io"
+    },
+    {
+      "box": {
+        "h": 1327,
+        "w": 700,
+        "x": 376,
+        "y": 654
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-2",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 654
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "2. Data We Collect"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 703
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Account Data"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 737
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "When you create an account (via email, Discord, or Google), we store your email address, username, and avatar selection. Authentication is handled by Supabase."
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 813
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Game Session Data"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 847
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We temporarily store game room participation, scores, and game state data to enable real-time multiplayer gameplay."
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 923
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Technical Data"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 957
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "When you visit our website or use its online features, technical connection data such as your IP address, browser and device information is processed to deliver content, establish connections and prot"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 1178
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Local Storage"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 1212
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use browser storage for language, audio and theme preferences, session tokens and privacy choices. Consent for optional analytics and consent for advertising are separate choices. The uses of cooki"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 1316
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 1351
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Player names, chat messages and text typed in games (for example answers, prompts or custom bingo squares) are automatically checked against a list of offensive words. This filter is a fixed word list"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 1571
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "tag": "h3",
+      "text": "Lobby usage totals"
+    },
+    {
+      "box": {
+        "h": 376,
+        "w": 700,
+        "x": 376,
+        "y": 1605
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "To improve the lobby, we count 2D/3D opens and switches, loading outcomes, Premium entry points and wardrobe actions, including when optional analytics is declined. Messages contain only the action an"
+    },
+    {
+      "box": {
+        "h": 310,
+        "w": 700,
+        "x": 376,
+        "y": 2017
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-3",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2017
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 2058
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use your data exclusively to:"
+    },
+    {
+      "box": {
+        "h": 134,
+        "w": 700,
+        "x": 376,
+        "y": 2097
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 2241
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We also use advertising to finance the service. The processing of advertising data, including the possible disclosure of full IP addresses to advertising buyers, and your choices are explained in sect"
+    },
+    {
+      "box": {
+        "h": 265,
+        "w": 700,
+        "x": 376,
+        "y": 2363
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-4",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2363
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 2404
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We process your data on the following legal bases under the GDPR:"
+    },
+    {
+      "box": {
+        "h": 185,
+        "w": 700,
+        "x": 376,
+        "y": 2443
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 768,
+        "w": 700,
+        "x": 376,
+        "y": 2665
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-5",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 2665
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "5. International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 2706
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Some of our third-party service providers are based in the United States:"
+    },
+    {
+      "box": {
+        "h": 156,
+        "w": 700,
+        "x": 376,
+        "y": 2745
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 144,
+        "w": 700,
+        "x": 376,
+        "y": 2911
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Our website and our European game servers run at Hetzner Online GmbH in Nuremberg, Germany. In addition, we operate one game server at a Hetzner location in the United States (Ashburn, Virginia) so th"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3066
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "PostHog is hosted in the EU (Frankfurt, Germany) and does not transfer data outside the EU. It is used only with your consent for analytics and session recording."
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 3133
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "These transfers are safeguarded by the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs) as approved by the European Commission. You may request a copy of the applicable sa"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 3230
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Advertising buyers may also receive data outside the EEA. A transfer must have a basis under Chapter V GDPR: for example, an applicable adequacy decision, including the EU-US Data Privacy Framework on"
+    },
+    {
+      "box": {
+        "h": 2142,
+        "w": 700,
+        "x": 376,
+        "y": 3468
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-6",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 3468
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 3509
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Google Analytics 4 also loads before you make a choice and when you decline analytics cookies (Advanced Consent Mode). In these cases, Google receives cookieless measurement pings with consent status,"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 3722
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "GameBuddies.io uses optional analytics cookies only with your explicit consent. When you accept analytics cookies, we use:"
+    },
+    {
+      "box": {
+        "h": 93,
+        "w": 700,
+        "x": 376,
+        "y": 3789
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 3892
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Optional analytics cookies require analytics consent. Advertising has separate consent settings; accepting analytics alone does not enable personalised advertising. You can refuse both optional uses i"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 3989
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We may show advertising through Google AdSense. Google and its partners may use advertising cookies to serve ads based on visits to this or other websites, subject to your consent where required. The "
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 4201
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We also use local storage (not cookies) for:"
+    },
+    {
+      "box": {
+        "h": 203,
+        "w": 700,
+        "x": 376,
+        "y": 4240
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 4453
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "You can change your cookie preference at any time by clearing your browser storage or clicking the cookie settings link in the footer. You can clear all local data at any time through your browser set"
+    },
+    {
+      "box": {
+        "h": 24,
+        "w": 700,
+        "x": 376,
+        "y": 4558
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "18px 700",
+      "id": "privacy-advertising",
+      "tag": "h3",
+      "text": "Advertising, advertising partners and full IP addresses"
+    },
+    {
+      "box": {
+        "h": 173,
+        "w": 700,
+        "x": 376,
+        "y": 4592
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use Google AdSense to finance the service through advertising. When advertising services are loaded, Google can receive your IP address and technical request information, such as browser and device"
+    },
+    {
+      "box": {
+        "h": 202,
+        "w": 700,
+        "x": 376,
+        "y": 4776
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "If full IP address sharing is enabled in AdSense, Google may include your complete, untruncated IP address in bid requests sent to advertising buyers through Authorized Buyers, Display & Video 360 and"
+    },
+    {
+      "box": {
+        "h": 231,
+        "w": 700,
+        "x": 376,
+        "y": 4988
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "For visitors in the EEA, the UK and Switzerland, consent for personalised advertising and the associated collection, sharing and use of personal data is obtained through Google Privacy & messaging. Th"
+    },
+    {
+      "box": {
+        "h": 231,
+        "w": 700,
+        "x": 376,
+        "y": 5229
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Google and the advertising partners shown in the consent dialog may receive and process these data. The partner list links to their privacy information and describes their purposes and retention perio"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 5470
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Your consent choices are stored by the consent platform so that they can be respected on later visits. Google states that its website consent cookie FCCDCF has a maximum lifetime of 390 days; you can "
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 700,
+        "x": 376,
+        "y": 5567
+      },
+      "class": "gb-btn gb-btn--secondary gb-btn--sm",
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "13px 650",
+      "tag": "button",
+      "text": "Cookie settings"
+    },
+    {
+      "box": {
+        "h": 1005,
+        "w": 700,
+        "x": 376,
+        "y": 5647
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-7",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 5647
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "7. Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 5688
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We use the following third-party services:"
+    },
+    {
+      "box": {
+        "h": 857,
+        "w": 700,
+        "x": 376,
+        "y": 5727
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 6594
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Transactional emails (sign-up confirmations, password resets, magic links, service notices) are sent from our own mail server in Germany; no third party is involved in those messages."
+    },
+    {
+      "box": {
+        "h": 186,
+        "w": 700,
+        "x": 376,
+        "y": 6688
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-8",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 6688
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "8. Data Retention"
+    },
+    {
+      "box": {
+        "h": 144,
+        "w": 700,
+        "x": 376,
+        "y": 6729
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Account data is stored until you request deletion. Game session data is temporary and deleted shortly after the game ends. For advertising data held by Google and advertising partners, the relevant re"
+    },
+    {
+      "box": {
+        "h": 351,
+        "w": 700,
+        "x": 376,
+        "y": 6909
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-9",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 6909
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 700,
+        "x": 376,
+        "y": 6950
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "Under the General Data Protection Regulation (GDPR), you have the following rights:"
+    },
+    {
+      "box": {
+        "h": 203,
+        "w": 700,
+        "x": 376,
+        "y": 6989
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 58,
+        "w": 700,
+        "x": 376,
+        "y": 7203
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "To exercise any of these rights, contact us at contact@gamebuddies.io. We will respond within 30 days."
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 700,
+        "x": 376,
+        "y": 7296
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-10",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 7296
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "10. Data Security"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 7338
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS/WSS), secure authentication via Supabase, and regular security reviews."
+    },
+    {
+      "box": {
+        "h": 128,
+        "w": 700,
+        "x": 376,
+        "y": 7460
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-11",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 7460
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "11. Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 87,
+        "w": 700,
+        "x": 376,
+        "y": 7501
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "GameBuddies.io does not intentionally collect personal data from children under the age of 16. If you believe a child under 16 has provided us with personal data, please contact us and we will delete "
+    },
+    {
+      "box": {
+        "h": 157,
+        "w": 700,
+        "x": 376,
+        "y": 7624
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-12",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 7624
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 116,
+        "w": 700,
+        "x": 376,
+        "y": 7665
+      },
+      "color": "#e4ddf3",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "We publish changes to this privacy policy here with an updated date. Continuing to use the service does not give or extend consent. If a planned processing activity requires consent that your previous"
+    },
+    {
+      "box": {
+        "h": 157,
+        "w": 700,
+        "x": 376,
+        "y": 7817
+      },
+      "class": "rd-legal-section",
+      "color": "#f8f5ff",
+      "depth": 12,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "id": "privacy-13",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 31,
+        "w": 700,
+        "x": 376,
+        "y": 7817
+      },
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "24px 700",
+      "tag": "h2",
+      "text": "13. Contact"
+    },
+    {
+      "box": {
+        "h": 116,
+        "w": 700,
+        "x": 376,
+        "y": 7858
+      },
+      "class": "rd-legal-address",
+      "color": "#f8f5ff",
+      "depth": 13,
+      "font": "17px 400",
+      "tag": "p",
+      "text": "For any questions about this privacy policy or your personal data, contact us at: Sebastian Krol GameBuddies.io Email: contact@gamebuddies.io"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 127,
+        "x": 24,
+        "y": 8010
+      },
+      "class": "gb-btn gb-btn--ghost gb-btn--sm rd-legal-top",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "13px 650",
+      "tag": "button",
+      "text": "Back to Top"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 39,
+        "y": 8023
+      },
+      "color": "#f8f5ff",
+      "depth": 10,
+      "font": "13px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#0a0818",
+      "box": {
+        "h": 514,
+        "w": 1430,
+        "x": 0,
+        "y": 8118
+      },
+      "class": "gb rd-ft app-footer",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 36,
+        "w": 229,
+        "x": 24,
+        "y": 8169
+      },
+      "class": "gb-wm rd-ft__wm",
+      "color": "#0000ee",
+      "depth": 7,
+      "font": "24px 400",
+      "href": "https://gamebuddies.io/",
+      "tag": "a",
+      "text": "GameBuddies.io"
+    },
+    {
+      "box": {
+        "h": 50,
+        "w": 380,
+        "x": 24,
+        "y": 8217
+      },
+      "class": "gb-text rd-ft__tagline",
+      "color": "#e4ddf3",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Party games with friends. Pick a game, send one link, play together in the browser."
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 167,
+        "x": 24,
+        "y": 8286
+      },
+      "class": "gb-btn gb-btn--secondary gb-btn--sm rd-ft__discord",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 650",
+      "href": "https://discord.gg/PffCAzYMuF",
+      "tag": "a",
+      "text": "Join our Discord"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 37,
+        "y": 8298
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 201,
+        "y": 8286
+      },
+      "class": "gb-keycap rd-ft__social-icon",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 650",
+      "href": "https://www.youtube.com/@GameBuddiesIO",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 22,
+        "w": 22,
+        "x": 212,
+        "y": 8297
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "16px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 255,
+        "y": 8286
+      },
+      "class": "gb-keycap rd-ft__social-icon",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 650",
+      "href": "https://www.tiktok.com/@gamebuddies.io",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 267,
+        "y": 8298
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "16px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 309,
+        "y": 8286
+      },
+      "class": "gb-keycap rd-ft__social-icon",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 650",
+      "href": "https://www.instagram.com/gamebuddies.io/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 321,
+        "y": 8298
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "16px 650",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 292,
+        "w": 203,
+        "x": 452,
+        "y": 8169
+      },
+      "class": "rd-ft__group rd-ft__group--games",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 203,
+        "x": 452,
+        "y": 8169
+      },
+      "class": "rd-ft__heading rd-ft__heading--pink",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "24px 700",
+      "id": "rd-ft-games",
+      "tag": "h2",
+      "text": "Games"
+    },
+    {
+      "box": {
+        "h": 264,
+        "w": 203,
+        "x": 452,
+        "y": 8196
+      },
+      "class": "rd-ft__list",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "rd-ft-list-games",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8196
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/games",
+      "tag": "a",
+      "text": "All 20 party games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8240
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/rooms",
+      "tag": "a",
+      "text": "Open rooms"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8284
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/free-browser-games",
+      "tag": "a",
+      "text": "Free browser games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8328
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/games-with-video-chat",
+      "tag": "a",
+      "text": "Games with video chat"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8372
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/tv",
+      "tag": "a",
+      "text": "Play on your TV"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 452,
+        "y": 8416
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/clicker",
+      "tag": "a",
+      "text": "Gabu Clicker"
+    },
+    {
+      "box": {
+        "h": 292,
+        "w": 203,
+        "x": 703,
+        "y": 8169
+      },
+      "class": "rd-ft__group rd-ft__group--help",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 203,
+        "x": 703,
+        "y": 8169
+      },
+      "class": "rd-ft__heading rd-ft__heading--cyan",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "24px 700",
+      "id": "rd-ft-help",
+      "tag": "h2",
+      "text": "Help"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 203,
+        "x": 703,
+        "y": 8196
+      },
+      "class": "rd-ft__list",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "rd-ft-list-help",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 703,
+        "y": 8196
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/#how-it-works",
+      "tag": "a",
+      "text": "How it works"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 703,
+        "y": 8240
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/streamers",
+      "tag": "a",
+      "text": "For streamers"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 99,
+        "x": 703,
+        "y": 8284
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "tag": "button",
+      "text": "Send feedback"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 703,
+        "y": 8328
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/about#contact",
+      "tag": "a",
+      "text": "Contact us"
+    },
+    {
+      "box": {
+        "h": 292,
+        "w": 203,
+        "x": 953,
+        "y": 8169
+      },
+      "class": "rd-ft__group rd-ft__group--company",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 203,
+        "x": 953,
+        "y": 8169
+      },
+      "class": "rd-ft__heading rd-ft__heading--purple",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "24px 700",
+      "id": "rd-ft-company",
+      "tag": "h2",
+      "text": "Company"
+    },
+    {
+      "box": {
+        "h": 220,
+        "w": 203,
+        "x": 953,
+        "y": 8196
+      },
+      "class": "rd-ft__list",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "id": "rd-ft-list-company",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 953,
+        "y": 8196
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/about",
+      "tag": "a",
+      "text": "About us"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 953,
+        "y": 8240
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/blog",
+      "tag": "a",
+      "text": "Blog"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 953,
+        "y": 8284
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/now-playing",
+      "tag": "a",
+      "text": "Watch streams"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 953,
+        "y": 8328
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/premium?src=footer",
+      "tag": "a",
+      "text": "Premium"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 953,
+        "y": 8372
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/community",
+      "tag": "a",
+      "text": "Friends of GameBuddies"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 1382,
+        "x": 24,
+        "y": 8488
+      },
+      "class": "rd-ft__group rd-ft__group--compare",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 171,
+        "x": 24,
+        "y": 8501
+      },
+      "class": "rd-ft__heading rd-ft__heading--gold",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "24px 700",
+      "id": "rd-ft-compare",
+      "tag": "h2",
+      "text": "Looking for an alternative?"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 469,
+        "x": 219,
+        "y": 8488
+      },
+      "class": "rd-ft__list",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "id": "rd-ft-list-compare",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 132,
+        "x": 219,
+        "y": 8488
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/jackbox-alternative",
+      "tag": "a",
+      "text": "Jackbox alternative"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 125,
+        "x": 375,
+        "y": 8488
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/kahoot-alternative",
+      "tag": "a",
+      "text": "Kahoot alternative"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 164,
+        "x": 524,
+        "y": 8488
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 10,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/gartic-phone-alternative",
+      "tag": "a",
+      "text": "Gartic Phone alternative"
+    },
+    {
+      "box": {
+        "h": 292,
+        "w": 203,
+        "x": 1204,
+        "y": 8169
+      },
+      "class": "rd-ft__legal",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 203,
+        "x": 1204,
+        "y": 8169
+      },
+      "class": "rd-ft__legal-title",
+      "color": "#ffb020",
+      "depth": 7,
+      "font": "14px 400",
+      "id": "rd-ft-legal",
+      "tag": "h2",
+      "text": "Legal"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 203,
+        "x": 1204,
+        "y": 8196
+      },
+      "class": "rd-ft__legal-list",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 1204,
+        "y": 8196
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/privacy",
+      "tag": "a",
+      "text": "Privacy"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 1204,
+        "y": 8240
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/terms",
+      "tag": "a",
+      "text": "Terms"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 203,
+        "x": 1204,
+        "y": 8284
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "https://gamebuddies.io/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 104,
+        "x": 1204,
+        "y": 8328
+      },
+      "class": "rd-ft__link",
+      "color": "#e4ddf3",
+      "depth": 9,
+      "font": "15px 500",
+      "tag": "button",
+      "text": "Privacy settings"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 141,
+        "x": 1071,
+        "y": 8567
+      },
+      "class": "gb-btn gb-btn--ghost gb-btn--sm rd-lang__ghost",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 650",
+      "tag": "button",
+      "text": "English"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1086,
+        "y": 8581
+      },
+      "color": "#f8f5ff",
+      "depth": 10,
+      "font": "15px 650",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 1181,
+        "y": 8581
+      },
+      "color": "#f8f5ff",
+      "depth": 10,
+      "font": "15px 650",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 184,
+        "x": 1222,
+        "y": 8567
+      },
+      "class": "gb-btn gb-btn--ghost gb-btn--sm rd-ft__sound",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 650",
+      "tag": "button",
+      "text": "Sound and motion"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1237,
+        "y": 8579
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 650",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 274,
+        "x": 24,
+        "y": 8579
+      },
+      "class": "gb-small rd-ft__copy",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "p",
+      "text": "© 2026 GameBuddies.io. All rights reserved."
+    }
+  ],
+  "page": {
+    "h": 8631,
+    "w": 1430
+  },
+  "text": "Skip to main content Games Gabu Clicker Now Playing Blog Premium Log in Feedback Privacy & Cookies Terms of Service Impressum Privacy Policy & Cookies Information about the processing of personal data Last updated: November 4, 2026 Questions: contact@gamebuddies.io Cookie settings CONTENTS 1 Data Controller 2 Data We Collect 3 How We Use Your Data 4 Legal Bases for Data Processing 5 International Data Transfers 6 Cookies & Local Storage 7 Third-Party Services 8 Data Retention 9 Your Rights Under GDPR 10 Data Security 11 Children's Privacy 12 Changes to This Policy 13 Contact 1. Data Controller Responsible for data processing on this website: Gamebuddies - Sebastian Krol c/o Online-Impressum #6596 Europaring 90 53757 Sankt Augustin Email: contact@gamebuddies.io 2. Data We Collect Account Data When you create an account (via email, Discord, or Google), we store your email address, username, and avatar selection. Authentication is handled by Supabase. Game Session Data We temporarily store game room participation, scores, and game state data to enable real-time multiplayer gameplay. Technical Data When you visit our website or use its online features, technical connection data such as your IP address, browser and device information is processed to deliver content, establish connections and protect the service. Our hosting provider Hetzner Online GmbH also processes connection data. Embedded analytics and advertising services can receive technical data directly from your browser; their purposes and your choices are described in sections 5 to 7. An IP address is personal data and is not anonymous merely because we do not store it in an account. Local Storage We use browser storage for language, audio and theme preferences, session tokens and privacy choices. Consent for optional analytics and consent for advertising are separate choices. The uses of cookies and similar storage are described in section 6. Moderation of Typed Text Player names, chat messages and text typed in games (for example answers, prompts or custom bingo squares) are automatically checked against a list of offensive words. This filter is a fixed word list, not an AI system. If it blocks a text, we store the blocked text together with the game, room code, player name, user ID and time, so that we can check the filter for mistakes and act against repeated abuse. Text that passes the filter is not stored for this purpose. We delete these entries after 12 months at the latest. Legal basis: Art. 6(1)(f) GDPR (our legitimate interest in keeping the games free of abusive content). Lobby usage totals To improve the lobby, we count 2D/3D opens and switches, loading outcomes, Premium entry points and wardrobe actions, including when optional analytics is declined. Messages contain only the action and a fixed category and travel over the existing game connection. Successful outfit changes are counted after saving. We check room access and limit excessive requests, then immediately combine the counts by calendar day. These statistics store no names, account, room or session identifiers, IP addresses, individual event times, item identifiers or personal activity histories. They do not set analytics cookies or create browser-storage identifiers. Daily totals are retained for up to 120 days. Connection data needed before aggregation is processed on the basis of Art. 6(1)(f) GDPR, for our legitimate interest in understanding feature usage and improving the lobby with minimal data. The ordinary connection and hosting processing described elsewhere in this policy still applies. Separate detailed UI analytics linked to a user identifier requires analytics consent. To object or ask about this processing, contact contact@gamebuddies.io. 3. How We Use Your Data We use your data exclusively to: Enable multiplayer gameplay and room management Manage your account and save your preferences Track achievements and game progress Improve the platform and fix bugs We also use advertising to finance the service. The processing of advertising data, including the possible disclosure of full IP addresses to advertising buyers, and your choices are explained in sections 6 and 7. 4. Legal Bases for Data Processing We process your data on the following legal bases under the GDPR: Art. 6(1)(b) — Contract fulfillment: Processing necessary to provide our services, including gameplay, account management, and room functionality. Art. 6(1)(f) — Legitimate interest: Processing for security purposes, fraud prevention, and infrastructure operation (e.g., hosting via Hetzner Online GmbH). Art. 6(1)(a) — Consent: Processing based on your explicit consent for optional features such as video chat (WebRTC), optional analytics, and advertising. 5. International Data Transfers Some of our third-party service providers are based in the United States: Supabase (database and authentication) Stripe (payment processing) Google LLC (Google Analytics 4 — cookies only with your consent; cookieless measurement also before or without consent; Google AdSense advertising — personalised only with your consent) Our website and our European game servers run at Hetzner Online GmbH in Nuremberg, Germany. In addition, we operate one game server at a Hetzner location in the United States (Ashburn, Virginia) so that players in the Americas get short response times. If you play through that server, the connection and gameplay data required for it are processed in the United States. PostHog is hosted in the EU (Frankfurt, Germany) and does not transfer data outside the EU. It is used only with your consent for analytics and session recording. These transfers are safeguarded by the EU-US Data Privacy Framework (DPF) and/or Standard Contractual Clauses (SCCs) as approved by the European Commission. You may request a copy of the applicable safeguards by contacting us at contact@gamebuddies.io. Advertising buyers may also receive data outside the EEA. A transfer must have a basis under Chapter V GDPR: for example, an applicable adequacy decision, including the EU-US Data Privacy Framework only for recipients covered by an active certification, or appropriate safeguards such as Standard Contractual Clauses with any necessary supplementary measures. Consent to personalised advertising does not by itself replace these transfer requirements. The partner list in the privacy settings links to the recipients and their transfer information. 6. Cookies & Local Storage Google Analytics 4 also loads before you make a choice and when you decline analytics cookies (Advanced Consent Mode). In these cases, Google receives cookieless measurement pings with consent status, technical request information and a cleaned page address. No Analytics cookies are read or written while analytics storage is denied. Cookieless does not mean that no data is sent to Google. These signals can support aggregate reporting and modelling; they do not provide a complete count of individual visitors. Analytics cookies, our custom game events and PostHog require analytics consent. GameBuddies.io uses optional analytics cookies only with your explicit consent. When you accept analytics cookies, we use: PostHog — for usage analytics, session recordings, and heatmaps to improve the user experience (data processed in the EU) Google Analytics 4 — for traffic analysis and marketing attribution Optional analytics cookies require analytics consent. Advertising has separate consent settings; accepting analytics alone does not enable personalised advertising. You can refuse both optional uses in the privacy settings. We may show advertising through Google AdSense. Google and its partners may use advertising cookies to serve ads based on visits to this or other websites, subject to your consent where required. The following subsection explains advertising data, full IP address sharing, recipients and your choices. Google privacy policy: https://policies.google.com/privacy · How Google uses data from partner sites: https://policies.google.com/technologies/partner-sites · Google Ads Settings: https://www.google.com/settings/ads. Premium members see no ads. We also use local storage (not cookies) for: Authentication session tokens Language preference Audio/music volume settings Theme preference (dark/light) Guest player name Cookie consent preference You can change your cookie preference at any time by clearing your browser storage or clicking the cookie settings link in the footer. You can clear all local data at any time through your browser settings. Advertising, advertising partners and full IP addresses We use Google AdSense to finance the service through advertising. When advertising services are loaded, Google can receive your IP address and technical request information, such as browser and device information. Depending on your privacy choices and the permitted advertising mode, cookies or other identifiers may also be processed to select, deliver and measure ads. With the necessary consent, these data may be used to create advertising profiles and select personalised ads. If full IP address sharing is enabled in AdSense, Google may include your complete, untruncated IP address in bid requests sent to advertising buyers through Authorized Buyers, Display & Video 360 and Google Ads. A bid request offers an advertising placement to potential buyers; recipients can receive the data even if they do not ultimately show an ad. The full IP address can help estimate location and associate requests with a connection or device for advertising selection and measurement. Google restricts this sharing for non-personalised ads, limited ads and restricted data processing requests. For visitors in the EEA, the UK and Switzerland, consent for personalised advertising and the associated collection, sharing and use of personal data is obtained through Google Privacy & messaging. The legal basis for processing covered by this consent is Art. 6(1)(a) GDPR; consent-required storage or access on your device is based on section 25(1) TDDDG. Analytics consent alone does not authorise personalised advertising. You can refuse, select individual purposes and providers, or withdraw consent through the privacy settings on this page or in the footer. Withdrawal does not affect the lawfulness of earlier processing based on consent. Google and the advertising partners shown in the consent dialog may receive and process these data. The partner list links to their privacy information and describes their purposes and retention periods. Recipients may be located outside the EEA; see section 5 for international transfers. Refusing personalised advertising does not prevent you from using the games. Depending on your remaining choices and the applicable requirements, Google may serve non-personalised or limited ads, or no ad. Non-personalised does not automatically mean cookieless, and limited ads do not mean that no technical data is processed. Your consent choices are stored by the consent platform so that they can be respected on later visits. Google states that its website consent cookie FCCDCF has a maximum lifetime of 390 days; you can change your choices sooner at any time. Cookie settings 7. Third-Party Services We use the following third-party services: Supabase — for authentication and database hosting (their privacy policy applies) WebRTC — for peer-to-peer video chat (video/audio data flows directly between players and is not stored on our servers) Stripe — for payment processing of optional premium subscriptions (Stripe's privacy policy applies) Hetzner Online GmbH (Industriestr. 25, 91710 Gunzenhausen, Germany) — for website and server hosting. Our servers are located in Germany (EU); one additional game server runs at a Hetzner location in the United States. As our hosting provider, Hetzner may process technical data such as IP addresses at the infrastructure level for security and performance purposes (their privacy policy applies) PostHog — for usage analytics, session recordings, and heatmaps (only with your consent; their privacy policy applies) Google Analytics 4 — for traffic analysis and marketing attribution (cookies only with your consent; cookieless measurement also before or without consent; Google's privacy policy applies) Google AdSense (Google LLC, USA) — for advertising delivery and measurement; Google and its advertising partners use cookies to serve and measure ads, and personalised ads are shown only with your consent, collected via Google's certified consent platform. Opt out: https://www.google.com/settings/ads · https://www.aboutads.info/choices/ · Privacy policy: https://policies.google.com/privacy. Premium members see no ads Cloudflare — for passive web analytics and CDN services (no tracking cookies; their privacy policy applies) Brevo (Sendinblue SAS, 7 rue de Madrid, 75008 Paris, France) — for sending announcement emails to larger groups of recipients (e.g. new game launches) and as a fallback for transactional email. Data processed: your email address and delivery metadata (timestamp, delivery status). Processing takes place within the EU. Art. 28 GDPR data processing agreement accepted at registration. No open/click tracking pixels are embedded in our emails. Transactional emails (sign-up confirmations, password resets, magic links, service notices) are sent from our own mail server in Germany; no third party is involved in those messages. 8. Data Retention Account data is stored until you request deletion. Game session data is temporary and deleted shortly after the game ends. For advertising data held by Google and advertising partners, the relevant retention periods or criteria are described in the partner information available through the privacy settings. The lifetime of a consent cookie is not a general retention period for advertising data. 9. Your Rights Under GDPR Under the General Data Protection Regulation (GDPR), you have the following rights: Right of access — request a copy of your personal data Right to rectification — correct inaccurate personal data Right to erasure — request deletion of your personal data Right to data portability — receive your data in a structured format Right to object — object to the processing of your data Right to restriction — request limited processing of your data To exercise any of these rights, contact us at contact@gamebuddies.io. We will respond within 30 days. 10. Data Security We implement appropriate technical and organizational measures to protect your data, including encrypted connections (HTTPS/WSS), secure authentication via Supabase, and regular security reviews. 11. Children's Privacy GameBuddies.io does not intentionally collect personal data from children under the age of 16. If you believe a child under 16 has provided us with personal data, please contact us and we will delete it promptly. 12. Changes to This Policy We publish changes to this privacy policy here with an updated date. Continuing to use the service does not give or extend consent. If a planned processing activity requires consent that your previous choice does not cover, we must obtain it before starting that activity. You can withdraw consent at any time with effect for the future. 13. Contact For any questions about this privacy policy or your personal data, contact us at: Sebastian Krol GameBuddies.io Email: contact@gamebuddies.io Back to Top GameBuddies.io Party games with friends. Pick a game, send one link, play together in the browser. Join our Discord Games All 20 party games Open rooms Free browser games Games with video chat Play on your TV Gabu Clicker Help How it works For streamers Send feedback Contact us Company About us Blog Watch streams Premium Friends of GameBuddies Looking for an alternative? Jackbox alternative Kahoot alternative Gartic Phone alternative Legal Privacy Terms Impressum Privacy settings English Sound and motion © 2026 GameBuddies.io. All rights reserved.",
+  "title": "Privacy Policy | GameBuddies.io",
+  "unreadable_stylesheets": 0,
+  "url": "https://gamebuddies.io/datenschutz",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

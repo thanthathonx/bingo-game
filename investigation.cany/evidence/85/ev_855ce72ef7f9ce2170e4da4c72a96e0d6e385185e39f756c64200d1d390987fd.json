@@ -1,0 +1,643 @@
+{
+  "id": "ev_855ce72ef7f9ce2170e4da4c72a96e0d6e385185e39f756c64200d1d390987fd",
+  "subject": {
+    "kind": "website",
+    "name": "about:blank"
+  },
+  "operation": "web_walkthrough_record",
+  "params": {
+    "action_count": 4,
+    "endpoint": "http://127.0.0.1:49989",
+    "launched": true,
+    "sensitive_value_declarations": 0
+  },
+  "result": {
+    "aborted": null,
+    "action_count": 4,
+    "browser": {
+      "cleanup": "closed",
+      "product": "Chrome/156.0.8078.80",
+      "started_by": "craft-anything"
+    },
+    "environment": {
+      "requested": {
+        "bypass_service_workers": true,
+        "color_scheme": "light",
+        "device_scale_factor": 1.0,
+        "height": 900,
+        "locale": "en-US",
+        "reduced_motion": true,
+        "timezone": "UTC",
+        "width": 1440
+      },
+      "settings": {
+        "locale": "applied",
+        "media": "applied",
+        "service_workers": "applied",
+        "timezone": "applied",
+        "viewport": "applied"
+      }
+    },
+    "events": {
+      "dropped": 0,
+      "families": [
+        "page_errors"
+      ],
+      "items": [],
+      "unavailable": []
+    },
+    "final_artifacts": {
+      "accessibility": {
+        "nodes": [
+          {
+            "name": "Play Bingo Friends Online - Free Custom Bingo Party Game",
+            "role": "RootWebArea"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "",
+            "role": "generic"
+          },
+          {
+            "name": "",
+            "role": "generic"
+          },
+          {
+            "name": "",
+            "role": "generic"
+          },
+          {
+            "name": "",
+            "role": "banner"
+          },
+          {
+            "name": "",
+            "role": "main"
+          },
+          {
+            "name": "",
+            "role": "contentinfo"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Bingo Friends · all games",
+            "role": "link"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Game audio",
+            "role": "button"
+          },
+          {
+            "name": "Settings",
+            "role": "button"
+          },
+          {
+            "name": "Language: English",
+            "role": "button"
+          },
+          {
+            "name": "Sign in",
+            "role": "button"
+          },
+          {
+            "name": "Menu",
+            "role": "button"
+          },
+          {
+            "name": "Language",
+            "role": "dialog"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Bingo Friends mascot",
+            "role": "image"
+          },
+          {
+            "name": "Bingo Friends",
+            "role": "heading"
+          },
+          {
+            "name": "",
+            "role": "paragraph"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "1-∞ players",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Party Game",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Create Room",
+            "role": "generic"
+          },
+          {
+            "name": "IMPRESSUM",
+            "role": "link"
+          },
+          {
+            "name": "PRIVACY",
+            "role": "link"
+          },
+          {
+            "name": "TERMS",
+            "role": "link"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "BINGO",
+            "role": "StaticText"
+          },
+          {
+            "name": " FRIENDS",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Sign in",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Menu",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "LANGUAGE",
+            "role": "heading"
+          },
+          {
+            "name": "Close",
+            "role": "button"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "English",
+            "role": "button"
+          },
+          {
+            "name": "Deutsch",
+            "role": "button"
+          },
+          {
+            "name": "Español",
+            "role": "button"
+          },
+          {
+            "name": "Português (Brasil)",
+            "role": "button"
+          },
+          {
+            "name": "Português (Portugal)",
+            "role": "button"
+          },
+          {
+            "name": "中文 ( 繁體 )",
+            "role": "button"
+          },
+          {
+            "name": "Bingo",
+            "role": "StaticText"
+          },
+          {
+            "name": " Friends",
+            "role": "StaticText"
+          },
+          {
+            "name": "Number bingo or your own event cards — complete a line to win.",
+            "role": "StaticText"
+          },
+          {
+            "name": "1-∞ players",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Party Game",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "",
+            "role": "paragraph"
+          },
+          {
+            "name": "",
+            "role": "form"
+          },
+          {
+            "name": "IMPRESSUM",
+            "role": "StaticText"
+          },
+          {
+            "name": "PRIVACY",
+            "role": "StaticText"
+          },
+          {
+            "name": "TERMS",
+            "role": "StaticText"
+          },
+          {
+            "name": "BINGO",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": " FRIENDS",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Sign in",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Menu",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "LANGUAGE",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "English",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Deutsch",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Español",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Português (Brasil)",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Português (Portugal)",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "中文 ( 繁體 )",
+            "role": "StaticText"
+          },
+          {
+            "name": "Bingo",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": " Friends",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Number bingo or your own event cards — ",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "complete a line to win.",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Start a new game and invite friends",
+            "role": "StaticText"
+          },
+          {
+            "name": "",
+            "role": "generic"
+          },
+          {
+            "name": "",
+            "role": "LabelText"
+          },
+          {
+            "name": "",
+            "role": "LabelText"
+          },
+          {
+            "name": "CREATE ROOM",
+            "role": "button"
+          },
+          {
+            "name": "IMPRESSUM",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "PRIVACY",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "TERMS",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "LANGUAGE",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "English",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Deutsch",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Español",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Português (Brasil)",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Português (Portugal)",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "中文 ( 繁體 )",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Start a new game and invite friends",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Your Name*",
+            "role": "textbox"
+          },
+          {
+            "name": "",
+            "role": "LabelText"
+          },
+          {
+            "name": "Streamer Mode (hide room code)",
+            "role": "checkbox"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Streamer Mode (hide room code)",
+            "role": "StaticText"
+          },
+          {
+            "name": "Big Screen Mode (TV — players join on their phones)",
+            "role": "checkbox"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "Big Screen Mode (TV — players join on their phones)",
+            "role": "StaticText"
+          },
+          {
+            "name": "CREATE ROOM",
+            "role": "StaticText"
+          },
+          {
+            "name": null,
+            "role": "none"
+          },
+          {
+            "name": "",
+            "role": "generic"
+          },
+          {
+            "name": "Your Name",
+            "role": "StaticText"
+          },
+          {
+            "name": "*",
+            "role": "StaticText"
+          },
+          {
+            "name": "Streamer Mode (hide room code)",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Big Screen Mode (TV — players join on their ",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "phones)",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "CREATE ROOM",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "Your Name",
+            "role": "InlineTextBox"
+          },
+          {
+            "name": "*",
+            "role": "InlineTextBox"
+          }
+        ]
+      }
+    },
+    "keep_bodies": {
+      "header_values": false,
+      "request_body": false,
+      "response_body": false
+    },
+    "network": null,
+    "secret_redactions": 0,
+    "secrets_hidden": 0,
+    "start_url": "about:blank",
+    "starting_storage": {
+      "cookies_set": [],
+      "failed": [],
+      "storage_entries_set": 0
+    },
+    "steps": [
+      {
+        "action": "goto",
+        "index": 0,
+        "status": "ok",
+        "step_id": "home",
+        "url": "http://127.0.0.1:54168/"
+      },
+      {
+        "action": "click",
+        "index": 1,
+        "status": "ok",
+        "step_id": "audio",
+        "url": "http://127.0.0.1:54168/"
+      },
+      {
+        "action": "click",
+        "index": 2,
+        "status": "ok",
+        "step_id": "menu",
+        "url": "http://127.0.0.1:54168/"
+      },
+      {
+        "action": "click",
+        "index": 3,
+        "status": "ok",
+        "step_id": "lang",
+        "url": "http://127.0.0.1:54168/"
+      }
+    ]
+  },
+  "summary": "Ran 4 of 4 scripted step(s) on about:blank.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "controlled_run",
+      "message": "This is one controlled run of scripted steps; different steps or timing would show different behaviour."
+    },
+    {
+      "code": "values_not_kept",
+      "message": "Request/response bodies are reduced to outlines, cookies and auth headers are dropped, and declared secrets are redacted in every encoding."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 4,
+    "total": 4
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "about:blank"
+    }
+  ],
+  "links": []
+}

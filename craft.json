@@ -1,0 +1,1407 @@
+{
+  "version": 2,
+  "name": "gamebuddies.io",
+  "request": "i want to clone game and ui bingo game i want game complete ready for play",
+  "target": {
+    "kind": "website",
+    "url": "https://gamebuddies.io/bingo/"
+  },
+  "stack": "React + TypeScript (Vite)",
+  "status": "ready",
+  "note": "Ready: about 59% like the original, 36 of 36 claims hold. 3 questions about the original are still open.",
+  "created_ms": 1793897967984,
+  "updated_ms": 1793901829227,
+  "checks": [
+    {
+      "round": 1,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 57.587465240506425,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px; at 390 px: the footer: 1 per row vs 2) | /impressum: 65% (1440 px: 64% alike (layout 71%, detail 56%; page height 10159 vs 1902 px); 768 px: 68% alike (layout 69%, detail 67%; page height 900 vs 2243 px); 390 px: 63% alike (layout 66%, detail 59%; page height 900 vs 2307 px); text 11% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"Service Provider\", \"Contact\", \"Regulatory and Supervisory Authority\", \"VAT ID\", \"Consumer Dispute Resolution\", \"Privacy Policy & Cookies\", \"1. Data Controller\"; missing words: data, consent, google, advertising, gamebuddies, analytics, may, processing, at, any, can, our; structure 35% alike; missing parts: 28 subheadings, 8 lists, a image; colours the original uses that the build doesn't: #e7e9f1 (text); text sizes the original uses that the build doesn't: 16.8px, 33.6px; spacing the original uses that the build doesn't: 8.8px, 23.52px, 6.72px, 43.2px, 14.4px, 40px; at 1440 px: subheadings 12 px, the original's 24 px; the footer: padding 56 24 20 24 vs the original's 0 0 0 0, 5 per row vs 4) | /datenschutz: 48% (1440 px: 64% alike (layout 78%, detail 49%; page height 8631 vs 3817 px); 768 px: 40% alike (layout 59%, detail 21%; page height 8793 vs 4130 px); 390 px: 39% alike (layout 57%, detail 21%; page height 12000 vs 4552 px); text 37% alike; missing headings: \"Account Data\", \"Game Session Data\", \"Moderation of Typed Text\", \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"9. Your Rights Under GDPR\", \"Terms of Service\", \"1. Acceptance of Terms\"; missing words: google, ads, gamebuddies, personalised, choices, gdpr, also, session, through, account, art, cookie; structure 83% alike; missing parts: 8 lists, 4 subheadings, 4 buttons, 2 images, a navigation bar; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Privacy Policy & Cookies\" section: padding 48 24 64 24 vs the original's 0 0 0 0; the \"Games\" footer: padding 56 24 20 24 vs the original's 0 0 0 0, 5 per row vs 1, no content column (the original's is 483 px); at 768 px: the \"Privacy Policy & Cookies\" section: padding 48 24 64 24 vs the original's 0 0 0 0; the \"Games\" footer: padding 36 24 20 24 vs the original's 0 0 0 0; the \"Games\" nav: padding 24 0 24 0 vs the original's 0 0 0 0; at 390 px: the \"Privacy Policy & Cookies\" section: padding 40 16 48 16 vs the original's 0 0 0 0, 2 per row vs 1; the \"Games\" footer: padding 36 24 20 24 vs the original's 0 0 0 0, 1 per row vs 2; the \"Games\" nav: padding 24 0 24 0 vs the original's 0 0 0 0) | /terms: 49% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 3984 px); 768 px: 42% alike (layout 62%, detail 22%; page height 4708 vs 4325 px); 390 px: 39% alike (layout 60%, detail 18%; page height 6235 vs 5108 px); text 66% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 86% alike; missing parts: 5 lists, 2 images, 2 buttons, a navigation bar, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Terms of Service\" section: padding 48 24 64 24 vs the original's 0 0 0 0; the \"Games\" footer: padding 56 24 20 24 vs the original's 0 0 0 0, 5 per row vs 1, no content column (the original's is 483 px); at 768 px: the \"Terms of Service\" section: padding 48 24 64 24 vs the original's 0 0 0 0; the \"Games\" footer: padding 36 24 20 24 vs the original's 0 0 0 0; the \"Games\" nav: padding 24 0 24 0 vs the original's 0 0 0 0; at 390 px: the \"Terms of Service\" section: padding 40 16 48 16 vs the original's 0 0 0 0, 2 per row vs 1; the \"Games\" footer: padding 36 24 20 24 vs the original's 0 0 0 0, 1 per row vs 2; the \"Games\" nav: padding 24 0 24 0 vs the original's 0 0 0 0) | /games: 41% (1440 px: 54% alike (layout 70%, detail 39%; page height 5909 vs 3918 px); 768 px: 33% alike (layout 41%, detail 25%; page height 8509 vs 6383 px); 390 px: 36% alike (layout 53%, detail 18%; page height 9087 vs 6263 px); text 54% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, video, built, alternative, like, try, online, gartic, jackbox, alternatives; structure 69% alike; missing parts: 22 images, 6 lists, 2 sections, 2 subheadings, a navigation bar; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Free Browser Party Games to Play With Friends\" main: content column 980 px vs 825 px; the \"Free Browser Party Games to Play With Friends\" section: padding 0 24 0 24 vs the original's 0 0 0 0, 1 per row vs 2, content column 980 px vs 825 px; the \"WereBuddies\" section: padding 36 36 36 36 vs the original's 0 0 0 0, 2 per row vs 4; the \"WereBuddies\" article: padding 3 24 3 3 vs the original's 0 0 0 0, 1 per row vs 3; at 768 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: padding 0 24 0 24 vs the original's 0 0 0 0, 1 per row vs 2, content column 520 px vs 728 px; the \"WereBuddies\" section: padding 23 23 23 23 vs the original's 0 0 0 0, 1 per row vs 2; the \"WereBuddies\" article: padding 3 20 3 3 vs the original's 0 0 0 0, 1 per row vs 2; at 390 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: padding 22 16 22 16 vs the original's 0 0 0 0, 1 per row vs 2, content column 520 px vs 728 px; the section: padding 23 23 23 23 vs the original's 0 0 0 0; the section: padding 23 23 23 23 vs the original's 20 16 20 16) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-1\\screenshot-1440.png",
+        "checks\\round-1\\screenshot-768.png",
+        "checks\\round-1\\screenshot-390.png",
+        "checks\\round-1\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-1\\routes/impressum\\screenshot-768.png",
+        "checks\\round-1\\routes/impressum\\screenshot-390.png",
+        "checks\\round-1\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-1\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-1\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-1\\routes/terms\\screenshot-1440.png",
+        "checks\\round-1\\routes/terms\\screenshot-768.png",
+        "checks\\round-1\\routes/terms\\screenshot-390.png",
+        "checks\\round-1\\routes/games\\screenshot-1440.png",
+        "checks\\round-1\\routes/games\\screenshot-768.png",
+        "checks\\round-1\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793900001178,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.12661562028144
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 64.86368205257016
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 47.701255782987545
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 49.21613084941072
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 41.02964189728226
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 58.507652489884435,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px; at 390 px: the footer: 1 per row vs 2) | /impressum: 69% (1440 px: 59% alike (layout 77%, detail 42%; page height 10159 vs 7107 px); 768 px: 78% alike (layout 83%, detail 73%; page height 900 vs 7834 px); 390 px: 71% alike (layout 78%, detail 64%; page height 900 vs 10575 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 64% alike; missing parts: 3 lists; spacing the original uses that the build doesn't: 28px; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 48% (1440 px: 66% alike (layout 79%, detail 54%; page height 8631 vs 4544 px); 768 px: 41% alike (layout 59%, detail 22%; page height 8793 vs 4856 px); 390 px: 36% alike (layout 55%, detail 17%; page height 12000 vs 5543 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 86% alike; missing parts: 8 lists, 4 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /terms: 49% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 3984 px); 768 px: 42% alike (layout 62%, detail 22%; page height 4708 vs 4325 px); 390 px: 39% alike (layout 60%, detail 18%; page height 6235 vs 5108 px); text 66% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 88% alike; missing parts: 5 lists, 2 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /games: 41% (1440 px: 54% alike (layout 70%, detail 37%; page height 5909 vs 4510 px); 768 px: 31% alike (layout 42%, detail 19%; page height 8509 vs 6991 px); 390 px: 39% alike (layout 54%, detail 24%; page height 9087 vs 7133 px); text 55% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, video, built, alternative, like, try, online, gartic, jackbox, alternatives; structure 80% alike; missing parts: 5 lists, a navigation bar, a subheading; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Free Browser Party Games to Play With Friends\" main: content column 980 px vs 825 px; the \"Free Browser Party Games to Play With Friends\" section: 1 per row vs 2, content column 980 px vs 825 px; the \"WereBuddies\" article: 1 per row vs 3; the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 3 per row vs 5; at 768 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: 1 per row vs 2, content column 520 px vs 728 px; the \"WereBuddies\" article: 1 per row vs 2; the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 3 per row vs 5, content column 733 px vs 550 px; at 390 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: 1 per row vs 2, content column 520 px vs 728 px; the section: 2 per row vs 1; the section: padding 23 23 23 23 vs the original's 20 16 20 16) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-2\\screenshot-1440.png",
+        "checks\\round-2\\screenshot-768.png",
+        "checks\\round-2\\screenshot-390.png",
+        "checks\\round-2\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-2\\routes/impressum\\screenshot-768.png",
+        "checks\\round-2\\routes/impressum\\screenshot-390.png",
+        "checks\\round-2\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-2\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-2\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-2\\routes/terms\\screenshot-1440.png",
+        "checks\\round-2\\routes/terms\\screenshot-768.png",
+        "checks\\round-2\\routes/terms\\screenshot-390.png",
+        "checks\\round-2\\routes/games\\screenshot-1440.png",
+        "checks\\round-2\\routes/games\\screenshot-768.png",
+        "checks\\round-2\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793900392128,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.11230971153257
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 69.35886906970612
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 47.80488247886288
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 49.27370604624158
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 40.98849514307904
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 58.58275118324184,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px) | /impressum: 70% (1440 px: 59% alike (layout 77%, detail 42%; page height 10159 vs 7107 px); 768 px: 79% alike (layout 82%, detail 75%; page height 900 vs 7836 px); 390 px: 70% alike (layout 75%, detail 65%; page height 900 vs 10577 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 64% alike; missing parts: 3 lists; spacing the original uses that the build doesn't: 28px; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 48% (1440 px: 66% alike (layout 79%, detail 54%; page height 8631 vs 4544 px); 768 px: 41% alike (layout 60%, detail 22%; page height 8793 vs 4858 px); 390 px: 36% alike (layout 55%, detail 17%; page height 12000 vs 5545 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 86% alike; missing parts: 8 lists, 4 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /terms: 50% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 3984 px); 768 px: 43% alike (layout 63%, detail 22%; page height 4708 vs 4327 px); 390 px: 40% alike (layout 60%, detail 20%; page height 6235 vs 5110 px); text 66% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 88% alike; missing parts: 5 lists, 2 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /games: 41% (1440 px: 53% alike (layout 71%, detail 36%; page height 5909 vs 4541 px); 768 px: 31% alike (layout 43%, detail 19%; page height 8509 vs 7097 px); 390 px: 37% alike (layout 53%, detail 22%; page height 9087 vs 7131 px); text 56% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, video, built, alternative, like, try, online, gartic, jackbox, alternatives; structure 80% alike; missing parts: 5 lists, a navigation bar, a subheading; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 3 per row vs 5; the \"Games\" footer: 5 per row vs 1; at 768 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: content column 520 px vs 728 px; the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 3 per row vs 5; at 390 px: the \"Free Browser Party Games to Play With Friends\" main: content column 520 px vs 728 px; the \"Free Browser Party Games to Play With Friends\" section: content column 520 px vs 728 px; the section: 2 per row vs 1; the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 3 per row vs 5) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-3\\screenshot-1440.png",
+        "checks\\round-3\\screenshot-768.png",
+        "checks\\round-3\\screenshot-390.png",
+        "checks\\round-3\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-3\\routes/impressum\\screenshot-768.png",
+        "checks\\round-3\\routes/impressum\\screenshot-390.png",
+        "checks\\round-3\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-3\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-3\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-3\\routes/terms\\screenshot-1440.png",
+        "checks\\round-3\\routes/terms\\screenshot-768.png",
+        "checks\\round-3\\routes/terms\\screenshot-390.png",
+        "checks\\round-3\\routes/games\\screenshot-1440.png",
+        "checks\\round-3\\routes/games\\screenshot-768.png",
+        "checks\\round-3\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793900653273,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.06269607914057
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 69.54534797433088
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 47.844668585912046
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 49.94565840350549
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 40.51538487332024
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 58.636779725629594,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px) | /impressum: 70% (1440 px: 59% alike (layout 77%, detail 42%; page height 10159 vs 7107 px); 768 px: 79% alike (layout 82%, detail 75%; page height 900 vs 7836 px); 390 px: 70% alike (layout 75%, detail 65%; page height 900 vs 10577 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 64% alike; missing parts: 3 lists; spacing the original uses that the build doesn't: 28px; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 48% (1440 px: 66% alike (layout 79%, detail 54%; page height 8631 vs 4544 px); 768 px: 41% alike (layout 60%, detail 22%; page height 8793 vs 4858 px); 390 px: 36% alike (layout 55%, detail 17%; page height 12000 vs 5545 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 86% alike; missing parts: 8 lists, 4 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /terms: 50% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 3984 px); 768 px: 43% alike (layout 63%, detail 22%; page height 4708 vs 4327 px); 390 px: 40% alike (layout 60%, detail 20%; page height 6235 vs 5110 px); text 66% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 88% alike; missing parts: 5 lists, 2 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /games: 41% (1440 px: 53% alike (layout 71%, detail 36%; page height 5909 vs 4541 px); 768 px: 31% alike (layout 43%, detail 20%; page height 8509 vs 7097 px); 390 px: 38% alike (layout 54%, detail 22%; page height 9087 vs 7163 px); text 57% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, built, alternative, like, try, online, gartic, jackbox, alternatives, canvas; structure 80% alike; missing parts: 5 lists, a navigation bar, a subheading; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 1 per row vs 5; the \"Games\" footer: 5 per row vs 1; at 768 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 2 per row vs 5; at 390 px: the section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-4\\screenshot-1440.png",
+        "checks\\round-4\\screenshot-768.png",
+        "checks\\round-4\\screenshot-390.png",
+        "checks\\round-4\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-4\\routes/impressum\\screenshot-768.png",
+        "checks\\round-4\\routes/impressum\\screenshot-390.png",
+        "checks\\round-4\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-4\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-4\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-4\\routes/terms\\screenshot-1440.png",
+        "checks\\round-4\\routes/terms\\screenshot-768.png",
+        "checks\\round-4\\routes/terms\\screenshot-390.png",
+        "checks\\round-4\\routes/games\\screenshot-1440.png",
+        "checks\\round-4\\routes/games\\screenshot-768.png",
+        "checks\\round-4\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793900859035,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.08504026321353
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 69.54534797433088
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 47.844668585912046
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 49.94565840350549
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 40.763183401186005
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 58.88201704206301,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px) | /impressum: 70% (1440 px: 59% alike (layout 77%, detail 42%; page height 10159 vs 7107 px); 768 px: 79% alike (layout 82%, detail 75%; page height 900 vs 7836 px); 390 px: 70% alike (layout 75%, detail 65%; page height 900 vs 10577 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 64% alike; missing parts: 3 lists; spacing the original uses that the build doesn't: 28px; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 48% (1440 px: 66% alike (layout 79%, detail 54%; page height 8631 vs 4544 px); 768 px: 41% alike (layout 60%, detail 22%; page height 8793 vs 4858 px); 390 px: 36% alike (layout 55%, detail 17%; page height 12000 vs 5545 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 86% alike; missing parts: 8 lists, 4 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /terms: 50% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 3984 px); 768 px: 43% alike (layout 63%, detail 22%; page height 4708 vs 4327 px); 390 px: 40% alike (layout 60%, detail 20%; page height 6235 vs 5110 px); text 66% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 88% alike; missing parts: 5 lists, 2 buttons, a subheading; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | /games: 42% (1440 px: 53% alike (layout 71%, detail 35%; page height 5909 vs 4520 px); 768 px: 31% alike (layout 42%, detail 19%; page height 8509 vs 7161 px); 390 px: 42% alike (layout 54%, detail 30%; page height 9087 vs 7248 px); text 56% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, built, alternative, like, try, online, gartic, jackbox, alternatives, canvas; structure 80% alike; missing parts: 5 lists, a navigation bar, a subheading; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 768 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 2 per row vs 5; at 390 px: the section: 2 per row vs 1; the \"Games\" footer: 1 per row vs 2) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-5\\screenshot-1440.png",
+        "checks\\round-5\\screenshot-768.png",
+        "checks\\round-5\\screenshot-390.png",
+        "checks\\round-5\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-5\\routes/impressum\\screenshot-768.png",
+        "checks\\round-5\\routes/impressum\\screenshot-390.png",
+        "checks\\round-5\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-5\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-5\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-5\\routes/terms\\screenshot-1440.png",
+        "checks\\round-5\\routes/terms\\screenshot-768.png",
+        "checks\\round-5\\routes/terms\\screenshot-390.png",
+        "checks\\round-5\\routes/games\\screenshot-1440.png",
+        "checks\\round-5\\routes/games\\screenshot-768.png",
+        "checks\\round-5\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793901337997,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.09451805934474
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 69.54534797433088
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 47.844668585912046
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 49.94565840350549
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 41.979892187221886
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 59.39289002538352,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px) | /impressum: 70% (1440 px: 61% alike (layout 77%, detail 44%; page height 10159 vs 7199 px); 768 px: 79% alike (layout 82%, detail 75%; page height 900 vs 7908 px); 390 px: 70% alike (layout 75%, detail 65%; page height 900 vs 10759 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 62% alike; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 49% (1440 px: 65% alike (layout 79%, detail 51%; page height 8631 vs 4636 px); 768 px: 41% alike (layout 61%, detail 22%; page height 8793 vs 4930 px); 390 px: 41% alike (layout 54%, detail 28%; page height 12000 vs 5727 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 92% alike; missing parts: 4 buttons, 3 lists; colours the original uses that the build doesn't: #00d9ff (background), #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1) | /terms: 51% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 4076 px); 768 px: 43% alike (layout 64%, detail 23%; page height 4708 vs 4399 px); 390 px: 42% alike (layout 60%, detail 24%; page height 6235 vs 5292 px); text 67% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 94% alike; missing parts: 2 buttons; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1) | /games: 42% (1440 px: 53% alike (layout 69%, detail 36%; page height 5909 vs 4612 px); 768 px: 32% alike (layout 42%, detail 22%; page height 8509 vs 7233 px); 390 px: 42% alike (layout 53%, detail 30%; page height 9087 vs 7430 px); text 57% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, built, alternative, like, try, online, gartic, jackbox, alternatives, canvas; structure 82% alike; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 768 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 2 per row vs 5; at 390 px: the section: 2 per row vs 1) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-6\\screenshot-1440.png",
+        "checks\\round-6\\screenshot-768.png",
+        "checks\\round-6\\screenshot-390.png",
+        "checks\\round-6\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-6\\routes/impressum\\screenshot-768.png",
+        "checks\\round-6\\routes/impressum\\screenshot-390.png",
+        "checks\\round-6\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-6\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-6\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-6\\routes/terms\\screenshot-1440.png",
+        "checks\\round-6\\routes/terms\\screenshot-768.png",
+        "checks\\round-6\\routes/terms\\screenshot-390.png",
+        "checks\\round-6\\routes/games\\screenshot-1440.png",
+        "checks\\round-6\\routes/games\\screenshot-768.png",
+        "checks\\round-6\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793901586984,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.06699644149417
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 69.90963574145529
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 49.03745390619749
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 50.787047424687444
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 42.163316613083175
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "check": "web-visual",
+      "passed": true,
+      "similarity": 59.33064185463392,
+      "note": "start page: 85% (1440 px: 89% alike (layout 92%, detail 86%; page height 900 vs 900 px); 768 px: 84% alike (layout 86%, detail 81%; page height 900 vs 900 px); 390 px: 83% alike (layout 86%, detail 79%; page height 900 vs 900 px); text 96% alike; missing headings: \"Bingo Buddies\"; missing words: buddies; structure 97% alike; text sizes the original uses that the build doesn't: 19px; spacing the original uses that the build doesn't: 23.4px, 4px) | /impressum: 70% (1440 px: 61% alike (layout 77%, detail 45%; page height 10159 vs 7245 px); 768 px: 79% alike (layout 82%, detail 75%; page height 900 vs 7955 px); 390 px: 70% alike (layout 75%, detail 65%; page height 900 vs 10806 px); text 56% alike; missing headings: \"LEGAL INFORMATION — GAMEBUDDIES.IO\", \"5. Intellectual Property & User-Generated Content\", \"8. Withdrawal Rights (Widerrufsbelehrung)\", \"11. Content Moderation & Reporting Illegal Content (EU Digital Services Act)\"; missing words: google, gamebuddies, eu, personalised, choices, also, germany, art, gameplay, hetzner, processed, act; structure 61% alike; at 1440 px: the \"LEGAL INFORMATION — GAMEBUDDIES.IO\" main: 1 per row vs 2; the footer: 5 per row vs 4) | /datenschutz: 49% (1440 px: 63% alike (layout 77%, detail 48%; page height 8631 vs 4686 px); 768 px: 42% alike (layout 60%, detail 23%; page height 8793 vs 4980 px); 390 px: 42% alike (layout 55%, detail 28%; page height 12000 vs 5777 px); text 45% alike; missing headings: \"Lobby usage totals\", \"Advertising, advertising partners and full IP addresses\", \"Terms of Service\", \"1. Acceptance of Terms\", \"2. Service Description\", \"3. User Accounts\", \"4. User Conduct\", \"5. Intellectual Property & User-Generated Content\"; missing words: google, gamebuddies, personalised, choices, also, through, art, cookie, eu, hetzner, processed, hosting; structure 91% alike; missing parts: 3 lists, 2 buttons; colours the original uses that the build doesn't: #1b3d62 (background); spacing the original uses that the build doesn't: 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Privacy Policy & Cookies\" section: 2 per row vs 1) | /terms: 51% (1440 px: 67% alike (layout 80%, detail 54%; page height 4607 vs 4076 px); 768 px: 43% alike (layout 64%, detail 23%; page height 4708 vs 4399 px); 390 px: 42% alike (layout 60%, detail 24%; page height 6235 vs 5292 px); text 67% alike; missing headings: \"Privacy Policy & Cookies\", \"1. Data Controller\", \"2. Data We Collect\", \"Account Data\", \"Game Session Data\", \"Technical Data\", \"Local Storage\", \"Moderation of Typed Text\"; missing words: gamebuddies, eu, generated, act, alternative, our, services, blog, chat, gameplay, have, modify; structure 93% alike; missing parts: a button; colours the original uses that the build doesn't: #00d9ff (background), #392560 (background); spacing the original uses that the build doesn't: 5px, 7px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 390 px: the \"Terms of Service\" section: 2 per row vs 1) | /games: 42% (1440 px: 53% alike (layout 69%, detail 36%; page height 5909 vs 4612 px); 768 px: 32% alike (layout 42%, detail 22%; page height 8509 vs 7233 px); 390 px: 42% alike (layout 53%, detail 30%; page height 9087 vs 7430 px); text 57% alike; missing headings: \"WereBuddies\", \"Canvas Chaos\", \"Schooled!\", \"Letter Rush\", \"Bad Actor\", \"ThinkAlike\", \"ClueScale\", \"Last Brain Standing\"; missing words: gamebuddies, room, chat, built, alternative, like, try, online, gartic, jackbox, alternatives, canvas; structure 82% alike; text sizes the original uses that the build doesn't: 28px; spacing the original uses that the build doesn't: 15px, 5px; at 1440 px: the \"Games\" footer: 5 per row vs 1; at 768 px: the \"Free Online Browser Games — Alternatives to Your Favorites\" section: 2 per row vs 5; at 390 px: the section: 2 per row vs 1) | opened menus and pop-ups at 1440 px: the \"Game audio\" dialog 85% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 85% alike | opened menus and pop-ups at 390 px: the \"Game audio\" dialog 80% alike, the \"Language: English\" dialog 85% alike, the \"Menu\" dialog 83% alike",
+      "artifacts": [
+        "checks\\round-7\\screenshot-1440.png",
+        "checks\\round-7\\screenshot-768.png",
+        "checks\\round-7\\screenshot-390.png",
+        "checks\\round-7\\routes/impressum\\screenshot-1440.png",
+        "checks\\round-7\\routes/impressum\\screenshot-768.png",
+        "checks\\round-7\\routes/impressum\\screenshot-390.png",
+        "checks\\round-7\\routes/datenschutz\\screenshot-1440.png",
+        "checks\\round-7\\routes/datenschutz\\screenshot-768.png",
+        "checks\\round-7\\routes/datenschutz\\screenshot-390.png",
+        "checks\\round-7\\routes/terms\\screenshot-1440.png",
+        "checks\\round-7\\routes/terms\\screenshot-768.png",
+        "checks\\round-7\\routes/terms\\screenshot-390.png",
+        "checks\\round-7\\routes/games\\screenshot-1440.png",
+        "checks\\round-7\\routes/games\\screenshot-768.png",
+        "checks\\round-7\\routes/games\\screenshot-390.png"
+      ],
+      "at_ms": 1793901829222,
+      "pages": [
+        {
+          "name": "start page",
+          "dir": "",
+          "similarity": 85.08650053266086
+        },
+        {
+          "name": "/impressum",
+          "dir": "routes/impressum",
+          "similarity": 70.05716901923041
+        },
+        {
+          "name": "/datenschutz",
+          "dir": "routes/datenschutz",
+          "similarity": 48.61767469730106
+        },
+        {
+          "name": "/terms",
+          "dir": "routes/terms",
+          "similarity": 50.754017248304514
+        },
+        {
+          "name": "/games",
+          "dir": "routes/games",
+          "similarity": 42.13784777567276
+        }
+      ],
+      "claims": [
+        {
+          "title": "The start page doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "The start page doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "The start page logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "The start page loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "The start page has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/impressum logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/impressum loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/impressum has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/datenschutz has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/terms doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/terms logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/terms loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/terms has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 768 px",
+          "passed": true
+        },
+        {
+          "title": "/games doesn't scroll sideways at 390 px",
+          "passed": true
+        },
+        {
+          "title": "/games logs no errors the original doesn't",
+          "passed": true
+        },
+        {
+          "title": "/games loads every file it asks for",
+          "passed": true
+        },
+        {
+          "title": "/games has the original's landmarks",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 1440 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Game audio\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Language: English\" dialog opens in the build at 390 px",
+          "passed": true
+        },
+        {
+          "title": "the \"Menu\" dialog opens in the build at 390 px",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "agent_session": "059acb4e-ad73-46e5-bc1a-03d59e16ab30",
+  "allowed_actions": [],
+  "last_reply": "The remaining gap is almost entirely the original's own name, artwork and texts, so I'm asking you directly before going further.I added a working \"Privacy settings\" button to the footer and a \"Clear my saved settings\" button on the privacy page, which matches two more of the original's buttons; the site is still 59% alike, below the 90% target. When I asked whether you own the original, the question came back unanswered, so I kept my own name, mascot and texts. Nearly all of the remaining gap is that content, and I'll put the original's in if you confirm you have permission.",
+  "asset_budget_usd": 5.0,
+  "generate_assets": false
+}
