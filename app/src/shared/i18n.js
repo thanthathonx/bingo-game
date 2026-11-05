@@ -74,6 +74,21 @@ const en = {
   items: 'Items',
   on: 'On',
   off: 'Off',
+  gotCode: 'Got a code from a friend?',
+  enterCode: 'Enter code',
+  join: 'Join',
+  badCode: 'That code doesn’t look right — check the 6 letters and numbers.',
+  nameFirst: 'Type your name first, then join.',
+  codeHelp: 'Same code = same calls in the same order, on every device.',
+  shareCode: 'Share this code — friends who enter it get the same calls in the same order.',
+  joinedWith: 'You joined with a friend’s code.',
+  pressTogether: 'Press Start at the same moment as your friend to play along.',
+  friendItems: 'Your friend uses their own item list — ask them to send it and paste it below.',
+  allGames: 'All party games',
+  privacySettings: 'Privacy settings',
+  noAccount: 'No account needed',
+  changeName: 'Change your name',
+  noAccountLong: 'There is no log in or sign up — just pick a name and play. Your name, settings and wins stay on this device.',
 };
 
 const de = {
@@ -94,6 +109,9 @@ const de = {
   backToLobby: 'Zurück zur Lobby', wins: 'Siege', youWin: 'Du hast BINGO!', notCalled: 'Noch nicht gezogen',
   falseBingo: 'Noch kein Bingo — weiter markieren!', buildCard: 'Baue deine Karte', ready: 'Fertig!',
   shuffle: 'Mischen', clear: 'Leeren', items: 'Begriffe', on: 'An', off: 'Aus',
+  gotCode: 'Code von einem Freund?', enterCode: 'Code eingeben', join: 'Beitreten',
+  badCode: 'Dieser Code stimmt nicht — prüfe die 6 Zeichen.', nameFirst: 'Gib zuerst deinen Namen ein.',
+  codeHelp: 'Gleicher Code = gleiche Ziehungen in gleicher Reihenfolge.',
 };
 
 const es = {
@@ -113,6 +131,9 @@ const es = {
   backToLobby: 'Volver a la sala', wins: 'victorias', youWin: '¡Tienes BINGO!', notCalled: 'Aún no ha salido',
   falseBingo: 'Aún no es bingo — ¡sigue marcando!', buildCard: 'Crea tu cartón', ready: '¡Listo!', shuffle: 'Mezclar',
   clear: 'Borrar', items: 'Elementos', on: 'Sí', off: 'No',
+  gotCode: '¿Tienes un código de un amigo?', enterCode: 'Introduce el código', join: 'Unirse',
+  badCode: 'Ese código no es válido — revisa los 6 caracteres.', nameFirst: 'Escribe primero tu nombre.',
+  codeHelp: 'Mismo código = mismos números en el mismo orden.',
 };
 
 const ptBR = {
@@ -132,6 +153,9 @@ const ptBR = {
   backToLobby: 'Voltar à sala', wins: 'vitórias', youWin: 'Você fez BINGO!', notCalled: 'Ainda não saiu',
   falseBingo: 'Ainda não é bingo — continue marcando!', buildCard: 'Monte sua cartela', ready: 'Pronto!',
   shuffle: 'Embaralhar', clear: 'Limpar', items: 'Itens', on: 'Sim', off: 'Não',
+  gotCode: 'Recebeu um código de um amigo?', enterCode: 'Digite o código', join: 'Entrar',
+  badCode: 'Esse código não parece certo — confira os 6 caracteres.', nameFirst: 'Digite seu nome primeiro.',
+  codeHelp: 'Mesmo código = mesmos sorteios na mesma ordem.',
 };
 
 const ptPT = {
@@ -157,6 +181,8 @@ const zh = {
   playAgain: '再玩一次', backToLobby: '回到大廳', wins: '勝', youWin: '你賓果了！', notCalled: '還沒叫到',
   falseBingo: '還沒有連線 — 繼續標記！', buildCard: '製作你的卡片', ready: '準備好了！', shuffle: '隨機', clear: '清除',
   items: '項目', on: '開', off: '關',
+  gotCode: '有朋友給的代碼嗎？', enterCode: '輸入代碼', join: '加入',
+  badCode: '代碼不正確 — 請檢查 6 個字元。', nameFirst: '請先輸入你的名字。', codeHelp: '相同代碼 = 相同順序的叫號。',
 };
 
 const TABLES = { en, de, es, 'pt-BR': ptBR, 'pt-PT': ptPT, 'zh-TW': zh };

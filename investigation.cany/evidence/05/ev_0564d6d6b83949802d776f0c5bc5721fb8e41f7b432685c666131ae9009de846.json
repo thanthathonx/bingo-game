@@ -1,0 +1,481 @@
+{
+  "id": "ev_0564d6d6b83949802d776f0c5bc5721fb8e41f7b432685c666131ae9009de846",
+  "subject": {
+    "kind": "website",
+    "name": "http://127.0.0.1:55212/terms"
+  },
+  "operation": "web_site_capture",
+  "params": {
+    "include_html": false,
+    "max_height": 12000,
+    "noise_pass": false,
+    "visitor_view": false,
+    "widths": [
+      1440,
+      768,
+      390
+    ]
+  },
+  "result": {
+    "counts": {
+      "forms": 0,
+      "headings": 19,
+      "images": 2,
+      "links": 61,
+      "outline": 144
+    },
+    "design": {
+      "backgrounds": [
+        {
+          "count": 9,
+          "value": "#27305c"
+        },
+        {
+          "count": 2,
+          "value": "#100d25"
+        },
+        {
+          "count": 1,
+          "value": "#100d29"
+        },
+        {
+          "count": 1,
+          "value": "#123247"
+        },
+        {
+          "count": 1,
+          "value": "#37245c"
+        },
+        {
+          "count": 1,
+          "value": "#1b1433"
+        },
+        {
+          "count": 1,
+          "value": "#0a0818"
+        }
+      ],
+      "css_variables": {
+        "--accent-color": "#fd79a8",
+        "--accent-hover": "#ff9bc0",
+        "--bg-card": "#16123a",
+        "--bg-card-hover": "#1f1a55",
+        "--bg-dark": "#0c0a20",
+        "--bg-darker": "#07061a",
+        "--bg-tertiary": "#1d1850",
+        "--bingo-b": "var(--galaxy-lavender)",
+        "--bingo-g": "var(--galaxy-mint)",
+        "--bingo-i": "var(--galaxy-pink)",
+        "--bingo-n": "var(--gb-cyan)",
+        "--bingo-o": "var(--gb-gold)",
+        "--border-color": "#4b3f8f",
+        "--danger": "#ff6b6b",
+        "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+        "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+        "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+        "--font-display": "\"Bungee\", \"Outfit\", system-ui, sans-serif",
+        "--font-hand": "\"Short Stack\", cursive",
+        "--font-read": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif",
+        "--font-title": "Fredoka, \"Short Stack\", sans-serif",
+        "--galaxy-lavender": "#a29bfe",
+        "--galaxy-mint": "#55efc4",
+        "--galaxy-pink": "#fd79a8",
+        "--galaxy-violet": "#6c5ce7",
+        "--gb-cream": "#efeaff",
+        "--gb-cyan": "#00d9ff",
+        "--gb-gold": "#ffd166",
+        "--gbd-gold": "#ffb020",
+        "--gbd-ink": "#05020e",
+        "--gbd-purple": "#a855f7",
+        "--gbd-t1": "#e7e9f1",
+        "--gbd-t2": "#a8aec7",
+        "--header-bg": "#221c3d",
+        "--key-bg": "#2c2f51",
+        "--key-rim": "#454866",
+        "--panel-bg": "#29204a",
+        "--panel-rim": "#683ba1",
+        "--panel-row": "#2f274f",
+        "--panel-rule": "#433b60",
+        "--radius-full": "999px",
+        "--radius-lg": "16px",
+        "--radius-md": "10px",
+        "--radius-sm": "6px",
+        "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+        "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+        "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+        "--text-muted": "#897fc0",
+        "--text-primary": "#ffffff",
+        "--text-secondary": "#c4bdf0"
+      },
+      "font_faces": [
+        {
+          "family": "Space Grotesk",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300 700"
+        },
+        {
+          "family": "Fredoka",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300 700"
+        },
+        {
+          "family": "Bungee",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Short Stack",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "500"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Outfit",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "800 900"
+        }
+      ],
+      "font_sizes": [
+        {
+          "count": 54,
+          "value": "15px"
+        },
+        {
+          "count": 31,
+          "value": "17px"
+        },
+        {
+          "count": 15,
+          "value": "24px"
+        },
+        {
+          "count": 6,
+          "value": "14px"
+        },
+        {
+          "count": 3,
+          "value": "22px"
+        },
+        {
+          "count": 2,
+          "value": "16px"
+        },
+        {
+          "count": 1,
+          "value": "36px"
+        },
+        {
+          "count": 1,
+          "value": "18px"
+        },
+        {
+          "count": 1,
+          "value": "12px"
+        },
+        {
+          "count": 1,
+          "value": "13px"
+        }
+      ],
+      "font_weights": [
+        {
+          "count": 54,
+          "value": "400"
+        },
+        {
+          "count": 30,
+          "value": "700"
+        },
+        {
+          "count": 16,
+          "value": "500"
+        },
+        {
+          "count": 11,
+          "value": "600"
+        },
+        {
+          "count": 3,
+          "value": "800"
+        },
+        {
+          "count": 1,
+          "value": "650"
+        }
+      ],
+      "fonts": [
+        {
+          "count": 107,
+          "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+        },
+        {
+          "count": 8,
+          "value": "Bungee, Outfit, system-ui, sans-serif"
+        }
+      ],
+      "max_widths": [
+        {
+          "count": 1,
+          "value": "482.816px"
+        }
+      ],
+      "radii": [
+        {
+          "count": 19,
+          "value": "8px"
+        },
+        {
+          "count": 3,
+          "value": "10px"
+        },
+        {
+          "count": 1,
+          "value": "50%"
+        },
+        {
+          "count": 1,
+          "value": "12px"
+        }
+      ],
+      "shadows": [
+        {
+          "count": 3,
+          "value": "rgb(5, 2, 14) 3px 3px 0px 0px"
+        },
+        {
+          "count": 1,
+          "value": "rgba(255, 255, 255, 0.06) 0px 1px 0px 0px"
+        },
+        {
+          "count": 1,
+          "value": "rgb(5, 2, 14) 0px 0px 0px 1px, rgba(168, 85, 247, 0.25) 0px 0px 30px 0px"
+        }
+      ],
+      "spacing": [
+        {
+          "count": 89,
+          "value": "10px"
+        },
+        {
+          "count": 26,
+          "value": "4px"
+        },
+        {
+          "count": 25,
+          "value": "14px"
+        },
+        {
+          "count": 24,
+          "value": "8px"
+        },
+        {
+          "count": 17,
+          "value": "16px"
+        },
+        {
+          "count": 14,
+          "value": "6px"
+        },
+        {
+          "count": 12,
+          "value": "36px"
+        },
+        {
+          "count": 10,
+          "value": "24px"
+        },
+        {
+          "count": 6,
+          "value": "1px"
+        },
+        {
+          "count": 5,
+          "value": "20px"
+        },
+        {
+          "count": 4,
+          "value": "28px"
+        },
+        {
+          "count": 4,
+          "value": "22px"
+        },
+        {
+          "count": 4,
+          "value": "2px"
+        },
+        {
+          "count": 3,
+          "value": "12px"
+        },
+        {
+          "count": 2,
+          "value": "48px"
+        },
+        {
+          "count": 1,
+          "value": "64px"
+        },
+        {
+          "count": 1,
+          "value": "72px"
+        },
+        {
+          "count": 1,
+          "value": "56px"
+        },
+        {
+          "count": 1,
+          "value": "32px"
+        },
+        {
+          "count": 1,
+          "value": "18px"
+        }
+      ],
+      "text_colors": [
+        {
+          "count": 41,
+          "value": "#f8f5ff"
+        },
+        {
+          "count": 32,
+          "value": "#e4ddf3"
+        },
+        {
+          "count": 17,
+          "value": "#d9d1eb"
+        },
+        {
+          "count": 13,
+          "value": "#b5abd0"
+        },
+        {
+          "count": 4,
+          "value": "#00d9ff"
+        },
+        {
+          "count": 2,
+          "value": "#ffffff"
+        },
+        {
+          "count": 2,
+          "value": "#e94560"
+        },
+        {
+          "count": 1,
+          "value": "#fd79a8"
+        },
+        {
+          "count": 1,
+          "value": "#ffcf70"
+        },
+        {
+          "count": 1,
+          "value": "#a855f7"
+        },
+        {
+          "count": 1,
+          "value": "#ffb020"
+        }
+      ]
+    },
+    "files": [
+      "README.md",
+      "capture.json"
+    ],
+    "html_bytes": 0,
+    "output_directory": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\checks\\round-0\\routes/terms",
+    "screenshots": [
+      {
+        "css_width": 1440,
+        "cut": false,
+        "file": "screenshot-1440.png",
+        "height": 4076,
+        "sha256": "2a57cacf6a97cae24324e63a2f226a666c22d38afb0a9c419303d0712b6b41e3",
+        "width": 1440
+      },
+      {
+        "css_width": 768,
+        "cut": false,
+        "file": "screenshot-768.png",
+        "height": 4399,
+        "sha256": "5ebda41e4a4503a378f0a8630b6fc9c629fdc7475db55625ddbc1d147e2c944e",
+        "width": 768
+      },
+      {
+        "css_width": 390,
+        "cut": false,
+        "file": "screenshot-390.png",
+        "height": 5292,
+        "sha256": "ccb86cc74bf46d2569b1ce2629af6d70570bab66ad82f6035a4664a70fb07525",
+        "width": 390
+      }
+    ],
+    "title": "Terms of Service | PlayPals",
+    "url": "http://127.0.0.1:55212/terms"
+  },
+  "summary": "Captured http://127.0.0.1:55212/terms: 3 screenshot(s), 144 outline items, 19 headings, 2 images, 61 links, 0 forms → D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\checks\\round-0\\routes/terms.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "one_state",
+      "message": "One state of the page: menus, dialogs and content behind interactions are not opened."
+    },
+    {
+      "code": "cross_origin_css",
+      "message": "CSS custom properties and breakpoints from cross-origin stylesheets can't be read."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "http://127.0.0.1:55212/terms"
+    },
+    {
+      "kind": "path",
+      "value": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\checks\\round-0\\routes/terms"
+    }
+  ],
+  "links": []
+}

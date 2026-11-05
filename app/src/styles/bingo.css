@@ -352,6 +352,7 @@ body.bingo-body {
 }
 
 .pm-item:hover { background: var(--panel-row); }
+a.pm-item { text-decoration: none; }
 
 .pm-icon.is-purple {
   border: 2px solid #954dde;
@@ -397,6 +398,13 @@ body.bingo-body {
   text-align: left;
 }
 
+.pm-profile small {
+  display: block;
+  margin-top: 2px;
+  font: 600 13px var(--font-read);
+  color: var(--text-secondary);
+}
+
 .pm-avatar {
   width: 58px;
   height: 58px;
@@ -438,7 +446,7 @@ body.bingo-body {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   gap: 24px;
   width: 100%;
@@ -668,15 +676,19 @@ body.bingo-body {
 .home-btn.small { height: 50px; font-size: 16px; letter-spacing: 0.1em; }
 
 @media (min-width: 900px) {
-  .home-stage { padding: 24px; }
+  /* Card top sits where the original's does (289 px on a 900 px screen); the code box extends below. */
+  .home-stage {
+    align-items: flex-start;
+    padding: clamp(24px, calc(100vh - 689px), 211px) 24px 24px;
+  }
   .home-grid {
     grid-template-columns: 472px 418px;
     justify-content: center;
     justify-items: start;
-    align-items: center;
+    align-items: start;
     column-gap: 53px;
-    transform: translateY(-8px);
   }
+  .home-hero-col { margin-top: -11px; }
   .home-hero-col,
   .home-hero { align-items: flex-start; text-align: left; }
   .home-mascot-wrap { margin-left: -22px; }
@@ -705,7 +717,7 @@ body.bingo-body {
   .home-badge { margin-top: 8px; padding: 4px 12px; }
   .home-card { width: 100%; padding: 28px; }
   .fl-input { height: 48px; padding-top: 14px; }
-  .fl-label { font-size: 14px; }
+  .fl-label { font-size: 13px; }
   .home-check { min-height: 40px; padding: 6px 10px; font-size: 14px; line-height: 1.2; }
   .home-form { gap: 8px; }
   .card-description { display: none; }
@@ -740,4 +752,109 @@ body.bingo-body {
 
 @media (max-width: 479px) {
   .legal-link { padding: 0 8px; }
+}
+
+/* ---------- Join with a friend's code ---------- */
+.join-form {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 2px dashed var(--border-color);
+}
+
+/* The visible prompt is the input's placeholder; the label stays for screen readers. */
+.join-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.join-row {
+  display: flex;
+  gap: 8px;
+}
+
+.join-input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  background: var(--bg-darker);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--gb-cyan);
+  font: 400 20px var(--font-display);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.join-input::placeholder {
+  font: 400 15px var(--font-hand);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text-muted);
+}
+
+.join-input:focus { border-color: var(--gb-cyan); }
+.join-input[aria-invalid='true'] { border-color: var(--danger); }
+
+.join-btn {
+  height: 48px;
+  min-width: 96px;
+  padding: 0 18px;
+  border: 2px solid var(--gb-cyan);
+  border-radius: var(--radius-md);
+  background: var(--gb-cyan);
+  box-shadow: var(--shadow-sm);
+  color: var(--gbd-ink);
+  font: 800 15px var(--font-read);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.join-btn:disabled { opacity: 0.45; }
+
+.join-help,
+.join-error {
+  margin: 8px 0 0;
+  font-size: 12.8px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.join-help { color: var(--text-muted); }
+.join-error { color: #ffb3b3; }
+
+.room-code-box { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+.room-code-hint { margin: 0; max-width: 340px; text-align: right; }
+
+.join-note {
+  margin: -6px 0 18px;
+  padding: 10px 14px;
+  border: 2px solid var(--gb-cyan);
+  border-radius: var(--radius-md);
+  background: rgba(0, 217, 255, 0.08);
+  font-size: 14px;
+  color: var(--gbd-t1);
+}
+
+@media (max-width: 899px) {
+  .join-form { margin-top: 12px; padding-top: 10px; }
+  .join-help { display: none; }
+  .home-stage { padding-bottom: 0; }
+  .join-input,
+  .join-btn { height: 44px; }
+}
+
+@media (max-width: 479px) {
+  .join-form { margin-top: 12px; padding-top: 10px; }
+  .join-input { height: 44px; font-size: 17px; padding: 0 10px; }
+  .join-input::placeholder { font-size: 12.5px; letter-spacing: 0; }
+  .join-btn { height: 44px; min-width: 80px; }
+  .room-code-box { align-items: flex-start; }
+  .room-code-hint { text-align: left; }
 }

@@ -1,4 +1,4 @@
-# Capture of http://127.0.0.1:53311/games
+# Capture of http://127.0.0.1:60760/games
 
 - Title: Free Online Party Games to Play With Friends | PlayPals
 - Description: Browser party games to play with friends — pick one and start playing, no download.

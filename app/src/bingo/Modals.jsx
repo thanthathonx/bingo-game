@@ -48,8 +48,8 @@ function SignInModal({ onClose, name, onName }) {
   const { t } = useLang();
   const [value, setValue] = useState(name);
   return (
-    <Modal title={t('loginSignup')} onClose={onClose}>
-      <p>Online accounts aren&apos;t part of this version. Your name, settings and wins are saved on this device instead.</p>
+    <Modal title={t('changeName')} onClose={onClose}>
+      <p>{t('noAccountLong')}</p>
       <form className="home-form" onSubmit={(e) => { e.preventDefault(); onName(value.trim().slice(0, 20)); onClose(); }}>
         <div className="fl-wrap">
           <input id="profile-name" className="fl-input" placeholder=" " maxLength={20} value={value} onChange={(e) => setValue(e.target.value)} />

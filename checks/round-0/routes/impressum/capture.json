@@ -14,12 +14,12 @@
   "assets": {
     "background_images": [],
     "fonts": [
-      "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2",
-      "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+      "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
     ],
     "images": [
       {
@@ -38,63 +38,63 @@
     "inline_scripts": 0,
     "requests": [
       {
-        "bytes": 152800,
+        "bytes": 152808,
         "type": "script",
-        "url": "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js"
+        "url": "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js"
+      },
+      {
+        "bytes": 105107,
+        "type": "script",
+        "url": "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
       },
       {
         "bytes": 3396,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css"
+        "url": "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css"
       },
       {
-        "bytes": 105179,
-        "type": "script",
-        "url": "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
-      },
-      {
-        "bytes": 20310,
+        "bytes": 20331,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
-      },
-      {
-        "bytes": 14360,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
-      },
-      {
-        "bytes": 14440,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+        "url": "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
       },
       {
         "bytes": 14348,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2"
-      },
-      {
-        "bytes": 14644,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2"
       },
       {
         "bytes": 14332,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 14440,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2"
       },
       {
         "bytes": 13828,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
       }
     ],
     "scripts": [
-      "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js",
-      "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+      "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js",
+      "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
     ],
     "stylesheets": [
-      "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css",
-      "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+      "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
     ]
   },
   "breakpoints": [
@@ -386,7 +386,7 @@
         "value": "16px"
       },
       {
-        "count": 14,
+        "count": 12,
         "value": "6px"
       },
       {
@@ -403,15 +403,15 @@
       },
       {
         "count": 6,
-        "value": "1px"
-      },
-      {
-        "count": 6,
         "value": "14.4px"
       },
       {
         "count": 5,
         "value": "20px"
+      },
+      {
+        "count": 4,
+        "value": "1px"
       },
       {
         "count": 4,
@@ -2696,63 +2696,67 @@
   ],
   "links": [
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "PlayPals.io"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/bingo/",
+      "text": "Play now"
+    },
+    {
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy & Cookies"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms of Service"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All games"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
@@ -2760,27 +2764,27 @@
       "text": "Email us"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -2788,7 +2792,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -2796,39 +2800,39 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -2836,7 +2840,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -2844,50 +2848,50 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for parties"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for streams"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Classroom bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Sound and motion"
     }
   ],
   "meta": {
     "description": "Legal disclosure for this website.",
     "icons": [
-      "http://127.0.0.1:53311/favicon.ico"
+      "http://127.0.0.1:60760/favicon.ico"
     ],
     "og_image": "",
     "og_title": "",
@@ -2920,7 +2924,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "16px 400",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "PlayPals.io"
     },
@@ -2963,7 +2967,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Games"
     },
@@ -2977,7 +2981,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo"
     },
@@ -2991,7 +2995,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "tag": "a",
       "text": "Now Playing"
     },
@@ -3017,7 +3021,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "Help"
     },
@@ -3085,8 +3089,9 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 650",
-      "tag": "button",
-      "text": "Log in"
+      "href": "http://127.0.0.1:60760/bingo/",
+      "tag": "a",
+      "text": "Play now"
     },
     {
       "background": "#123247",
@@ -3154,7 +3159,7 @@
       "color": "#d9d1eb",
       "depth": 6,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "Privacy & Cookies"
     },
@@ -3180,7 +3185,7 @@
       "color": "#d9d1eb",
       "depth": 6,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "Terms of Service"
     },
@@ -3207,7 +3212,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "Impressum"
     },
@@ -5307,7 +5312,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play Bingo Friends"
     },
@@ -5335,7 +5340,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a"
     },
     {
@@ -5362,7 +5367,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a"
     },
     {
@@ -5455,7 +5460,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "All party games"
     },
@@ -5469,7 +5474,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo Friends"
     },
@@ -5483,7 +5488,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Free browser games"
     },
@@ -5497,7 +5502,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play on your TV"
     },
@@ -5552,7 +5557,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "How it works"
     },
@@ -5566,7 +5571,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "For streamers"
     },
@@ -5635,7 +5640,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "About us"
     },
@@ -5704,7 +5709,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "Privacy"
     },
@@ -5718,7 +5723,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "Terms"
     },
@@ -5732,7 +5737,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "Impressum"
     },
@@ -5802,7 +5807,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for parties"
     },
@@ -5816,7 +5821,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for streams"
     },
@@ -5830,7 +5835,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Classroom bingo"
     },
@@ -5885,7 +5890,7 @@
       "color": "#d9d1eb",
       "depth": 7,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Sound and motion"
     },
@@ -5906,10 +5911,10 @@
     "h": 7245,
     "w": 1425
   },
-  "text": "PlayPals.io Games Bingo Now Playing Help Premium Log in Privacy & Cookies Terms of Service Impressum LEGAL INFORMATION — PLAYPALS.IO This imprint applies to the website and to every page and social media presence of the PlayPals demo. IMPRESSUM Legal disclosure for this website — Last updated: November 6, 2026 Service Provider PlayPals demo team Example Street 1 12345 Sample City Country Contact Email: hello@example.com Please use email for all enquiries — we read every message. Responsible for Content PlayPals demo team, address as above. Regulatory and Supervisory Authority Not applicable — this demo is not a licensed or regulated service. VAT ID Not applicable for this demo. Consumer Dispute Resolution We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board. Liability for Content and Links We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for content that changes later on those websites. If you notice a problem, please let us know and we will fix it promptly. Copyright Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author. PRIVACY POLICY & COOKIES Information about the processing of personal data — Last updated: November 6, 2026 1. Data Controller Responsible for data processing on this website: PlayPals demo team Example Street 1, 12345 Sample City Email: hello@example.com 2. Data We Collect Account Data This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it. Game Session Data The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are not sent to us. When you close the tab, the round ends; only your total wins and your settings are remembered on your device. Technical Data When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is needed to deliver the pages, to keep the service secure and to find technical faults. An IP address counts as personal data, so these logs are only used for those purposes and are deleted automatically after a short time. Local Storage We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, your name and any problem reports you wrote. This data never leaves your device and you can delete it at any time in your browser settings. Section 6 lists every item. Moderation of Typed Text Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a word is on the list, the text is not accepted and you see a short notice. Custom Text About Others Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details. 3. How We Use Your Data We use the data described above only to: Run the games and remember your preferences Deliver the pages securely Find and fix technical problems 4. Legal Bases for Data Processing Where data protection law applies, we process data on these legal bases: Performance of a contract — providing the games you choose to play Legitimate interests — secure and reliable delivery of the website Consent — any optional feature that asks for your permission first 5. International Data Transfers This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound by appropriate safeguards. 6. Cookies & Local Storage This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. Because nothing optional is stored, no consent banner is needed. You can clear them at any time: Language preference Audio volume and mute setting Whether calls are read out loud Reduced motion choice Your player name Last used game settings and custom bingo items Locally saved problem reports To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again. Clear my saved settings Analytics No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and this policy will be updated first. 7. Third-Party Services Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded. 8. Data Retention Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days. 9. Your Rights Under GDPR Depending on where you live, you may have the following rights: Right of access to the data we hold about you Right to correct inaccurate data Right to have data deleted Right to restrict processing Right to data portability Right to object to processing Right to complain to a data protection authority To use any of these rights, contact hello@example.com. 10. Data Security Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers. 11. Children's Privacy The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us. 12. Changes to This Policy We may update this policy when the site changes. The date at the top shows the latest version. 13. Contact Questions about privacy? Contact us at: PlayPals demo team Email: hello@example.com TERMS OF SERVICE General Terms and Conditions — Last updated: November 6, 2026 1. Acceptance of Terms By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service. 2. Service Description PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions can happen while we improve things. 3. User Accounts You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everything that happens under your account. 4. User Conduct When using the Service, please do not: Cheat, exploit bugs or use tools that give an unfair advantage Harass or insult other players, or use hateful language Use the Service for anything illegal or to share harmful content Pretend to be another player, a moderator or a member of staff Try to disrupt the Service or the devices it runs on 5. Intellectual Property & Content You Create The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law expressly allows it. Custom bingo items, player names, drawings and other text you type stay yours. By entering them into a game you allow the Service to display them to the people playing with you for the length of that game, and to keep them on your own device so the game can remember your last settings. Please only enter content you own or are allowed to share, and keep it friendly. You confirm that what you enter does not break the rights of anyone else. Game hosts can remove items or players at any time, and we may remove content that breaks these Terms. If you create a card list that you would like others to use, you remain responsible for it. Nothing you type is used for advertising, sold or shared with third parties. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at your own risk. 7. Limitation of Liability We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations — the obligations that make the Service possible in the first place and that you may reasonably rely on. In that case liability is limited to the damage that was typical and foreseeable when you started using the Service. Any liability under mandatory product liability law is not affected. All other liability for slight negligence is excluded. Because game data is stored on your own device, we cannot restore scores or settings that were deleted by your browser. 8. Withdrawal Rights (Consumers) If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason. To withdraw, send a clear statement (for example by email) to: PlayPals demo team Email: hello@example.com If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days using the original payment method. 9. Modifications We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply. 10. Governing Law These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence. 11. Content Moderation & Reporting Problems Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an automated system. Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include: why you believe the content is a problem where it appeared (page, game, room code, player name and, if possible, a screenshot) your name and email address so we can reply a statement that your report is accurate to the best of your knowledge We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, the text is not accepted and you see a short notice in the game. Room hosts can remove players and items from their own game. If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again. Your right to take legal action is not affected. 12. Contact Questions about these Terms? Contact us at: PlayPals demo team Email: hello@example.com PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Play now Privacy & Cookies Terms of Service Impressum LEGAL INFORMATION — PLAYPALS.IO This imprint applies to the website and to every page and social media presence of the PlayPals demo. IMPRESSUM Legal disclosure for this website — Last updated: November 6, 2026 Service Provider PlayPals demo team Example Street 1 12345 Sample City Country Contact Email: hello@example.com Please use email for all enquiries — we read every message. Responsible for Content PlayPals demo team, address as above. Regulatory and Supervisory Authority Not applicable — this demo is not a licensed or regulated service. VAT ID Not applicable for this demo. Consumer Dispute Resolution We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board. Liability for Content and Links We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for content that changes later on those websites. If you notice a problem, please let us know and we will fix it promptly. Copyright Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author. PRIVACY POLICY & COOKIES Information about the processing of personal data — Last updated: November 6, 2026 1. Data Controller Responsible for data processing on this website: PlayPals demo team Example Street 1, 12345 Sample City Email: hello@example.com 2. Data We Collect Account Data This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it. Game Session Data The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are not sent to us. When you close the tab, the round ends; only your total wins and your settings are remembered on your device. Technical Data When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is needed to deliver the pages, to keep the service secure and to find technical faults. An IP address counts as personal data, so these logs are only used for those purposes and are deleted automatically after a short time. Local Storage We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, your name and any problem reports you wrote. This data never leaves your device and you can delete it at any time in your browser settings. Section 6 lists every item. Moderation of Typed Text Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a word is on the list, the text is not accepted and you see a short notice. Custom Text About Others Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details. 3. How We Use Your Data We use the data described above only to: Run the games and remember your preferences Deliver the pages securely Find and fix technical problems 4. Legal Bases for Data Processing Where data protection law applies, we process data on these legal bases: Performance of a contract — providing the games you choose to play Legitimate interests — secure and reliable delivery of the website Consent — any optional feature that asks for your permission first 5. International Data Transfers This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound by appropriate safeguards. 6. Cookies & Local Storage This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. Because nothing optional is stored, no consent banner is needed. You can clear them at any time: Language preference Audio volume and mute setting Whether calls are read out loud Reduced motion choice Your player name Last used game settings and custom bingo items Locally saved problem reports To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again. Clear my saved settings Analytics No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and this policy will be updated first. 7. Third-Party Services Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded. 8. Data Retention Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days. 9. Your Rights Under GDPR Depending on where you live, you may have the following rights: Right of access to the data we hold about you Right to correct inaccurate data Right to have data deleted Right to restrict processing Right to data portability Right to object to processing Right to complain to a data protection authority To use any of these rights, contact hello@example.com. 10. Data Security Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers. 11. Children's Privacy The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us. 12. Changes to This Policy We may update this policy when the site changes. The date at the top shows the latest version. 13. Contact Questions about privacy? Contact us at: PlayPals demo team Email: hello@example.com TERMS OF SERVICE General Terms and Conditions — Last updated: November 6, 2026 1. Acceptance of Terms By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service. 2. Service Description PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions can happen while we improve things. 3. User Accounts You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everything that happens under your account. 4. User Conduct When using the Service, please do not: Cheat, exploit bugs or use tools that give an unfair advantage Harass or insult other players, or use hateful language Use the Service for anything illegal or to share harmful content Pretend to be another player, a moderator or a member of staff Try to disrupt the Service or the devices it runs on 5. Intellectual Property & Content You Create The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law expressly allows it. Custom bingo items, player names, drawings and other text you type stay yours. By entering them into a game you allow the Service to display them to the people playing with you for the length of that game, and to keep them on your own device so the game can remember your last settings. Please only enter content you own or are allowed to share, and keep it friendly. You confirm that what you enter does not break the rights of anyone else. Game hosts can remove items or players at any time, and we may remove content that breaks these Terms. If you create a card list that you would like others to use, you remain responsible for it. Nothing you type is used for advertising, sold or shared with third parties. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at your own risk. 7. Limitation of Liability We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations — the obligations that make the Service possible in the first place and that you may reasonably rely on. In that case liability is limited to the damage that was typical and foreseeable when you started using the Service. Any liability under mandatory product liability law is not affected. All other liability for slight negligence is excluded. Because game data is stored on your own device, we cannot restore scores or settings that were deleted by your browser. 8. Withdrawal Rights (Consumers) If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason. To withdraw, send a clear statement (for example by email) to: PlayPals demo team Email: hello@example.com If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days using the original payment method. 9. Modifications We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply. 10. Governing Law These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence. 11. Content Moderation & Reporting Problems Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an automated system. Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include: why you believe the content is a problem where it appeared (page, game, room code, player name and, if possible, a screenshot) your name and email address so we can reply a statement that your report is accurate to the best of your knowledge We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, the text is not accepted and you see a short notice in the game. Room hosts can remove players and items from their own game. If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again. Your right to take legal action is not affected. 12. Contact Questions about these Terms? Contact us at: PlayPals demo team Email: hello@example.com PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
   "title": "Impressum | PlayPals",
   "unreadable_stylesheets": 0,
-  "url": "http://127.0.0.1:53311/impressum",
+  "url": "http://127.0.0.1:60760/impressum",
   "viewport": {
     "h": 900,
     "w": 1440

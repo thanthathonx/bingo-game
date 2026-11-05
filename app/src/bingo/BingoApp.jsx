@@ -7,7 +7,8 @@ import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
 import LegalFooter from './LegalFooter.jsx';
 import { reducer, newRound, SPEEDS, SKILLS, YOU } from './gameState.js';
-import { cellIndexOf, squaresAway, makeRoomCode } from './engine.js';
+import { cellIndexOf, squaresAway } from './engine.js';
+import { randomSeed, decodeRoom } from './roomCode.js';
 import { callText } from './Card.jsx';
 import { BUDDY_NAMES, BUDDY_COLORS, MAX_BUDDIES, presetText } from './presets.js';
 import { LangContext, translator, speechLang } from '../shared/i18n.js';
@@ -82,9 +83,35 @@ export default function BingoApp() {
   const startRound = useCallback((r) => {
     clearTimers();
     setInitialGame(newRound(r));
+    setRoom((prev) => (prev ? { ...prev, roundNo: (prev.roundNo ?? 0) + 1 } : prev));
     setRound((n) => n + 1);
     setScreen('game');
   }, [clearTimers]);
+
+  const openRoom = ({ name: n, streamer, bigScreen, code }) => {
+    unlockAudio();
+    setName(n);
+    save('name', n);
+    const saved = load('room', null);
+    const joined = code ? decodeRoom(code) : null;
+    const base = { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}) };
+    const settings = joined
+      ? { ...base, ...joined.settings, itemsText: presetText(joined.settings.presetId) }
+      : base;
+    setRoom({
+      seed: joined ? joined.seed : randomSeed(),
+      roundNo: 0,
+      joinedCode: joined ? code : null,
+      friendCustomItems: Boolean(joined?.customItems),
+      hostName: n,
+      streamer,
+      bigScreen,
+      buddies: [0, 1, 2].map(makeBuddy),
+      settings,
+      wins: {},
+    });
+    setScreen('lobby');
+  };
 
   return (
     <LangContext.Provider value={langValue}>
@@ -102,27 +129,19 @@ export default function BingoApp() {
         claimed={claimed}
         later={later}
         clearTimers={clearTimers}
-        onCreate={({ name: n, streamer, bigScreen }) => {
-          unlockAudio();
-          setName(n);
-          save('name', n);
-          const saved = load('room', null);
-          const buddies = [0, 1, 2].map(makeBuddy);
-          setRoom({
-            code: makeRoomCode(),
-            hostName: n,
-            streamer,
-            bigScreen,
-            buddies,
-            settings: { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}) },
-            wins: {},
-          });
-          setScreen('lobby');
-        }}
+        onCreate={openRoom}
         onStart={(r) => startRound(r)}
         setScreen={setScreen}
         lang={lang}
-        onAction={setModal}
+        onAction={(action) => {
+          if (action !== 'join') {
+            setModal(action);
+            return;
+          }
+          clearTimers();
+          setScreen('home');
+          window.setTimeout(() => document.getElementById('friend-code')?.focus(), 60);
+        }}
       />
       <Modals open={modal} onClose={() => setModal(null)} prefs={prefs}
         onPrefs={(p) => { const next = { ...prefs, ...p }; setPrefs(next); save('prefs', next); }}

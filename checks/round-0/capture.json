@@ -13,102 +13,102 @@
   "assets": {
     "background_images": [],
     "fonts": [
-      "http://127.0.0.1:53311/assets/short-stack-latin-400-normal-BJrJPFDw.woff2",
-      "http://127.0.0.1:53311/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2",
-      "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
-      "http://127.0.0.1:53311/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
+      "http://127.0.0.1:60760/assets/short-stack-latin-400-normal-BJrJPFDw.woff2",
+      "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:60760/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:60760/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
     ],
     "images": [
       {
         "alt": "",
         "h": 512,
-        "src": "http://127.0.0.1:53311/mascot.svg",
+        "src": "http://127.0.0.1:60760/mascot.svg",
         "w": 512
       },
       {
         "alt": "Bingo Friends mascot",
         "h": 512,
-        "src": "http://127.0.0.1:53311/mascot.svg",
+        "src": "http://127.0.0.1:60760/mascot.svg",
         "w": 512
       }
     ],
     "inline_scripts": 0,
     "requests": [
       {
-        "bytes": 152800,
+        "bytes": 152808,
         "type": "script",
-        "url": "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js"
-      },
-      {
-        "bytes": 53661,
-        "type": "script",
-        "url": "http://127.0.0.1:53311/assets/main-bingo-BExZ4Sle.js"
+        "url": "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js"
       },
       {
         "bytes": 3396,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css"
+        "url": "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css"
       },
       {
-        "bytes": 26790,
+        "bytes": 58741,
+        "type": "script",
+        "url": "http://127.0.0.1:60760/assets/main-bingo-DxaIFAx8.js"
+      },
+      {
+        "bytes": 28934,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/main-bingo-DM8yyNsJ.css"
+        "url": "http://127.0.0.1:60760/assets/main-bingo-BiU9MaUN.css"
       },
       {
         "bytes": 2779,
         "type": "img",
-        "url": "http://127.0.0.1:53311/mascot.svg"
+        "url": "http://127.0.0.1:60760/mascot.svg"
       },
       {
         "bytes": 24692,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/short-stack-latin-400-normal-BJrJPFDw.woff2"
-      },
-      {
-        "bytes": 22588,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
+        "url": "http://127.0.0.1:60760/assets/short-stack-latin-400-normal-BJrJPFDw.woff2"
       },
       {
         "bytes": 14644,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2"
+        "url": "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2"
+      },
+      {
+        "bytes": 22588,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
       },
       {
         "bytes": 14348,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2"
       },
       {
         "bytes": 14360,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
       },
       {
         "bytes": 30032,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
+        "url": "http://127.0.0.1:60760/assets/fredoka-latin-wght-normal-DM6njrJ3.woff2"
       },
       {
         "bytes": 2999,
         "type": "other",
-        "url": "http://127.0.0.1:53311/favicon.ico"
+        "url": "http://127.0.0.1:60760/favicon.ico"
       }
     ],
     "scripts": [
-      "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js",
-      "http://127.0.0.1:53311/assets/main-bingo-BExZ4Sle.js"
+      "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js",
+      "http://127.0.0.1:60760/assets/main-bingo-DxaIFAx8.js"
     ],
     "stylesheets": [
-      "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css",
-      "http://127.0.0.1:53311/assets/main-bingo-DM8yyNsJ.css"
+      "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:60760/assets/main-bingo-BiU9MaUN.css"
     ]
   },
   "breakpoints": [
     {
-      "count": 4,
+      "count": 5,
       "px": 479,
       "query": "max-width 479px"
     },
@@ -123,7 +123,7 @@
       "query": "max-width 639px"
     },
     {
-      "count": 1,
+      "count": 2,
       "px": 899,
       "query": "max-width 899px"
     },
@@ -145,6 +145,10 @@
         "value": "#2c2f51"
       },
       {
+        "count": 4,
+        "value": "#07061a"
+      },
+      {
         "count": 3,
         "value": "#0c0a20"
       },
@@ -153,8 +157,8 @@
         "value": "#16123a"
       },
       {
-        "count": 3,
-        "value": "#07061a"
+        "count": 2,
+        "value": "#00d9ff"
       },
       {
         "count": 1,
@@ -171,10 +175,6 @@
       {
         "count": 1,
         "value": "#221c3d"
-      },
-      {
-        "count": 1,
-        "value": "#00d9ff"
       },
       {
         "count": 1,
@@ -291,12 +291,16 @@
     ],
     "font_sizes": [
       {
-        "count": 4,
+        "count": 5,
         "value": "15px"
       },
       {
-        "count": 3,
+        "count": 4,
         "value": "12.8px"
+      },
+      {
+        "count": 3,
+        "value": "16px"
       },
       {
         "count": 3,
@@ -313,10 +317,6 @@
       {
         "count": 2,
         "value": "72px"
-      },
-      {
-        "count": 2,
-        "value": "16px"
       },
       {
         "count": 1,
@@ -345,7 +345,7 @@
     ],
     "font_weights": [
       {
-        "count": 14,
+        "count": 16,
         "value": "400"
       },
       {
@@ -353,18 +353,22 @@
         "value": "700"
       },
       {
-        "count": 1,
-        "value": "600"
+        "count": 2,
+        "value": "800"
       },
       {
         "count": 1,
-        "value": "800"
+        "value": "600"
       }
     ],
     "fonts": [
       {
-        "count": 15,
+        "count": 17,
         "value": "\"Space Grotesk\", system-ui, sans-serif"
+      },
+      {
+        "count": 3,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
       },
       {
         "count": 3,
@@ -373,10 +377,6 @@
       {
         "count": 2,
         "value": "Bungee, Outfit, system-ui, sans-serif"
-      },
-      {
-        "count": 2,
-        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
       },
       {
         "count": 2,
@@ -395,7 +395,7 @@
     ],
     "radii": [
       {
-        "count": 9,
+        "count": 11,
         "value": "10px"
       },
       {
@@ -425,7 +425,7 @@
         "value": "rgb(5, 2, 14) 0px 0px 0px 1px, rgb(5, 2, 14) 3px 3px 0px 0px"
       },
       {
-        "count": 2,
+        "count": 3,
         "value": "rgba(5, 4, 20, 0.7) 3px 3px 0px 0px"
       },
       {
@@ -443,20 +443,24 @@
     ],
     "spacing": [
       {
-        "count": 23,
+        "count": 26,
         "value": "8px"
-      },
-      {
-        "count": 11,
-        "value": "24px"
       },
       {
         "count": 10,
         "value": "10px"
       },
       {
-        "count": 6,
+        "count": 10,
+        "value": "24px"
+      },
+      {
+        "count": 7,
         "value": "16px"
+      },
+      {
+        "count": 5,
+        "value": "14px"
       },
       {
         "count": 3,
@@ -467,6 +471,10 @@
         "value": "13px"
       },
       {
+        "count": 3,
+        "value": "18px"
+      },
+      {
         "count": 2,
         "value": "12px"
       },
@@ -475,12 +483,16 @@
         "value": "9px"
       },
       {
-        "count": 2,
-        "value": "14px"
+        "count": 1,
+        "value": "211px"
       },
       {
         "count": 1,
         "value": "53px"
+      },
+      {
+        "count": 1,
+        "value": "-11px"
       },
       {
         "count": 1,
@@ -489,10 +501,6 @@
       {
         "count": 1,
         "value": "17px"
-      },
-      {
-        "count": 1,
-        "value": "18px"
       }
     ],
     "text_colors": [
@@ -510,7 +518,15 @@
       },
       {
         "count": 2,
+        "value": "#05020e"
+      },
+      {
+        "count": 2,
         "value": "#c4bdf0"
+      },
+      {
+        "count": 2,
+        "value": "#897fc0"
       },
       {
         "count": 1,
@@ -522,10 +538,6 @@
       },
       {
         "count": 1,
-        "value": "#05020e"
-      },
-      {
-        "count": 1,
         "value": "#efeaff"
       },
       {
@@ -534,15 +546,15 @@
       },
       {
         "count": 1,
-        "value": "#897fc0"
-      },
-      {
-        "count": 1,
         "value": "#ff6b6b"
       },
       {
         "count": 1,
         "value": "#07061a"
+      },
+      {
+        "count": 1,
+        "value": "#ffffff"
       }
     ]
   },
@@ -573,6 +585,28 @@
           "required": false,
           "tag": "input",
           "type": "checkbox"
+        },
+        {
+          "label": "",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "tag": "button",
+          "type": "submit"
+        }
+      ],
+      "method": "get"
+    },
+    {
+      "action": "",
+      "fields": [
+        {
+          "label": "Got a code from a friend?",
+          "name": "",
+          "placeholder": "Got a code from a friend?",
+          "required": false,
+          "tag": "input",
+          "type": "text"
         },
         {
           "label": "",
@@ -632,7 +666,7 @@
             0,
             0
           ],
-          "per_row": 2,
+          "per_row": 1,
           "tag": "main",
           "w": 1440,
           "y": 75
@@ -796,26 +830,26 @@
   ],
   "links": [
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "BINGO FRIENDS"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "IMPRESSUM"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "PRIVACY"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "TERMS"
     }
   ],
   "meta": {
     "description": "Play Bingo Friends for free: number bingo or your own event cards, daub items as they're called and be the first to shout BINGO!",
     "icons": [
-      "http://127.0.0.1:53311/favicon.ico"
+      "http://127.0.0.1:60760/favicon.ico"
     ],
     "og_image": "",
     "og_title": "",
@@ -860,7 +894,7 @@
       "color": "#e7e9f1",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "BINGO FRIENDS"
     },
@@ -876,7 +910,7 @@
       "color": "#e7e9f1",
       "depth": 8,
       "font": "15px 600",
-      "src": "http://127.0.0.1:53311/mascot.svg",
+      "src": "http://127.0.0.1:60760/mascot.svg",
       "tag": "img"
     },
     {
@@ -970,13 +1004,13 @@
       "depth": 8,
       "font": "15px 800",
       "tag": "button",
-      "text": "Sign in"
+      "text": "Join"
     },
     {
       "box": {
         "h": 20,
         "w": 20,
-        "x": 1229,
+        "x": 1237,
         "y": 26
       },
       "color": "#05020e",
@@ -1032,13 +1066,13 @@
         "h": 144,
         "w": 144,
         "x": 244,
-        "y": 301
+        "y": 289
       },
       "class": "home-mascot",
       "color": "#ffffff",
       "depth": 11,
       "font": "16px 400",
-      "src": "http://127.0.0.1:53311/mascot.svg",
+      "src": "http://127.0.0.1:60760/mascot.svg",
       "tag": "img"
     },
     {
@@ -1046,7 +1080,7 @@
         "h": 73,
         "w": 450,
         "x": 249,
-        "y": 454
+        "y": 442
       },
       "class": "home-title",
       "color": "#fd79a8",
@@ -1060,7 +1094,7 @@
         "h": 49,
         "w": 347,
         "x": 249,
-        "y": 536
+        "y": 523
       },
       "class": "home-tagline",
       "color": "#efeaff",
@@ -1074,7 +1108,7 @@
         "h": 16,
         "w": 16,
         "x": 267,
-        "y": 611
+        "y": 598
       },
       "color": "#a29bfe",
       "depth": 10,
@@ -1134,7 +1168,7 @@
         "h": 22,
         "w": 22,
         "x": 810,
-        "y": 426
+        "y": 427
       },
       "color": "#000000",
       "depth": 12,
@@ -1166,7 +1200,7 @@
         "h": 67,
         "w": 366,
         "x": 800,
-        "y": 544
+        "y": 545
       },
       "class": "home-btn",
       "color": "#07061a",
@@ -1174,6 +1208,68 @@
       "font": "20.8px 700",
       "tag": "button",
       "text": "CREATE ROOM"
+    },
+    {
+      "box": {
+        "h": 90,
+        "w": 366,
+        "x": 800,
+        "y": 628
+      },
+      "class": "join-form",
+      "color": "#ffffff",
+      "depth": 10,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "form"
+    },
+    {
+      "background": "#07061a",
+      "box": {
+        "h": 48,
+        "w": 262,
+        "x": 800,
+        "y": 644
+      },
+      "class": "join-input",
+      "color": "#00d9ff",
+      "depth": 12,
+      "font": "20px 400",
+      "id": "friend-code",
+      "name": "",
+      "placeholder": "Got a code from a friend?",
+      "tag": "input",
+      "type": "text"
+    },
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 48,
+        "w": 96,
+        "x": 1070,
+        "y": 644
+      },
+      "class": "join-btn",
+      "color": "#05020e",
+      "depth": 12,
+      "font": "15px 800",
+      "tag": "button",
+      "text": "JOIN"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 366,
+        "x": 800,
+        "y": 700
+      },
+      "class": "join-help",
+      "color": "#897fc0",
+      "depth": 11,
+      "font": "12.8px 400",
+      "id": "code-help",
+      "tag": "p",
+      "text": "Same code = same calls in the same order, on every device."
     },
     {
       "background": "#16123a",
@@ -1202,7 +1298,7 @@
       "color": "#a29bfe",
       "depth": 6,
       "font": "11.52px 700",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "IMPRESSUM"
     },
@@ -1217,7 +1313,7 @@
       "color": "#a29bfe",
       "depth": 6,
       "font": "11.52px 700",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "PRIVACY"
     },
@@ -1232,7 +1328,7 @@
       "color": "#a29bfe",
       "depth": 6,
       "font": "11.52px 700",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "TERMS"
     }
@@ -1241,10 +1337,10 @@
     "h": 900,
     "w": 1440
   },
-  "text": "✦ ✧ ✦ ✶ ✧ BINGO FRIENDS Sign in Menu Bingo Friends Number bingo or your own event cards — complete a line to win. 1-∞ players | Party Game Start a new game and invite friends Your Name* Streamer Mode (hide room code) Big Screen Mode (TV — players join on their phones) CREATE ROOM IMPRESSUM PRIVACY TERMS",
+  "text": "✦ ✧ ✦ ✶ ✧ BINGO FRIENDS Join Menu Bingo Friends Number bingo or your own event cards — complete a line to win. 1-∞ players | Party Game Start a new game and invite friends Your Name* Streamer Mode (hide room code) Big Screen Mode (TV — players join on their phones) CREATE ROOM Got a code from a friend? JOIN Same code = same calls in the same order, on every device. IMPRESSUM PRIVACY TERMS",
   "title": "Play Bingo Friends Online - Free Custom Bingo Party Game",
   "unreadable_stylesheets": 0,
-  "url": "http://127.0.0.1:53311/",
+  "url": "http://127.0.0.1:60760/",
   "viewport": {
     "h": 900,
     "w": 1440

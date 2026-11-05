@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import {
-  IconSpeaker, IconMuted, IconGear, IconSignIn, IconMenu, IconClose, IconMusic, IconSparkles,
-  IconCheck, IconHelp, IconMessage, IconCrown, IconKey, Flag,
+  IconSpeaker, IconMuted, IconGear, IconMenu, IconClose, IconMusic, IconSparkles,
+  IconCheck, IconHelp, IconMessage, IconKey, IconGamepad, IconUsers, IconShield, Flag,
 } from '../shared/icons.jsx';
 import { LANGUAGES, useLang } from '../shared/i18n.js';
 import { getAudioSettings, onAudioChange, setAudioSettings, playSfx } from '../shared/audio.js';
@@ -71,10 +71,10 @@ export default function Header({ onAction }) {
             title={t('language')} aria-haspopup="dialog" aria-expanded={panel === 'language'} onClick={() => toggle('language')}>
             <span className="rh-flag"><Flag code={lang} /></span>
           </button>
-          <button type="button" className="rh-key is-cta rh-signin" aria-label={t('signIn')} title={t('signIn')}
-            onClick={() => act('signin')}>
-            <IconSignIn />
-            <span className="rh-text">{t('signIn')}</span>
+          <button type="button" className="rh-key is-cta rh-signin" aria-label={t('gotCode')} title={t('gotCode')}
+            onClick={() => act('join')}>
+            <IconKey />
+            <span className="rh-text">{t('join')}</span>
           </button>
           <button type="button" className={`${keyClass('menu')} rh-menu`} aria-label={t('menu')} title={t('menu')}
             aria-haspopup="dialog" aria-expanded={panel === 'menu'} onClick={() => toggle('menu')}>
@@ -159,14 +159,14 @@ function MenuPanel({ t, act }) {
     <div className="rh-panel-body">
       <button type="button" className="pm-profile" onClick={() => act('signin')}>
         <span className="pm-avatar"><Mascot size={46} /></span>
-        <span>{t('loginSignup')}</span>
+        <span>{t('noAccount')}<small>{t('changeName')}</small></span>
       </button>
-      <button type="button" className="pm-item" onClick={() => act('signin')}>
-        <span className="pm-icon is-purple"><IconSignIn size={18} /></span>{t('signIn')}
+      <button type="button" className="pm-item" onClick={() => act('join')}>
+        <span className="pm-icon is-purple"><IconKey size={18} /></span>{t('gotCode')}
       </button>
-      <button type="button" className="pm-item" onClick={() => act('signin')}>
-        <span className="pm-icon is-purple"><IconSignIn size={18} /></span>{t('createAccount')}
-      </button>
+      <a className="pm-item" href="/games/">
+        <span className="pm-icon is-purple"><IconGamepad size={18} /></span>{t('allGames')}
+      </a>
       <div className="pm-section">{t('helpSupport')}</div>
       <button type="button" className="pm-item" onClick={() => act('settings')}>
         <span className="pm-icon is-gold"><IconGear size={18} /></span>{t('settings')}
@@ -177,13 +177,13 @@ function MenuPanel({ t, act }) {
       <button type="button" className="pm-item" onClick={() => act('report')}>
         <span className="pm-icon is-gold"><IconMessage size={18} /></span>{t('report')}
       </button>
-      <div className="pm-section">{t('account')}</div>
-      <button type="button" className="pm-item" onClick={() => act('premium')}>
-        <span className="pm-icon is-purple"><IconCrown size={18} /></span>{t('premium')}
+      <div className="pm-section">{t('you')}</div>
+      <button type="button" className="pm-item" onClick={() => act('signin')}>
+        <span className="pm-icon is-purple"><IconUsers size={18} /></span>{t('changeName')}
       </button>
-      <button type="button" className="pm-item" onClick={() => act('redeem')}>
-        <span className="pm-icon is-purple"><IconKey size={18} /></span>{t('redeem')}
-      </button>
+      <a className="pm-item" href="/datenschutz#s6">
+        <span className="pm-icon is-purple"><IconShield size={18} /></span>{t('privacySettings')}
+      </a>
     </div>
   );
 }

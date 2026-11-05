@@ -14,13 +14,13 @@
   "assets": {
     "background_images": [],
     "fonts": [
-      "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
-      "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
-      "http://127.0.0.1:53311/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
+      "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:60760/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
     ],
     "images": [
       {
@@ -159,68 +159,68 @@
     "inline_scripts": 0,
     "requests": [
       {
-        "bytes": 152800,
+        "bytes": 152808,
         "type": "script",
-        "url": "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js"
+        "url": "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js"
       },
       {
         "bytes": 3396,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css"
+        "url": "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css"
       },
       {
-        "bytes": 20310,
-        "type": "link",
-        "url": "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
-      },
-      {
-        "bytes": 105179,
+        "bytes": 105107,
         "type": "script",
-        "url": "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+        "url": "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
+      },
+      {
+        "bytes": 20331,
+        "type": "link",
+        "url": "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
       },
       {
         "bytes": 13828,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
       },
       {
         "bytes": 14348,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2"
-      },
-      {
-        "bytes": 14440,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
-      },
-      {
-        "bytes": 14644,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2"
       },
       {
         "bytes": 14360,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 14440,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2"
       },
       {
         "bytes": 14332,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
       },
       {
         "bytes": 22588,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
+        "url": "http://127.0.0.1:60760/assets/space-grotesk-latin-wght-normal-BhU9QXUp.woff2"
       }
     ],
     "scripts": [
-      "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js",
-      "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+      "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js",
+      "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
     ],
     "stylesheets": [
-      "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css",
-      "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+      "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
     ]
   },
   "breakpoints": [
@@ -580,7 +580,7 @@
     ],
     "spacing": [
       {
-        "count": 211,
+        "count": 209,
         "value": "6px"
       },
       {
@@ -596,7 +596,7 @@
         "value": "8px"
       },
       {
-        "count": 84,
+        "count": 82,
         "value": "1px"
       },
       {
@@ -1629,63 +1629,67 @@
   ],
   "links": [
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "PlayPals.io"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/bingo/",
+      "text": "Play now"
+    },
+    {
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "NEW"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "PLAY WITH FRIENDS"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Details"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All games"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
@@ -1693,27 +1697,27 @@
       "text": "Email us"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -1721,7 +1725,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -1729,39 +1733,39 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -1769,7 +1773,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -1777,50 +1781,50 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for parties"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for streams"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Classroom bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Sound and motion"
     }
   ],
   "meta": {
     "description": "Browser party games to play with friends — pick one and start playing, no download.",
     "icons": [
-      "http://127.0.0.1:53311/favicon.ico"
+      "http://127.0.0.1:60760/favicon.ico"
     ],
     "og_image": "",
     "og_title": "",
@@ -1853,7 +1857,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "16px 400",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "PlayPals.io"
     },
@@ -1897,7 +1901,7 @@
       "color": "#00d9ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Games"
     },
@@ -1911,7 +1915,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo"
     },
@@ -1925,7 +1929,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "tag": "a",
       "text": "Now Playing"
     },
@@ -1951,7 +1955,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "Help"
     },
@@ -2019,8 +2023,9 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 650",
-      "tag": "button",
-      "text": "Log in"
+      "href": "http://127.0.0.1:60760/bingo/",
+      "tag": "a",
+      "text": "Play now"
     },
     {
       "background": "#123247",
@@ -2407,7 +2412,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "16px 400",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "NEW"
     },
@@ -2490,7 +2495,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "PLAY WITH FRIENDS"
     },
@@ -2517,7 +2522,7 @@
       "color": "#00d9ff",
       "depth": 9,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Details"
     },
@@ -5439,7 +5444,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play Bingo Friends"
     },
@@ -5467,7 +5472,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a"
     },
     {
@@ -5494,7 +5499,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a"
     },
     {
@@ -5587,7 +5592,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "All party games"
     },
@@ -5601,7 +5606,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo Friends"
     },
@@ -5615,7 +5620,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Free browser games"
     },
@@ -5629,7 +5634,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play on your TV"
     },
@@ -5684,7 +5689,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "How it works"
     },
@@ -5698,7 +5703,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "For streamers"
     },
@@ -5767,7 +5772,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "About us"
     },
@@ -5836,7 +5841,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "Privacy"
     },
@@ -5850,7 +5855,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "Terms"
     },
@@ -5864,7 +5869,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "Impressum"
     },
@@ -5934,7 +5939,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for parties"
     },
@@ -5948,7 +5953,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for streams"
     },
@@ -5962,7 +5967,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Classroom bingo"
     },
@@ -6017,7 +6022,7 @@
       "color": "#d9d1eb",
       "depth": 7,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Sound and motion"
     },
@@ -6038,10 +6043,10 @@
     "h": 4612,
     "w": 1425
   },
-  "text": "PlayPals.io Games Bingo Now Playing Help Premium Log in FREE BROWSER PARTY GAMES TO PLAY WITH FRIENDS ✦ ✦ ✦ Play opens the game right here. Share your screen or pass the device around. PLAYERS Any Solo 2 3 4+ TYPE All types Quiz & Trivia Word Games Deduction Creative Arcade 20 GAMES NEW BINGO FRIENDS Number bingo or your own event cards. First full line wins! 1+ players Party PLAY WITH FRIENDS Details DOODLE DASH Creative Draw fast, guess faster. Chaos guaranteed. 2+ players 5-30 min Details Play QUIZ POP Trivia Buzz in first or lose the point. 2+ players 15-30 min Details Play WORD SPRINT Party One letter, five categories, no time. 2+ players 10-20 min Details Play MASK PARTY Deduction Act it out before the timer pops. 3+ players 20-40 min Details Play MIND SYNC Guessing Two players, one word. Think alike. 2 players 1-5 min Details Play NUMBER HUNCH Guessing Guess the number closest to the truth. 2+ players 15-25 min Details Play LAST ONE STANDING Trivia Quiz rounds where the crowd decides. 2+ players 20-40 min Details Play HOT POTATO Party Pass it on before it pops. 1+ players 3-10 min Details Play BINGO FRIENDS Party Turn any event, stream or class into a live bingo game. 1+ players 10+ min Details Play SUSPECT SKETCH Deduction Clue cards, one culprit, many theories. 1+ players 10-25 min Details Play SOUND SKETCH Party Hum it, beatbox it, guess it. 4+ players 10-30 min Details Play FIB FINDER Party Write a fake answer. Spot the real one. 3+ players 15-25 min Details Play EMOJI DECODE Party Describe a word in emoji. Race to crack it. 2+ players 5-30 min Details Play RANK IT Party Sort the list from best to worst — together. 1+ players 10-25 min Details Play SPOTLIGHT Party Everyone can see your word except you. 2+ players 5-20 min Details Play MAZE MAKERS Strategy Build a maze, send a monster, escape. 1+ players 15-40 min Details Play TABLE KICK Party Tiny football for one to eight players. 1+ players 3-8 min Details Play JOKE BOMBS Party Light the fuse, steal the last laugh. 1+ players 3-10 min Details Play LIGHT TRAILS Arcade Leave a wall of light. Be the last one moving. 1+ players 5-15 min Details Play Free browser party games for game night — trivia, drawing, deduction and bingo. Play with friends in your browser, no download, no account. Pick a game, gather everyone around one screen or pass the device around. Every game works on desktop, tablet or phone, and the bingo game even has a Big Screen mode for the TV. MORE WAYS TO PLAY — PICK THE RIGHT GAME Not sure where to start? These quick picks match the most common game-night moods. Big group? Bingo Friends with event cards works for any number of people around one screen. Love drawing? Doodle Dash turns every round into a guessing frenzy. Quiz fans? Quiz Pop and Last One Standing keep score for you. Short on time? Mind Sync and Hot Potato last just a few minutes. Hosting a stream? Bingo Friends has Streamer Mode and a Big Screen view. Feature PlayPals Party app Video quiz Board game Price Free Paid packs Free (ads) One-off Download needed No Often No — Computer players Yes Rarely No No Works on a TV Big Screen Varies Yes No Your own cards Yes No No No All games are free and run in your browser — just open one and start playing. WHY PLAYPALS? ✓ 100% free — no paywalls, play instantly ✓ No downloads or installs — everything in your browser ✓ Computer buddies when your friends are busy ✓ Works on desktop, tablet and mobile ✓ Your settings are saved on your device FREQUENTLY ASKED QUESTIONS What is the best game for a big group? Do I need to install anything? Is it really free? Can we switch games without leaving? Which game is best for people who just met? Can I play on my phone during a call? PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Play now FREE BROWSER PARTY GAMES TO PLAY WITH FRIENDS ✦ ✦ ✦ Play opens the game right here. Share your screen or pass the device around. PLAYERS Any Solo 2 3 4+ TYPE All types Quiz & Trivia Word Games Deduction Creative Arcade 20 GAMES NEW BINGO FRIENDS Number bingo or your own event cards. First full line wins! 1+ players Party PLAY WITH FRIENDS Details DOODLE DASH Creative Draw fast, guess faster. Chaos guaranteed. 2+ players 5-30 min Details Play QUIZ POP Trivia Buzz in first or lose the point. 2+ players 15-30 min Details Play WORD SPRINT Party One letter, five categories, no time. 2+ players 10-20 min Details Play MASK PARTY Deduction Act it out before the timer pops. 3+ players 20-40 min Details Play MIND SYNC Guessing Two players, one word. Think alike. 2 players 1-5 min Details Play NUMBER HUNCH Guessing Guess the number closest to the truth. 2+ players 15-25 min Details Play LAST ONE STANDING Trivia Quiz rounds where the crowd decides. 2+ players 20-40 min Details Play HOT POTATO Party Pass it on before it pops. 1+ players 3-10 min Details Play BINGO FRIENDS Party Turn any event, stream or class into a live bingo game. 1+ players 10+ min Details Play SUSPECT SKETCH Deduction Clue cards, one culprit, many theories. 1+ players 10-25 min Details Play SOUND SKETCH Party Hum it, beatbox it, guess it. 4+ players 10-30 min Details Play FIB FINDER Party Write a fake answer. Spot the real one. 3+ players 15-25 min Details Play EMOJI DECODE Party Describe a word in emoji. Race to crack it. 2+ players 5-30 min Details Play RANK IT Party Sort the list from best to worst — together. 1+ players 10-25 min Details Play SPOTLIGHT Party Everyone can see your word except you. 2+ players 5-20 min Details Play MAZE MAKERS Strategy Build a maze, send a monster, escape. 1+ players 15-40 min Details Play TABLE KICK Party Tiny football for one to eight players. 1+ players 3-8 min Details Play JOKE BOMBS Party Light the fuse, steal the last laugh. 1+ players 3-10 min Details Play LIGHT TRAILS Arcade Leave a wall of light. Be the last one moving. 1+ players 5-15 min Details Play Free browser party games for game night — trivia, drawing, deduction and bingo. Play with friends in your browser, no download, no account. Pick a game, gather everyone around one screen or pass the device around. Every game works on desktop, tablet or phone, and the bingo game even has a Big Screen mode for the TV. MORE WAYS TO PLAY — PICK THE RIGHT GAME Not sure where to start? These quick picks match the most common game-night moods. Big group? Bingo Friends with event cards works for any number of people around one screen. Love drawing? Doodle Dash turns every round into a guessing frenzy. Quiz fans? Quiz Pop and Last One Standing keep score for you. Short on time? Mind Sync and Hot Potato last just a few minutes. Hosting a stream? Bingo Friends has Streamer Mode and a Big Screen view. Feature PlayPals Party app Video quiz Board game Price Free Paid packs Free (ads) One-off Download needed No Often No — Computer players Yes Rarely No No Works on a TV Big Screen Varies Yes No Your own cards Yes No No No All games are free and run in your browser — just open one and start playing. WHY PLAYPALS? ✓ 100% free — no paywalls, play instantly ✓ No downloads or installs — everything in your browser ✓ Computer buddies when your friends are busy ✓ Works on desktop, tablet and mobile ✓ Your settings are saved on your device FREQUENTLY ASKED QUESTIONS What is the best game for a big group? Do I need to install anything? Is it really free? Can we switch games without leaving? Which game is best for people who just met? Can I play on my phone during a call? PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
   "title": "Free Online Party Games to Play With Friends | PlayPals",
   "unreadable_stylesheets": 0,
-  "url": "http://127.0.0.1:53311/games",
+  "url": "http://127.0.0.1:60760/games",
   "viewport": {
     "h": 900,
     "w": 1440

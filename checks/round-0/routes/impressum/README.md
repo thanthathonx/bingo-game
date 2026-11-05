@@ -1,4 +1,4 @@
-# Capture of http://127.0.0.1:53311/impressum
+# Capture of http://127.0.0.1:60760/impressum
 
 - Title: Impressum | PlayPals
 - Description: Legal disclosure for this website.
@@ -18,7 +18,7 @@
 - Text colours: `#e7e9f1`, `#f8f5ff`, `#00d9ff`, `#d9d1eb`, `#ffffff`, `#e94560`
 - Backgrounds: `#27305c`, `#100d25`, `#100d29`, `#123247`, `#00d9ff`, `#0a0818`
 - Corner radii: `8px`, `10px`, `50%`
-- Spacing (padding, gaps, margins): `6.72px`, `23.52px`, `8.8px`, `10px`, `16px`, `6px`, `8px`, `24px`, `22px`, `1px`
+- Spacing (padding, gaps, margins): `6.72px`, `23.52px`, `8.8px`, `10px`, `16px`, `6px`, `8px`, `24px`, `22px`, `14.4px`
 - Content widths: `920px`, `482.816px`
 - Font files: 6
 

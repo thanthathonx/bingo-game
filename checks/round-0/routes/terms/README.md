@@ -1,4 +1,4 @@
-# Capture of http://127.0.0.1:53311/terms
+# Capture of http://127.0.0.1:60760/terms
 
 - Title: Terms of Service | PlayPals
 - Description: Terms of service and usage conditions.
@@ -18,7 +18,7 @@
 - Text colours: `#f8f5ff`, `#e4ddf3`, `#d9d1eb`, `#b5abd0`, `#00d9ff`, `#ffffff`
 - Backgrounds: `#27305c`, `#100d25`, `#100d29`, `#123247`, `#37245c`, `#1b1433`
 - Corner radii: `8px`, `10px`, `50%`, `12px`
-- Spacing (padding, gaps, margins): `10px`, `4px`, `14px`, `8px`, `16px`, `6px`, `36px`, `24px`, `1px`, `20px`
+- Spacing (padding, gaps, margins): `10px`, `4px`, `14px`, `8px`, `16px`, `6px`, `36px`, `24px`, `20px`, `1px`
 - Content widths: `482.816px`
 - Font files: 6
 

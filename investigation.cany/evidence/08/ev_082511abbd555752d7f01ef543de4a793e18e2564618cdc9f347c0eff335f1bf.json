@@ -1,0 +1,77 @@
+{
+  "id": "ev_082511abbd555752d7f01ef543de4a793e18e2564618cdc9f347c0eff335f1bf",
+  "subject": {
+    "kind": "website",
+    "name": "http://127.0.0.1:58497/"
+  },
+  "operation": "web_page_states_capture",
+  "params": {
+    "max_states": 8,
+    "width": 390
+  },
+  "result": {
+    "folder": "D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\checks\\round-9\\states-390",
+    "found": 3,
+    "states": [
+      {
+        "changed": [
+          "expanded",
+          "dialog appeared"
+        ],
+        "file": "state-1.png",
+        "index": 0,
+        "kind": "dialog",
+        "label": "Game audio",
+        "sha256": "28a86ef8204508af490e36e1c2a9af07c7b3ba0a8a93e92844f58f1650ed843e"
+      },
+      {
+        "changed": [
+          "expanded"
+        ],
+        "file": "state-2.png",
+        "index": 1,
+        "kind": "dialog",
+        "label": "Language: English",
+        "sha256": "ff203a8977c6bc9fb8ee4ca413d2e9654102dd9a5fc2d7635ae567cac1c19a93"
+      },
+      {
+        "changed": [
+          "expanded"
+        ],
+        "file": "state-3.png",
+        "index": 2,
+        "kind": "dialog",
+        "label": "Menu",
+        "sha256": "35a4fee7d57a1e7832a8cc760340cf55126d523f31a1298be61d3ab68ee1e333"
+      }
+    ],
+    "url": "http://127.0.0.1:58497/"
+  },
+  "summary": "Opened 3 of 3 control(s) on http://127.0.0.1:58497/; 3 pictured in D:\\Thanthathon Sangphet\\Documents\\Craft Anything\\gamebuddies-io\\checks\\round-9\\states-390.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "first_controls",
+      "message": "Only the first controls found are opened, one at a time; menus inside menus and hover-only menus are not."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 3,
+    "total": 3
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "http://127.0.0.1:58497/"
+    }
+  ],
+  "links": []
+}

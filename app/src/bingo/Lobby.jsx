@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
-import { IconEye, IconPlus, IconMinus, IconCrown, IconTv, IconDoor, IconPlay } from '../shared/icons.jsx';
+import { IconEye, IconPlus, IconMinus, IconCrown, IconTv, IconDoor, IconPlay, IconCopy } from '../shared/icons.jsx';
+import { encodeRoom } from './roomCode.js';
 import { useLang } from '../shared/i18n.js';
 import { itemsNeeded } from './engine.js';
 import { settingsProblem, poolFor } from './gameState.js';
@@ -16,6 +17,17 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
   const s = room.settings;
   const problem = settingsProblem(s);
   const hostWins = room.wins.you ?? 0;
+  const code = encodeRoom(s, room.seed);
+  const [copied, setCopied] = useState(false);
+  const copyCode = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 1800);
+    } catch {
+      setShowCode(true);
+    }
+  };
 
   return (
     <div className="lobby">
@@ -24,14 +36,26 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           <span className="phase-chip">{t('lobby')}</span>
           <h1 className="lobby-title">Bingo<span> Friends</span></h1>
         </div>
-        <div className="room-code" aria-live="polite">
-          <span className="room-code-label">{t('roomCode')}</span>
-          <span className="room-code-value">{showCode ? room.code : '••••••'}</span>
-          <button type="button" className="mini-key" onClick={() => setShowCode((v) => !v)} aria-label="Show or hide room code">
-            <IconEye size={16} />
-          </button>
+        <div className="room-code-box">
+          <div className="room-code" aria-live="polite">
+            <span className="room-code-label">{t('roomCode')}</span>
+            <span className="room-code-value">{showCode ? code : '••••••'}</span>
+            <button type="button" className="mini-key" onClick={() => setShowCode((v) => !v)} aria-label="Show or hide room code">
+              <IconEye size={16} />
+            </button>
+            <button type="button" className="mini-key" onClick={copyCode} aria-label="Copy room code">
+              <IconCopy size={16} />
+            </button>
+          </div>
+          <p className="hint room-code-hint" role="status">{copied ? '✓ Copied' : t('shareCode')}</p>
         </div>
       </div>
+      {room.joinedCode && (
+        <p className="join-note">
+          {t('joinedWith')} {t('pressTogether')}
+          {room.friendCustomItems && s.mode === 'custom' && <> {t('friendItems')}</>}
+        </p>
+      )}
 
       <div className="lobby-grid">
         <section className="panel" aria-labelledby="players-h">

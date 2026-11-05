@@ -1,0 +1,5922 @@
+{
+  "a11y": {
+    "images_without_alt": 0,
+    "landmarks": {
+      "banner": 1,
+      "contentinfo": 1,
+      "main": 1,
+      "navigation": 7
+    },
+    "lang": "en",
+    "unnamed_controls": 0,
+    "unnamed_examples": []
+  },
+  "assets": {
+    "background_images": [],
+    "fonts": [
+      "http://127.0.0.1:50726/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:50726/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:50726/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:50726/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:50726/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:50726/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+    ],
+    "images": [
+      {
+        "alt": "",
+        "h": 40,
+        "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+        "w": 40
+      },
+      {
+        "alt": "PlayPals mascot reading the rules",
+        "h": 72,
+        "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2272%22%20height%3D%2272%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3Cg%20transform%3D%22translate(80%2066)%22%3E%3Cpath%20d%3D%22M0%204%20Q15%20-2%2017%206%20Q19%20-2%2034%204%20V30%20Q19%2024%2017%2032%20Q15%2024%200%2030Z%22%20fill%3D%22%2355efc4%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+        "w": 72
+      }
+    ],
+    "inline_scripts": 0,
+    "requests": [
+      {
+        "bytes": 152808,
+        "type": "script",
+        "url": "http://127.0.0.1:50726/assets/icons-CYNXD-cr.js"
+      },
+      {
+        "bytes": 105107,
+        "type": "script",
+        "url": "http://127.0.0.1:50726/assets/main-portal-BODgPXiT.js"
+      },
+      {
+        "bytes": 3396,
+        "type": "link",
+        "url": "http://127.0.0.1:50726/assets/icons-DUzXT1Uj.css"
+      },
+      {
+        "bytes": 20331,
+        "type": "link",
+        "url": "http://127.0.0.1:50726/assets/main-portal-DBW5r7OS.css"
+      },
+      {
+        "bytes": 14348,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/outfit-latin-800-normal-CQna6-G7.woff2"
+      },
+      {
+        "bytes": 14440,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+      },
+      {
+        "bytes": 14332,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/bungee-latin-400-normal-Dfnurram.woff2"
+      },
+      {
+        "bytes": 13828,
+        "type": "css",
+        "url": "http://127.0.0.1:50726/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+      }
+    ],
+    "scripts": [
+      "http://127.0.0.1:50726/assets/icons-CYNXD-cr.js",
+      "http://127.0.0.1:50726/assets/main-portal-BODgPXiT.js"
+    ],
+    "stylesheets": [
+      "http://127.0.0.1:50726/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:50726/assets/main-portal-DBW5r7OS.css"
+    ]
+  },
+  "breakpoints": [
+    {
+      "count": 4,
+      "px": 599,
+      "query": "max-width 599px"
+    },
+    {
+      "count": 1,
+      "px": 767,
+      "query": "max-width 767px"
+    },
+    {
+      "count": 4,
+      "px": 899,
+      "query": "max-width 899px"
+    },
+    {
+      "count": 1,
+      "px": 967,
+      "query": "max-width 967px"
+    },
+    {
+      "count": 1,
+      "px": 1023,
+      "query": "max-width 1023px"
+    },
+    {
+      "count": 1,
+      "px": 1199,
+      "query": "max-width 1199px"
+    }
+  ],
+  "design": {
+    "backgrounds": [
+      {
+        "count": 8,
+        "value": "#27305c"
+      },
+      {
+        "count": 2,
+        "value": "#100d25"
+      },
+      {
+        "count": 1,
+        "value": "#100d29"
+      },
+      {
+        "count": 1,
+        "value": "#123247"
+      },
+      {
+        "count": 1,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 1,
+        "value": "#0a0818"
+      }
+    ],
+    "css_variables": {
+      "--accent-color": "#fd79a8",
+      "--accent-hover": "#ff9bc0",
+      "--bg-card": "#16123a",
+      "--bg-card-hover": "#1f1a55",
+      "--bg-dark": "#0c0a20",
+      "--bg-darker": "#07061a",
+      "--bg-tertiary": "#1d1850",
+      "--bingo-b": "var(--galaxy-lavender)",
+      "--bingo-g": "var(--galaxy-mint)",
+      "--bingo-i": "var(--galaxy-pink)",
+      "--bingo-n": "var(--gb-cyan)",
+      "--bingo-o": "var(--gb-gold)",
+      "--border-color": "#4b3f8f",
+      "--danger": "#ff6b6b",
+      "--ease-out-expo": "cubic-bezier(.23, 1, .32, 1)",
+      "--ease-pop": "cubic-bezier(.34, 1.56, .64, 1)",
+      "--font-body": "\"Space Grotesk\", system-ui, sans-serif",
+      "--font-display": "\"Bungee\", \"Outfit\", system-ui, sans-serif",
+      "--font-hand": "\"Short Stack\", cursive",
+      "--font-read": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif",
+      "--font-title": "Fredoka, \"Short Stack\", sans-serif",
+      "--galaxy-lavender": "#a29bfe",
+      "--galaxy-mint": "#55efc4",
+      "--galaxy-pink": "#fd79a8",
+      "--galaxy-violet": "#6c5ce7",
+      "--gb-cream": "#efeaff",
+      "--gb-cyan": "#00d9ff",
+      "--gb-gold": "#ffd166",
+      "--gbd-gold": "#ffb020",
+      "--gbd-ink": "#05020e",
+      "--gbd-purple": "#a855f7",
+      "--gbd-t1": "#e7e9f1",
+      "--gbd-t2": "#a8aec7",
+      "--header-bg": "#221c3d",
+      "--key-bg": "#2c2f51",
+      "--key-rim": "#454866",
+      "--panel-bg": "#29204a",
+      "--panel-rim": "#683ba1",
+      "--panel-row": "#2f274f",
+      "--panel-rule": "#433b60",
+      "--radius-full": "999px",
+      "--radius-lg": "16px",
+      "--radius-md": "10px",
+      "--radius-sm": "6px",
+      "--shadow-md": "5px 5px 0 rgba(5, 4, 20, .7)",
+      "--shadow-sm": "3px 3px 0 rgba(5, 4, 20, .7)",
+      "--text-hero": "clamp(2.6rem, 2rem + 3.5vw, 4.5rem)",
+      "--text-muted": "#897fc0",
+      "--text-primary": "#ffffff",
+      "--text-secondary": "#c4bdf0"
+    },
+    "font_faces": [
+      {
+        "family": "Space Grotesk",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Fredoka",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "300 700"
+      },
+      {
+        "family": "Bungee",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Short Stack",
+        "status": "unloaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "400"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "500"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "600"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "700"
+      },
+      {
+        "family": "Outfit",
+        "status": "loaded",
+        "style": "normal",
+        "weight": "800 900"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 95,
+        "value": "16px"
+      },
+      {
+        "count": 40,
+        "value": "16.8px"
+      },
+      {
+        "count": 27,
+        "value": "15px"
+      },
+      {
+        "count": 7,
+        "value": "14px"
+      },
+      {
+        "count": 6,
+        "value": "24px"
+      },
+      {
+        "count": 3,
+        "value": "22px"
+      },
+      {
+        "count": 1,
+        "value": "33.6px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 106,
+        "value": "400"
+      },
+      {
+        "count": 45,
+        "value": "700"
+      },
+      {
+        "count": 16,
+        "value": "500"
+      },
+      {
+        "count": 8,
+        "value": "600"
+      },
+      {
+        "count": 3,
+        "value": "800"
+      },
+      {
+        "count": 1,
+        "value": "650"
+      }
+    ],
+    "fonts": [
+      {
+        "count": 168,
+        "value": "Outfit, \"Space Grotesk\", system-ui, -apple-system, sans-serif"
+      },
+      {
+        "count": 11,
+        "value": "Bungee, Outfit, system-ui, sans-serif"
+      }
+    ],
+    "max_widths": [
+      {
+        "count": 1,
+        "value": "920px"
+      },
+      {
+        "count": 1,
+        "value": "482.816px"
+      }
+    ],
+    "radii": [
+      {
+        "count": 7,
+        "value": "8px"
+      },
+      {
+        "count": 2,
+        "value": "10px"
+      },
+      {
+        "count": 1,
+        "value": "50%"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 3,
+        "value": "rgb(5, 2, 14) 3px 3px 0px 0px"
+      },
+      {
+        "count": 1,
+        "value": "rgba(255, 255, 255, 0.06) 0px 1px 0px 0px"
+      }
+    ],
+    "spacing": [
+      {
+        "count": 94,
+        "value": "6.72px"
+      },
+      {
+        "count": 40,
+        "value": "23.52px"
+      },
+      {
+        "count": 40,
+        "value": "8.8px"
+      },
+      {
+        "count": 28,
+        "value": "10px"
+      },
+      {
+        "count": 17,
+        "value": "16px"
+      },
+      {
+        "count": 12,
+        "value": "6px"
+      },
+      {
+        "count": 10,
+        "value": "8px"
+      },
+      {
+        "count": 8,
+        "value": "24px"
+      },
+      {
+        "count": 7,
+        "value": "22px"
+      },
+      {
+        "count": 6,
+        "value": "14.4px"
+      },
+      {
+        "count": 5,
+        "value": "20px"
+      },
+      {
+        "count": 4,
+        "value": "1px"
+      },
+      {
+        "count": 4,
+        "value": "14px"
+      },
+      {
+        "count": 4,
+        "value": "2px"
+      },
+      {
+        "count": 3,
+        "value": "43.2px"
+      },
+      {
+        "count": 2,
+        "value": "4px"
+      },
+      {
+        "count": 1,
+        "value": "40px"
+      },
+      {
+        "count": 1,
+        "value": "72px"
+      },
+      {
+        "count": 1,
+        "value": "12px"
+      },
+      {
+        "count": 1,
+        "value": "56px"
+      },
+      {
+        "count": 1,
+        "value": "32px"
+      },
+      {
+        "count": 1,
+        "value": "28px"
+      },
+      {
+        "count": 1,
+        "value": "18px"
+      },
+      {
+        "count": 1,
+        "value": "48px"
+      }
+    ],
+    "text_colors": [
+      {
+        "count": 93,
+        "value": "#e7e9f1"
+      },
+      {
+        "count": 65,
+        "value": "#f8f5ff"
+      },
+      {
+        "count": 7,
+        "value": "#00d9ff"
+      },
+      {
+        "count": 4,
+        "value": "#d9d1eb"
+      },
+      {
+        "count": 2,
+        "value": "#ffffff"
+      },
+      {
+        "count": 2,
+        "value": "#e94560"
+      },
+      {
+        "count": 1,
+        "value": "#fd79a8"
+      },
+      {
+        "count": 1,
+        "value": "#ffcf70"
+      },
+      {
+        "count": 1,
+        "value": "#041523"
+      },
+      {
+        "count": 1,
+        "value": "#e4ddf3"
+      },
+      {
+        "count": 1,
+        "value": "#a855f7"
+      },
+      {
+        "count": 1,
+        "value": "#ffb020"
+      }
+    ]
+  },
+  "forms": [],
+  "headings": [
+    {
+      "level": 1,
+      "text": "LEGAL INFORMATION — PLAYPALS.IO"
+    },
+    {
+      "level": 2,
+      "text": "IMPRESSUM"
+    },
+    {
+      "level": 3,
+      "text": "Service Provider"
+    },
+    {
+      "level": 3,
+      "text": "Contact"
+    },
+    {
+      "level": 3,
+      "text": "Responsible for Content"
+    },
+    {
+      "level": 3,
+      "text": "Regulatory and Supervisory Authority"
+    },
+    {
+      "level": 3,
+      "text": "VAT ID"
+    },
+    {
+      "level": 3,
+      "text": "Consumer Dispute Resolution"
+    },
+    {
+      "level": 3,
+      "text": "Liability for Content and Links"
+    },
+    {
+      "level": 3,
+      "text": "Copyright"
+    },
+    {
+      "level": 2,
+      "text": "PRIVACY POLICY & COOKIES"
+    },
+    {
+      "level": 3,
+      "text": "1. Data Controller"
+    },
+    {
+      "level": 3,
+      "text": "2. Data We Collect"
+    },
+    {
+      "level": 3,
+      "text": "Account Data"
+    },
+    {
+      "level": 3,
+      "text": "Game Session Data"
+    },
+    {
+      "level": 3,
+      "text": "Technical Data"
+    },
+    {
+      "level": 3,
+      "text": "Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "level": 3,
+      "text": "Custom Text About Others"
+    },
+    {
+      "level": 3,
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "level": 3,
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "level": 3,
+      "text": "5. International Data Transfers"
+    },
+    {
+      "level": 3,
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "level": 3,
+      "text": "Analytics"
+    },
+    {
+      "level": 3,
+      "text": "7. Third-Party Services"
+    },
+    {
+      "level": 3,
+      "text": "8. Data Retention"
+    },
+    {
+      "level": 3,
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "level": 3,
+      "text": "10. Data Security"
+    },
+    {
+      "level": 3,
+      "text": "11. Children's Privacy"
+    },
+    {
+      "level": 3,
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "level": 3,
+      "text": "13. Contact"
+    },
+    {
+      "level": 2,
+      "text": "TERMS OF SERVICE"
+    },
+    {
+      "level": 3,
+      "text": "1. Acceptance of Terms"
+    },
+    {
+      "level": 3,
+      "text": "2. Service Description"
+    },
+    {
+      "level": 3,
+      "text": "3. User Accounts"
+    },
+    {
+      "level": 3,
+      "text": "4. User Conduct"
+    },
+    {
+      "level": 3,
+      "text": "5. Intellectual Property & Content You Create"
+    },
+    {
+      "level": 3,
+      "text": "6. Disclaimer of Warranties"
+    },
+    {
+      "level": 3,
+      "text": "7. Limitation of Liability"
+    },
+    {
+      "level": 3,
+      "text": "8. Withdrawal Rights (Consumers)"
+    },
+    {
+      "level": 3,
+      "text": "9. Modifications"
+    },
+    {
+      "level": 3,
+      "text": "10. Governing Law"
+    },
+    {
+      "level": 3,
+      "text": "11. Content Moderation & Reporting Problems"
+    },
+    {
+      "level": 3,
+      "text": "12. Contact"
+    },
+    {
+      "level": 2,
+      "text": "GAMES"
+    },
+    {
+      "level": 2,
+      "text": "HELP"
+    },
+    {
+      "level": 2,
+      "text": "COMPANY"
+    },
+    {
+      "level": 2,
+      "text": "LEGAL"
+    },
+    {
+      "level": 2,
+      "text": "Looking for more?"
+    }
+  ],
+  "health": {
+    "errors": [],
+    "failed_requests": []
+  },
+  "lang": "en",
+  "layouts": [
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 88,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 1425,
+          "y": 0
+        },
+        {
+          "gap": 20,
+          "h": 48,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 287,
+          "y": 19
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 920,
+            "x": 253
+          },
+          "h": 6621,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "main",
+          "w": 1425,
+          "y": 88
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 1377,
+          "y": 88
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 920,
+            "x": 253
+          },
+          "h": 6534,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "article",
+          "w": 920,
+          "y": 175
+        },
+        {
+          "h": 906,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 382
+        },
+        {
+          "h": 152,
+          "heading": "Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 474
+        },
+        {
+          "h": 88,
+          "heading": "Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 650
+        },
+        {
+          "h": 55,
+          "heading": "Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 761
+        },
+        {
+          "h": 55,
+          "heading": "Regulatory and Supervisory Authority",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 840
+        },
+        {
+          "h": 55,
+          "heading": "VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 919
+        },
+        {
+          "h": 55,
+          "heading": "Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 998
+        },
+        {
+          "h": 107,
+          "heading": "Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 1077
+        },
+        {
+          "h": 81,
+          "heading": "Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 1207
+        },
+        {
+          "h": 3059,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 1331
+        },
+        {
+          "h": 152,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 1423
+        },
+        {
+          "h": 776,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 1599
+        },
+        {
+          "h": 152,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 2398
+        },
+        {
+          "h": 152,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 2574
+        },
+        {
+          "h": 81,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 2750
+        },
+        {
+          "h": 550,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 2854
+        },
+        {
+          "h": 81,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 3427
+        },
+        {
+          "h": 81,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 3532
+        },
+        {
+          "h": 322,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 3636
+        },
+        {
+          "h": 81,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 3982
+        },
+        {
+          "h": 81,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4086
+        },
+        {
+          "h": 55,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4191
+        },
+        {
+          "h": 120,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4269
+        },
+        {
+          "h": 2277,
+          "heading": "TERMS OF SERVICE",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4433
+        },
+        {
+          "h": 81,
+          "heading": "1. Acceptance of Terms",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4525
+        },
+        {
+          "h": 81,
+          "heading": "2. Service Description",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4629
+        },
+        {
+          "h": 81,
+          "heading": "3. User Accounts",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4734
+        },
+        {
+          "h": 217,
+          "heading": "4. User Conduct",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 4838
+        },
+        {
+          "h": 235,
+          "heading": "5. Intellectual Property & Content You Create",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 5079
+        },
+        {
+          "h": 81,
+          "heading": "6. Disclaimer of Warranties",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 5337
+        },
+        {
+          "h": 183,
+          "heading": "7. Limitation of Liability",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 5441
+        },
+        {
+          "h": 236,
+          "heading": "8. Withdrawal Rights (Consumers)",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 5648
+        },
+        {
+          "h": 81,
+          "heading": "9. Modifications",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 5907
+        },
+        {
+          "h": 81,
+          "heading": "10. Governing Law",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 6012
+        },
+        {
+          "h": 450,
+          "heading": "11. Content Moderation & Reporting Problems",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 6116
+        },
+        {
+          "h": 120,
+          "heading": "12. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 920,
+          "y": 6589
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 483,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 380,
+            "x": 24
+          },
+          "h": 464,
+          "heading": "GAMES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 5,
+          "tag": "footer",
+          "w": 1425,
+          "y": 6781
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "GAMES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 6838
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "HELP",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 6838
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "COMPANY",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 6838
+        },
+        {
+          "gap": 8,
+          "h": 204,
+          "heading": "LEGAL",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 219,
+          "y": 6838
+        },
+        {
+          "gap": 24,
+          "h": 44,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 1377,
+          "y": 7070
+        }
+      ],
+      "page_h": 7245,
+      "page_w": 1425,
+      "type": {
+        "body": 16,
+        "h1": 34,
+        "h2": 24,
+        "h3": 17
+      },
+      "width": 1440
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 112,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "header",
+          "w": 753,
+          "y": 0
+        },
+        {
+          "gap": 32,
+          "h": 40,
+          "pad": [
+            0,
+            24,
+            0,
+            24
+          ],
+          "per_row": 1,
+          "tag": "nav",
+          "w": 753,
+          "y": 70
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 705,
+            "x": 24
+          },
+          "h": 7100,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 753,
+          "y": 112
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 705,
+          "y": 112
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 705,
+            "x": 24
+          },
+          "h": 7021,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "article",
+          "w": 705,
+          "y": 191
+        },
+        {
+          "h": 957,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 424
+        },
+        {
+          "h": 152,
+          "heading": "Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 516
+        },
+        {
+          "h": 88,
+          "heading": "Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 691
+        },
+        {
+          "h": 55,
+          "heading": "Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 803
+        },
+        {
+          "h": 55,
+          "heading": "Regulatory and Supervisory Authority",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 882
+        },
+        {
+          "h": 55,
+          "heading": "VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 960
+        },
+        {
+          "h": 81,
+          "heading": "Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1039
+        },
+        {
+          "h": 132,
+          "heading": "Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1144
+        },
+        {
+          "h": 81,
+          "heading": "Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1300
+        },
+        {
+          "h": 3186,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1424
+        },
+        {
+          "h": 152,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1516
+        },
+        {
+          "h": 853,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 1691
+        },
+        {
+          "h": 152,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2568
+        },
+        {
+          "h": 152,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2744
+        },
+        {
+          "h": 107,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 2919
+        },
+        {
+          "h": 575,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3050
+        },
+        {
+          "h": 81,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3648
+        },
+        {
+          "h": 81,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3753
+        },
+        {
+          "h": 322,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 3857
+        },
+        {
+          "h": 81,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4202
+        },
+        {
+          "h": 81,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4307
+        },
+        {
+          "h": 55,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4411
+        },
+        {
+          "h": 120,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4490
+        },
+        {
+          "h": 2558,
+          "heading": "TERMS OF SERVICE",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4653
+        },
+        {
+          "h": 81,
+          "heading": "1. Acceptance of Terms",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4745
+        },
+        {
+          "h": 107,
+          "heading": "2. Service Description",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4850
+        },
+        {
+          "h": 107,
+          "heading": "3. User Accounts",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 4980
+        },
+        {
+          "h": 217,
+          "heading": "4. User Conduct",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 5110
+        },
+        {
+          "h": 286,
+          "heading": "5. Intellectual Property & Content You Create",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 5350
+        },
+        {
+          "h": 107,
+          "heading": "6. Disclaimer of Warranties",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 5660
+        },
+        {
+          "h": 209,
+          "heading": "7. Limitation of Liability",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 5790
+        },
+        {
+          "h": 261,
+          "heading": "8. Withdrawal Rights (Consumers)",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 6022
+        },
+        {
+          "h": 81,
+          "heading": "9. Modifications",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 6307
+        },
+        {
+          "h": 81,
+          "heading": "10. Governing Law",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 6412
+        },
+        {
+          "h": 552,
+          "heading": "11. Content Moderation & Reporting Problems",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 6516
+        },
+        {
+          "h": 120,
+          "heading": "12. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 705,
+          "y": 7092
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 480,
+            "x": 24
+          },
+          "h": 687,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 753,
+          "y": 7268
+        },
+        {
+          "gap": 24,
+          "h": 44,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 705,
+          "y": 7727
+        }
+      ],
+      "page_h": 7955,
+      "page_w": 753,
+      "type": {
+        "body": 16,
+        "h1": 34,
+        "h2": 24,
+        "h3": 17
+      },
+      "width": 768
+    },
+    {
+      "blocks": [
+        {
+          "background": "#100d29",
+          "h": 64,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "header",
+          "w": 390,
+          "y": 0
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 358,
+            "x": 16
+          },
+          "h": 9843,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "main",
+          "w": 390,
+          "y": 64
+        },
+        {
+          "h": 47,
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 3,
+          "tag": "nav",
+          "w": 358,
+          "y": 64
+        },
+        {
+          "column": {
+            "max_w": 920,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 358,
+            "x": 16
+          },
+          "h": 9768,
+          "heading": "LEGAL INFORMATION — PLAYPALS.IO",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "article",
+          "w": 358,
+          "y": 139
+        },
+        {
+          "h": 1184,
+          "heading": "IMPRESSUM",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 417
+        },
+        {
+          "h": 152,
+          "heading": "Service Provider",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 531
+        },
+        {
+          "h": 113,
+          "heading": "Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 707
+        },
+        {
+          "h": 55,
+          "heading": "Responsible for Content",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 844
+        },
+        {
+          "h": 81,
+          "heading": "Regulatory and Supervisory Authority",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 922
+        },
+        {
+          "h": 55,
+          "heading": "VAT ID",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1027
+        },
+        {
+          "h": 107,
+          "heading": "Consumer Dispute Resolution",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1106
+        },
+        {
+          "h": 209,
+          "heading": "Liability for Content and Links",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1236
+        },
+        {
+          "h": 132,
+          "heading": "Copyright",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1468
+        },
+        {
+          "h": 4360,
+          "heading": "PRIVACY POLICY & COOKIES",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1644
+        },
+        {
+          "h": 152,
+          "heading": "1. Data Controller",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1758
+        },
+        {
+          "h": 1313,
+          "heading": "2. Data We Collect",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 1933
+        },
+        {
+          "h": 178,
+          "heading": "3. How We Use Your Data",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3270
+        },
+        {
+          "h": 255,
+          "heading": "4. Legal Bases for Data Processing",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3472
+        },
+        {
+          "h": 158,
+          "heading": "5. International Data Transfers",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3750
+        },
+        {
+          "h": 780,
+          "heading": "6. Cookies & Local Storage",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 3931
+        },
+        {
+          "h": 132,
+          "heading": "7. Third-Party Services",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4735
+        },
+        {
+          "h": 132,
+          "heading": "8. Data Retention",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 4890
+        },
+        {
+          "h": 398,
+          "heading": "9. Your Rights Under GDPR",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 5046
+        },
+        {
+          "h": 132,
+          "heading": "10. Data Security",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 5468
+        },
+        {
+          "h": 132,
+          "heading": "11. Children's Privacy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 5624
+        },
+        {
+          "h": 81,
+          "heading": "12. Changes to This Policy",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 5779
+        },
+        {
+          "h": 120,
+          "heading": "13. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 5884
+        },
+        {
+          "h": 3860,
+          "heading": "TERMS OF SERVICE",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 6047
+        },
+        {
+          "h": 107,
+          "heading": "1. Acceptance of Terms",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 6161
+        },
+        {
+          "h": 158,
+          "heading": "2. Service Description",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 6291
+        },
+        {
+          "h": 158,
+          "heading": "3. User Accounts",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 6472
+        },
+        {
+          "h": 345,
+          "heading": "4. User Conduct",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 6654
+        },
+        {
+          "h": 516,
+          "heading": "5. Intellectual Property & Content You Create",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 7022
+        },
+        {
+          "h": 158,
+          "heading": "6. Disclaimer of Warranties",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 7562
+        },
+        {
+          "h": 388,
+          "heading": "7. Limitation of Liability",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 7743
+        },
+        {
+          "h": 364,
+          "heading": "8. Withdrawal Rights (Consumers)",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 8155
+        },
+        {
+          "h": 132,
+          "heading": "9. Modifications",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 8542
+        },
+        {
+          "h": 132,
+          "heading": "10. Governing Law",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 8698
+        },
+        {
+          "h": 910,
+          "heading": "11. Content Moderation & Reporting Problems",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 8853
+        },
+        {
+          "h": 120,
+          "heading": "12. Contact",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 1,
+          "tag": "section",
+          "w": 358,
+          "y": 9787
+        },
+        {
+          "background": "#0a0818",
+          "column": {
+            "max_w": 480,
+            "pad": [
+              0,
+              0
+            ],
+            "w": 342,
+            "x": 24
+          },
+          "h": 851,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "footer",
+          "w": 390,
+          "y": 9955
+        },
+        {
+          "gap": 24,
+          "h": 154,
+          "heading": "Looking for more?",
+          "pad": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "per_row": 2,
+          "tag": "nav",
+          "w": 342,
+          "y": 10414
+        }
+      ],
+      "page_h": 10806,
+      "page_w": 390,
+      "type": {
+        "body": 16,
+        "h1": 25,
+        "h2": 21,
+        "h3": 17
+      },
+      "width": 390
+    }
+  ],
+  "links": [
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "PlayPals.io"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Play now"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "Games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#now",
+      "text": "Now Playing"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "href": "http://127.0.0.1:50726/terms",
+      "text": "Terms of Service"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "All games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "text": "Help"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Email us"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:50726/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "All party games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo Friends"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/",
+      "text": "Free browser games"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Play on your TV"
+    },
+    {
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "text": "How it works"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "For streamers"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Send feedback"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "About us"
+    },
+    {
+      "href": "mailto:hello@example.com",
+      "text": "Contact us"
+    },
+    {
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:50726/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo for parties"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Bingo for streams"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Classroom bingo"
+    },
+    {
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "text": "Privacy"
+    },
+    {
+      "href": "http://127.0.0.1:50726/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "http://127.0.0.1:50726/impressum",
+      "text": "Impressum"
+    },
+    {
+      "href": "http://127.0.0.1:50726/bingo/",
+      "text": "Sound and motion"
+    }
+  ],
+  "meta": {
+    "description": "Legal disclosure for this website.",
+    "icons": [
+      "http://127.0.0.1:50726/favicon.ico"
+    ],
+    "og_image": "",
+    "og_title": "",
+    "theme_color": "#100d29"
+  },
+  "outline": [
+    {
+      "background": "#100d29",
+      "box": {
+        "h": 88,
+        "w": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "class": "pp-hdr",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "header"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 156,
+        "x": 24,
+        "y": 23
+      },
+      "class": "pp-logo",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "16px 400",
+      "href": "http://127.0.0.1:50726/games/",
+      "tag": "a",
+      "text": "PlayPals.io"
+    },
+    {
+      "alt": "",
+      "box": {
+        "h": 40,
+        "w": 40,
+        "x": 24,
+        "y": 23
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 287,
+        "x": 200,
+        "y": 19
+      },
+      "class": "pp-nav",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 200,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/games/",
+      "tag": "a",
+      "text": "Games"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 39,
+        "x": 268,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Bingo"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 108,
+        "x": 327,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/games/#now",
+      "tag": "a",
+      "text": "Now Playing"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 327,
+        "y": 34
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 31,
+        "x": 455,
+        "y": 19
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "tag": "a",
+      "text": "Help"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 111,
+        "x": 1090,
+        "y": 19
+      },
+      "class": "pp-premium",
+      "color": "#ffcf70",
+      "depth": 7,
+      "font": "16px 600",
+      "tag": "button",
+      "text": "Premium"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1100,
+        "y": 34
+      },
+      "color": "#ffcf70",
+      "depth": 8,
+      "font": "16px 600",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1211,
+        "y": 19
+      },
+      "class": "pp-keycap pp-lang",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1223,
+        "y": 35
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 48,
+        "w": 132,
+        "x": 1269,
+        "y": 19
+      },
+      "class": "pp-login",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 650",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Play now"
+    },
+    {
+      "background": "#123247",
+      "box": {
+        "h": 48,
+        "w": 48,
+        "x": 1369,
+        "y": 762
+      },
+      "class": "pp-fab",
+      "color": "#effcff",
+      "depth": 5,
+      "font": "16px 400",
+      "tag": "button"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 1383,
+        "y": 776
+      },
+      "color": "#effcff",
+      "depth": 6,
+      "font": "16px 400",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 6621,
+        "w": 1425,
+        "x": 0,
+        "y": 88
+      },
+      "class": "lc-main",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "id": "main",
+      "tag": "main"
+    },
+    {
+      "box": {
+        "h": 47,
+        "w": 1377,
+        "x": 24,
+        "y": 88
+      },
+      "class": "lg-tabs",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 178,
+        "x": 24,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "tag": "a",
+      "text": "Privacy & Cookies"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 40,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 170,
+        "x": 202,
+        "y": 88
+      },
+      "color": "#d9d1eb",
+      "depth": 6,
+      "font": "15px 600",
+      "href": "http://127.0.0.1:50726/terms",
+      "tag": "a",
+      "text": "Terms of Service"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 218,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 600",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 46,
+        "w": 134,
+        "x": 372,
+        "y": 88
+      },
+      "class": "is-active",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:50726/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 388,
+        "y": 102
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 6534,
+        "w": 920,
+        "x": 253,
+        "y": 175
+      },
+      "class": "lc-doc",
+      "color": "#e7e9f1",
+      "depth": 5,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "article"
+    },
+    {
+      "alt": "PlayPals mascot reading the rules",
+      "box": {
+        "h": 72,
+        "w": 72,
+        "x": 253,
+        "y": 175
+      },
+      "class": "lc-mascot",
+      "color": "#e7e9f1",
+      "depth": 6,
+      "font": "16px 400",
+      "src": "data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22%22%20width%3D%2272%22%20height%3D%2272%22%20viewBox%3D%220%200%20120%20120%22%20aria-hidden%3D%22true%22%3E%3Cellipse%20cx%3D%2260%22%20cy%3D%22110%22%20rx%3D%2230%22%20ry%3D%225%22%20fill%3D%22rgba(5%2C2%2C14%2C.35)%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M30%2040%20L28%2012%20L52%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M90%2040%20L94%2012%20L68%2030%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M33%2033%20L32%2019%20L45%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M87%2033%20L90%2019%20L75%2029%20Z%22%20fill%3D%22%23ff8fb8%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M60%2024%20C88%2024%20100%2044%20100%2068%20C100%2094%2084%20106%2060%20106%20C36%20106%2020%2094%2020%2068%20C20%2044%2032%2024%2060%2024%20Z%22%20fill%3D%22%232fd3e6%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%223%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M32%2092%20C42%20102%2078%20102%2088%2092%20C82%20101%2072%20105%2060%20105%20C48%20105%2038%20101%2032%2092%20Z%22%20fill%3D%22%2316a9c4%22%3E%3C%2Fpath%3E%3Cellipse%20cx%3D%2245%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2275%22%20cy%3D%2258%22%20rx%3D%229%22%20ry%3D%2210%22%20fill%3D%22%231b1240%22%3E%3C%2Fellipse%3E%3Ccircle%20cx%3D%2248%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2278%22%20cy%3D%2254%22%20r%3D%223.4%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2242%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Ccircle%20cx%3D%2272%22%20cy%3D%2262%22%20r%3D%221.6%22%20fill%3D%22%23fff%22%3E%3C%2Fcircle%3E%3Cellipse%20cx%3D%2234%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2286%22%20cy%3D%2272%22%20rx%3D%227%22%20ry%3D%224%22%20fill%3D%22%23ff7fb0%22%20opacity%3D%22.75%22%3E%3C%2Fellipse%3E%3Cpath%20d%3D%22M53%2070%20Q56.5%2074%2060%2070%20Q63.5%2074%2067%2070%22%20fill%3D%22none%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.6%22%20stroke-linecap%3D%22round%22%3E%3C%2Fpath%3E%3Cg%20transform%3D%22translate(80%2066)%22%3E%3Cpath%20d%3D%22M0%204%20Q15%20-2%2017%206%20Q19%20-2%2034%204%20V30%20Q19%2024%2017%2032%20Q15%2024%200%2030Z%22%20fill%3D%22%2355efc4%22%20stroke%3D%22%231b1240%22%20stroke-width%3D%222.4%22%20stroke-linejoin%3D%22round%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E",
+      "tag": "img"
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 920,
+        "x": 253,
+        "y": 259
+      },
+      "color": "#00d9ff",
+      "depth": 6,
+      "font": "33.6px 400",
+      "tag": "h1",
+      "text": "LEGAL INFORMATION — PLAYPALS.IO"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 313
+      },
+      "color": "#e7e9f1",
+      "depth": 6,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This imprint applies to the website and to every page and social media presence of the PlayPals demo."
+    },
+    {
+      "box": {
+        "h": 906,
+        "w": 920,
+        "x": 253,
+        "y": 382
+      },
+      "class": "lc-part",
+      "color": "#e7e9f1",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 920,
+        "x": 253,
+        "y": 382
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "24px 400",
+      "tag": "h2",
+      "text": "IMPRESSUM"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 425
+      },
+      "color": "#e7e9f1",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Legal disclosure for this website — Last updated: November 6, 2026"
+    },
+    {
+      "box": {
+        "h": 152,
+        "w": 920,
+        "x": 253,
+        "y": 474
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 474
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Service Provider"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 504
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 536
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Example Street 1"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 568
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "12345 Sample City"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 601
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Country"
+    },
+    {
+      "box": {
+        "h": 88,
+        "w": 920,
+        "x": 253,
+        "y": 650
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 650
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 680
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 712
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Please use email for all enquiries — we read every message."
+    },
+    {
+      "box": {
+        "h": 55,
+        "w": 920,
+        "x": 253,
+        "y": 761
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 761
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Responsible for Content"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 791
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team, address as above."
+    },
+    {
+      "box": {
+        "h": 55,
+        "w": 920,
+        "x": 253,
+        "y": 840
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 840
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Regulatory and Supervisory Authority"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 870
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Not applicable — this demo is not a licensed or regulated service."
+    },
+    {
+      "box": {
+        "h": 55,
+        "w": 920,
+        "x": 253,
+        "y": 919
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 919
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "VAT ID"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 949
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Not applicable for this demo."
+    },
+    {
+      "box": {
+        "h": 55,
+        "w": 920,
+        "x": 253,
+        "y": 998
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 998
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Consumer Dispute Resolution"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1028
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board."
+    },
+    {
+      "box": {
+        "h": 107,
+        "w": 920,
+        "x": 253,
+        "y": 1077
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1077
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Liability for Content and Links"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 1106
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for cont"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 1207
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1207
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Copyright"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 1237
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author."
+    },
+    {
+      "box": {
+        "h": 3059,
+        "w": 920,
+        "x": 253,
+        "y": 1331
+      },
+      "class": "lc-part",
+      "color": "#e7e9f1",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 920,
+        "x": 253,
+        "y": 1331
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "24px 400",
+      "tag": "h2",
+      "text": "PRIVACY POLICY & COOKIES"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1374
+      },
+      "color": "#e7e9f1",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Information about the processing of personal data — Last updated: November 6, 2026"
+    },
+    {
+      "box": {
+        "h": 152,
+        "w": 920,
+        "x": 253,
+        "y": 1423
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1423
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "1. Data Controller"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1453
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Responsible for data processing on this website:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1485
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1517
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Example Street 1, 12345 Sample City"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 1550
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 776,
+        "w": 920,
+        "x": 253,
+        "y": 1599
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1599
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "2. Data We Collect"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1643
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Account Data"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 1673
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it."
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1748
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Game Session Data"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 1778
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are n"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 1878
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Technical Data"
+    },
+    {
+      "box": {
+        "h": 102,
+        "w": 920,
+        "x": 253,
+        "y": 1908
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is ne"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2034
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Local Storage"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 2063
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, "
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2164
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Moderation of Typed Text"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 2193
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a w"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2294
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Custom Text About Others"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 2323
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details."
+    },
+    {
+      "box": {
+        "h": 152,
+        "w": 920,
+        "x": 253,
+        "y": 2398
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2398
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "3. How We Use Your Data"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 2428
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We use the data described above only to:"
+    },
+    {
+      "box": {
+        "h": 90,
+        "w": 920,
+        "x": 253,
+        "y": 2460
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 152,
+        "w": 920,
+        "x": 253,
+        "y": 2574
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2574
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "4. Legal Bases for Data Processing"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 2604
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Where data protection law applies, we process data on these legal bases:"
+    },
+    {
+      "box": {
+        "h": 90,
+        "w": 920,
+        "x": 253,
+        "y": 2636
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 2750
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2750
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "5. International Data Transfers"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 2780
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound"
+    },
+    {
+      "box": {
+        "h": 550,
+        "w": 920,
+        "x": 253,
+        "y": 2854
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 2854
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "6. Cookies & Local Storage"
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 2884
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. "
+    },
+    {
+      "box": {
+        "h": 219,
+        "w": 920,
+        "x": 253,
+        "y": 2968
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 3202
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again."
+    },
+    {
+      "box": {
+        "h": 40,
+        "w": 920,
+        "x": 253,
+        "y": 3259
+      },
+      "class": "lg-actions",
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Clear my saved settings"
+    },
+    {
+      "background": "#00d9ff",
+      "box": {
+        "h": 40,
+        "w": 188,
+        "x": 253,
+        "y": 3259
+      },
+      "class": "lg-btn",
+      "color": "#041523",
+      "depth": 9,
+      "font": "14px 700",
+      "tag": "button",
+      "text": "Clear my saved settings"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 3323
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "Analytics"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 3353
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 3427
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 3427
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "7. Third-Party Services"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 3457
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded."
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 3532
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 3532
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "8. Data Retention"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 3562
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days."
+    },
+    {
+      "box": {
+        "h": 322,
+        "w": 920,
+        "x": 253,
+        "y": 3636
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 3636
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "9. Your Rights Under GDPR"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 3666
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Depending on where you live, you may have the following rights:"
+    },
+    {
+      "box": {
+        "h": 219,
+        "w": 920,
+        "x": 253,
+        "y": 3699
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 3932
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To use any of these rights, contact hello@example.com."
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 3982
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 3982
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "10. Data Security"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 4011
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers."
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 4086
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4086
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "11. Children's Privacy"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 4116
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us."
+    },
+    {
+      "box": {
+        "h": 55,
+        "w": 920,
+        "x": 253,
+        "y": 4191
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4191
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "12. Changes to This Policy"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4220
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We may update this policy when the site changes. The date at the top shows the latest version."
+    },
+    {
+      "box": {
+        "h": 120,
+        "w": 920,
+        "x": 253,
+        "y": 4269
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4269
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "13. Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4299
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Questions about privacy? Contact us at:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4332
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4364
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 2277,
+        "w": 920,
+        "x": 253,
+        "y": 4433
+      },
+      "class": "lc-part",
+      "color": "#e7e9f1",
+      "depth": 6,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 29,
+        "w": 920,
+        "x": 253,
+        "y": 4433
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "24px 400",
+      "tag": "h2",
+      "text": "TERMS OF SERVICE"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4475
+      },
+      "color": "#e7e9f1",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "General Terms and Conditions — Last updated: November 6, 2026"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 4525
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4525
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "1. Acceptance of Terms"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 4554
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service."
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 4629
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4629
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "2. Service Description"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 4659
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions c"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 4734
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4734
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "3. User Accounts"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 4763
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everyth"
+    },
+    {
+      "box": {
+        "h": 217,
+        "w": 920,
+        "x": 253,
+        "y": 4838
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 4838
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "4. User Conduct"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 4868
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "When using the Service, please do not:"
+    },
+    {
+      "box": {
+        "h": 155,
+        "w": 920,
+        "x": 253,
+        "y": 4900
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 235,
+        "w": 920,
+        "x": 253,
+        "y": 5079
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 5079
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "5. Intellectual Property & Content You Create"
+    },
+    {
+      "box": {
+        "h": 205,
+        "w": 920,
+        "x": 253,
+        "y": 5108
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law e"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 5337
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 5337
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "6. Disclaimer of Warranties"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 5366
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at"
+    },
+    {
+      "box": {
+        "h": 183,
+        "w": 920,
+        "x": 253,
+        "y": 5441
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 5441
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "7. Limitation of Liability"
+    },
+    {
+      "box": {
+        "h": 154,
+        "w": 920,
+        "x": 253,
+        "y": 5471
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations "
+    },
+    {
+      "box": {
+        "h": 236,
+        "w": 920,
+        "x": 253,
+        "y": 5648
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 5648
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "8. Withdrawal Rights (Consumers)"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 5678
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason."
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 5736
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "To withdraw, send a clear statement (for example by email) to:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 5768
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 5800
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 5833
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days usi"
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 5907
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 5907
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "9. Modifications"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 5937
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply."
+    },
+    {
+      "box": {
+        "h": 81,
+        "w": 920,
+        "x": 253,
+        "y": 6012
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 6012
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "10. Governing Law"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 6042
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence."
+    },
+    {
+      "box": {
+        "h": 450,
+        "w": 920,
+        "x": 253,
+        "y": 6116
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 6116
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "11. Content Moderation & Reporting Problems"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 6146
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an auto"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 6204
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include:"
+    },
+    {
+      "box": {
+        "h": 123,
+        "w": 920,
+        "x": 253,
+        "y": 6262
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 6399
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "We confirm receipt, review every report carefully and objectively, and tell you what we decided and why."
+    },
+    {
+      "box": {
+        "h": 77,
+        "w": 920,
+        "x": 253,
+        "y": 6431
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, th"
+    },
+    {
+      "box": {
+        "h": 51,
+        "w": 920,
+        "x": 253,
+        "y": 6515
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again"
+    },
+    {
+      "box": {
+        "h": 120,
+        "w": 920,
+        "x": 253,
+        "y": 6589
+      },
+      "class": "lc-section",
+      "color": "#e7e9f1",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "section"
+    },
+    {
+      "box": {
+        "h": 21,
+        "w": 920,
+        "x": 253,
+        "y": 6589
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "16.8px 700",
+      "tag": "h3",
+      "text": "12. Contact"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 6619
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Questions about these Terms? Contact us at:"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 6651
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "PlayPals demo team"
+    },
+    {
+      "box": {
+        "h": 26,
+        "w": 920,
+        "x": 253,
+        "y": 6684
+      },
+      "color": "#e7e9f1",
+      "depth": 8,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Email: hello@example.com"
+    },
+    {
+      "background": "#0a0818",
+      "box": {
+        "h": 464,
+        "w": 1425,
+        "x": 0,
+        "y": 6781
+      },
+      "class": "pp-foot",
+      "color": "#f8f5ff",
+      "depth": 4,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "footer"
+    },
+    {
+      "box": {
+        "h": 48,
+        "w": 380,
+        "x": 24,
+        "y": 6885
+      },
+      "color": "#e4ddf3",
+      "depth": 7,
+      "font": "16px 400",
+      "tag": "p",
+      "text": "Party games with friends. Pick a game, share one screen, play together in the browser."
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 191,
+        "x": 24,
+        "y": 6955
+      },
+      "class": "pp-pill pp-wide",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Play Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 42,
+        "y": 6968
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 225,
+        "y": 6955
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:50726/games/",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 237,
+        "y": 6967
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 279,
+        "y": 6955
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 291,
+        "y": 6967
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 44,
+        "x": 333,
+        "y": 6955
+      },
+      "class": "pp-pill pp-sq",
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "href": "mailto:hello@example.com",
+      "tag": "a"
+    },
+    {
+      "box": {
+        "h": 20,
+        "w": 20,
+        "x": 345,
+        "y": 6967
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 452,
+        "y": 6838
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 452,
+        "y": 6838
+      },
+      "color": "#e94560",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "GAMES"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 219,
+        "x": 452,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/games/",
+      "tag": "a",
+      "text": "All party games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 6910
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Bingo Friends"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 6954
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/games/",
+      "tag": "a",
+      "text": "Free browser games"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 452,
+        "y": 6998
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Play on your TV"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 695,
+        "y": 6838
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 695,
+        "y": 6838
+      },
+      "color": "#00d9ff",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "HELP"
+    },
+    {
+      "box": {
+        "h": 132,
+        "w": 219,
+        "x": 695,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/games/#faq",
+      "tag": "a",
+      "text": "How it works"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 6910
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "For streamers"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 695,
+        "y": 6954
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Send feedback"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 939,
+        "y": 6838
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 939,
+        "y": 6838
+      },
+      "color": "#a855f7",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "COMPANY"
+    },
+    {
+      "box": {
+        "h": 88,
+        "w": 219,
+        "x": 939,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 939,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/impressum",
+      "tag": "a",
+      "text": "About us"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 939,
+        "y": 6910
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "mailto:hello@example.com",
+      "tag": "a",
+      "text": "Contact us"
+    },
+    {
+      "box": {
+        "h": 204,
+        "w": 219,
+        "x": 1182,
+        "y": 6838
+      },
+      "class": "pp-foot-col",
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "column",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 219,
+        "x": 1182,
+        "y": 6838
+      },
+      "color": "#ffb020",
+      "depth": 7,
+      "font": "14px 400",
+      "tag": "h2",
+      "text": "LEGAL"
+    },
+    {
+      "box": {
+        "h": 176,
+        "w": 219,
+        "x": 1182,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 7,
+      "display": "block",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 6866
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/datenschutz",
+      "tag": "a",
+      "text": "Privacy"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 6910
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/terms",
+      "tag": "a",
+      "text": "Terms"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 219,
+        "x": 1182,
+        "y": 6954
+      },
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/impressum",
+      "tag": "a",
+      "text": "Impressum"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 104,
+        "x": 1182,
+        "y": 6998
+      },
+      "class": "pp-foot-btn",
+      "color": "#f8f5ff",
+      "depth": 9,
+      "font": "15px 500",
+      "tag": "button",
+      "text": "Privacy settings"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 1377,
+        "x": 24,
+        "y": 7070
+      },
+      "class": "pp-foot-more",
+      "color": "#f8f5ff",
+      "depth": 5,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "nav"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 116,
+        "x": 24,
+        "y": 7083
+      },
+      "color": "#f8f5ff",
+      "depth": 6,
+      "font": "14px 600",
+      "tag": "h2",
+      "text": "Looking for more?"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 390,
+        "x": 164,
+        "y": 7070
+      },
+      "color": "#f8f5ff",
+      "depth": 6,
+      "display": "flex",
+      "flex": "row",
+      "font": "16px 400",
+      "tag": "ul"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 112,
+        "x": 164,
+        "y": 7070
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Bingo for parties"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 119,
+        "x": 299,
+        "y": 7070
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Bingo for streams"
+    },
+    {
+      "box": {
+        "h": 44,
+        "w": 112,
+        "x": 442,
+        "y": 7070
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 500",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Classroom bingo"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 147,
+        "x": 1056,
+        "y": 7181
+      },
+      "class": "pp-pill",
+      "color": "#f8f5ff",
+      "depth": 7,
+      "font": "15px 700",
+      "tag": "button",
+      "text": "English"
+    },
+    {
+      "box": {
+        "h": 17,
+        "w": 25,
+        "x": 1074,
+        "y": 7195
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "box": {
+        "h": 16,
+        "w": 16,
+        "x": 1169,
+        "y": 7195
+      },
+      "color": "#f8f5ff",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    },
+    {
+      "background": "#27305c",
+      "box": {
+        "h": 44,
+        "w": 188,
+        "x": 1213,
+        "y": 7181
+      },
+      "class": "pp-pill",
+      "color": "#d9d1eb",
+      "depth": 7,
+      "font": "15px 700",
+      "href": "http://127.0.0.1:50726/bingo/",
+      "tag": "a",
+      "text": "Sound and motion"
+    },
+    {
+      "box": {
+        "h": 18,
+        "w": 18,
+        "x": 1231,
+        "y": 7194
+      },
+      "color": "#d9d1eb",
+      "depth": 8,
+      "font": "15px 700",
+      "tag": "svg"
+    }
+  ],
+  "page": {
+    "h": 7245,
+    "w": 1425
+  },
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Play now Privacy & Cookies Terms of Service Impressum LEGAL INFORMATION — PLAYPALS.IO This imprint applies to the website and to every page and social media presence of the PlayPals demo. IMPRESSUM Legal disclosure for this website — Last updated: November 6, 2026 Service Provider PlayPals demo team Example Street 1 12345 Sample City Country Contact Email: hello@example.com Please use email for all enquiries — we read every message. Responsible for Content PlayPals demo team, address as above. Regulatory and Supervisory Authority Not applicable — this demo is not a licensed or regulated service. VAT ID Not applicable for this demo. Consumer Dispute Resolution We are not obliged and not willing to take part in dispute resolution proceedings before a consumer arbitration board. Liability for Content and Links We take care to keep the content of this site accurate, but cannot guarantee that it is complete or up to date. Links to other websites are checked when they are added; we are not responsible for content that changes later on those websites. If you notice a problem, please let us know and we will fix it promptly. Copyright Texts, graphics and code on this site are protected by copyright. Copying them beyond what the law allows requires the written permission of the respective author. PRIVACY POLICY & COOKIES Information about the processing of personal data — Last updated: November 6, 2026 1. Data Controller Responsible for data processing on this website: PlayPals demo team Example Street 1, 12345 Sample City Email: hello@example.com 2. Data We Collect Account Data This version has no online accounts. If you choose a player name in the sign-in window, it is saved only in your own browser so you do not have to type it again. We never receive it. Game Session Data The games on this site run in your browser. The room code, your player name, the cards you build, the numbers or items that are called and your scores are kept in your browser while you play and are not sent to us. When you close the tab, the round ends; only your total wins and your settings are remembered on your device. Technical Data When you open the site, your browser sends technical information such as your IP address, browser type, operating system, the page you asked for and the time of the request to the web host. This is needed to deliver the pages, to keep the service secure and to find technical faults. An IP address counts as personal data, so these logs are only used for those purposes and are deleted automatically after a short time. Local Storage We use your browser's local storage to remember your language, music and sound volume, mute setting, whether calls are read out loud, reduced motion, your last game settings, your custom bingo items, your name and any problem reports you wrote. This data never leaves your device and you can delete it at any time in your browser settings. Section 6 lists every item. Moderation of Typed Text Player names and custom bingo items are checked in your browser against a short, fixed list of offensive words before they are shown. The check is not an AI system and nothing is sent anywhere. If a word is on the list, the text is not accepted and you see a short notice. Custom Text About Others Items you type into event cards stay on your device. Please do not enter personal information about other people, such as full names, addresses or health details. 3. How We Use Your Data We use the data described above only to: Run the games and remember your preferences Deliver the pages securely Find and fix technical problems 4. Legal Bases for Data Processing Where data protection law applies, we process data on these legal bases: Performance of a contract — providing the games you choose to play Legitimate interests — secure and reliable delivery of the website Consent — any optional feature that asks for your permission first 5. International Data Transfers This demo does not send game data to other countries. If the site is hosted with a provider outside your country, the provider only receives the technical data needed to deliver the pages and is bound by appropriate safeguards. 6. Cookies & Local Storage This site does not use advertising or tracking cookies, and it does not show ads. The only items stored are the preferences listed in section 2, which are strictly necessary for the features you use. Because nothing optional is stored, no consent banner is needed. You can clear them at any time: Language preference Audio volume and mute setting Whether calls are read out loud Reduced motion choice Your player name Last used game settings and custom bingo items Locally saved problem reports To delete everything at once, open your browser settings, find the site data for this address and remove it. The games keep working afterwards; they simply start with default settings again. Clear my saved settings Analytics No analytics service is used. We do not count visitors, record sessions or build profiles. If this ever changes, it will only happen with your explicit consent, which you can withdraw at any time, and this policy will be updated first. 7. Third-Party Services Fonts are bundled with the site and loaded from our own server, so no font provider receives your IP address. No analytics, advertising or social media scripts are embedded. 8. Data Retention Local storage stays on your device until you delete it. Server logs kept by the web host are removed automatically after a short period, usually within 14 days. 9. Your Rights Under GDPR Depending on where you live, you may have the following rights: Right of access to the data we hold about you Right to correct inaccurate data Right to have data deleted Right to restrict processing Right to data portability Right to object to processing Right to complain to a data protection authority To use any of these rights, contact hello@example.com. 10. Data Security Pages are delivered over an encrypted connection (HTTPS). Because game data stays on your device, it is only as safe as the device itself — use a screen lock on shared computers. 11. Children's Privacy The site does not knowingly collect personal data from children. Parents who believe their child entered personal data can clear the browser storage or contact us. 12. Changes to This Policy We may update this policy when the site changes. The date at the top shows the latest version. 13. Contact Questions about privacy? Contact us at: PlayPals demo team Email: hello@example.com TERMS OF SERVICE General Terms and Conditions — Last updated: November 6, 2026 1. Acceptance of Terms By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service. 2. Service Description PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions can happen while we improve things. 3. User Accounts You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everything that happens under your account. 4. User Conduct When using the Service, please do not: Cheat, exploit bugs or use tools that give an unfair advantage Harass or insult other players, or use hateful language Use the Service for anything illegal or to share harmful content Pretend to be another player, a moderator or a member of staff Try to disrupt the Service or the devices it runs on 5. Intellectual Property & Content You Create The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law expressly allows it. Custom bingo items, player names, drawings and other text you type stay yours. By entering them into a game you allow the Service to display them to the people playing with you for the length of that game, and to keep them on your own device so the game can remember your last settings. Please only enter content you own or are allowed to share, and keep it friendly. You confirm that what you enter does not break the rights of anyone else. Game hosts can remove items or players at any time, and we may remove content that breaks these Terms. If you create a card list that you would like others to use, you remain responsible for it. Nothing you type is used for advertising, sold or shared with third parties. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at your own risk. 7. Limitation of Liability We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations — the obligations that make the Service possible in the first place and that you may reasonably rely on. In that case liability is limited to the damage that was typical and foreseeable when you started using the Service. Any liability under mandatory product liability law is not affected. All other liability for slight negligence is excluded. Because game data is stored on your own device, we cannot restore scores or settings that were deleted by your browser. 8. Withdrawal Rights (Consumers) If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason. To withdraw, send a clear statement (for example by email) to: PlayPals demo team Email: hello@example.com If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days using the original payment method. 9. Modifications We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply. 10. Governing Law These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence. 11. Content Moderation & Reporting Problems Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an automated system. Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include: why you believe the content is a problem where it appeared (page, game, room code, player name and, if possible, a screenshot) your name and email address so we can reply a statement that your report is accurate to the best of your knowledge We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, the text is not accepted and you see a short notice in the game. Room hosts can remove players and items from their own game. If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again. Your right to take legal action is not affected. 12. Contact Questions about these Terms? Contact us at: PlayPals demo team Email: hello@example.com PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "title": "Impressum | PlayPals",
+  "unreadable_stylesheets": 0,
+  "url": "http://127.0.0.1:50726/impressum",
+  "viewport": {
+    "h": 900,
+    "w": 1440
+  }
+}

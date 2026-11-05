@@ -137,7 +137,7 @@ body.portal-body {
 }
 
 .pp-keycap { width: 48px; }
-.pp-login { width: 132px; font: 650 15px var(--font-read); }
+.pp-login { width: 132px; font: 650 15px var(--font-read); text-decoration: none; }
 
 .pp-fab {
   position: fixed;

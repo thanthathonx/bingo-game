@@ -1,0 +1,61 @@
+{
+  "id": "ev_1c981d9f022876e02fd2cc2eec766df6c28f09e78161b2093d57ed76955bcf0e",
+  "subject": {
+    "kind": "website",
+    "name": "http://127.0.0.1:55212/"
+  },
+  "operation": "web_site_open",
+  "params": {
+    "height": 900,
+    "url": "http://127.0.0.1:55212/",
+    "width": 1440
+  },
+  "result": {
+    "browser": "Chrome/156.0.8078.80",
+    "facts": {
+      "elements": 110,
+      "forms": 2,
+      "height": 900,
+      "images": 2,
+      "lang": "en",
+      "links": 4,
+      "ready": "complete",
+      "title": "Play Bingo Friends Online - Free Custom Bingo Party Game",
+      "url": "http://127.0.0.1:55212/",
+      "width": 1440
+    },
+    "health": {
+      "errors": [],
+      "failed_requests": []
+    },
+    "title": "Play Bingo Friends Online - Free Custom Bingo Party Game",
+    "url": "http://127.0.0.1:55212/"
+  },
+  "summary": "Opened http://127.0.0.1:55212/: \"Play Bingo Friends Online - Free Custom Bingo Party Game\".",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "windows-x86_64"
+  },
+  "limitations": [
+    {
+      "code": "private_profile",
+      "message": "A fresh private browser: pages behind a login show their signed-out state."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 1,
+    "total": 1
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "http://127.0.0.1:55212/"
+    }
+  ],
+  "links": []
+}

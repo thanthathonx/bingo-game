@@ -1,4 +1,4 @@
-# Capture of http://127.0.0.1:53311/datenschutz
+# Capture of http://127.0.0.1:60760/datenschutz
 
 - Title: Privacy Policy | PlayPals
 - Description: Privacy policy and data protection information.
@@ -18,7 +18,7 @@
 - Text colours: `#f8f5ff`, `#e4ddf3`, `#d9d1eb`, `#b5abd0`, `#00d9ff`, `#ffffff`
 - Backgrounds: `#27305c`, `#100d25`, `#100d29`, `#123247`, `#1c365a`, `#1b1433`
 - Corner radii: `8px`, `10px`, `50%`, `12px`
-- Spacing (padding, gaps, margins): `10px`, `4px`, `8px`, `14px`, `16px`, `6px`, `36px`, `24px`, `1px`, `22px`
+- Spacing (padding, gaps, margins): `10px`, `4px`, `8px`, `14px`, `16px`, `36px`, `6px`, `24px`, `22px`, `20px`
 - Content widths: `482.816px`
 - Font files: 6
 

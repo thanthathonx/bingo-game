@@ -4,6 +4,7 @@ import {
   makeClassicCard, makeCustomCard, makeDrawOrder, initialMarks, canDaub, validateClaim,
   autoMarks, placeItems, parseItems, itemsNeeded, shuffle, FREE, sameValue,
 } from './engine.js';
+import { seededRng, hashText } from './roomCode.js';
 
 export const YOU = 'you';
 export const PENALTY_MS = 3000;
@@ -40,6 +41,11 @@ function makePlayer(base, settings, pool, rng) {
 export function newRound(room, rng = Math.random) {
   const { settings } = room;
   const pool = poolFor(settings);
+  // With a room code, every device that uses the code draws the same calls in the same order.
+  const shared = Number.isInteger(room.seed);
+  const roundNo = room.roundNo ?? 0;
+  const drawRng = shared ? seededRng(room.seed * 1000 + roundNo) : rng;
+  const myCardRng = shared ? seededRng(hashText(`${room.seed}:${roundNo}:${room.hostName}`)) : rng;
   const bots = room.buddies.map((b) => makePlayer({ ...b, isBot: true }, settings, pool, rng));
   const players = [...bots];
   if (!room.bigScreen) {
@@ -48,7 +54,7 @@ export function newRound(room, rng = Math.random) {
       const cells = placeItems([], settings.size);
       players.unshift({ ...you, cells, marks: initialMarks(cells), ready: false });
     } else {
-      players.unshift(makePlayer(you, settings, pool, rng));
+      players.unshift(makePlayer(you, settings, pool, myCardRng));
     }
   }
   const needsBuild = settings.mode === 'custom' && !room.bigScreen;
@@ -57,7 +63,7 @@ export function newRound(room, rng = Math.random) {
     settings,
     pool,
     players,
-    order: makeDrawOrder(settings.mode, settings.size, pool, rng),
+    order: makeDrawOrder(settings.mode, settings.size, pool, drawRng),
     called: [],
     paused: false,
     winner: null,

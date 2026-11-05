@@ -9,7 +9,7 @@
       "index": 0,
       "kind": "dialog",
       "label": "Game audio",
-      "sha256": "edce88ba4490fd83355d6114ffc1f07ea8ba35a5189c6caef5c6f18c4ac0ffce"
+      "sha256": "0883543461b6e72c6ab102388053c2d092fc08a1468a3803c32a98129ba56804"
     },
     {
       "changed": [
@@ -19,7 +19,7 @@
       "index": 1,
       "kind": "dialog",
       "label": "Language: English",
-      "sha256": "2356b02462caefb0430e171f9c03778dbb6135b008856227bece5fbb49cff696"
+      "sha256": "8ef3559be009a928ba1f18edfacb6dd8e16c7c99b3e067f3d8a93a4700cc83a6"
     },
     {
       "changed": [
@@ -29,9 +29,9 @@
       "index": 2,
       "kind": "dialog",
       "label": "Menu",
-      "sha256": "a029dc1afda8f34f6e99f8d28575c8c92faa5906e3952b92c81942ad1b70dae0"
+      "sha256": "97e2859aca92023573885986dc6910d1d4d6cafa2aa6862a3611a69c0b6be369"
     }
   ],
-  "url": "http://127.0.0.1:53311/",
+  "url": "http://127.0.0.1:60760/",
   "width": 390
 }

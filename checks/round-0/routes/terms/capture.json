@@ -14,12 +14,12 @@
   "assets": {
     "background_images": [],
     "fonts": [
-      "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2",
-      "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
-      "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+      "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2",
+      "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2",
+      "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
     ],
     "images": [
       {
@@ -38,63 +38,63 @@
     "inline_scripts": 0,
     "requests": [
       {
-        "bytes": 152800,
+        "bytes": 152808,
         "type": "script",
-        "url": "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js"
+        "url": "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js"
       },
       {
-        "bytes": 105179,
-        "type": "script",
-        "url": "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+        "bytes": 20331,
+        "type": "link",
+        "url": "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
       },
       {
         "bytes": 3396,
         "type": "link",
-        "url": "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css"
+        "url": "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css"
       },
       {
-        "bytes": 20310,
-        "type": "link",
-        "url": "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+        "bytes": 105107,
+        "type": "script",
+        "url": "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
       },
       {
         "bytes": 14348,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-800-normal-CQna6-G7.woff2"
-      },
-      {
-        "bytes": 14644,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/bungee-latin-400-normal-Dfnurram.woff2"
-      },
-      {
-        "bytes": 14360,
-        "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-800-normal-CQna6-G7.woff2"
       },
       {
         "bytes": 14440,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-600-normal-B7SfZ07L.woff2"
+      },
+      {
+        "bytes": 14360,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-700-normal-Cu9v6i1X.woff2"
       },
       {
         "bytes": 14332,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-400-normal-BGsTXAXT.woff2"
+      },
+      {
+        "bytes": 14644,
+        "type": "css",
+        "url": "http://127.0.0.1:60760/assets/bungee-latin-400-normal-Dfnurram.woff2"
       },
       {
         "bytes": 13828,
         "type": "css",
-        "url": "http://127.0.0.1:53311/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
+        "url": "http://127.0.0.1:60760/assets/outfit-latin-500-normal-DKnIMDSk.woff2"
       }
     ],
     "scripts": [
-      "http://127.0.0.1:53311/assets/icons-BPlK6QSu.js",
-      "http://127.0.0.1:53311/assets/main-portal-BLJ3fjJm.js"
+      "http://127.0.0.1:60760/assets/icons-CYNXD-cr.js",
+      "http://127.0.0.1:60760/assets/main-portal-BODgPXiT.js"
     ],
     "stylesheets": [
-      "http://127.0.0.1:53311/assets/icons-DUzXT1Uj.css",
-      "http://127.0.0.1:53311/assets/main-portal-GUfCn9RF.css"
+      "http://127.0.0.1:60760/assets/icons-DUzXT1Uj.css",
+      "http://127.0.0.1:60760/assets/main-portal-DBW5r7OS.css"
     ]
   },
   "breakpoints": [
@@ -406,7 +406,7 @@
         "value": "16px"
       },
       {
-        "count": 14,
+        "count": 12,
         "value": "6px"
       },
       {
@@ -418,12 +418,12 @@
         "value": "24px"
       },
       {
-        "count": 6,
-        "value": "1px"
-      },
-      {
         "count": 5,
         "value": "20px"
+      },
+      {
+        "count": 4,
+        "value": "1px"
       },
       {
         "count": 4,
@@ -1573,51 +1573,55 @@
   ],
   "links": [
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "PlayPals.io"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/bingo/",
+      "text": "Play now"
+    },
+    {
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "text": "Now Playing"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy & Cookies"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms of Service"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
@@ -1625,67 +1629,67 @@
       "text": "hello@example.com"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s1",
+      "href": "http://127.0.0.1:60760/terms#s1",
       "text": "1 Acceptance of Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s2",
+      "href": "http://127.0.0.1:60760/terms#s2",
       "text": "2 Service Description"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s3",
+      "href": "http://127.0.0.1:60760/terms#s3",
       "text": "3 User Accounts"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s4",
+      "href": "http://127.0.0.1:60760/terms#s4",
       "text": "4 User Conduct"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s5",
+      "href": "http://127.0.0.1:60760/terms#s5",
       "text": "5 Intellectual Property & Content You Create"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s6",
+      "href": "http://127.0.0.1:60760/terms#s6",
       "text": "6 Disclaimer of Warranties"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s7",
+      "href": "http://127.0.0.1:60760/terms#s7",
       "text": "7 Limitation of Liability"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s8",
+      "href": "http://127.0.0.1:60760/terms#s8",
       "text": "8 Withdrawal Rights (Consumers)"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s9",
+      "href": "http://127.0.0.1:60760/terms#s9",
       "text": "9 Modifications"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s10",
+      "href": "http://127.0.0.1:60760/terms#s10",
       "text": "10 Governing Law"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s11",
+      "href": "http://127.0.0.1:60760/terms#s11",
       "text": "11 Content Moderation & Reporting Problems"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#s12",
+      "href": "http://127.0.0.1:60760/terms#s12",
       "text": "12 Contact"
     },
     {
-      "href": "http://127.0.0.1:53311/terms#main",
+      "href": "http://127.0.0.1:60760/terms#main",
       "text": "Back to Top"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All games"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "Help"
     },
     {
@@ -1693,27 +1697,27 @@
       "text": "Email us"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -1721,7 +1725,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -1729,39 +1733,39 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "All party games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo Friends"
     },
     {
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "text": "Free browser games"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Play on your TV"
     },
     {
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "text": "How it works"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "For streamers"
     },
     {
@@ -1769,7 +1773,7 @@
       "text": "Send feedback"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "About us"
     },
     {
@@ -1777,50 +1781,50 @@
       "text": "Contact us"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for parties"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Bingo for streams"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Classroom bingo"
     },
     {
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "text": "Privacy"
     },
     {
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "text": "Terms"
     },
     {
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "text": "Impressum"
     },
     {
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "text": "Sound and motion"
     }
   ],
   "meta": {
     "description": "Terms of service and usage conditions.",
     "icons": [
-      "http://127.0.0.1:53311/favicon.ico"
+      "http://127.0.0.1:60760/favicon.ico"
     ],
     "og_image": "",
     "og_title": "",
@@ -1853,7 +1857,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "16px 400",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "PlayPals.io"
     },
@@ -1896,7 +1900,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Games"
     },
@@ -1910,7 +1914,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo"
     },
@@ -1924,7 +1928,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#now",
+      "href": "http://127.0.0.1:60760/games/#now",
       "tag": "a",
       "text": "Now Playing"
     },
@@ -1950,7 +1954,7 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "Help"
     },
@@ -2018,8 +2022,9 @@
       "color": "#f8f5ff",
       "depth": 7,
       "font": "15px 650",
-      "tag": "button",
-      "text": "Log in"
+      "href": "http://127.0.0.1:60760/bingo/",
+      "tag": "a",
+      "text": "Play now"
     },
     {
       "background": "#123247",
@@ -2086,7 +2091,7 @@
       "color": "#d9d1eb",
       "depth": 6,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "Privacy & Cookies"
     },
@@ -2113,7 +2118,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "Terms of Service"
     },
@@ -2139,7 +2144,7 @@
       "color": "#d9d1eb",
       "depth": 6,
       "font": "15px 600",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "Impressum"
     },
@@ -2328,7 +2333,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s1",
+      "href": "http://127.0.0.1:60760/terms#s1",
       "tag": "a",
       "text": "1 Acceptance of Terms"
     },
@@ -2342,7 +2347,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s2",
+      "href": "http://127.0.0.1:60760/terms#s2",
       "tag": "a",
       "text": "2 Service Description"
     },
@@ -2356,7 +2361,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s3",
+      "href": "http://127.0.0.1:60760/terms#s3",
       "tag": "a",
       "text": "3 User Accounts"
     },
@@ -2370,7 +2375,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s4",
+      "href": "http://127.0.0.1:60760/terms#s4",
       "tag": "a",
       "text": "4 User Conduct"
     },
@@ -2384,7 +2389,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s5",
+      "href": "http://127.0.0.1:60760/terms#s5",
       "tag": "a",
       "text": "5 Intellectual Property & Content You Create"
     },
@@ -2398,7 +2403,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s6",
+      "href": "http://127.0.0.1:60760/terms#s6",
       "tag": "a",
       "text": "6 Disclaimer of Warranties"
     },
@@ -2412,7 +2417,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s7",
+      "href": "http://127.0.0.1:60760/terms#s7",
       "tag": "a",
       "text": "7 Limitation of Liability"
     },
@@ -2426,7 +2431,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s8",
+      "href": "http://127.0.0.1:60760/terms#s8",
       "tag": "a",
       "text": "8 Withdrawal Rights (Consumers)"
     },
@@ -2440,7 +2445,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s9",
+      "href": "http://127.0.0.1:60760/terms#s9",
       "tag": "a",
       "text": "9 Modifications"
     },
@@ -2454,7 +2459,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s10",
+      "href": "http://127.0.0.1:60760/terms#s10",
       "tag": "a",
       "text": "10 Governing Law"
     },
@@ -2468,7 +2473,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s11",
+      "href": "http://127.0.0.1:60760/terms#s11",
       "tag": "a",
       "text": "11 Content Moderation & Reporting Problems"
     },
@@ -2482,7 +2487,7 @@
       "color": "#d9d1eb",
       "depth": 10,
       "font": "15px 400",
-      "href": "http://127.0.0.1:53311/terms#s12",
+      "href": "http://127.0.0.1:60760/terms#s12",
       "tag": "a",
       "text": "12 Contact"
     },
@@ -3146,7 +3151,7 @@
       "color": "#f8f5ff",
       "depth": 6,
       "font": "13px 700",
-      "href": "http://127.0.0.1:53311/terms#main",
+      "href": "http://127.0.0.1:60760/terms#main",
       "tag": "a",
       "text": "Back to Top"
     },
@@ -3202,7 +3207,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play Bingo Friends"
     },
@@ -3230,7 +3235,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a"
     },
     {
@@ -3257,7 +3262,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a"
     },
     {
@@ -3350,7 +3355,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "All party games"
     },
@@ -3364,7 +3369,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo Friends"
     },
@@ -3378,7 +3383,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/",
+      "href": "http://127.0.0.1:60760/games/",
       "tag": "a",
       "text": "Free browser games"
     },
@@ -3392,7 +3397,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Play on your TV"
     },
@@ -3447,7 +3452,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/games/#faq",
+      "href": "http://127.0.0.1:60760/games/#faq",
       "tag": "a",
       "text": "How it works"
     },
@@ -3461,7 +3466,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "For streamers"
     },
@@ -3530,7 +3535,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "About us"
     },
@@ -3599,7 +3604,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/datenschutz",
+      "href": "http://127.0.0.1:60760/datenschutz",
       "tag": "a",
       "text": "Privacy"
     },
@@ -3613,7 +3618,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/terms",
+      "href": "http://127.0.0.1:60760/terms",
       "tag": "a",
       "text": "Terms"
     },
@@ -3627,7 +3632,7 @@
       "color": "#f8f5ff",
       "depth": 9,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/impressum",
+      "href": "http://127.0.0.1:60760/impressum",
       "tag": "a",
       "text": "Impressum"
     },
@@ -3697,7 +3702,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for parties"
     },
@@ -3711,7 +3716,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Bingo for streams"
     },
@@ -3725,7 +3730,7 @@
       "color": "#f8f5ff",
       "depth": 8,
       "font": "15px 500",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Classroom bingo"
     },
@@ -3780,7 +3785,7 @@
       "color": "#d9d1eb",
       "depth": 7,
       "font": "15px 700",
-      "href": "http://127.0.0.1:53311/bingo/",
+      "href": "http://127.0.0.1:60760/bingo/",
       "tag": "a",
       "text": "Sound and motion"
     },
@@ -3801,10 +3806,10 @@
     "h": 4076,
     "w": 1425
   },
-  "text": "PlayPals.io Games Bingo Now Playing Help Premium Log in Privacy & Cookies Terms of Service Impressum TERMS OF SERVICE General Terms and Conditions Last updated: November 6, 2026 Questions: hello@example.com CONTENTS 1 Acceptance of Terms 2 Service Description 3 User Accounts 4 User Conduct 5 Intellectual Property & Content You Create 6 Disclaimer of Warranties 7 Limitation of Liability 8 Withdrawal Rights (Consumers) 9 Modifications 10 Governing Law 11 Content Moderation & Reporting Problems 12 Contact 1. Acceptance of Terms By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service. 2. Service Description PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions can happen while we improve things. 3. User Accounts You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everything that happens under your account. 4. User Conduct When using the Service, please do not: Cheat, exploit bugs or use tools that give an unfair advantage Harass or insult other players, or use hateful language Use the Service for anything illegal or to share harmful content Pretend to be another player, a moderator or a member of staff Try to disrupt the Service or the devices it runs on 5. Intellectual Property & Content You Create The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law expressly allows it. Custom bingo items, player names, drawings and other text you type stay yours. By entering them into a game you allow the Service to display them to the people playing with you for the length of that game, and to keep them on your own device so the game can remember your last settings. Please only enter content you own or are allowed to share, and keep it friendly. You confirm that what you enter does not break the rights of anyone else. Game hosts can remove items or players at any time, and we may remove content that breaks these Terms. If you create a card list that you would like others to use, you remain responsible for it. Nothing you type is used for advertising, sold or shared with third parties. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at your own risk. 7. Limitation of Liability We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations — the obligations that make the Service possible in the first place and that you may reasonably rely on. In that case liability is limited to the damage that was typical and foreseeable when you started using the Service. Any liability under mandatory product liability law is not affected. All other liability for slight negligence is excluded. Because game data is stored on your own device, we cannot restore scores or settings that were deleted by your browser. 8. Withdrawal Rights (Consumers) If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason. To withdraw, send a clear statement (for example by email) to: PlayPals demo team Email: hello@example.com If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days using the original payment method. 9. Modifications We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply. 10. Governing Law These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence. 11. Content Moderation & Reporting Problems Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an automated system. Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include: why you believe the content is a problem where it appeared (page, game, room code, player name and, if possible, a screenshot) your name and email address so we can reply a statement that your report is accurate to the best of your knowledge We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, the text is not accepted and you see a short notice in the game. Room hosts can remove players and items from their own game. If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again. Your right to take legal action is not affected. 12. Contact Questions about these Terms? Contact us at: PlayPals demo team Email: hello@example.com Back to Top PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
+  "text": "PlayPals.io Games Bingo Now Playing Help Premium Play now Privacy & Cookies Terms of Service Impressum TERMS OF SERVICE General Terms and Conditions Last updated: November 6, 2026 Questions: hello@example.com CONTENTS 1 Acceptance of Terms 2 Service Description 3 User Accounts 4 User Conduct 5 Intellectual Property & Content You Create 6 Disclaimer of Warranties 7 Limitation of Liability 8 Withdrawal Rights (Consumers) 9 Modifications 10 Governing Law 11 Content Moderation & Reporting Problems 12 Contact 1. Acceptance of Terms By opening or using PlayPals (the \"Service\") you agree to these Terms of Service. If you do not agree with them, please do not use the Service. 2. Service Description PlayPals is a collection of browser party games that you can play on one device or share with friends. Some games run entirely in your browser. Features may change over time, and short interruptions can happen while we improve things. 3. User Accounts You can play as a guest. Your name, settings and scores are stored on your own device. If online accounts are added later, you will be responsible for keeping your sign-in details safe and for everything that happens under your account. 4. User Conduct When using the Service, please do not: Cheat, exploit bugs or use tools that give an unfair advantage Harass or insult other players, or use hateful language Use the Service for anything illegal or to share harmful content Pretend to be another player, a moderator or a member of staff Try to disrupt the Service or the devices it runs on 5. Intellectual Property & Content You Create The look, code, characters, sounds and texts of the Service belong to their respective owners. You may not copy, change or distribute any part of the Service without permission, except where the law expressly allows it. Custom bingo items, player names, drawings and other text you type stay yours. By entering them into a game you allow the Service to display them to the people playing with you for the length of that game, and to keep them on your own device so the game can remember your last settings. Please only enter content you own or are allowed to share, and keep it friendly. You confirm that what you enter does not break the rights of anyone else. Game hosts can remove items or players at any time, and we may remove content that breaks these Terms. If you create a card list that you would like others to use, you remain responsible for it. Nothing you type is used for advertising, sold or shared with third parties. 6. Disclaimer of Warranties The Service is provided \"as is\" and \"as available\" without warranties of any kind. We do not promise that it will always be available, free of errors or that saved data will be kept forever. Use it at your own risk. 7. Limitation of Liability We are fully liable for damage caused intentionally or through gross negligence, and for injury to life, body or health. For slight negligence we are only liable for breaches of essential obligations — the obligations that make the Service possible in the first place and that you may reasonably rely on. In that case liability is limited to the damage that was typical and foreseeable when you started using the Service. Any liability under mandatory product liability law is not affected. All other liability for slight negligence is excluded. Because game data is stored on your own device, we cannot restore scores or settings that were deleted by your browser. 8. Withdrawal Rights (Consumers) If paid features are ever offered and you are a consumer, you may withdraw from a purchase within 14 days without giving a reason. To withdraw, send a clear statement (for example by email) to: PlayPals demo team Email: hello@example.com If you asked for digital content to be delivered straight away and confirmed that you lose your right of withdrawal, the right ends once delivery starts. Valid refunds are paid back within 14 days using the original payment method. 9. Modifications We may update these Terms or the Service from time to time. Changes are published on this page. If you keep using the Service after a change, the updated Terms apply. 10. Governing Law These Terms are governed by the law of the place where the operator is established, without prejudice to mandatory consumer protection rules of your country of residence. 11. Content Moderation & Reporting Problems Point of contact: questions from players and from authorities can be sent to hello@example.com. You can write to us in English or German. Every message is read and answered by a person, not by an automated system. Reporting content: if you come across content in the Service that you believe is illegal or harmful — for example a player name, a custom bingo item or an uploaded image — send a report and include: why you believe the content is a problem where it appeared (page, game, room code, player name and, if possible, a screenshot) your name and email address so we can reply a statement that your report is accurate to the best of your knowledge We confirm receipt, review every report carefully and objectively, and tell you what we decided and why. How we moderate: player names, room codes and custom items pass through a simple filter that compares them with a list of offensive words. It is a fixed list, not an AI system. If it finds a match, the text is not accepted and you see a short notice in the game. Room hosts can remove players and items from their own game. If we restrict your content: we tell you the reason and the facts behind the decision as far as we can reach you. You can object to any decision at hello@example.com and a person will look at it again. Your right to take legal action is not affected. 12. Contact Questions about these Terms? Contact us at: PlayPals demo team Email: hello@example.com Back to Top PLAYPALS.IO Party games with friends. Pick a game, share one screen, play together in the browser. Play Bingo Friends GAMES All party games Bingo Friends Free browser games Play on your TV HELP How it works For streamers Send feedback COMPANY About us Contact us LEGAL Privacy Terms Impressum Privacy settings Looking for more? Bingo for parties Bingo for streams Classroom bingo © 2026 PlayPals demo. All rights reserved. English Sound and motion",
   "title": "Terms of Service | PlayPals",
   "unreadable_stylesheets": 0,
-  "url": "http://127.0.0.1:53311/terms",
+  "url": "http://127.0.0.1:60760/terms",
   "viewport": {
     "h": 900,
     "w": 1440

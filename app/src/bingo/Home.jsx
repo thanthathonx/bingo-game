@@ -1,24 +1,42 @@
 import { useState } from 'react';
 import { IconUsers } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
+import { decodeRoom, normalizeCode, CODE_LENGTH } from './roomCode.js';
 
 export const NAME_MAX = 20;
 
 /**
- * Start screen: hero on the left, "create room" card on the right.
- * @param {{ initialName: string, onCreate: (opts: { name: string, streamer: boolean, bigScreen: boolean }) => void }} props
+ * Start screen: hero on the left, "create room" card (plus "join with a friend's code") on the right.
+ * @param {{ initialName: string, onCreate: (opts: { name: string, streamer: boolean, bigScreen: boolean, code?: string }) => void }} props
  */
 export default function Home({ initialName, onCreate }) {
   const { t } = useLang();
   const [name, setName] = useState(initialName);
   const [streamer, setStreamer] = useState(false);
   const [bigScreen, setBigScreen] = useState(false);
+  const [code, setCode] = useState('');
+  const [codeError, setCodeError] = useState('');
   const trimmed = name.trim();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!trimmed) return;
     onCreate({ name: trimmed.slice(0, NAME_MAX), streamer, bigScreen });
+  };
+
+  const handleJoin = (e) => {
+    e.preventDefault();
+    if (!trimmed) {
+      setCodeError(t('nameFirst'));
+      document.getElementById('player-name')?.focus();
+      return;
+    }
+    if (!decodeRoom(code)) {
+      setCodeError(t('badCode'));
+      return;
+    }
+    setCodeError('');
+    onCreate({ name: trimmed.slice(0, NAME_MAX), streamer, bigScreen: false, code: normalizeCode(code) });
   };
 
   return (
@@ -48,7 +66,8 @@ export default function Home({ initialName, onCreate }) {
             <form className="home-form" onSubmit={handleSubmit}>
               <div className="fl-wrap">
                 <input id="player-name" className="fl-input" type="text" required maxLength={NAME_MAX}
-                  placeholder=" " autoComplete="nickname" value={name} onChange={(e) => setName(e.target.value)} />
+                  placeholder=" " autoComplete="nickname" value={name}
+                  onChange={(e) => { setName(e.target.value); setCodeError(''); }} />
                 <label htmlFor="player-name" className="fl-label">
                   {t('yourName')}<span className="req">*</span>
                 </label>
@@ -64,6 +83,22 @@ export default function Home({ initialName, onCreate }) {
               <button type="submit" className="home-btn" disabled={!trimmed}>
                 {t('createRoom')}
               </button>
+            </form>
+            <form className="join-form" onSubmit={handleJoin} noValidate>
+              <label htmlFor="friend-code" className="join-label">{t('gotCode')}</label>
+              <div className="join-row">
+                <input id="friend-code" className="join-input" type="text" autoComplete="off" size={6}
+                  autoCapitalize="characters" spellCheck={false} maxLength={CODE_LENGTH + 2}
+                  placeholder={t('gotCode')} value={code} aria-invalid={Boolean(codeError)}
+                  aria-describedby="code-help"
+                  onChange={(e) => { setCode(normalizeCode(e.target.value)); setCodeError(''); }} />
+                <button type="submit" className="join-btn" disabled={code.length !== CODE_LENGTH}>
+                  {t('join')}
+                </button>
+              </div>
+              <p id="code-help" className={codeError ? 'join-error' : 'join-help'} role={codeError ? 'alert' : undefined}>
+                {codeError || t('codeHelp')}
+              </p>
             </form>
           </div>
         </div>

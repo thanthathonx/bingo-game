@@ -47,7 +47,7 @@ export function PortalHeader({ active }) {
           <button type="button" className="pp-keycap pp-lang" aria-label="Language: English" onClick={() => say('More languages are available inside the bingo game.')}>
             <Flag code="en" width={25} height={17} />
           </button>
-          <button type="button" className="pp-login" onClick={() => say('Accounts are not part of this version — just play!')}>Log in</button>
+          <a className="pp-login" href="/bingo/">Play now</a>
           <button type="button" className="pp-keycap pp-burger" aria-label="Menu" aria-expanded={menuOpen} onClick={() => setMenuOpen((v) => !v)}>
             <IconMenu size={22} />
           </button>
