@@ -641,6 +641,38 @@ button.bcell:active { transform: scale(0.94); }
   .bingo-btn { font-size: 24px; }
 }
 
+/* Phones: the caller shrinks to one row (small ball beside the count and recent calls) so the
+   card fits on screen, and BINGO stays pinned to the bottom edge while the card is in view. */
+@media (max-width: 700px) {
+  .play { gap: 12px; }
+  .play:not(.is-tv) .caller {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas: "ball meta" "ball recent" "actions actions";
+    align-items: center;
+    justify-items: start;
+    gap: 4px 12px;
+    padding: 10px 12px;
+    text-align: left;
+  }
+  .play:not(.is-tv) .caller > .phase-chip { display: none; }
+  .play:not(.is-tv) .caller > .ball-wrap { grid-area: ball; padding: 0; }
+  .play:not(.is-tv) .caller .ball {
+    width: 68px; height: 68px; padding: 6px; font-size: 20px; border-width: 3px;
+    box-shadow: 3px 3px 0 var(--gbd-ink), inset -5px -6px 0 rgba(5, 2, 14, 0.18);
+  }
+  .play:not(.is-tv) .caller .ball.is-text { font-size: 10px; }
+  .play:not(.is-tv) .caller > .caller-meta { grid-area: meta; }
+  .play:not(.is-tv) .caller > .recent { grid-area: recent; justify-content: flex-start; min-height: 0; }
+  .play:not(.is-tv) .caller > .caller-actions { grid-area: actions; justify-content: flex-start; }
+  .play:not(.is-tv) .caller > .hint,
+  .play:not(.is-tv) .caller > .item-pool { grid-column: 1 / -1; }
+  .play:not(.is-tv) .caller .caller-actions .ghost-btn,
+  .play:not(.is-tv) .caller .caller-actions .home-btn { min-height: 0; padding: 6px 12px; font-size: 13px; }
+  .my-card { gap: 10px; }
+  .bingo-btn { position: sticky; bottom: 10px; z-index: 5; height: 56px; }
+}
+
 /* Online leaderboard and big rooms */
 .board-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .board-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--bg-darker); border-radius: var(--radius-md); }

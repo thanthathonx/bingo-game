@@ -34,6 +34,19 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
   const progressRef = useRef(null); // guest: my latest progress, sent with every heartbeat
   const [roster, setRoster] = useState([]); // host: roster for the screen
   const [board, setBoard] = useState(null); // guest: the host's leaderboard for the current round
+  // The browser knows straight away when the device goes offline; the socket only notices
+  // after its heartbeat times out (~30 s), so use both for the "reconnecting" banner.
+  const [offline, setOffline] = useState(() => typeof navigator !== 'undefined' && navigator.onLine === false);
+  useEffect(() => {
+    const off = () => setOffline(true);
+    const on = () => setOffline(false);
+    window.addEventListener('offline', off);
+    window.addEventListener('online', on);
+    return () => {
+      window.removeEventListener('offline', off);
+      window.removeEventListener('online', on);
+    };
+  }, []);
 
   useEffect(() => {
     hostIdRef.current = isHost ? myId : null;
@@ -278,9 +291,9 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
     hostStart,
     leave,
     // guest: the host dropped out and we're waiting for it to come back (up to HOST_GONE_MS)
-    hostMissing: Boolean(online && !isHost && !room?.connecting && status === 'live' && !hostPresent),
+    hostMissing: Boolean(online && !isHost && !room?.connecting && status === 'live' && !offline && !hostPresent),
     // our own connection dropped and is coming back
-    reconnecting: Boolean(online && !room?.connecting && status === 'error'),
+    reconnecting: Boolean(online && !room?.connecting && (status === 'error' || offline)),
     ctx: online ? { isHost, myId, name, broadcast, toHost, gameApi, rosterRef, progressRef, board } : null,
   };
 }
