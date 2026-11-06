@@ -99,7 +99,7 @@ const en = {
   waitingCards: 'Waiting for friends to finish their cards…',
   leaderboard: 'Closest to BINGO',
   hostReconnecting: 'The host lost connection — waiting for them to come back…', reconnecting: 'Connection lost — reconnecting…',
-  inviteTitle: 'Scan to join', copyLink: 'Copy invite link', joinedCount: 'players joined', invitedTo: 'You are joining room', joinIntro: 'Type your name to join your friend''s game',
+  inviteTitle: 'Scan to join', copyLink: 'Copy invite link', joinedCount: 'players joined', invitedTo: 'You are joining room', joinIntro: 'Type your name to join your friend’s game',
   noAccount: 'No account needed',
   changeName: 'Change your name',
   noAccountLong: 'There is no log in or sign up — just pick a name and play. Your name, settings and wins stay on this device.',
