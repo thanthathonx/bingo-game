@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { IconClose } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
 import { getAudioSettings, setAudioSettings } from '../shared/audio.js';
-import { load, save } from '../shared/storage.js';
 
 function Modal({ title, onClose, children }) {
   const { t } = useLang();
@@ -77,62 +76,10 @@ function HowToModal({ onClose }) {
   );
 }
 
-function ReportModal({ onClose }) {
-  const { t } = useLang();
-  const [text, setText] = useState('');
-  const [sent, setSent] = useState(false);
-  const submit = (e) => {
-    e.preventDefault();
-    const notes = load('reports', []);
-    save('reports', [...notes.slice(-19), { text: text.slice(0, 1000), at: new Date().toISOString() }]);
-    setSent(true);
-  };
-  return (
-    <Modal title={t('report')} onClose={onClose}>
-      {sent ? <p>Thanks! Your note was saved on this device.</p> : (
-        <form className="home-form" onSubmit={submit}>
-          <textarea className="items-box" rows={5} maxLength={1000} placeholder="What went wrong?" value={text} onChange={(e) => setText(e.target.value)} />
-          <button type="submit" className="home-btn small" disabled={!text.trim()}>Send</button>
-        </form>
-      )}
-    </Modal>
-  );
-}
-
-function PremiumModal({ onClose }) {
-  const { t } = useLang();
-  return (
-    <Modal title={t('premium')} onClose={onClose}>
-      <p>Everything in this version is free — every mode, card size and buddy. Enjoy!</p>
-    </Modal>
-  );
-}
-
-function RedeemModal({ onClose }) {
-  const { t } = useLang();
-  const [code, setCode] = useState('');
-  const [msg, setMsg] = useState('');
-  return (
-    <Modal title={t('redeem')} onClose={onClose}>
-      <form className="home-form" onSubmit={(e) => { e.preventDefault(); setMsg('That code isn’t valid — but everything is already unlocked.'); }}>
-        <div className="fl-wrap">
-          <input id="redeem" className="fl-input" placeholder=" " maxLength={24} value={code} onChange={(e) => setCode(e.target.value.toUpperCase())} />
-          <label htmlFor="redeem" className="fl-label">Code</label>
-        </div>
-        <button type="submit" className="home-btn small" disabled={!code.trim()}>{t('redeem')}</button>
-        {msg && <p className="notice" role="status">{msg}</p>}
-      </form>
-    </Modal>
-  );
-}
-
 /** Renders whichever menu action is open. */
 export default function Modals({ open, onClose, prefs, onPrefs, name, onName }) {
   if (open === 'settings') return <SettingsModal onClose={onClose} prefs={prefs} onPrefs={onPrefs} />;
   if (open === 'signin') return <SignInModal onClose={onClose} name={name} onName={onName} />;
   if (open === 'howto') return <HowToModal onClose={onClose} />;
-  if (open === 'report') return <ReportModal onClose={onClose} />;
-  if (open === 'premium') return <PremiumModal onClose={onClose} />;
-  if (open === 'redeem') return <RedeemModal onClose={onClose} />;
   return null;
 }

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import {
   IconSpeaker, IconMuted, IconGear, IconMenu, IconClose, IconMusic, IconSparkles,
-  IconCheck, IconHelp, IconMessage, IconKey, Flag,
+  IconCheck, IconHelp, IconKey, Flag,
 } from '../shared/icons.jsx';
 import { LANGUAGES, useLang } from '../shared/i18n.js';
 import { getAudioSettings, onAudioChange, setAudioSettings, playSfx } from '../shared/audio.js';
@@ -170,9 +170,6 @@ function MenuPanel({ t, act, name }) {
       </button>
       <button type="button" className="pm-item" onClick={() => act('howto')}>
         <span className="pm-icon is-gold"><IconHelp size={18} /></span>{t('howToPlay')}
-      </button>
-      <button type="button" className="pm-item" onClick={() => act('report')}>
-        <span className="pm-icon is-gold"><IconMessage size={18} /></span>{t('report')}
       </button>
     </div>
   );
