@@ -25,6 +25,8 @@ export const NAME_MAX = 20;
 export default function Home({ initialName, onCreate, error = '' }) {
   const { t } = useLang();
   const [name, setName] = useState(initialName);
+  // Name changed from the menu while on this screen: show it in the box.
+  useEffect(() => setName(initialName), [initialName]);
   const [streamer, setStreamer] = useState(false);
   const [bigScreen, setBigScreen] = useState(false);
   const [invited] = useState(codeFromLink);

@@ -216,6 +216,11 @@ export function reducer(state, action) {
       const next = action.player ? reducer(state, { type: 'UPSERT_PLAYER', player: action.player }) : state;
       return { ...next, phase: 'finished', winner: action.winner, claimPending: false };
     }
+    case 'RENAME': {
+      const name = String(action.name ?? '').trim().slice(0, 20);
+      if (!name) return state;
+      return updatePlayer(state, YOU, (p) => (p.name === name ? p : { ...p, name }));
+    }
     case 'CLEAR_PENDING':
       return state.claimPending ? { ...state, claimPending: false } : state;
     case 'SET_PAUSE':

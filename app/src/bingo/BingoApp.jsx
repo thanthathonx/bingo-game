@@ -320,6 +320,11 @@ function GameScreens({
   const isGuest = Boolean(online && !online.isHost);
   useOnlineGame({ online, active: screen === 'game', game, dispatch });
 
+  // A new name from the menu shows on your card (and, online, the leaderboard) straight away.
+  useEffect(() => {
+    if (game && name) dispatch({ type: 'RENAME', name });
+  }, [name]);
+
   // Remember the round (host: whole game, guest: own card) so a reload can pick it up again.
   useEffect(() => {
     if (online && game && screen === 'game') onPersistGame(game, online.round);
@@ -486,7 +491,7 @@ function GameScreens({
     <div className={`app-root${prefs.reduceMotion ? ' reduce-motion' : ''}`}>
       <Backdrop />
       <div className={`home-page screen-${screen}`}>
-        <Header onAction={onAction} />
+        <Header onAction={onAction} name={name} />
         {(hostMissing || reconnecting) && (
           <div className="net-banner" role="status">{t(hostMissing ? 'hostReconnecting' : 'reconnecting')}</div>
         )}

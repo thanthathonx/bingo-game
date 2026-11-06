@@ -229,3 +229,9 @@ test('a saved card goes back on "you", and only if it fits the round', () => {
   assert.equal(withCard(building, card).phase, 'playing');
   assert.equal(withCard(building, { ...card, ready: false }).phase, 'build');
 });
+test('renaming changes your name in the running round, and ignores empty names', () => {
+  const state = hostRound();
+  const renamed = reducer(state, { type: 'RENAME', name: '  Nong May  ' });
+  assert.equal(renamed.players.find((p) => p.id === YOU).name, 'Nong May');
+  assert.equal(reducer(state, { type: 'RENAME', name: '   ' }), state);
+});

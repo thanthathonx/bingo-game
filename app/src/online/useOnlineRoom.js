@@ -87,8 +87,10 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
     if (!known && roster0.size >= MAX_ROOM_PLAYERS) return;
     const name0 = String(msg.name ?? '').trim().slice(0, 20) || 'Player';
     roster0.set(msg.from, { id: msg.from, name: name0, lastSeen: Date.now(), progress: known?.progress ?? null });
-    if (!known || known.name !== name0) publishRoster();
-    if (!known || msg.type === MSG.HELLO) scheduleRoom();
+    const renamed = Boolean(known) && known.name !== name0;
+    if (!known || renamed) publishRoster();
+    // A newcomer, someone back after a reload, or a new name: share the updated lobby.
+    if (!known || renamed || msg.type === MSG.HELLO) scheduleRoom();
   };
 
   const handle = (msg) => {

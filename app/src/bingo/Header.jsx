@@ -2,16 +2,16 @@ import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import {
   IconSpeaker, IconMuted, IconGear, IconMenu, IconClose, IconMusic, IconSparkles,
-  IconCheck, IconHelp, IconMessage, IconKey, IconUsers, Flag,
+  IconCheck, IconHelp, IconMessage, IconKey, Flag,
 } from '../shared/icons.jsx';
 import { LANGUAGES, useLang } from '../shared/i18n.js';
 import { getAudioSettings, onAudioChange, setAudioSettings, playSfx } from '../shared/audio.js';
 
 /**
  * Room header with the audio, language and menu panels.
- * @param {{ onAction: (name: string) => void }} props
+ * @param {{ onAction: (name: string) => void, name?: string }} props  name: the player's current name
  */
-export default function Header({ onAction }) {
+export default function Header({ onAction, name = '' }) {
   const { t, lang } = useLang();
   const [panel, setPanel] = useState(null);
   const [audio, setAudio] = useState(getAudioSettings());
@@ -93,7 +93,7 @@ export default function Header({ onAction }) {
           </div>
           {panel === 'audio' && <AudioPanel audio={audio} t={t} />}
           {panel === 'language' && <LanguagePanel onDone={() => setPanel(null)} />}
-          {panel === 'menu' && <MenuPanel t={t} act={act} />}
+          {panel === 'menu' && <MenuPanel t={t} act={act} name={name} />}
         </div>
       )}
     </header>
@@ -154,12 +154,12 @@ function LanguagePanel({ onDone }) {
   );
 }
 
-function MenuPanel({ t, act }) {
+function MenuPanel({ t, act, name }) {
   return (
     <div className="rh-panel-body">
       <button type="button" className="pm-profile" onClick={() => act('signin')}>
         <span className="pm-avatar"><Mascot size={46} /></span>
-        <span>{t('noAccount')}<small>{t('changeName')}</small></span>
+        <span>{name || t('noAccount')}<small>{t('changeName')}</small></span>
       </button>
       <button type="button" className="pm-item" onClick={() => act('join')}>
         <span className="pm-icon is-purple"><IconKey size={18} /></span>{t('gotCode')}
@@ -173,10 +173,6 @@ function MenuPanel({ t, act }) {
       </button>
       <button type="button" className="pm-item" onClick={() => act('report')}>
         <span className="pm-icon is-gold"><IconMessage size={18} /></span>{t('report')}
-      </button>
-      <div className="pm-section">{t('you')}</div>
-      <button type="button" className="pm-item" onClick={() => act('signin')}>
-        <span className="pm-icon is-purple"><IconUsers size={18} /></span>{t('changeName')}
       </button>
     </div>
   );
