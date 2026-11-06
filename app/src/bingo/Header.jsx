@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import {
   IconSpeaker, IconMuted, IconGear, IconMenu, IconClose, IconMusic, IconSparkles,
-  IconCheck, IconHelp, IconMessage, IconKey, IconGamepad, IconUsers, IconShield, Flag,
+  IconCheck, IconHelp, IconMessage, IconKey, IconUsers, Flag,
 } from '../shared/icons.jsx';
 import { LANGUAGES, useLang } from '../shared/i18n.js';
 import { getAudioSettings, onAudioChange, setAudioSettings, playSfx } from '../shared/audio.js';
@@ -52,7 +52,7 @@ export default function Header({ onAction }) {
   return (
     <header className="rh" data-world-ui="true">
       <div className="rh-row">
-        <a className="rh-brand" href="/games/" aria-label="Bingo Friends · all games">
+        <a className="rh-brand" href="/" aria-label="Bingo Friends">
           <img src="/mascot.svg" width="46" height="46" alt="" className="rh-logo" />
           <span className="rh-title">
             <b>Bingo</b> Friends
@@ -164,9 +164,6 @@ function MenuPanel({ t, act }) {
       <button type="button" className="pm-item" onClick={() => act('join')}>
         <span className="pm-icon is-purple"><IconKey size={18} /></span>{t('gotCode')}
       </button>
-      <a className="pm-item" href="/games/">
-        <span className="pm-icon is-purple"><IconGamepad size={18} /></span>{t('allGames')}
-      </a>
       <div className="pm-section">{t('helpSupport')}</div>
       <button type="button" className="pm-item" onClick={() => act('settings')}>
         <span className="pm-icon is-gold"><IconGear size={18} /></span>{t('settings')}
@@ -181,9 +178,6 @@ function MenuPanel({ t, act }) {
       <button type="button" className="pm-item" onClick={() => act('signin')}>
         <span className="pm-icon is-purple"><IconUsers size={18} /></span>{t('changeName')}
       </button>
-      <a className="pm-item" href="/datenschutz#s6">
-        <span className="pm-icon is-purple"><IconShield size={18} /></span>{t('privacySettings')}
-      </a>
     </div>
   );
 }

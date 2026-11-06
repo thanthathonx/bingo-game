@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build && node scripts/flat-pages.js",
+    "build": "vite build",
     "test": "node --test tests/engine.test.js tests/gameState.test.js tests/roomCode.test.js tests/online.test.js"
   },
   "dependencies": {

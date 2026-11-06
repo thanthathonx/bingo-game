@@ -5,14 +5,13 @@ import Lobby from './Lobby.jsx';
 import { BuildView, PlayView, Results } from './Play.jsx';
 import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
-import LegalFooter from './LegalFooter.jsx';
 import { reducer, newRound, SPEEDS, SKILLS, YOU } from './gameState.js';
 import { cellIndexOf, squaresAway, validateClaim } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
 import { onlineEnabled } from '../online/client.js';
-import { MSG, makeOnlineCode, makeClientId, wirePlayer } from '../online/protocol.js';
+import { MSG, makeOnlineCode, makeClientId, wirePlayer, wireState, leaderboard } from '../online/protocol.js';
 import { useOnlineRoom } from '../online/useOnlineRoom.js';
-import { useOnlineGame } from '../online/useOnlineGame.js';
+import { useOnlineGame, boardEntries } from '../online/useOnlineGame.js';
 import { callText } from './Card.jsx';
 import { BUDDY_NAMES, BUDDY_COLORS, MAX_BUDDIES, presetText } from './presets.js';
 import { LangContext, translator, speechLang } from '../shared/i18n.js';
@@ -199,7 +198,7 @@ export default function BingoApp() {
         lang={lang}
         joinError={joinError}
         online={online.ctx && room ? { ...online.ctx, round: (room.roundNo ?? 0) - 1 } : null}
-        peers={online.peers}
+        peers={online.players}
         onlineStatus={online.status}
         onLeaveRoom={online.leave}
         onAction={(action) => {
@@ -239,20 +238,26 @@ function GameScreens({
 
   // Online event cards: friends still building their card. The host waits for them before the
   // first call (up to BUILD_WAIT_MS after the host is ready), so nobody misses the start.
+  // Set during render (not in an effect) so the caller below already sees it on the first pass.
   const playingSince = useRef(0);
-  useEffect(() => {
-    if (playing && !playingSince.current) playingSince.current = Date.now();
-  }, [playing]);
+  if (playing && !playingSince.current) playingSince.current = Date.now();
+  // Guests report "card ready" to the host's roster (not React state), so while waiting the host
+  // re-checks once a second.
   const stillBuilding = online && !isGuest && game
-    ? game.players.filter((p) => p.isRemote && !p.isBot && !p.ready).length
+    ? [...online.rosterRef.current.values()].filter((g) => g.progress?.round === online.round && !g.progress.ready).length
     : 0;
   const waitForBuilders = stillBuilding > 0 && game?.called.length === 0;
+  const waitLeft = waitForBuilders ? Math.max(0, playingSince.current + BUILD_WAIT_MS - now) : 0;
+  useEffect(() => {
+    if (!playing || isGuest || !online || game.called.length > 0 || (stillBuilding === 0 && playingSince.current && now - playingSince.current > 5000)) return undefined;
+    const id = window.setTimeout(() => setNow(Date.now()), 1000);
+    return () => window.clearTimeout(id);
+  }, [playing, now, game?.called.length]);
 
   // Automatic caller. Online, only the host calls.
   useEffect(() => {
     if (!playing || !settings.autoCall || game.paused || isGuest) return undefined;
-    const waitLeft = waitForBuilders ? Math.max(0, playingSince.current + BUILD_WAIT_MS - Date.now()) : 0;
-    const delay = Math.max(waitLeft, game.called.length === 0 ? FIRST_CALL_MS : SPEEDS[settings.speed]);
+    const delay = Math.max(waitForBuilders ? waitLeft : 0, game.called.length === 0 ? FIRST_CALL_MS : SPEEDS[settings.speed]);
     const id = window.setTimeout(() => dispatch({ type: 'CALL' }), delay);
     return () => window.clearTimeout(id);
   }, [playing, settings?.autoCall, settings?.speed, game?.paused, game?.called.length, waitForBuilders]);
@@ -331,13 +336,32 @@ function GameScreens({
     if (winnerId && !isGuest) setRoom((r) => ({ ...r, wins: { ...r.wins, [winnerId]: (r.wins[winnerId] ?? 0) + 1 } }));
   }, [game?.phase]);
 
+  // Host: guests' reports land in the roster (not React state), so redraw the board every 2 s
+  // even when nothing else changes (e.g. while paused).
+  const hostInGame = Boolean(online && !isGuest && screen === 'game' && game && game.phase !== 'finished');
+  useEffect(() => {
+    if (!hostInGame) return undefined;
+    const id = window.setInterval(() => setNow(Date.now()), 2000);
+    return () => window.clearInterval(id);
+  }, [hostInGame]);
+
+  // Online, the wall is a leaderboard (top 10) instead of every card: guests get it from the
+  // host, the host builds it from its own players and the guests' reports.
+  let board = null;
+  if (online && game && isGuest) {
+    board = online.board?.round === online.round ? online.board : { entries: [], count: 0 };
+  } else if (online && game) {
+    const { entries, count } = boardEntries(game, online.round, online.rosterRef.current, online.myId);
+    board = { entries: leaderboard(entries).map((e) => ({ ...e, id: e.id === online.myId ? YOU : e.id })), count };
+  }
+
   // BINGO! Online guests ask the host to confirm a good line instead of deciding it themselves.
   const claim = () => {
     const at = Date.now();
     const me = game.players.find((p) => p.id === YOU);
     const good = me && validateClaim(me.cells, me.marks, settings.size, game.called);
     if (isGuest && good && at >= game.lockedUntil) {
-      online.send(MSG.CLAIM, { round: online.round, player: wirePlayer(me, online.myId) });
+      online.toHost(MSG.CLAIM, { round: online.round, player: wirePlayer(me, online.myId) });
       dispatch({ type: 'CLAIM', id: YOU, now: at, deferWin: true });
       return;
     }
@@ -358,7 +382,9 @@ function GameScreens({
     if (online?.isHost && game && game.phase !== 'finished') {
       const nobody = { id: null, line: [] };
       dispatch({ type: 'FINISH', winner: nobody, player: null });
-      online.send(MSG.FINISH, { round: online.round, ...nobody, player: null });
+      online.broadcast(MSG.STATE, wireState({
+        round: online.round, called: game.called, paused: false, board: [], count: 0, finish: { ...nobody, player: null },
+      }));
     }
     if (!isGuest) setRoom((r) => (r ? { ...r, inGame: false } : r));
     setScreen('lobby');
@@ -382,13 +408,12 @@ function GameScreens({
           {screen === 'game' && game?.phase === 'build' && <BuildView game={game} dispatch={dispatch} onLeave={toLobby} />}
           {screen === 'game' && game && game.phase !== 'build' && (
             <PlayView game={game} dispatch={dispatch} bigScreen={room.bigScreen} now={now} onLeave={toLobby}
-              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} />
+              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} board={board} />
           )}
           {screen === 'game' && game?.phase === 'finished' && (
             <Results game={game} onAgain={isGuest ? null : () => onStart(room)} onLobby={toLobby} />
           )}
         </main>
-        <LegalFooter />
       </div>
     </div>
   );

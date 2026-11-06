@@ -50,7 +50,7 @@ export function BuildView({ game, dispatch, onLeave }) {
 /**
  * Main playing screen: caller, your card (unless Big Screen), and the bingo wall.
  */
-export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0 }) {
+export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0, board = null }) {
   const { t } = useLang();
   const { settings } = game;
   const me = game.players.find((p) => p.id === YOU);
@@ -116,6 +116,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
         </section>
       )}
 
+      {board ? <Leaderboard board={board} /> : (
       <section className="panel wall" aria-label="Bingo wall">
         <h2 className="panel-title">{t('playersTitle')}</h2>
         <div className="wall-grid">
@@ -138,7 +139,30 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
           {others.length === 0 && <p className="hint">Playing solo — add buddies in the lobby for some competition.</p>}
         </div>
       </section>
+      )}
     </div>
+  );
+}
+
+/** Online rooms: the players closest to BINGO (the host shares the top 10). */
+function Leaderboard({ board }) {
+  const { t } = useLang();
+  return (
+    <section className="panel wall" aria-label={t('leaderboard')}>
+      <h2 className="panel-title">{t('leaderboard')} <span className="count">{board.count}</span></h2>
+      {board.entries.length === 0 && <p className="hint">{t('connecting')}</p>}
+      <ol className="board-list">
+        {board.entries.map((e, i) => (
+          <li key={e.id} className={`board-row${e.id === YOU ? ' is-me' : ''}`}>
+            <span className="board-rank">{i + 1}</span>
+            <span className="board-name">{e.name}{e.id === YOU && <em> ({t('you')})</em>}</span>
+            {e.away === 0 && <span className="flag-bingo">{t('bingo')}</span>}
+            {e.away === 1 && <span className="flag-near">{t('oneAway')}</span>}
+            {e.away > 1 && <span className="wall-daubs">{e.daubs} ✓</span>}
+          </li>
+        ))}
+      </ol>
+    </section>
   );
 }
 

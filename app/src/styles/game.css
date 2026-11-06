@@ -640,3 +640,11 @@ button.bcell:active { transform: scale(0.94); }
   .ball { width: 120px; height: 120px; font-size: 30px; }
   .bingo-btn { font-size: 24px; }
 }
+
+/* Online leaderboard and big rooms */
+.board-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.board-row { display: flex; align-items: center; gap: 8px; padding: 8px 10px; background: var(--bg-darker); border-radius: var(--radius-md); }
+.board-row.is-me { outline: 2px solid var(--accent-color); }
+.board-rank { width: 22px; text-align: center; font: 800 13px var(--font-read); color: var(--text-muted); }
+.board-name { flex: 1; min-width: 0; font: 700 14px var(--font-read); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lobby .player-list { max-height: min(52vh, 520px); overflow-y: auto; }

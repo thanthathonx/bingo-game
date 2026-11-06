@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/(games|bingo|impressum|datenschutz|terms)(.*)", "destination": "/", "permanent": false }
+  ]
+}

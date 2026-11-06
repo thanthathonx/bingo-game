@@ -12,11 +12,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: page('index.html'),
-        bingo: page('bingo/index.html'),
-        games: page('games/index.html'),
-        impressum: page('impressum/index.html'),
-        datenschutz: page('datenschutz/index.html'),
-        terms: page('terms/index.html'),
       },
     },
   },
