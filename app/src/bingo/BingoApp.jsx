@@ -197,6 +197,35 @@ export default function BingoApp() {
     });
   }, [room]);
 
+  // ----- Address bar and Back button -----
+  // In an online room the address shows the invite link, so copying it invites a friend.
+  // (Not in streamer mode: the code must stay off screen.)
+  const inRoom = Boolean(room) && screen !== 'home';
+  useEffect(() => {
+    const code = room?.online?.code;
+    const url = code && inRoom && !room.streamer ? `/?room=${code}` : '/';
+    if (window.location.pathname + window.location.search !== url) window.history.replaceState(window.history.state, '', url);
+  }, [room?.online?.code, room?.streamer, inRoom]);
+
+  // A swipe back / Back key inside a room would drop the player out of the round (or, for the
+  // host, end it for everyone), so it does nothing there and says how to leave instead.
+  const [backHint, setBackHint] = useState(false);
+  useEffect(() => {
+    if (!inRoom) return undefined;
+    window.history.pushState({ bingoGuard: true }, '', window.location.href);
+    const onPop = () => {
+      window.history.pushState({ bingoGuard: true }, '', window.location.href);
+      setBackHint(true);
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, [inRoom]);
+  useEffect(() => {
+    if (!backHint) return undefined;
+    const id = window.setTimeout(() => setBackHint(false), 3500);
+    return () => window.clearTimeout(id);
+  }, [backHint]);
+
   /** The round on screen changed: the host keeps the whole game, a guest just its own card. */
   const persistGame = (game, roundUsed) => {
     if (!room?.online) return;
@@ -286,6 +315,7 @@ export default function BingoApp() {
         onLeaveRoom={online.leave}
         hostMissing={online.hostMissing}
         reconnecting={online.reconnecting}
+        backHint={backHint}
         onPersistGame={persistGame}
         onAction={(action) => {
           if (action !== 'join') {
@@ -312,7 +342,7 @@ export default function BingoApp() {
 /** Everything below the header that depends on the current round. Re-mounted per round via key. */
 function GameScreens({
   initial, screen, room, setRoom, name, prefs, now, setNow, later, clearTimers, claimed, onCreate, onStart, setScreen, lang,
-  onAction, joinError, online, peers, onlineStatus, onLeaveRoom, hostMissing, reconnecting, onPersistGame,
+  onAction, joinError, online, peers, onlineStatus, onLeaveRoom, hostMissing, reconnecting, onPersistGame, backHint,
 }) {
   const { t } = useLang();
   const [game, dispatch] = useReducer(reducer, initial);
@@ -495,6 +525,7 @@ function GameScreens({
         {(hostMissing || reconnecting) && (
           <div className="net-banner" role="status">{t(hostMissing ? 'hostReconnecting' : 'reconnecting')}</div>
         )}
+        {backHint && !hostMissing && !reconnecting && <div className="net-banner" role="status">{t('backHint')}</div>}
         <main className="stage-main">
           {screen === 'home' && <Home initialName={name} onCreate={onCreate} error={joinError} />}
           {screen === 'lobby' && room && (
