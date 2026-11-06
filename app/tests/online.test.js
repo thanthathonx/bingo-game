@@ -235,3 +235,9 @@ test('renaming changes your name in the running round, and ignores empty names',
   assert.equal(renamed.players.find((p) => p.id === YOU).name, 'Nong May');
   assert.equal(reducer(state, { type: 'RENAME', name: '   ' }), state);
 });
+test('the lobby says when the host has no room left, so an extra guest can be told', () => {
+  const room = { hostName: 'Host', bigScreen: false, settings: SETTINGS, buddies: [], wins: {} };
+  assert.equal(readRoom(wireRoom(room, 'p-host', [], true), ME).full, true);
+  assert.equal(readRoom(wireRoom(room, 'p-host', []), ME).full, false);
+  assert.ok(MAX_ROOM_PLAYERS > 350); // above the Realtime connection cap, so that limit comes first
+});

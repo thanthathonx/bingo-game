@@ -77,7 +77,7 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
       if (!current?.online) return;
       const list = [{ id: myId, name: current.hostName, isHost: true },
         ...[...rosterRef.current.values()].map(({ id, name: n }) => ({ id, name: n, isHost: false }))];
-      broadcast(MSG.ROOM, wireRoom(current, myId, list));
+      broadcast(MSG.ROOM, wireRoom(current, myId, list, rosterRef.current.size >= MAX_ROOM_PLAYERS));
     }, ROOM_THROTTLE_MS);
   };
 
@@ -164,6 +164,11 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
         const r = readRoom(msg, myId);
         if (!r) break;
         if (!hostIdRef.current) hostIdRef.current = msg.from;
+        // The host's roster is full and we're not on it: we couldn't win, so say so and leave.
+        if (r.full && !r.players.some((p) => p.id === myId)) {
+          leaveRoom('roomFull');
+          break;
+        }
         // Back after a reload, and our round is still running: rejoin it with our saved card.
         const resume = resumeRef?.current;
         if (resume) {

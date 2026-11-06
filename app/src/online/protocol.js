@@ -13,7 +13,9 @@ import { CARD_SIZES, FREE } from '../bingo/engine.js';
 export const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 export const ONLINE_CODE_LENGTH = 6;
 export const NAME_MAX = 20;
-export const MAX_ROOM_PLAYERS = 250;
+// Above the Realtime connection cap (350), so in practice the project limit is reached first.
+// A guest the host can't fit is told the room is full (see `full` in the lobby message).
+export const MAX_ROOM_PLAYERS = 500;
 export const BOARD_SIZE = 10;
 const ID_MAX = 40;
 const ITEM_MAX = 40;
@@ -202,8 +204,9 @@ export function readState(raw, size, myId) {
 }
 
 /** Lobby state the host shares. Buddies run on the host, guests only see them. */
-export function wireRoom(room, myId, players) {
+export function wireRoom(room, myId, players, full = false) {
   return {
+    full: Boolean(full),
     hostName: room.hostName,
     bigScreen: Boolean(room.bigScreen),
     settings: room.settings,
@@ -255,5 +258,6 @@ export function readRoom(raw, myId) {
     roundNo: Number.isInteger(raw.roundNo) ? raw.roundNo : 0,
     inGame: raw.inGame === true,
     players,
+    full: raw.full === true,
   };
 }
