@@ -21,6 +21,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
   const isGuest = Boolean(online && !online.isHost);
   const code = room.online ? room.online.code : encodeRoom(s, room.seed);
   const friends = online ? peers.filter((p) => p.id !== online.myId) : [];
+  const winsLabel = (n) => `${n} ${t(n === 1 ? 'win' : 'wins')}`;
   const winsOf = (id) => room.wins[id === online?.myId ? 'you' : id] ?? 0;
   const nobodyToPlay = room.bigScreen && room.buddies.length === 0 && friends.length === 0;
   const [copied, setCopied] = useState(false);
@@ -58,14 +59,14 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           <div className="room-code" aria-live="polite">
             <span className="room-code-label">{t('roomCode')}</span>
             <span className="room-code-value">{showCode ? code : '••••••'}</span>
-            <button type="button" className="mini-key" onClick={() => setShowCode((v) => !v)} aria-label="Show or hide room code">
+            <button type="button" className="mini-key" onClick={() => setShowCode((v) => !v)} aria-label={t('showHideCode')}>
               <IconEye size={16} />
             </button>
-            <button type="button" className="mini-key" onClick={copyCode} aria-label="Copy room code">
+            <button type="button" className="mini-key" onClick={copyCode} aria-label={t('copyCode')}>
               <IconCopy size={16} />
             </button>
           </div>
-          <p className="hint room-code-hint" role="status">{copied ? '✓ Copied' : t(room.online ? 'shareCodeOnline' : 'shareCode')}</p>
+          <p className="hint room-code-hint" role="status">{copied ? `✓ ${t('copied')}` : t(room.online ? 'shareCodeOnline' : 'shareCode')}</p>
         </div>
       </div>
       {room.joinedCode && (
@@ -91,7 +92,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
                 <span className="player-name">{p.name} {p.id === online.myId && <em>({t('you')})</em>}</span>
                 {p.isHost && (room.bigScreen || room.hostBigScreen) && <span className="tag"><IconTv size={14} /> TV</span>}
                 {p.isHost && <span className="tag tag-gold"><IconCrown size={14} /> {t('host')}</span>}
-                <span className="wins">{winsOf(p.id)} {t('wins')}</span>
+                <span className="wins">{winsLabel(winsOf(p.id))}</span>
               </li>
             )) : (
               <li className="player-row is-host">
@@ -99,14 +100,14 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
                 <span className="player-name">{room.hostName} <em>({t('you')})</em></span>
                 {room.bigScreen && <span className="tag"><IconTv size={14} /> TV</span>}
                 <span className="tag tag-gold"><IconCrown size={14} /> {t('host')}</span>
-                <span className="wins">{hostWins} {t('wins')}</span>
+                <span className="wins">{winsLabel(hostWins)}</span>
               </li>
             )}
             {room.buddies.map((b) => (
               <li key={b.id} className="player-row">
                 <Mascot size={40} tint={b.color} prop="none" />
                 <span className="player-name">{b.name}</span>
-                <span className="wins">{room.wins[b.id] ?? 0} {t('wins')}</span>
+                <span className="wins">{winsLabel(room.wins[b.id] ?? 0)}</span>
                 {!isGuest && (
                   <button type="button" className="mini-key" onClick={() => onRemoveBuddy(b.id)} aria-label={`Remove ${b.name}`}>
                     <IconMinus size={16} />
@@ -120,7 +121,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
               <IconPlus size={18} /> {t('addBuddy')}
             </button>
           )}
-          <p className="hint">{online && !isGuest ? t('inviteHint') : 'Buddies are computer players that daub and shout BINGO on their own.'}</p>
+          <p className="hint">{online && !isGuest ? t('inviteHint') : t('buddiesHint')}</p>
         </section>
 
         <section className="panel" aria-labelledby="settings-h">
@@ -145,7 +146,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
               </div>
               <textarea className="items-box" rows={6} value={s.itemsText} aria-label={t('items')}
                 onChange={(e) => onSettings({ itemsText: e.target.value.slice(0, 4000), presetId: null })} />
-              {problem && <p className="warn">Add at least {problem.need - problem.have} more item(s) — one per line.</p>}
+              {problem && <p className="warn">{t('moreItems').replace('{n}', problem.need - problem.have)}</p>}
             </Setting>
           )}
           <Setting label={t('autoCall')}>
@@ -162,7 +163,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           </Setting>
           <Setting label={t('buddySkill')}>
             <Segmented value={s.skill} onChange={(skill) => onSettings({ skill })}
-              options={[{ value: 'relaxed', label: 'Relaxed' }, { value: 'normal', label: 'Normal' }, { value: 'speedy', label: 'Speedy' }]} />
+              options={[{ value: 'relaxed', label: t('skillRelaxed') }, { value: 'normal', label: t('skillNormal') }, { value: 'speedy', label: t('skillSpeedy') }]} />
           </Setting>
           <Setting label={t('winPattern')}>
             <span className="setting-static">{t('anyLine')}</span>

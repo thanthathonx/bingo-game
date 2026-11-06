@@ -16,9 +16,9 @@ export function BuildView({ game, dispatch, onLeave }) {
   return (
     <div className="play play-build">
       <div className="play-top">
-        <span className="phase-chip">BUILDING CARDS</span>
+        <span className="phase-chip">{t('buildingChip')}</span>
         <h1 className="play-title">{t('buildCard')}</h1>
-        <p className="hint">Tap items to place them on your card. Tap a square to take it off again.</p>
+        <p className="hint">{t('buildHint')}</p>
       </div>
       <div className="build-grid">
         <section className="panel">
@@ -63,7 +63,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
   return (
     <div className={`play${bigScreen ? ' is-tv' : ''}`}>
       <section className="panel caller" aria-live="polite">
-        <span className="phase-chip">CALLING</span>
+        <span className="phase-chip">{t('callingChip')}</span>
         <div className="ball-wrap">
           {last === undefined ? (
             <div className="ball is-idle"><span>?</span></div>
@@ -85,7 +85,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
             game.paused && <span className="hint">{t('hostPaused')}</span>
           ) : settings.autoCall ? (
             <button type="button" className="ghost-btn" onClick={() => dispatch({ type: 'TOGGLE_PAUSE' })}>
-              {game.paused ? <><IconPlay size={18} /> Resume</> : <><IconPause size={18} /> Pause</>}
+              {game.paused ? <><IconPlay size={18} /> {t('resume')}</> : <><IconPause size={18} /> {t('pause')}</>}
             </button>
           ) : (
             <button type="button" className="home-btn small" onClick={() => dispatch({ type: 'CALL' })} disabled={game.order.length === 0}>
@@ -112,12 +112,12 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
           </button>
           {game.claimPending && <p className="notice" role="status">{t('checkingBingo')}</p>}
           {game.notice && <p className="notice" role="status">{game.notice.kind === 'notCalled' ? t('notCalled') : t('falseBingo')}</p>}
-          {!settings.interactiveDaub && <p className="hint">Auto-daub is on — just shout BINGO when a line is full.</p>}
+          {!settings.interactiveDaub && <p className="hint">{t('autoDaubOn')}</p>}
         </section>
       )}
 
       {board ? <Leaderboard board={board} /> : (
-      <section className="panel wall" aria-label="Bingo wall">
+      <section className="panel wall" aria-label={t('bingoWall')}>
         <h2 className="panel-title">{t('playersTitle')}</h2>
         <div className="wall-grid">
           {others.map((p) => {
@@ -136,7 +136,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
               </div>
             );
           })}
-          {others.length === 0 && <p className="hint">Playing solo — add buddies in the lobby for some competition.</p>}
+          {others.length === 0 && <p className="hint">{t('soloHint')}</p>}
         </div>
       </section>
       )}
@@ -202,10 +202,10 @@ export function Results({ game, onAgain, onLobby }) {
   const winner = game.players.find((p) => p.id === game.winner?.id);
   const youWon = winner?.id === YOU;
   return (
-    <div className="results" role="dialog" aria-modal="true" aria-label="Round over">
+    <div className="results" role="dialog" aria-modal="true" aria-label={t('roundOver')}>
       {youWon && <Confetti />}
       <div className="results-card">
-        <span className="phase-chip">GAME OVER</span>
+        <span className="phase-chip">{t('gameOverChip')}</span>
         {winner ? (
           <>
             <Mascot size={96} tint={winner.isBot ? winner.color : undefined} prop={youWon ? 'star' : 'card'} />
@@ -213,7 +213,7 @@ export function Results({ game, onAgain, onLobby }) {
             <Card cells={winner.cells} marks={winner.marks} size={game.settings.size} winLine={game.winner.line} isText={game.settings.mode === 'custom'} />
           </>
         ) : (
-          <h2 className="results-title">Nobody got a line this time!</h2>
+          <h2 className="results-title">{t('nobodyWon')}</h2>
         )}
         <div className="results-actions">
           <button type="button" className="ghost-btn" onClick={onLobby}>{t('backToLobby')}</button>

@@ -32,13 +32,13 @@ function SettingsModal({ onClose, prefs, onPrefs }) {
     <Modal title={t('settings')} onClose={onClose}>
       <label className="home-check">
         <input type="checkbox" checked={speakOn} onChange={(e) => { setSpeakOn(e.target.checked); setAudioSettings({ speak: e.target.checked }); }} />
-        <span>Read calls out loud</span>
+        <span>{t('readAloud')}</span>
       </label>
       <label className="home-check">
         <input type="checkbox" checked={prefs.reduceMotion} onChange={(e) => onPrefs({ reduceMotion: e.target.checked })} />
-        <span>Reduce motion (no floating sparkles)</span>
+        <span>{t('reduceMotion')}</span>
       </label>
-      <p className="hint">Music and sound volume live in the speaker button at the top.</p>
+      <p className="hint">{t('volumeHint')}</p>
     </Modal>
   );
 }
@@ -54,7 +54,7 @@ function SignInModal({ onClose, name, onName }) {
           <input id="profile-name" className="fl-input" placeholder=" " maxLength={20} value={value} onChange={(e) => setValue(e.target.value)} />
           <label htmlFor="profile-name" className="fl-label">{t('yourName')}</label>
         </div>
-        <button type="submit" className="home-btn small" disabled={!value.trim()}>Save</button>
+        <button type="submit" className="home-btn small" disabled={!value.trim()}>{t('save')}</button>
       </form>
     </Modal>
   );
@@ -65,12 +65,12 @@ function HowToModal({ onClose }) {
   return (
     <Modal title={t('howToPlay')} onClose={onClose}>
       <ol className="howto">
-        <li><b>Create a room</b> with your name, then add computer buddies in the lobby.</li>
-        <li><b>Pick a mode:</b> number bingo (1–75 on a 5×5 card) or event cards built from your own list of things that might happen.</li>
-        <li><b>Listen for calls.</b> Each call appears in the big ball. Tap the matching square on your card to daub it.</li>
-        <li><b>Complete any line</b> — a row, column or diagonal. The star in the middle is free.</li>
-        <li><b>Hit BINGO!</b> before the buddies do. A false BINGO locks your button for 3 seconds.</li>
-        <li><b>Big Screen Mode</b> turns this screen into the caller board for a TV — you host and the buddies play.</li>
+        <li><b>{t('howto1T')}</b> {t('howto1')}</li>
+        <li><b>{t('howto2T')}</b> {t('howto2')}</li>
+        <li><b>{t('howto3T')}</b> {t('howto3')}</li>
+        <li><b>{t('howto4T')}</b> {t('howto4')}</li>
+        <li><b>{t('howto5T')}</b> {t('howto5')}</li>
+        <li><b>{t('howto6T')}</b> {t('howto6')}</li>
       </ol>
     </Modal>
   );

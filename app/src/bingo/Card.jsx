@@ -1,4 +1,5 @@
 import { LETTERS, FREE, letterFor, squaresAway } from './engine.js';
+import { useLang } from '../shared/i18n.js';
 
 const LETTER_COLORS = ['var(--bingo-b)', 'var(--bingo-i)', 'var(--bingo-n)', 'var(--bingo-g)', 'var(--bingo-o)'];
 
@@ -21,6 +22,7 @@ export function callText(value, size) {
  *   onCell?: (i: number) => void, mini?: boolean, building?: boolean, isText?: boolean }} props
  */
 export default function Card({ cells, marks = [], size, winLine = [], onCell, mini = false, building = false, isText = false }) {
+  const { t } = useLang();
   const showLetters = size === 5 && !isText && !mini;
   return (
     <div className={`bcard${mini ? ' is-mini' : ''}${isText ? ' is-text' : ''}`} style={{ '--n': size }}>
@@ -45,7 +47,7 @@ export default function Card({ cells, marks = [], size, winLine = [], onCell, mi
           }
           return (
             <button key={i} type="button" className={cls} onClick={() => onCell(i)}
-              aria-pressed={building ? undefined : Boolean(marks[i])} aria-label={building && v === null ? 'Empty square' : String(label)}>
+              aria-pressed={building ? undefined : Boolean(marks[i])} aria-label={building && v === null ? t('emptySquare') : String(label)}>
               <CellText value={label} free={isFree} />
             </button>
           );
@@ -56,7 +58,8 @@ export default function Card({ cells, marks = [], size, winLine = [], onCell, mi
 }
 
 function CellText({ value, free }) {
-  if (free) return <span className="bcell-free">★<small>FREE</small></span>;
+  const { t } = useLang();
+  if (free) return <span className="bcell-free">★<small>{t('free')}</small></span>;
   return <span className="bcell-text">{value}</span>;
 }
 
