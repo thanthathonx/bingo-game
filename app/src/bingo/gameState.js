@@ -45,11 +45,15 @@ export function newRound(room, rng = Math.random) {
   const shared = Number.isInteger(room.seed);
   const roundNo = room.roundNo ?? 0;
   const drawRng = shared ? seededRng(room.seed * 1000 + roundNo) : rng;
-  const myCardRng = shared ? seededRng(hashText(`${room.seed}:${roundNo}:${room.hostName}`)) : rng;
-  const bots = room.buddies.map((b) => makePlayer({ ...b, isBot: true }, settings, pool, rng));
+  // Online, every player gets their own card; offline the code + name pick the card.
+  const selfName = room.selfName ?? room.hostName;
+  const myCardRng = shared && !room.online ? seededRng(hashText(`${room.seed}:${roundNo}:${selfName}`)) : rng;
+  // Online guests see the host's buddies as remote players; only the host runs them.
+  const runsBuddies = !room.online || room.online.isHost;
+  const bots = runsBuddies ? room.buddies.map((b) => makePlayer({ ...b, isBot: true }, settings, pool, rng)) : [];
   const players = [...bots];
   if (!room.bigScreen) {
-    const you = { id: YOU, name: room.hostName, color: '#fd79a8', isBot: false };
+    const you = { id: YOU, name: selfName, color: '#fd79a8', isBot: false };
     if (settings.mode === 'custom') {
       const cells = placeItems([], settings.size);
       players.unshift({ ...you, cells, marks: initialMarks(cells), ready: false });
@@ -69,6 +73,8 @@ export function newRound(room, rng = Math.random) {
     winner: null,
     lockedUntil: 0,
     notice: null,
+    referee: runsBuddies,
+    claimPending: false,
   };
 }
 
@@ -84,7 +90,8 @@ function applyCall(state, value) {
   if (!state.settings.interactiveDaub) {
     next = updatePlayer(next, YOU, (p) => ({ ...p, marks: autoMarks(p.cells, called) }));
   }
-  if (order.length === 0 && !next.winner) {
+  // Out of balls with no line: only the referee (offline, or the online host) ends the round.
+  if (order.length === 0 && !next.winner && state.referee !== false) {
     const anyWin = next.players.some((p) => validateClaim(p.cells, autoMarks(p.cells, called), state.settings.size, called));
     if (!anyWin) return { ...next, phase: 'finished', winner: { id: null, line: [] } };
   }
@@ -155,11 +162,50 @@ export function reducer(state, action) {
       const p = state.players.find((x) => x.id === action.id);
       if (!p) return state;
       if (action.id === YOU && action.now < state.lockedUntil) return state;
+      if (action.id !== YOU && state.paused) return state; // buddies wait for the game to resume
       const line = validateClaim(p.cells, p.marks, state.settings.size, state.called);
+      // Online guests don't decide the win themselves: the host confirms it (see FINISH).
+      if (line && action.deferWin) return { ...state, claimPending: true };
       if (line) return { ...state, phase: 'finished', winner: { id: p.id, line } };
       if (action.id === YOU) return { ...state, lockedUntil: action.now + PENALTY_MS, notice: { kind: 'falseBingo', at: action.now } };
       return state;
     }
+    // ----- Online rooms -----
+    case 'UPSERT_PLAYER': {
+      if (action.player.id === YOU) return state;
+      const existing = state.players.find((p) => p.id === action.player.id);
+      if (existing && !existing.isRemote) return state; // never let the network replace our own buddies
+      return existing
+        ? updatePlayer(state, action.player.id, () => action.player)
+        : { ...state, players: [...state.players, action.player] };
+    }
+    case 'REMOVE_PLAYER':
+      return { ...state, players: state.players.filter((p) => p.id !== action.id || p.id === YOU) };
+    case 'SYNC_CALLS': {
+      if (state.phase === 'finished') return state;
+      return action.called.reduce(
+        (next, value) => (next.phase === 'finished' || next.called.some((c) => sameValue(c, value)) ? next : applyCall(next, value)),
+        state,
+      );
+    }
+    case 'REMOTE_CLAIM': {
+      if (state.phase !== 'playing') return state;
+      // The claim carries the card, so a claimant we have not heard from yet is added first.
+      const next = reducer(state, { type: 'UPSERT_PLAYER', player: action.player });
+      if (!next.players.some((p) => p.id === action.player.id && p.isRemote)) return state;
+      const line = validateClaim(action.player.cells, action.player.marks, state.settings.size, state.called);
+      return line ? { ...next, phase: 'finished', winner: { id: action.player.id, line } } : next;
+    }
+    case 'FINISH': {
+      // The host's result wins over anything this device decided on its own, except a real winner.
+      if (state.phase === 'finished' && state.winner?.id != null) return state;
+      const next = action.player ? reducer(state, { type: 'UPSERT_PLAYER', player: action.player }) : state;
+      return { ...next, phase: 'finished', winner: action.winner, claimPending: false };
+    }
+    case 'CLEAR_PENDING':
+      return state.claimPending ? { ...state, claimPending: false } : state;
+    case 'SET_PAUSE':
+      return { ...state, paused: Boolean(action.paused) };
     case 'TOGGLE_PAUSE':
       return { ...state, paused: !state.paused };
     case 'CLEAR_NOTICE':

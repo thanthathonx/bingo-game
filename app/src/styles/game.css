@@ -517,8 +517,9 @@ button.bcell:active { transform: scale(0.94); }
   border-radius: var(--radius-md);
 }
 
-.wall-head { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; }
-.wall-name { flex: 1; min-width: 0; font: 700 13px var(--font-read); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.wall-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin-bottom: 6px; }
+/* Narrow wall cards: keep the name readable and let the BINGO / 1 away flag drop below it. */
+.wall-name { flex: 1 1 56px; min-width: 56px; font: 700 13px var(--font-read); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .wall-daubs { font: 700 12px var(--font-read); color: var(--text-muted); }
 
 .called-board {

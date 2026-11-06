@@ -50,7 +50,7 @@ export function BuildView({ game, dispatch, onLeave }) {
 /**
  * Main playing screen: caller, your card (unless Big Screen), and the bingo wall.
  */
-export function PlayView({ game, dispatch, bigScreen, now, onLeave }) {
+export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0 }) {
   const { t } = useLang();
   const { settings } = game;
   const me = game.players.find((p) => p.id === YOU);
@@ -73,14 +73,17 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave }) {
             </div>
           )}
         </div>
-        <div className="caller-meta">{t('called')}: {game.called.length}/{game.called.length + game.order.length}</div>
+        {waitingFor > 0 && <p className="hint" role="status">{t('waitingCards')} ({waitingFor})</p>}
+        <div className="caller-meta">{t('called')}:{game.called.length}/{game.called.length + game.order.length}</div>
         <div className="recent">
           {game.called.slice(-6, -1).reverse().map((v) => (
             <span key={String(v)} className="recent-ball" style={{ '--ball': letterColor(v, settings.size) }}>{callText(v, settings.size)}</span>
           ))}
         </div>
         <div className="caller-actions">
-          {settings.autoCall ? (
+          {isGuest ? (
+            game.paused && <span className="hint">{t('hostPaused')}</span>
+          ) : settings.autoCall ? (
             <button type="button" className="ghost-btn" onClick={() => dispatch({ type: 'TOGGLE_PAUSE' })}>
               {game.paused ? <><IconPlay size={18} /> Resume</> : <><IconPause size={18} /> Pause</>}
             </button>
@@ -89,9 +92,9 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave }) {
               {t('callNext')}
             </button>
           )}
-          <button type="button" className="ghost-btn" onClick={onLeave}><IconDoor size={18} /> {t('leave')}</button>
+          <button type="button" className="ghost-btn" onClick={onLeave}><IconDoor size={18} /> {t('backToLobby')}</button>
         </div>
-        {!settings.autoCall && isText && <ManualItems game={game} dispatch={dispatch} />}
+        {!isGuest && !settings.autoCall && isText && <ManualItems game={game} dispatch={dispatch} />}
         {bigScreen && <CalledBoard game={game} />}
       </section>
 
@@ -104,9 +107,10 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave }) {
           <Card cells={me.cells} marks={me.marks} size={settings.size} isText={isText}
             onCell={(index) => dispatch({ type: 'DAUB', index, now: Date.now() })} />
           <button type="button" className={`bingo-btn${myAway === 0 ? ' is-ready' : ''}`} disabled={locked}
-            onClick={() => dispatch({ type: 'CLAIM', id: YOU, now: Date.now() })}>
+            onClick={onClaim ?? (() => dispatch({ type: 'CLAIM', id: YOU, now: Date.now() }))}>
             {locked ? `${Math.ceil((game.lockedUntil - now) / 1000)}…` : t('bingo')}
           </button>
+          {game.claimPending && <p className="notice" role="status">{t('checkingBingo')}</p>}
           {game.notice && <p className="notice" role="status">{game.notice.kind === 'notCalled' ? t('notCalled') : t('falseBingo')}</p>}
           {!settings.interactiveDaub && <p className="hint">Auto-daub is on — just shout BINGO when a line is full.</p>}
         </section>
@@ -189,7 +193,9 @@ export function Results({ game, onAgain, onLobby }) {
         )}
         <div className="results-actions">
           <button type="button" className="ghost-btn" onClick={onLobby}>{t('backToLobby')}</button>
-          <button type="button" className="home-btn small" onClick={onAgain}>{t('playAgain')}</button>
+          {onAgain
+            ? <button type="button" className="home-btn small" onClick={onAgain}>{t('playAgain')}</button>
+            : <span className="hint">{t('waitingHost')}</span>}
         </div>
       </div>
     </div>

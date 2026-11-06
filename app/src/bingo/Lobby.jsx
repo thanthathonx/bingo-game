@@ -11,14 +11,31 @@ import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
  * @param {{ room: object, onChange: (patch: object) => void, onSettings: (patch: object) => void,
  *   onAddBuddy: () => void, onRemoveBuddy: (id: string) => void, onStart: () => void, onLeave: () => void }} props
  */
-export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onStart, onLeave }) {
+export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onStart, onLeave, online = null, peers = [], onlineStatus = 'idle' }) {
   const { t } = useLang();
   const [showCode, setShowCode] = useState(!room.streamer);
   const s = room.settings;
   const problem = settingsProblem(s);
   const hostWins = room.wins.you ?? 0;
-  const code = encodeRoom(s, room.seed);
+  const isGuest = Boolean(online && !online.isHost);
+  const code = room.online ? room.online.code : encodeRoom(s, room.seed);
+  const friends = online ? peers.filter((p) => p.id !== online.myId) : [];
+  const winsOf = (id) => room.wins[id === online?.myId ? 'you' : id] ?? 0;
+  const nobodyToPlay = room.bigScreen && room.buddies.length === 0 && friends.length === 0;
   const [copied, setCopied] = useState(false);
+
+  if (room.connecting) {
+    return (
+      <div className="lobby">
+        <div className="panel lobby-wait" role="status">
+          <span className="phase-chip">{t('lobby')}</span>
+          <h1 className="lobby-title">{code}</h1>
+          <p className="hint">{t('connecting')}</p>
+          <button type="button" className="ghost-btn" onClick={onLeave}><IconDoor size={18} /> {t('leave')}</button>
+        </div>
+      </div>
+    );
+  }
   const copyCode = async () => {
     try {
       await navigator.clipboard.writeText(code);
@@ -47,7 +64,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
               <IconCopy size={16} />
             </button>
           </div>
-          <p className="hint room-code-hint" role="status">{copied ? '✓ Copied' : t('shareCode')}</p>
+          <p className="hint room-code-hint" role="status">{copied ? '✓ Copied' : t(room.online ? 'shareCodeOnline' : 'shareCode')}</p>
         </div>
       </div>
       {room.joinedCode && (
@@ -56,37 +73,57 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           {room.friendCustomItems && s.mode === 'custom' && <> {t('friendItems')}</>}
         </p>
       )}
+      {online && onlineStatus === 'error' && <p className="warn" role="alert">{t('connectionLost')}</p>}
+      {isGuest && room.inGame && <p className="join-note">{t('inProgress')}</p>}
 
       <div className="lobby-grid">
         <section className="panel" aria-labelledby="players-h">
-          <h2 id="players-h" className="panel-title">{t('playersTitle')} <span className="count">{room.buddies.length + 1}</span></h2>
+          <h2 id="players-h" className="panel-title">
+            {t('playersTitle')} <span className="count">{(online ? peers.length : 1) + room.buddies.length}</span>
+          </h2>
           <ul className="player-list">
-            <li className="player-row is-host">
-              <Mascot size={40} tint="#ff9bc0" prop="none" />
-              <span className="player-name">{room.hostName} <em>({t('you')})</em></span>
-              {room.bigScreen && <span className="tag"><IconTv size={14} /> TV</span>}
-              <span className="tag tag-gold"><IconCrown size={14} /> {t('host')}</span>
-              <span className="wins">{hostWins} {t('wins')}</span>
-            </li>
+            {online ? peers.map((p) => (
+              <li key={p.id} className={`player-row${p.isHost ? ' is-host' : ''}`}>
+                <Mascot size={40} tint={p.id === online.myId ? '#ff9bc0' : undefined} prop="none" />
+                <span className="player-name">{p.name} {p.id === online.myId && <em>({t('you')})</em>}</span>
+                {p.isHost && (room.bigScreen || room.hostBigScreen) && <span className="tag"><IconTv size={14} /> TV</span>}
+                {p.isHost && <span className="tag tag-gold"><IconCrown size={14} /> {t('host')}</span>}
+                <span className="wins">{winsOf(p.id)} {t('wins')}</span>
+              </li>
+            )) : (
+              <li className="player-row is-host">
+                <Mascot size={40} tint="#ff9bc0" prop="none" />
+                <span className="player-name">{room.hostName} <em>({t('you')})</em></span>
+                {room.bigScreen && <span className="tag"><IconTv size={14} /> TV</span>}
+                <span className="tag tag-gold"><IconCrown size={14} /> {t('host')}</span>
+                <span className="wins">{hostWins} {t('wins')}</span>
+              </li>
+            )}
             {room.buddies.map((b) => (
               <li key={b.id} className="player-row">
                 <Mascot size={40} tint={b.color} prop="none" />
                 <span className="player-name">{b.name}</span>
                 <span className="wins">{room.wins[b.id] ?? 0} {t('wins')}</span>
-                <button type="button" className="mini-key" onClick={() => onRemoveBuddy(b.id)} aria-label={`Remove ${b.name}`}>
-                  <IconMinus size={16} />
-                </button>
+                {!isGuest && (
+                  <button type="button" className="mini-key" onClick={() => onRemoveBuddy(b.id)} aria-label={`Remove ${b.name}`}>
+                    <IconMinus size={16} />
+                  </button>
+                )}
               </li>
             ))}
           </ul>
-          <button type="button" className="ghost-btn" onClick={onAddBuddy} disabled={room.buddies.length >= MAX_BUDDIES}>
-            <IconPlus size={18} /> {t('addBuddy')}
-          </button>
-          <p className="hint">Buddies are computer players that daub and shout BINGO on their own.</p>
+          {!isGuest && (
+            <button type="button" className="ghost-btn" onClick={onAddBuddy} disabled={room.buddies.length >= MAX_BUDDIES}>
+              <IconPlus size={18} /> {t('addBuddy')}
+            </button>
+          )}
+          <p className="hint">{online && !isGuest ? t('inviteHint') : 'Buddies are computer players that daub and shout BINGO on their own.'}</p>
         </section>
 
         <section className="panel" aria-labelledby="settings-h">
           <h2 id="settings-h" className="panel-title">{t('hostSettings')}</h2>
+          {isGuest && <p className="hint">{t('guestSettings')}</p>}
+          <fieldset className="settings-fieldset" disabled={isGuest}>
           <Setting label={t('mode')}>
             <Segmented value={s.mode} onChange={(mode) => onSettings({ mode })}
               options={[{ value: 'classic', label: t('modeClassic') }, { value: 'custom', label: t('modeCustom') }]} />
@@ -127,14 +164,19 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           <Setting label={t('winPattern')}>
             <span className="setting-static">{t('anyLine')}</span>
           </Setting>
+          </fieldset>
         </section>
       </div>
 
       <div className="lobby-actions">
         <button type="button" className="ghost-btn" onClick={onLeave}><IconDoor size={18} /> {t('leave')}</button>
-        <button type="button" className="home-btn lobby-start" onClick={onStart} disabled={Boolean(problem) || room.buddies.length === 0 && room.bigScreen}>
-          <IconPlay size={22} /> {t('startGame')}
-        </button>
+        {isGuest ? (
+          <p className="hint" role="status">{t('waitingHost')}</p>
+        ) : (
+          <button type="button" className="home-btn lobby-start" onClick={onStart} disabled={Boolean(problem) || nobodyToPlay}>
+            <IconPlay size={22} /> {t('startGame')}
+          </button>
+        )}
       </div>
     </div>
   );

@@ -7,8 +7,12 @@ import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
 import LegalFooter from './LegalFooter.jsx';
 import { reducer, newRound, SPEEDS, SKILLS, YOU } from './gameState.js';
-import { cellIndexOf, squaresAway } from './engine.js';
+import { cellIndexOf, squaresAway, validateClaim } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
+import { onlineEnabled } from '../online/client.js';
+import { MSG, makeOnlineCode, makeClientId, wirePlayer } from '../online/protocol.js';
+import { useOnlineRoom } from '../online/useOnlineRoom.js';
+import { useOnlineGame } from '../online/useOnlineGame.js';
 import { callText } from './Card.jsx';
 import { BUDDY_NAMES, BUDDY_COLORS, MAX_BUDDIES, presetText } from './presets.js';
 import { LangContext, translator, speechLang } from '../shared/i18n.js';
@@ -30,9 +34,33 @@ const DEFAULT_SETTINGS = {
 
 const between = ([lo, hi]) => lo + Math.random() * (hi - lo);
 
-function makeBuddy(index) {
-  return { id: `bot-${index}-${Date.now().toString(36)}`, name: BUDDY_NAMES[index % BUDDY_NAMES.length], color: BUDDY_COLORS[index % BUDDY_COLORS.length] };
+/** A new buddy with the first name not already in the room (each name has its own colour). */
+function makeBuddy(existing) {
+  const used = new Set(existing.map((b) => b.name));
+  const free = BUDDY_NAMES.findIndex((n) => !used.has(n));
+  const i = free < 0 ? existing.length : free;
+  const id = `bot-${i}-${Date.now().toString(36)}-${Math.floor(Math.random() * 1e6).toString(36)}`;
+  return { id, name: BUDDY_NAMES[i % BUDDY_NAMES.length], color: BUDDY_COLORS[i % BUDDY_COLORS.length] };
 }
+
+/** This tab's player id. Kept for the tab's lifetime, so a guest who reloads and rejoins keeps their wins. */
+function clientIdForTab() {
+  const KEY = 'bingo-friends-client-id';
+  try {
+    const saved = window.sessionStorage.getItem(KEY);
+    if (saved && /^p-[a-z0-9]{1,12}$/.test(saved)) return saved;
+    const id = makeClientId();
+    window.sessionStorage.setItem(KEY, id);
+    return id;
+  } catch {
+    return makeClientId(); // private mode / storage blocked: a fresh id per load is fine
+  }
+}
+
+/** Online event cards: how long the host waits for friends still building their cards. */
+const BUILD_WAIT_MS = 45000;
+
+const startingBuddies = (n) => Array.from({ length: n }).reduce((list) => [...list, makeBuddy(list)], []);
 
 export default function BingoApp() {
   const [lang, setLangState] = useState(() => load('lang', 'en'));
@@ -80,21 +108,57 @@ export default function BingoApp() {
   useEffect(() => clearTimers, [clearTimers]);
 
   // A new round re-mounts GameScreens (via key) with a fresh reducer state.
+  // r.roundNo is the round being started; the room then counts on to the next one.
   const startRound = useCallback((r) => {
     clearTimers();
     setInitialGame(newRound(r));
-    setRoom((prev) => (prev ? { ...prev, roundNo: (prev.roundNo ?? 0) + 1 } : prev));
+    setRoom({ ...r, roundNo: (r.roundNo ?? 0) + 1, inGame: true });
     setRound((n) => n + 1);
     setScreen('game');
   }, [clearTimers]);
+
+  const [joinError, setJoinError] = useState('');
+  const myId = useMemo(clientIdForTab, []);
+  const leaveRoom = useCallback((reason) => {
+    clearTimers();
+    setRoom(null);
+    setScreen('home');
+    setJoinError(reason ?? '');
+  }, [clearTimers]);
+  const online = useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom });
+
+  const hostStartRound = (r) => {
+    if (r.online?.isHost) online.hostStart(r, r.roundNo ?? 0);
+    startRound(r);
+  };
 
   const openRoom = ({ name: n, streamer, bigScreen, code }) => {
     unlockAudio();
     setName(n);
     save('name', n);
+    setJoinError('');
     const saved = load('room', null);
-    const joined = code ? decodeRoom(code) : null;
     const base = { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}) };
+    if (onlineEnabled) {
+      const isHost = !code;
+      setRoom({
+        online: { code: code ?? makeOnlineCode(), isHost },
+        connecting: !isHost,
+        seed: randomSeed(),
+        roundNo: 0,
+        hostName: isHost ? n : '',
+        selfName: n,
+        streamer,
+        bigScreen: isHost && bigScreen,
+        buddies: [], // online, friends join for real; the host can still add buddies
+        settings: base,
+        wins: {},
+        inGame: false,
+      });
+      setScreen('lobby');
+      return;
+    }
+    const joined = code ? decodeRoom(code) : null;
     const settings = joined
       ? { ...base, ...joined.settings, itemsText: presetText(joined.settings.presetId) }
       : base;
@@ -106,7 +170,7 @@ export default function BingoApp() {
       hostName: n,
       streamer,
       bigScreen,
-      buddies: [0, 1, 2].map(makeBuddy),
+      buddies: startingBuddies(3),
       settings,
       wins: {},
     });
@@ -130,14 +194,20 @@ export default function BingoApp() {
         later={later}
         clearTimers={clearTimers}
         onCreate={openRoom}
-        onStart={(r) => startRound(r)}
+        onStart={hostStartRound}
         setScreen={setScreen}
         lang={lang}
+        joinError={joinError}
+        online={online.ctx && room ? { ...online.ctx, round: (room.roundNo ?? 0) - 1 } : null}
+        peers={online.peers}
+        onlineStatus={online.status}
+        onLeaveRoom={online.leave}
         onAction={(action) => {
           if (action !== 'join') {
             setModal(action);
             return;
           }
+          if (room) online.leave();
           clearTimers();
           setScreen('home');
           window.setTimeout(() => document.getElementById('friend-code')?.focus(), 60);
@@ -145,33 +215,57 @@ export default function BingoApp() {
       />
       <Modals open={modal} onClose={() => setModal(null)} prefs={prefs}
         onPrefs={(p) => { const next = { ...prefs, ...p }; setPrefs(next); save('prefs', next); }}
-        name={name} onName={(n) => { setName(n); save('name', n); if (room) setRoom({ ...room, hostName: n }); }} />
+        name={name} onName={(n) => {
+          setName(n);
+          save('name', n);
+          if (room) setRoom({ ...room, selfName: n, hostName: room.online && !room.online.isHost ? room.hostName : n });
+        }} />
     </LangContext.Provider>
   );
 }
 
 /** Everything below the header that depends on the current round. Re-mounted per round via key. */
-function GameScreens({ initial, screen, room, setRoom, name, prefs, now, setNow, later, clearTimers, claimed, onCreate, onStart, setScreen, lang, onAction }) {
+function GameScreens({
+  initial, screen, room, setRoom, name, prefs, now, setNow, later, clearTimers, claimed, onCreate, onStart, setScreen, lang,
+  onAction, joinError, online, peers, onlineStatus, onLeaveRoom,
+}) {
   const [game, dispatch] = useReducer(reducer, initial);
   const lastCallCount = useRef(0);
+  const isGuest = Boolean(online && !online.isHost);
+  useOnlineGame({ online, active: screen === 'game', game, dispatch });
 
   const settings = game?.settings;
   const playing = screen === 'game' && game?.phase === 'playing';
 
-  // Automatic caller.
+  // Online event cards: friends still building their card. The host waits for them before the
+  // first call (up to BUILD_WAIT_MS after the host is ready), so nobody misses the start.
+  const playingSince = useRef(0);
   useEffect(() => {
-    if (!playing || !settings.autoCall || game.paused) return undefined;
-    const delay = game.called.length === 0 ? FIRST_CALL_MS : SPEEDS[settings.speed];
+    if (playing && !playingSince.current) playingSince.current = Date.now();
+  }, [playing]);
+  const stillBuilding = online && !isGuest && game
+    ? game.players.filter((p) => p.isRemote && !p.isBot && !p.ready).length
+    : 0;
+  const waitForBuilders = stillBuilding > 0 && game?.called.length === 0;
+
+  // Automatic caller. Online, only the host calls.
+  useEffect(() => {
+    if (!playing || !settings.autoCall || game.paused || isGuest) return undefined;
+    const waitLeft = waitForBuilders ? Math.max(0, playingSince.current + BUILD_WAIT_MS - Date.now()) : 0;
+    const delay = Math.max(waitLeft, game.called.length === 0 ? FIRST_CALL_MS : SPEEDS[settings.speed]);
     const id = window.setTimeout(() => dispatch({ type: 'CALL' }), delay);
     return () => window.clearTimeout(id);
-  }, [playing, settings?.autoCall, settings?.speed, game?.paused, game?.called.length]);
+  }, [playing, settings?.autoCall, settings?.speed, game?.paused, game?.called.length, waitForBuilders]);
 
   // Manual mode in number bingo: first call happens straight away for a friendlier start.
   useEffect(() => {
-    if (playing && !settings.autoCall && game.called.length === 0 && settings.mode === 'classic') {
+    if (playing && !isGuest && !settings.autoCall && game.called.length === 0 && settings.mode === 'classic') {
       dispatch({ type: 'CALL' });
     }
   }, [playing, settings?.autoCall, settings?.mode, game?.called.length]);
+
+  // Buddies this device runs (online guests only watch the host's buddies).
+  const ownBot = (p) => p.isBot && !p.isRemote;
 
   // React to each new call: sound, voice, buddies daubing.
   useEffect(() => {
@@ -181,25 +275,31 @@ function GameScreens({ initial, screen, room, setRoom, name, prefs, now, setNow,
     playSfx('call');
     speak(callText(value, settings.size), speechLang(lang));
     const skill = SKILLS[settings.skill] ?? SKILLS.normal;
-    game.players.filter((p) => p.isBot).forEach((bot) => {
+    game.players.filter(ownBot).forEach((bot) => {
       const index = cellIndexOf(bot.cells, value);
       if (index < 0 || Math.random() < skill.miss) return;
       later(() => dispatch({ type: 'BOT_MARK', id: bot.id, index }), between(skill.daub));
     });
   }, [game?.called.length]);
 
-  // Buddies shout BINGO a moment after completing a line.
+  // Buddies shout BINGO a moment after completing a line — but not while the game is paused:
+  // pausing forgets the pending shouts (the reducer ignores any that still fire) and resuming
+  // schedules them again.
   useEffect(() => {
     if (!playing) return;
+    if (game.paused) {
+      claimed.current = new Set();
+      return;
+    }
     const skill = SKILLS[settings.skill] ?? SKILLS.normal;
     game.players.forEach((p) => {
-      if (!p.isBot || claimed.current.has(p.id)) return;
+      if (!ownBot(p) || claimed.current.has(p.id)) return;
       if (squaresAway(p.marks, settings.size) === 0) {
         claimed.current.add(p.id);
         later(() => dispatch({ type: 'CLAIM', id: p.id, now: Date.now() }), between(skill.claim));
       }
     });
-  }, [game?.players, playing]);
+  }, [game?.players, playing, game?.paused]);
 
   // Near-win chime for you.
   const myAway = game?.players.find((p) => p.id === YOU) ? squaresAway(game.players.find((p) => p.id === YOU).marks, settings.size) : null;
@@ -227,8 +327,22 @@ function GameScreens({ initial, screen, room, setRoom, name, prefs, now, setNow,
     clearTimers();
     const winnerId = game.winner?.id;
     playSfx(winnerId === YOU ? 'bingo' : 'lose');
-    if (winnerId) setRoom((r) => ({ ...r, wins: { ...r.wins, [winnerId]: (r.wins[winnerId] ?? 0) + 1 } }));
+    // Online, the host keeps the score and shares it with the room.
+    if (winnerId && !isGuest) setRoom((r) => ({ ...r, wins: { ...r.wins, [winnerId]: (r.wins[winnerId] ?? 0) + 1 } }));
   }, [game?.phase]);
+
+  // BINGO! Online guests ask the host to confirm a good line instead of deciding it themselves.
+  const claim = () => {
+    const at = Date.now();
+    const me = game.players.find((p) => p.id === YOU);
+    const good = me && validateClaim(me.cells, me.marks, settings.size, game.called);
+    if (isGuest && good && at >= game.lockedUntil) {
+      online.send(MSG.CLAIM, { round: online.round, player: wirePlayer(me, online.myId) });
+      dispatch({ type: 'CLAIM', id: YOU, now: at, deferWin: true });
+      return;
+    }
+    dispatch({ type: 'CLAIM', id: YOU, now: at });
+  };
 
   const patchSettings = (patch) => {
     setRoom((r) => {
@@ -240,6 +354,13 @@ function GameScreens({ initial, screen, room, setRoom, name, prefs, now, setNow,
 
   const toLobby = () => {
     clearTimers();
+    // Host leaving a round that is still going: end it for everyone, with no winner.
+    if (online?.isHost && game && game.phase !== 'finished') {
+      const nobody = { id: null, line: [] };
+      dispatch({ type: 'FINISH', winner: nobody, player: null });
+      online.send(MSG.FINISH, { round: online.round, ...nobody, player: null });
+    }
+    if (!isGuest) setRoom((r) => (r ? { ...r, inGame: false } : r));
     setScreen('lobby');
   };
 
@@ -249,20 +370,22 @@ function GameScreens({ initial, screen, room, setRoom, name, prefs, now, setNow,
       <div className={`home-page screen-${screen}`}>
         <Header onAction={onAction} />
         <main className="stage-main">
-          {screen === 'home' && <Home initialName={name} onCreate={onCreate} />}
+          {screen === 'home' && <Home initialName={name} onCreate={onCreate} error={joinError} />}
           {screen === 'lobby' && room && (
             <Lobby room={room} onSettings={patchSettings}
-              onAddBuddy={() => setRoom((r) => (r.buddies.length >= MAX_BUDDIES ? r : { ...r, buddies: [...r.buddies, makeBuddy(r.buddies.length)] }))}
+              online={online} peers={peers} onlineStatus={onlineStatus}
+              onAddBuddy={() => setRoom((r) => (r.buddies.length >= MAX_BUDDIES ? r : { ...r, buddies: [...r.buddies, makeBuddy(r.buddies)] }))}
               onRemoveBuddy={(id) => setRoom((r) => ({ ...r, buddies: r.buddies.filter((b) => b.id !== id) }))}
               onStart={() => onStart(room)}
-              onLeave={() => setScreen('home')} />
+              onLeave={online ? onLeaveRoom : () => setScreen('home')} />
           )}
           {screen === 'game' && game?.phase === 'build' && <BuildView game={game} dispatch={dispatch} onLeave={toLobby} />}
           {screen === 'game' && game && game.phase !== 'build' && (
-            <PlayView game={game} dispatch={dispatch} bigScreen={room.bigScreen} now={now} onLeave={toLobby} />
+            <PlayView game={game} dispatch={dispatch} bigScreen={room.bigScreen} now={now} onLeave={toLobby}
+              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} />
           )}
           {screen === 'game' && game?.phase === 'finished' && (
-            <Results game={game} onAgain={() => onStart(room)} onLobby={toLobby} />
+            <Results game={game} onAgain={isGuest ? null : () => onStart(room)} onLobby={toLobby} />
           )}
         </main>
         <LegalFooter />

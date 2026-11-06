@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { IconUsers } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
 import { decodeRoom, normalizeCode, CODE_LENGTH } from './roomCode.js';
+import { onlineEnabled } from '../online/client.js';
+import { isOnlineCode } from '../online/protocol.js';
+
+const codeLooksRight = (code) => (onlineEnabled ? isOnlineCode(code) : Boolean(decodeRoom(code)));
 
 export const NAME_MAX = 20;
 
@@ -9,13 +13,13 @@ export const NAME_MAX = 20;
  * Start screen: hero on the left, "create room" card (plus "join with a friend's code") on the right.
  * @param {{ initialName: string, onCreate: (opts: { name: string, streamer: boolean, bigScreen: boolean, code?: string }) => void }} props
  */
-export default function Home({ initialName, onCreate }) {
+export default function Home({ initialName, onCreate, error = '' }) {
   const { t } = useLang();
   const [name, setName] = useState(initialName);
   const [streamer, setStreamer] = useState(false);
   const [bigScreen, setBigScreen] = useState(false);
   const [code, setCode] = useState('');
-  const [codeError, setCodeError] = useState('');
+  const [codeError, setCodeError] = useState(error ? t(error) : '');
   const trimmed = name.trim();
 
   const handleSubmit = (e) => {
@@ -31,7 +35,7 @@ export default function Home({ initialName, onCreate }) {
       document.getElementById('player-name')?.focus();
       return;
     }
-    if (!decodeRoom(code)) {
+    if (!codeLooksRight(code)) {
       setCodeError(t('badCode'));
       return;
     }
@@ -97,7 +101,7 @@ export default function Home({ initialName, onCreate }) {
                 </button>
               </div>
               <p id="code-help" className={codeError ? 'join-error' : 'join-help'} role={codeError ? 'alert' : undefined}>
-                {codeError || t('codeHelp')}
+                {codeError || t(onlineEnabled ? 'codeHelpOnline' : 'codeHelp')}
               </p>
             </form>
           </div>

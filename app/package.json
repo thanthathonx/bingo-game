@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build && node scripts/flat-pages.js",
-    "test": "node --test tests/engine.test.js tests/gameState.test.js tests/roomCode.test.js"
+    "test": "node --test tests/engine.test.js tests/gameState.test.js tests/roomCode.test.js tests/online.test.js"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "^5.1.0",
@@ -13,6 +13,7 @@
     "@fontsource/bungee": "^5.1.0",
     "@fontsource/outfit": "^5.1.0",
     "@fontsource/short-stack": "^5.1.0",
+    "@supabase/supabase-js": "^2.119.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

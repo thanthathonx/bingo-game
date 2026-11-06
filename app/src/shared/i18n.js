@@ -84,6 +84,19 @@ const en = {
   joinedWith: 'You joined with a friend’s code.',
   pressTogether: 'Press Start at the same moment as your friend to play along.',
   friendItems: 'Your friend uses their own item list — ask them to send it and paste it below.',
+  codeHelpOnline: 'Ask the host for their 6-character room code.',
+  shareCodeOnline: 'Send this code to friends — they join from their own device.',
+  connecting: 'Connecting to the room…',
+  roomNotFound: 'No open room with that code — check it with the host.',
+  hostLeft: 'The host closed the room.',
+  connectionLost: 'Connection problem — check your internet and try again.',
+  waitingHost: 'Waiting for the host to start…',
+  inProgress: 'A round is being played — you will join the next one.',
+  guestSettings: 'Only the host can change these.',
+  inviteHint: 'Share the room code — friends join from their own phone or computer. Buddies are computer players.',
+  hostPaused: 'The host paused the game.',
+  checkingBingo: 'Checking your BINGO with the host…',
+  waitingCards: 'Waiting for friends to finish their cards…',
   allGames: 'All party games',
   privacySettings: 'Privacy settings',
   noAccount: 'No account needed',
@@ -92,6 +105,14 @@ const en = {
 };
 
 const de = {
+  codeHelpOnline: 'Frag den Host nach dem 6-stelligen Raumcode.', shareCodeOnline: 'Schick diesen Code an Freunde — sie spielen auf ihrem eigenen Gerät mit.',
+  connecting: 'Verbinde mit dem Raum…', roomNotFound: 'Kein offener Raum mit diesem Code — frag beim Host nach.',
+  hostLeft: 'Der Host hat den Raum geschlossen.', connectionLost: 'Verbindungsproblem — prüfe dein Internet und versuch es erneut.',
+  waitingHost: 'Warte auf den Host…', inProgress: 'Gerade läuft eine Runde — du bist in der nächsten dabei.',
+  guestSettings: 'Nur der Host kann das ändern.', hostPaused: 'Der Host hat das Spiel pausiert.',
+  inviteHint: 'Teile den Raumcode — Freunde spielen auf ihrem eigenen Handy oder Computer mit. Buddys sind Computerspieler.',
+  checkingBingo: 'Dein BINGO wird beim Host geprüft…',
+  waitingCards: 'Warte, bis Freunde ihre Karten fertig haben…',
   tagline: 'Zahlen-Bingo oder eigene Event-Karten — vervollständige eine Reihe zum Sieg.',
   players: '1-∞ Spieler', partyGame: 'Partyspiel', startNew: 'Starte ein neues Spiel und lade Freunde ein',
   yourName: 'Dein Name', streamer: 'Streamer-Modus (Raumcode verbergen)',
@@ -115,6 +136,14 @@ const de = {
 };
 
 const es = {
+  codeHelpOnline: 'Pide al anfitrión el código de sala de 6 caracteres.', shareCodeOnline: 'Envía este código a tus amigos: se unen desde su propio dispositivo.',
+  connecting: 'Conectando con la sala…', roomNotFound: 'No hay ninguna sala abierta con ese código; compruébalo con el anfitrión.',
+  hostLeft: 'El anfitrión cerró la sala.', connectionLost: 'Problema de conexión: revisa tu internet e inténtalo de nuevo.',
+  waitingHost: 'Esperando al anfitrión…', inProgress: 'Hay una ronda en juego: entrarás en la siguiente.',
+  guestSettings: 'Solo el anfitrión puede cambiar esto.', hostPaused: 'El anfitrión pausó la partida.',
+  inviteHint: 'Comparte el código de sala: tus amigos se unen desde su móvil u ordenador. Los compañeros son jugadores de la computadora.',
+  checkingBingo: 'El anfitrión está comprobando tu BINGO…',
+  waitingCards: 'Esperando a que tus amigos terminen sus cartones…',
   tagline: 'Bingo de números o tus propias cartas de eventos — completa una línea para ganar.',
   players: '1-∞ jugadores', partyGame: 'Juego de fiesta', startNew: 'Empieza una partida e invita a tus amigos',
   yourName: 'Tu nombre', streamer: 'Modo streamer (ocultar código)', bigScreen: 'Pantalla grande (TV — los jugadores se unen con el móvil)',
@@ -137,6 +166,14 @@ const es = {
 };
 
 const ptBR = {
+  codeHelpOnline: 'Peça ao anfitrião o código da sala de 6 caracteres.', shareCodeOnline: 'Envie este código aos amigos — eles entram pelo próprio aparelho.',
+  connecting: 'Conectando à sala…', roomNotFound: 'Nenhuma sala aberta com esse código — confira com o anfitrião.',
+  hostLeft: 'O anfitrião fechou a sala.', connectionLost: 'Problema de conexão — verifique sua internet e tente de novo.',
+  waitingHost: 'Aguardando o anfitrião…', inProgress: 'Uma rodada está em andamento — você entra na próxima.',
+  guestSettings: 'Só o anfitrião pode mudar isso.', hostPaused: 'O anfitrião pausou o jogo.',
+  inviteHint: 'Compartilhe o código da sala — os amigos entram pelo celular ou computador. Os amigos-robô são jogadores do computador.',
+  checkingBingo: 'O anfitrião está conferindo seu BINGO…',
+  waitingCards: 'Aguardando os amigos terminarem as cartelas…',
   tagline: 'Bingo de números ou suas próprias cartelas de eventos — complete uma linha para vencer.',
   players: '1-∞ jogadores', partyGame: 'Jogo de festa', startNew: 'Comece um novo jogo e convide amigos',
   yourName: 'Seu nome', streamer: 'Modo streamer (ocultar código)', bigScreen: 'Modo tela grande (TV — jogadores entram pelo celular)',
@@ -167,6 +204,14 @@ const ptPT = {
 };
 
 const zh = {
+  codeHelpOnline: '向主持人索取 6 個字元的房間代碼。', shareCodeOnline: '把這個代碼傳給朋友，他們用自己的裝置加入。',
+  connecting: '正在連線到房間…', roomNotFound: '找不到使用這個代碼的房間，請跟主持人確認。',
+  hostLeft: '主持人已關閉房間。', connectionLost: '連線有問題，請檢查網路後再試一次。',
+  waitingHost: '等待主持人開始…', inProgress: '目前有一局正在進行，你會加入下一局。',
+  guestSettings: '只有主持人可以更改這些設定。', hostPaused: '主持人暫停了遊戲。',
+  inviteHint: '分享房間代碼，朋友用自己的手機或電腦加入。夥伴是電腦玩家。',
+  checkingBingo: '主持人正在確認你的賓果…',
+  waitingCards: '等待朋友完成他們的卡片…',
   tagline: '數字賓果或自訂事件卡 — 連成一線即可獲勝。',
   players: '1-∞ 名玩家', partyGame: '派對遊戲', startNew: '開始新遊戲並邀請朋友', yourName: '你的名字',
   streamer: '直播模式（隱藏房間代碼）', bigScreen: '大螢幕模式（電視 — 玩家用手機加入）', createRoom: '建立房間',
