@@ -696,3 +696,7 @@ button.bcell:active { transform: scale(0.94); }
 .invite-card.is-big .invite-count b { font-size: 40px; }
 .invite-note { margin: 4px 0; font: 600 14px var(--font-read); }
 @media (max-width: 479px) { .invite-card { flex-direction: column; text-align: center; } }
+
+/* Confirm dialogs */
+.modal-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+.home-btn.is-danger { background: #ff6b6b; }

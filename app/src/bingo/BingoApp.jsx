@@ -226,6 +226,15 @@ export default function BingoApp() {
     return () => window.clearTimeout(id);
   }, [backHint]);
 
+  /** Leave the current room (if any) and put the cursor in the "friend's code" box. */
+  const goToJoinForm = () => {
+    if (room?.online) online.leave();
+    else leaveRoom();
+    clearTimers();
+    setScreen('home');
+    window.setTimeout(() => document.getElementById('friend-code')?.focus(), 60);
+  };
+
   /** The round on screen changed: the host keeps the whole game, a guest just its own card. */
   const persistGame = (game, roundUsed) => {
     if (!room?.online) return;
@@ -322,13 +331,17 @@ export default function BingoApp() {
             setModal(action);
             return;
           }
-          if (room) online.leave();
-          clearTimers();
-          setScreen('home');
-          window.setTimeout(() => document.getElementById('friend-code')?.focus(), 60);
+          // Joining another room means leaving this one: ask first.
+          if (inRoom) {
+            setModal('confirmLeave');
+            return;
+          }
+          goToJoinForm();
         }}
       />
       <Modals open={modal} onClose={() => setModal(null)} prefs={prefs}
+        isHost={Boolean(room?.online?.isHost)}
+        onConfirmLeave={() => { setModal(null); goToJoinForm(); }}
         onPrefs={(p) => { const next = { ...prefs, ...p }; setPrefs(next); save('prefs', next); }}
         name={name} onName={(n) => {
           setName(n);

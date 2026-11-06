@@ -76,8 +76,23 @@ function HowToModal({ onClose }) {
   );
 }
 
+/** "Leave this room?" before joining another one. The host is told it closes the room for everyone. */
+function ConfirmLeaveModal({ onClose, isHost, onConfirm }) {
+  const { t } = useLang();
+  return (
+    <Modal title={t('leaveTitle')} onClose={onClose}>
+      <p>{t(isHost ? 'leaveHostBody' : 'leaveGuestBody')}</p>
+      <div className="modal-actions">
+        <button type="button" className="ghost-btn" onClick={onClose}>{t('cancel')}</button>
+        <button type="button" className={`home-btn small${isHost ? ' is-danger' : ''}`} onClick={onConfirm}>{t('leaveConfirm')}</button>
+      </div>
+    </Modal>
+  );
+}
+
 /** Renders whichever menu action is open. */
-export default function Modals({ open, onClose, prefs, onPrefs, name, onName }) {
+export default function Modals({ open, onClose, prefs, onPrefs, name, onName, isHost = false, onConfirmLeave }) {
+  if (open === 'confirmLeave') return <ConfirmLeaveModal onClose={onClose} isHost={isHost} onConfirm={onConfirmLeave} />;
   if (open === 'settings') return <SettingsModal onClose={onClose} prefs={prefs} onPrefs={onPrefs} />;
   if (open === 'signin') return <SignInModal onClose={onClose} name={name} onName={onName} />;
   if (open === 'howto') return <HowToModal onClose={onClose} />;
