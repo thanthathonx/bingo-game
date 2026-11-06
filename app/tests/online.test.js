@@ -191,3 +191,41 @@ test('a guest never ends the round on its own when the balls run out', () => {
   const fixed = reducer({ ...out, phase: 'finished', winner: { id: null, line: [] } }, { type: 'FINISH', winner: { id: 'p-friend', line: [0, 1, 2] }, player: readPlayer(card3(), 3, ME) });
   assert.equal(fixed.winner.id, 'p-friend');
 });
+
+// ----- Resume after a reload -----
+import { readSession, SESSION_MAX_AGE_MS, hostRoomSnapshot } from '../src/online/session.js';
+import { withCard } from '../src/bingo/gameState.js';
+
+test('a saved guest session comes back with its card; bad or old ones are ignored', () => {
+  const now = 1_000_000_000;
+  const card = { cells: [1, 11, 21, 2, FREE, 22, 3, 13, 23], marks: [true, false, false, false, true, false, false, false, false], ready: true };
+  const good = readSession({ role: 'guest', code: 'ABC234', name: ' Ann ', round: 2, seed: 77, card, savedAt: now - 1000 }, now);
+  assert.equal(good.name, 'Ann');
+  assert.deepEqual(good.resume, { round: 2, seed: 77, card });
+  assert.equal(readSession({ role: 'guest', code: 'ABC234', name: 'Ann', savedAt: now - SESSION_MAX_AGE_MS - 1 }, now), null);
+  assert.equal(readSession({ role: 'guest', code: 'abc!!', name: 'Ann', savedAt: now }, now), null);
+  assert.equal(readSession({ role: 'guest', code: 'ABC234', name: '', savedAt: now }, now), null);
+  assert.equal(readSession({ role: 'guest', code: 'ABC234', name: 'Ann', card: { cells: [1], marks: ['x'] }, round: 1, seed: 1, savedAt: now }, now).resume, null);
+  assert.equal(readSession({ role: 'boss', code: 'ABC234', name: 'Ann', savedAt: now }, now), null);
+});
+
+test('a saved host session keeps the room, and the game only when it looks like one', () => {
+  const now = 5_000;
+  const room = { settings: SETTINGS, hostName: 'Host', wins: {}, inGame: true, roundNo: 1 };
+  const game = hostRound();
+  assert.ok(readSession({ role: 'host', code: 'ABC234', name: 'Host', room, game, savedAt: now }, now).game);
+  assert.equal(readSession({ role: 'host', code: 'ABC234', name: 'Host', room, game: { phase: 'nope' }, savedAt: now }, now).game, null);
+  assert.deepEqual(Object.keys(hostRoomSnapshot({ ...room, online: {}, connecting: false, players: [] })).sort(), Object.keys(room).sort());
+});
+
+test('a saved card goes back on "you", and only if it fits the round', () => {
+  const state = hostRound();
+  const card = { cells: [1, 11, 21, 2, FREE, 22, 3, 13, 23], marks: [true, true, false, false, true, false, false, false, false], ready: true };
+  const me = withCard(state, card).players.find((p) => p.id === YOU);
+  assert.deepEqual(me.cells, card.cells);
+  assert.deepEqual(me.marks, card.marks);
+  assert.equal(withCard(state, { cells: [1, 2], marks: [true, false] }), state);
+  const building = { ...state, phase: 'build' };
+  assert.equal(withCard(building, card).phase, 'playing');
+  assert.equal(withCard(building, { ...card, ready: false }).phase, 'build');
+});

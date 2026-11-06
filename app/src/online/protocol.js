@@ -26,6 +26,7 @@ export const MSG = {
   START: 'start', // a new round begins
   STATE: 'state', // calls, pause, leaderboard, result — on every change and every few seconds
   CLOSED: 'closed', // the host left
+  ROLLCALL: 'rollcall', // the host (re)connected: everyone report in (spread over a few seconds)
   // host inbox, guest → host
   HELLO: 'hello', // I'm here (also asks for the room)
   BEAT: 'beat', // still here, with my progress
@@ -34,7 +35,7 @@ export const MSG = {
   LEAVE: 'leave', // I left
 };
 
-const HOST_ONLY = new Set([MSG.ROOM, MSG.START, MSG.STATE, MSG.CLOSED]);
+const HOST_ONLY = new Set([MSG.ROOM, MSG.START, MSG.STATE, MSG.CLOSED, MSG.ROLLCALL]);
 const TO_HOST = new Set([MSG.HELLO, MSG.BEAT, MSG.PROGRESS, MSG.CLAIM, MSG.LEAVE]);
 
 const isId = (v) => typeof v === 'string' && v.length > 0 && v.length <= ID_MAX;

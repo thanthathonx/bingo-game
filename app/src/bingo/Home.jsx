@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IconUsers } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
 import { decodeRoom, normalizeCode, CODE_LENGTH } from './roomCode.js';
@@ -6,6 +6,15 @@ import { onlineEnabled } from '../online/client.js';
 import { isOnlineCode } from '../online/protocol.js';
 
 const codeLooksRight = (code) => (onlineEnabled ? isOnlineCode(code) : Boolean(decodeRoom(code)));
+
+/** Room code from an invite link (?room=ABC234), or ''. */
+function codeFromLink() {
+  try {
+    return normalizeCode(new URLSearchParams(window.location.search).get('room') ?? '');
+  } catch {
+    return '';
+  }
+}
 
 export const NAME_MAX = 20;
 
@@ -18,13 +27,25 @@ export default function Home({ initialName, onCreate, error = '' }) {
   const [name, setName] = useState(initialName);
   const [streamer, setStreamer] = useState(false);
   const [bigScreen, setBigScreen] = useState(false);
-  const [code, setCode] = useState('');
+  const [invited] = useState(codeFromLink);
+  const [code, setCode] = useState(invited);
   const [codeError, setCodeError] = useState(error ? t(error) : '');
   const trimmed = name.trim();
 
+  // Opened from an invite link / QR code: the code is filled in, only the name is needed.
+  useEffect(() => {
+    if (invited) document.getElementById('player-name')?.focus();
+  }, [invited]);
+
+  // Invited: the main button joins the friend's room instead of creating a new one.
+  const joining = Boolean(invited) && code === invited;
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!trimmed) return;
+    if (joining) {
+      handleJoin(e);
+      return;
+    }
     onCreate({ name: trimmed.slice(0, NAME_MAX), streamer, bigScreen });
   };
 
@@ -40,6 +61,8 @@ export default function Home({ initialName, onCreate, error = '' }) {
       return;
     }
     setCodeError('');
+    // Drop ?room= from the address so a later visit doesn't try an old room again.
+    if (invited) window.history.replaceState(null, '', window.location.pathname);
     onCreate({ name: trimmed.slice(0, NAME_MAX), streamer, bigScreen: false, code: normalizeCode(code) });
   };
 
@@ -66,7 +89,7 @@ export default function Home({ initialName, onCreate, error = '' }) {
         </div>
         <div className="home-card-col">
           <div className="home-card" aria-label={t('createRoom')}>
-            <p className="card-description">{t('startNew')}</p>
+            <p className="card-description">{t(joining ? 'joinIntro' : 'startNew')}</p>
             <form className="home-form" onSubmit={handleSubmit}>
               <div className="fl-wrap">
                 <input id="player-name" className="fl-input" type="text" required maxLength={NAME_MAX}
@@ -76,16 +99,21 @@ export default function Home({ initialName, onCreate, error = '' }) {
                   {t('yourName')}<span className="req">*</span>
                 </label>
               </div>
-              <label className="home-check">
-                <input type="checkbox" checked={streamer} onChange={(e) => setStreamer(e.target.checked)} />
-                <span>{t('streamer')}</span>
-              </label>
-              <label className="home-check">
-                <input type="checkbox" checked={bigScreen} onChange={(e) => setBigScreen(e.target.checked)} />
-                <span>{t('bigScreen')}</span>
-              </label>
+              {!joining && (
+                <>
+                  <label className="home-check">
+                    <input type="checkbox" checked={streamer} onChange={(e) => setStreamer(e.target.checked)} />
+                    <span>{t('streamer')}</span>
+                  </label>
+                  <label className="home-check">
+                    <input type="checkbox" checked={bigScreen} onChange={(e) => setBigScreen(e.target.checked)} />
+                    <span>{t('bigScreen')}</span>
+                  </label>
+                </>
+              )}
+              {joining && <p className="invite-note">{t('invitedTo')} <b>{code}</b></p>}
               <button type="submit" className="home-btn" disabled={!trimmed}>
-                {t('createRoom')}
+                {joining ? `${t('join')} ${code}` : t('createRoom')}
               </button>
             </form>
             <form className="join-form" onSubmit={handleJoin} noValidate>

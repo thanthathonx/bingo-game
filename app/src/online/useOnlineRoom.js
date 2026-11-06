@@ -9,16 +9,21 @@ import {
 } from './protocol.js';
 
 const JOIN_TIMEOUT_MS = 8000; // guest: no answer from a host by then → no such room
-const HOST_GONE_MS = 4000; // guest: the host's presence has been missing this long → room closed
+// guest: the host has been missing this long → room closed. Long enough for a host whose
+// network blipped or who reloaded the page to come back (the room is kept in their session).
+const HOST_GONE_MS = 30000;
 const BEAT_MS = 15000; // guest heartbeat
 const GUEST_GONE_MS = 45000; // host: no heartbeat for this long → guest left
 const ROOM_THROTTLE_MS = 600; // host: at most this often a lobby broadcast
+const ROLLCALL_SPREAD_MS = 3000; // guests answer a roll call at a random moment within this window
 
 /**
  * @param {{ room: object|null, setRoom: Function, name: string, myId: string,
- *   startRound: (room: object) => void, leaveRoom: (reason?: string) => void }} opts
+ *   startRound: (room: object) => void, leaveRoom: (reason?: string) => void,
+ *   resumeRef: { current: { round: number, seed: number, card: object }|null } }} opts
+ *   resumeRef: a guest coming back after a reload, to be put back into the running round
  */
-export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom }) {
+export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom, resumeRef }) {
   const online = room?.online ?? null;
   const isHost = Boolean(online?.isHost);
   const gameApi = useRef(null);
@@ -44,6 +49,7 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
 
   // ----- host: roster -----
   const roomTimer = useRef(null);
+  const stateTimer = useRef(null);
   const players = isHost
     ? [{ id: myId, name: room?.hostName ?? name, isHost: true }, ...roster.map(({ id, name: n }) => ({ id, name: n, isHost: false }))]
     : (room?.players ?? []);
@@ -76,8 +82,12 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
     const current = roomRef.current;
     if (!current?.online) return;
     if (msg.type === '__connected') {
-      if (isHost) scheduleRoom();
-      else toHost(MSG.HELLO, { name });
+      if (isHost) {
+        scheduleRoom();
+        broadcast(MSG.ROLLCALL); // after a reconnect or reload the roster is rebuilt from the answers
+      } else {
+        toHost(MSG.HELLO, { name });
+      }
       return;
     }
     const rosterIds = new Set(rosterRef.current.keys());
@@ -97,6 +107,14 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
       case MSG.HELLO:
       case MSG.BEAT: {
         seeGuest(msg);
+        // Someone (re)joined mid-round: send the game state now rather than at the next
+        // repeat, at most once a second however many come back together.
+        if (msg.type === MSG.HELLO && gameApi.current?.pushState && !stateTimer.current) {
+          stateTimer.current = window.setTimeout(() => {
+            stateTimer.current = null;
+            gameApi.current?.pushState?.();
+          }, 1000);
+        }
         const entry = rosterRef.current.get(msg.from);
         if (!entry) break;
         // A heartbeat always carries the guest's current progress: none means "not in this round".
@@ -131,8 +149,25 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
         const r = readRoom(msg, myId);
         if (!r) break;
         if (!hostIdRef.current) hostIdRef.current = msg.from;
+        // Back after a reload, and our round is still running: rejoin it with our saved card.
+        const resume = resumeRef?.current;
+        if (resume) {
+          resumeRef.current = null;
+          if (r.inGame && resume.round === r.roundNo - 1) {
+            startRound({
+              ...current, ...r, bigScreen: false, hostBigScreen: r.bigScreen, connecting: false,
+              seed: resume.seed, roundNo: resume.round, resumeCard: resume.card,
+            });
+            break;
+          }
+        }
         // A guest always plays with a card; the host's TV mode is only shown as a tag.
         setRoom((prev) => (prev?.online ? { ...prev, ...r, bigScreen: false, hostBigScreen: r.bigScreen, connecting: false } : prev));
+        break;
+      }
+      case MSG.ROLLCALL: {
+        const wait = Math.random() * ROLLCALL_SPREAD_MS;
+        window.setTimeout(() => toHost(MSG.BEAT, { name, progress: progressRef.current }), wait);
         break;
       }
       case MSG.START: {
@@ -212,15 +247,19 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
     return () => window.clearTimeout(id);
   }, [online?.code, isHost, room?.connecting, hostPresent, status]);
 
-  // Say goodbye when the tab closes.
+  // A guest closing the tab says goodbye. The host does not: closing and reloading look the same
+  // to the page, and after a reload the host comes back to the same room (guests wait for it).
   useEffect(() => {
-    if (!online) return undefined;
-    const bye = () => (isHost ? broadcast(MSG.CLOSED) : toHost(MSG.LEAVE));
+    if (!online || isHost) return undefined;
+    const bye = () => toHost(MSG.LEAVE);
     window.addEventListener('pagehide', bye);
     return () => window.removeEventListener('pagehide', bye);
-  }, [online?.code, isHost, broadcast, toHost]);
+  }, [online?.code, isHost, toHost]);
 
-  useEffect(() => () => window.clearTimeout(roomTimer.current), []);
+  useEffect(() => () => {
+    window.clearTimeout(roomTimer.current);
+    window.clearTimeout(stateTimer.current);
+  }, []);
 
   const hostStart = (r, roundUsed) => {
     broadcast(MSG.START, { round: roundUsed, seed: r.seed, room: wireRoom(r, myId, players) });
@@ -238,6 +277,10 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
     players,
     hostStart,
     leave,
+    // guest: the host dropped out and we're waiting for it to come back (up to HOST_GONE_MS)
+    hostMissing: Boolean(online && !isHost && !room?.connecting && status === 'live' && !hostPresent),
+    // our own connection dropped and is coming back
+    reconnecting: Boolean(online && !room?.connecting && status === 'error'),
     ctx: online ? { isHost, myId, name, broadcast, toHost, gameApi, rosterRef, progressRef, board } : null,
   };
 }

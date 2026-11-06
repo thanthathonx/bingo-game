@@ -6,6 +6,7 @@ import { useLang } from '../shared/i18n.js';
 import { itemsNeeded } from './engine.js';
 import { settingsProblem, poolFor } from './gameState.js';
 import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
+import InviteCard from '../online/InviteCard.jsx';
 
 /**
  * @param {{ room: object, onChange: (patch: object) => void, onSettings: (patch: object) => void,
@@ -73,8 +74,10 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           {room.friendCustomItems && s.mode === 'custom' && <> {t('friendItems')}</>}
         </p>
       )}
-      {online && onlineStatus === 'error' && <p className="warn" role="alert">{t('connectionLost')}</p>}
       {isGuest && room.inGame && <p className="join-note">{t('inProgress')}</p>}
+      {online && !isGuest && (
+        <InviteCard code={room.online.code} hidden={room.streamer && !showCode} big={room.bigScreen} count={Math.max(0, peers.length - 1)} />
+      )}
 
       <div className="lobby-grid">
         <section className="panel" aria-labelledby="players-h">

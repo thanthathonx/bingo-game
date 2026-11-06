@@ -78,6 +78,20 @@ export function newRound(room, rng = Math.random) {
   };
 }
 
+/**
+ * Put a saved card back on "you" (a guest who reloaded mid-round). A card that doesn't fit the
+ * round is ignored. A ready card skips the build phase.
+ */
+export function withCard(state, card) {
+  const n = state.settings.size * state.settings.size;
+  if (!card || !Array.isArray(card.cells) || card.cells.length !== n || !Array.isArray(card.marks) || card.marks.length !== n) return state;
+  const players = state.players.map((p) => (p.id === YOU
+    ? { ...p, cells: [...card.cells], marks: card.marks.map(Boolean), ready: card.ready !== false }
+    : p));
+  const me = players.find((p) => p.id === YOU);
+  return { ...state, players, phase: state.phase === 'build' && me?.ready ? 'playing' : state.phase };
+}
+
 const updatePlayer = (state, id, fn) => ({
   ...state,
   players: state.players.map((p) => (p.id === id ? fn(p) : p)),

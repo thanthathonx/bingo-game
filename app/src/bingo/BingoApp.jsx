@@ -5,7 +5,8 @@ import Lobby from './Lobby.jsx';
 import { BuildView, PlayView, Results } from './Play.jsx';
 import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
-import { reducer, newRound, SPEEDS, SKILLS, YOU } from './gameState.js';
+import { reducer, newRound, withCard, SPEEDS, SKILLS, YOU } from './gameState.js';
+import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../online/session.js';
 import { cellIndexOf, squaresAway, validateClaim } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
 import { onlineEnabled } from '../online/client.js';
@@ -14,7 +15,7 @@ import { useOnlineRoom } from '../online/useOnlineRoom.js';
 import { useOnlineGame, boardEntries } from '../online/useOnlineGame.js';
 import { callText } from './Card.jsx';
 import { BUDDY_NAMES, BUDDY_COLORS, MAX_BUDDIES, presetText } from './presets.js';
-import { LangContext, translator, speechLang } from '../shared/i18n.js';
+import { LangContext, translator, speechLang, useLang } from '../shared/i18n.js';
 import { unlockAudio, playSfx, speak } from '../shared/audio.js';
 import { load, save } from '../shared/storage.js';
 
@@ -58,6 +59,24 @@ function clientIdForTab() {
 
 /** Online event cards: how long the host waits for friends still building their cards. */
 const BUILD_WAIT_MS = 45000;
+
+/** A guest's room while it waits for the host's lobby message (which fills in the rest). */
+function guestRoom(code, name, settings) {
+  return {
+    online: { code, isHost: false },
+    connecting: true,
+    seed: randomSeed(),
+    roundNo: 0,
+    hostName: '',
+    selfName: name,
+    streamer: false,
+    bigScreen: false,
+    buddies: [],
+    settings,
+    wins: {},
+    inGame: false,
+  };
+}
 
 const startingBuddies = (n) => Array.from({ length: n }).reduce((list) => [...list, makeBuddy(list)], []);
 
@@ -108,13 +127,24 @@ export default function BingoApp() {
 
   // A new round re-mounts GameScreens (via key) with a fresh reducer state.
   // r.roundNo is the round being started; the room then counts on to the next one.
+  // r.resumeCard: a guest back after a reload gets their saved card instead of a new one.
   const startRound = useCallback((r) => {
+    const { resumeCard, ...nextRoom } = r;
     clearTimers();
-    setInitialGame(newRound(r));
-    setRoom({ ...r, roundNo: (r.roundNo ?? 0) + 1, inGame: true });
+    const fresh = newRound(nextRoom);
+    setInitialGame(resumeCard ? withCard(fresh, resumeCard) : fresh);
+    setRoom({ ...nextRoom, roundNo: (nextRoom.roundNo ?? 0) + 1, inGame: true });
     setRound((n) => n + 1);
     setScreen('game');
   }, [clearTimers]);
+
+  // ----- Online session: survive a reload (see online/session.js) -----
+  const sessionRef = useRef({});
+  const resumeRef = useRef(null);
+  const persist = (patch) => {
+    sessionRef.current = { ...sessionRef.current, ...patch };
+    saveSession(sessionRef.current);
+  };
 
   const [joinError, setJoinError] = useState('');
   const myId = useMemo(clientIdForTab, []);
@@ -123,8 +153,60 @@ export default function BingoApp() {
     setRoom(null);
     setScreen('home');
     setJoinError(reason ?? '');
+    sessionRef.current = {};
+    resumeRef.current = null;
+    clearSession();
   }, [clearTimers]);
-  const online = useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom });
+  const online = useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom, resumeRef });
+
+  // Back after a reload: the host reopens its room (and round); a guest rejoins and, if its
+  // round is still running, gets its card back when the host's lobby message arrives.
+  useEffect(() => {
+    const s = onlineEnabled ? loadSession() : null;
+    if (!s) return;
+    setName(s.name);
+    if (s.role === 'host') {
+      sessionRef.current = { role: 'host', code: s.code, name: s.name, room: s.room, game: s.game };
+      const restored = { ...s.room, online: { code: s.code, isHost: true }, connecting: false };
+      if (s.game && s.room.inGame) {
+        setInitialGame(s.game);
+        setRound((n) => n + 1);
+        setRoom(restored);
+        setScreen('game');
+      } else {
+        setRoom({ ...restored, inGame: false });
+        setScreen('lobby');
+      }
+      return;
+    }
+    sessionRef.current = { role: 'guest', code: s.code, name: s.name, ...(s.resume ?? {}) };
+    resumeRef.current = s.resume;
+    setRoom(guestRoom(s.code, s.name, { ...DEFAULT_SETTINGS }));
+    setScreen('lobby');
+  }, []);
+
+  // Keep the session up to date as the room changes.
+  useEffect(() => {
+    if (!room?.online) return;
+    const isHost = room.online.isHost;
+    persist({
+      role: isHost ? 'host' : 'guest',
+      code: room.online.code,
+      name: room.selfName ?? name,
+      ...(isHost ? { room: hostRoomSnapshot(room) } : {}),
+    });
+  }, [room]);
+
+  /** The round on screen changed: the host keeps the whole game, a guest just its own card. */
+  const persistGame = (game, roundUsed) => {
+    if (!room?.online) return;
+    if (room.online.isHost) {
+      persist({ game });
+      return;
+    }
+    const me = game.players.find((p) => p.id === YOU);
+    if (me) persist({ round: roundUsed, seed: room.seed, card: { cells: me.cells, marks: me.marks, ready: me.ready !== false } });
+  };
 
   const hostStartRound = (r) => {
     if (r.online?.isHost) online.hostStart(r, r.roundNo ?? 0);
@@ -139,16 +221,17 @@ export default function BingoApp() {
     const saved = load('room', null);
     const base = { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}) };
     if (onlineEnabled) {
-      const isHost = !code;
-      setRoom({
-        online: { code: code ?? makeOnlineCode(), isHost },
-        connecting: !isHost,
+      sessionRef.current = {};
+      resumeRef.current = null;
+      setRoom(code ? guestRoom(code, n, base) : {
+        online: { code: makeOnlineCode(), isHost: true },
+        connecting: false,
         seed: randomSeed(),
         roundNo: 0,
-        hostName: isHost ? n : '',
+        hostName: n,
         selfName: n,
         streamer,
-        bigScreen: isHost && bigScreen,
+        bigScreen,
         buddies: [], // online, friends join for real; the host can still add buddies
         settings: base,
         wins: {},
@@ -201,6 +284,9 @@ export default function BingoApp() {
         peers={online.players}
         onlineStatus={online.status}
         onLeaveRoom={online.leave}
+        hostMissing={online.hostMissing}
+        reconnecting={online.reconnecting}
+        onPersistGame={persistGame}
         onAction={(action) => {
           if (action !== 'join') {
             setModal(action);
@@ -226,12 +312,18 @@ export default function BingoApp() {
 /** Everything below the header that depends on the current round. Re-mounted per round via key. */
 function GameScreens({
   initial, screen, room, setRoom, name, prefs, now, setNow, later, clearTimers, claimed, onCreate, onStart, setScreen, lang,
-  onAction, joinError, online, peers, onlineStatus, onLeaveRoom,
+  onAction, joinError, online, peers, onlineStatus, onLeaveRoom, hostMissing, reconnecting, onPersistGame,
 }) {
+  const { t } = useLang();
   const [game, dispatch] = useReducer(reducer, initial);
   const lastCallCount = useRef(0);
   const isGuest = Boolean(online && !online.isHost);
   useOnlineGame({ online, active: screen === 'game', game, dispatch });
+
+  // Remember the round (host: whole game, guest: own card) so a reload can pick it up again.
+  useEffect(() => {
+    if (online && game && screen === 'game') onPersistGame(game, online.round);
+  }, [game, screen]);
 
   const settings = game?.settings;
   const playing = screen === 'game' && game?.phase === 'playing';
@@ -395,6 +487,9 @@ function GameScreens({
       <Backdrop />
       <div className={`home-page screen-${screen}`}>
         <Header onAction={onAction} />
+        {(hostMissing || reconnecting) && (
+          <div className="net-banner" role="status">{t(hostMissing ? 'hostReconnecting' : 'reconnecting')}</div>
+        )}
         <main className="stage-main">
           {screen === 'home' && <Home initialName={name} onCreate={onCreate} error={joinError} />}
           {screen === 'lobby' && room && (

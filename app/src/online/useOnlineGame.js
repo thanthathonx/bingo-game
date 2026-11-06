@@ -63,7 +63,7 @@ export function useOnlineGame({ online, active, game, dispatch }) {
       }
       return;
     }
-    online.gameApi.current = { round: online.round, dispatch, game };
+    online.gameApi.current = { round: online.round, dispatch, game, pushState: () => sendState() };
   });
 
   // Host: the game state for everyone.
