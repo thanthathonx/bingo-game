@@ -834,3 +834,29 @@ a.pm-item { text-decoration: none; }
 .settings-fieldset:disabled { opacity: 0.7; }
 .settings-fieldset:disabled button { cursor: not-allowed; }
 .lobby-wait { display: grid; gap: 12px; justify-items: center; text-align: center; max-width: 420px; margin: 0 auto; }
+
+/* Home screen illustration (sits above the starfield; nebulas/stars stay faint on top). */
+.gb-photo {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gb-photo ~ .gb-stars,
+.gb-photo ~ .gb-neb,
+.gb-photo ~ .gb-dots { opacity: 0.25; }
+
+/* Home over the lobby illustration: the picture already has the mascot on the left, so on wide
+   screens the title moves above the card into the open space on the right; on phones the text
+   gets a shadow so it reads over the bright picture. */
+.has-photo .home-title { text-shadow: 0 3px 0 rgba(20, 8, 60, 0.55), 0 0 18px rgba(20, 8, 60, 0.55); }
+.has-photo .home-tagline { color: #fff; text-shadow: 0 1px 3px rgba(10, 4, 40, 0.95), 0 0 14px rgba(20, 8, 60, 0.85); }
+@media (min-width: 900px) {
+  .home-stage.has-photo { padding-top: clamp(20px, calc(100vh - 780px), 120px); }
+  .has-photo .home-grid { grid-template-columns: 418px; justify-content: end; padding-right: 18vw; row-gap: 18px; }
+  .has-photo .home-hero-col,
+  .has-photo .home-hero { align-items: center; text-align: center; margin-top: 0; }
+  .has-photo .home-mascot-wrap { display: none; }
+  .has-photo .home-title { margin-top: 0; }
+}

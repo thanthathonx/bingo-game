@@ -532,7 +532,7 @@ function GameScreens({
 
   return (
     <div className={`app-root${prefs.reduceMotion ? ' reduce-motion' : ''}`}>
-      <Backdrop />
+      <Backdrop home={screen === 'home'} />
       <div className={`home-page screen-${screen}`}>
         <Header onAction={onAction} name={name} />
         {(hostMissing || reconnecting) && (

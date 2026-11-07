@@ -69,7 +69,7 @@ export default function Home({ initialName, onCreate, error = '' }) {
   };
 
   return (
-    <div className="home-stage">
+    <div className="home-stage has-photo">
       <div className="home-grid">
         <div className="home-hero-col">
           <div className="home-hero">
