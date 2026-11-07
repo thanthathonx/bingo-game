@@ -1,6 +1,4 @@
 // Galaxy background: nebula glows, star field, a little constellation and floating sparkles.
-// The home screen shows the neon lobby illustration on top of it.
-import homeBg from '../assets/home-bg.jpg';
 
 const SPARKS = [
   { cls: 's-pink', left: '16%', bottom: '6%', size: '1.5rem', dur: '18s', delay: '0s', ch: '✦' },
@@ -10,11 +8,9 @@ const SPARKS = [
   { cls: 's-pink', left: '87%', bottom: '11%', size: '1.3rem', dur: '20s', delay: '-15s', ch: '✧' },
 ];
 
-/** @param {{ home?: boolean }} props  home: show the lobby illustration (home screen only) */
-export default function Backdrop({ home = false }) {
+export default function Backdrop() {
   return (
     <div className="gb-backdrop" aria-hidden="true">
-      {home && <div className="gb-photo" style={{ backgroundImage: `url(${homeBg})` }} />}
       <div className="gb-stars" />
       <div className="gb-neb n1" />
       <div className="gb-neb n2" />
