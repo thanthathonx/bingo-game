@@ -21,7 +21,8 @@ export function callText(value, size) {
  * @param {{ cells: Array, marks?: boolean[], size: number, winLine?: number[], lastCalled?: unknown,
  *   onCell?: (i: number) => void, mini?: boolean, building?: boolean, isText?: boolean }} props
  */
-export default function Card({ cells, marks = [], size, winLine = [], onCell, mini = false, building = false, isText = false }) {
+// target: squares that make up the win shape (Square / Heart), outlined so players know where to aim
+export default function Card({ cells, marks = [], size, winLine = [], target = [], onCell, mini = false, building = false, isText = false }) {
   const { t } = useLang();
   const showLetters = size === 5 && !isText && !mini;
   return (
@@ -39,6 +40,7 @@ export default function Card({ cells, marks = [], size, winLine = [], onCell, mi
             isFree ? 'is-free' : '',
             marks[i] && !isFree ? 'is-daubed' : '',
             winLine.includes(i) ? 'is-win' : '',
+            target.includes(i) ? 'is-target' : '',
             v === null ? 'is-empty' : '',
           ].filter(Boolean).join(' ');
           const label = isFree ? 'FREE' : v ?? '';

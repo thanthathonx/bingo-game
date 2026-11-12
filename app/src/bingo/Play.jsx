@@ -2,7 +2,7 @@ import Mascot from '../shared/Mascot.jsx';
 import { IconPause, IconPlay, IconShuffle, IconDoor } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
 import Card, { callText, letterColor } from './Card.jsx';
-import { squaresAway, maxNumber, range, sameValue, FREE } from './engine.js';
+import { squaresAway, maxNumber, range, sameValue, FREE, patternOf, winTargets } from './engine.js';
 import { YOU } from './gameState.js';
 
 /**
@@ -58,7 +58,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
   const isText = settings.mode === 'custom';
   const locked = now < game.lockedUntil;
   const others = game.players.filter((p) => p.id !== YOU);
-  const myAway = me ? squaresAway(me.marks, settings.size) : null;
+  const myAway = me ? squaresAway(me.marks, settings.size, patternOf(settings)) : null;
 
   return (
     <div className={`play${bigScreen ? ' is-tv' : ''}`}>
@@ -102,9 +102,11 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
         <section className="panel my-card">
           <div className="my-card-head">
             <span className="player-name">{me.name}</span>
+            {patternOf(settings) !== 'line' && <span className="tag pattern-tag">{t('patternGoal')}: {t(`pattern_${patternOf(settings)}`)}</span>}
             {myAway === 1 && <span className="flag-near">{t('oneAway')}</span>}
           </div>
           <Card cells={me.cells} marks={me.marks} size={settings.size} isText={isText}
+            target={patternOf(settings) === 'line' ? [] : winTargets(settings.size, patternOf(settings))[0]}
             onCell={(index) => dispatch({ type: 'DAUB', index, now: Date.now() })} />
           <button type="button" className={`bingo-btn${myAway === 0 ? ' is-ready' : ''}`} disabled={locked}
             onClick={onClaim ?? (() => dispatch({ type: 'CLAIM', id: YOU, now: Date.now() }))}>
@@ -121,7 +123,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
         <h2 className="panel-title">{t('playersTitle')}</h2>
         <div className="wall-grid">
           {others.map((p) => {
-            const away = squaresAway(p.marks, settings.size);
+            const away = squaresAway(p.marks, settings.size, patternOf(settings));
             const daubs = p.marks.filter((m, i) => m && p.cells[i] !== FREE).length;
             return (
               <div key={p.id} className="wall-card">

@@ -8,7 +8,7 @@
 // the score, and decides who won. Everything received is checked here first.
 
 import { YOU } from '../bingo/gameState.js';
-import { CARD_SIZES, FREE } from '../bingo/engine.js';
+import { CARD_SIZES, FREE, PATTERNS } from '../bingo/engine.js';
 
 export const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 export const ONLINE_CODE_LENGTH = 6;
@@ -155,7 +155,7 @@ export function readWinner(raw, size, myId) {
   if (raw.id === null) return { winner: { id: null, line: [] }, player: null };
   const player = readPlayer(raw.player, size, myId); // null when we are the winner: we have our own card
   const line = Array.isArray(raw.line) ? raw.line.filter((i) => Number.isInteger(i) && i >= 0 && i < size * size) : [];
-  if (!isId(raw.id) || line.length !== size) return null;
+  if (!isId(raw.id) || line.length < size || line.length > size * size) return null; // a line (size squares) or a shape
   return { winner: { id: fromWireId(raw.id, myId), line }, player };
 }
 
@@ -227,6 +227,7 @@ const SETTING_RULES = {
   skill: (v) => ['relaxed', 'normal', 'speedy'].includes(v),
   presetId: (v) => v === null || typeof v === 'string',
   itemsText: (v) => typeof v === 'string' && v.length <= 4000,
+  pattern: (v) => v === undefined || PATTERNS.includes(v),
 };
 
 /** Lobby state from the host, checked, in local ids (the player list keeps wire ids). */

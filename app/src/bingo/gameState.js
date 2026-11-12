@@ -2,7 +2,7 @@
 
 import {
   makeClassicCard, makeCustomCard, makeDrawOrder, initialMarks, canDaub, validateClaim,
-  autoMarks, placeItems, parseItems, itemsNeeded, shuffle, FREE, sameValue,
+  autoMarks, placeItems, parseItems, itemsNeeded, shuffle, FREE, sameValue, patternOf,
 } from './engine.js';
 import { seededRng, hashText } from './roomCode.js';
 
@@ -106,7 +106,7 @@ function applyCall(state, value) {
   }
   // Out of balls with no line: only the referee (offline, or the online host) ends the round.
   if (order.length === 0 && !next.winner && state.referee !== false) {
-    const anyWin = next.players.some((p) => validateClaim(p.cells, autoMarks(p.cells, called), state.settings.size, called));
+    const anyWin = next.players.some((p) => validateClaim(p.cells, autoMarks(p.cells, called), state.settings.size, called, patternOf(state.settings)));
     if (!anyWin) return { ...next, phase: 'finished', winner: { id: null, line: [] } };
   }
   return next;
@@ -177,7 +177,7 @@ export function reducer(state, action) {
       if (!p) return state;
       if (action.id === YOU && action.now < state.lockedUntil) return state;
       if (action.id !== YOU && state.paused) return state; // buddies wait for the game to resume
-      const line = validateClaim(p.cells, p.marks, state.settings.size, state.called);
+      const line = validateClaim(p.cells, p.marks, state.settings.size, state.called, patternOf(state.settings));
       // Online guests don't decide the win themselves: the host confirms it (see FINISH).
       if (line && action.deferWin) return { ...state, claimPending: true };
       if (line) return { ...state, phase: 'finished', winner: { id: p.id, line } };
@@ -207,7 +207,7 @@ export function reducer(state, action) {
       // The claim carries the card, so a claimant we have not heard from yet is added first.
       const next = reducer(state, { type: 'UPSERT_PLAYER', player: action.player });
       if (!next.players.some((p) => p.id === action.player.id && p.isRemote)) return state;
-      const line = validateClaim(action.player.cells, action.player.marks, state.settings.size, state.called);
+      const line = validateClaim(action.player.cells, action.player.marks, state.settings.size, state.called, patternOf(state.settings));
       return line ? { ...next, phase: 'finished', winner: { id: action.player.id, line } } : next;
     }
     case 'FINISH': {

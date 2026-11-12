@@ -87,6 +87,6 @@ test('big screen mode has no card for the host', () => {
 });
 
 test('custom mode needs enough items', () => {
-  assert.deepEqual(settingsProblem({ ...baseSettings, mode: 'custom', itemsText: 'a\nb' }), { need: 24, have: 2 });
+  assert.deepEqual(settingsProblem({ ...baseSettings, mode: 'custom', itemsText: 'a\nb' }), { need: 25, have: 2 });
   assert.equal(settingsProblem(baseSettings), null);
 });

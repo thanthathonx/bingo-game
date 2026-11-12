@@ -7,7 +7,7 @@ import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
 import { reducer, newRound, withCard, SPEEDS, SKILLS, YOU } from './gameState.js';
 import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../online/session.js';
-import { cellIndexOf, squaresAway, validateClaim } from './engine.js';
+import { cellIndexOf, squaresAway, validateClaim, patternOf } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
 import { onlineEnabled } from '../online/client.js';
 import { MSG, makeOnlineCode, makeClientId, wirePlayer, wireState, leaderboard } from '../online/protocol.js';
@@ -439,7 +439,7 @@ function GameScreens({
     const skill = SKILLS[settings.skill] ?? SKILLS.normal;
     game.players.forEach((p) => {
       if (!ownBot(p) || claimed.current.has(p.id)) return;
-      if (squaresAway(p.marks, settings.size) === 0) {
+      if (squaresAway(p.marks, settings.size, patternOf(settings)) === 0) {
         claimed.current.add(p.id);
         later(() => dispatch({ type: 'CLAIM', id: p.id, now: Date.now() }), between(skill.claim));
       }
@@ -447,7 +447,7 @@ function GameScreens({
   }, [game?.players, playing, game?.paused]);
 
   // Near-win chime for you.
-  const myAway = game?.players.find((p) => p.id === YOU) ? squaresAway(game.players.find((p) => p.id === YOU).marks, settings.size) : null;
+  const myAway = game?.players.find((p) => p.id === YOU) ? squaresAway(game.players.find((p) => p.id === YOU).marks, settings.size, patternOf(settings)) : null;
   useEffect(() => {
     if (playing && myAway === 1) playSfx('near');
   }, [myAway, playing]);
@@ -499,7 +499,7 @@ function GameScreens({
   const claim = () => {
     const at = Date.now();
     const me = game.players.find((p) => p.id === YOU);
-    const good = me && validateClaim(me.cells, me.marks, settings.size, game.called);
+    const good = me && validateClaim(me.cells, me.marks, settings.size, game.called, patternOf(settings));
     if (isGuest && good && at >= game.lockedUntil) {
       online.toHost(MSG.CLAIM, { round: online.round, player: wirePlayer(me, online.myId) });
       dispatch({ type: 'CLAIM', id: YOU, now: at, deferWin: true });

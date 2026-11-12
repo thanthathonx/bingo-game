@@ -3,7 +3,7 @@
 
 import { useEffect, useRef } from 'react';
 import { YOU } from '../bingo/gameState.js';
-import { squaresAway, FREE } from '../bingo/engine.js';
+import { squaresAway, FREE, patternOf } from '../bingo/engine.js';
 import { MSG, wirePlayer, wireState, leaderboard } from './protocol.js';
 
 const STATE_EVERY_MS = 5000; // host: repeat the state this often, so a lost message heals quickly
@@ -11,9 +11,9 @@ const PROGRESS_DEBOUNCE_MS = 1000; // guest: daubs within this window go out as 
 const CLAIM_WAIT_MS = 6000; // guest: give up waiting for the host's answer to a BINGO after this long
 
 /** Squares away from a line, daubs (free square not counted) and whether the card is ready. */
-export function progressOf(player, size) {
+export function progressOf(player, size, pattern = 'line') {
   return {
-    away: squaresAway(player.marks, size),
+    away: squaresAway(player.marks, size, pattern),
     daubs: player.marks.filter((m, i) => m && player.cells[i] !== FREE).length,
     ready: player.ready !== false,
   };
@@ -34,7 +34,7 @@ export function boardEntries(game, round, roster, myId) {
   const size = game.settings.size;
   const own = game.players
     .filter((p) => !p.isRemote)
-    .map((p) => ({ id: p.id === YOU ? myId : p.id, name: p.name, isBot: Boolean(p.isBot), ...progressOf(p, size) }));
+    .map((p) => ({ id: p.id === YOU ? myId : p.id, name: p.name, isBot: Boolean(p.isBot), ...progressOf(p, size, patternOf(game.settings)) }));
   const guests = [...roster.values()]
     .filter((g) => g.progress?.round === round)
     .map((g) => ({ id: g.id, name: g.name, away: g.progress.away, daubs: g.progress.daubs }));
@@ -91,7 +91,7 @@ export function useOnlineGame({ online, active, game, dispatch }) {
   // Guest: report my progress to the host when it changes (and keep it for the heartbeat).
   // Quick daubs in a row are sent as one report; "ready" and "one away / BINGO" go out at once.
   const me = game?.players.find((p) => p.id === YOU);
-  const progress = me && game ? progressOf(me, game.settings.size) : null;
+  const progress = me && game ? progressOf(me, game.settings.size, patternOf(game.settings)) : null;
   const key = progress ? `${progress.away}/${progress.daubs}/${progress.ready}` : '';
   const urgent = progress ? progress.away <= 1 || !progress.ready : false;
   useEffect(() => {

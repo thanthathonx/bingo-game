@@ -29,8 +29,12 @@ export function range(from, to) {
   return Array.from({ length: to - from + 1 }, (_, i) => from + i);
 }
 
+// No free centre square: every square holds a number or an item and must be called.
+// (Turn this back on with `size % 2 === 1` — the rest of the code still handles FREE.)
+export const FREE_CENTER = false;
+
 export function hasFreeCenter(size) {
-  return size % 2 === 1;
+  return FREE_CENTER && size % 2 === 1;
 }
 
 export function centerIndex(size) {
@@ -39,7 +43,7 @@ export function centerIndex(size) {
 
 /**
  * Classic number card, row-major. Column c holds numbers from its own band
- * (B 1-15, I 16-30 ... for 5x5). Odd sizes get a FREE centre.
+ * (B 1-15, I 16-30 ... for 5x5). A FREE centre only when FREE_CENTER is on.
  */
 export function makeClassicCard(size, rng = Math.random) {
   const band = perColumn(size);
@@ -113,14 +117,35 @@ export function winningLines(size) {
   return lines;
 }
 
-/** The first complete line, or null. */
-export function findWin(marks, size) {
-  return winningLines(size).find((line) => line.every((i) => marks[i])) ?? null;
+// ----- Win patterns -----
+// 'line' = any row, column or diagonal (every card size). Shapes are 5×5 only (row-major cells).
+export const PATTERNS = ['line', 'square', 'heart'];
+const SHAPES = {
+  // big square: the outer edge
+  square: [0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 21, 22, 23, 24],
+  // heart outline:  ■ ■ · ■ ■ / ■ · ■ · ■ / ■ · · · ■ / · ■ · ■ · / · · ■ · ·
+  heart: [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22],
+};
+
+/** The pattern that applies to these settings (shapes only exist on 5×5 cards). */
+export function patternOf(settings) {
+  const p = settings?.pattern;
+  return settings?.size === 5 && SHAPES[p] ? p : 'line';
 }
 
-/** Fewest squares still missing on any line (0 means bingo). */
-export function squaresAway(marks, size) {
-  return Math.min(...winningLines(size).map((line) => line.filter((i) => !marks[i]).length));
+/** The sets of squares that win for a pattern: every line, or the one shape. */
+export function winTargets(size, pattern = 'line') {
+  return size === 5 && SHAPES[pattern] ? [SHAPES[pattern]] : winningLines(size);
+}
+
+/** The first complete target (its squares), or null. */
+export function findWin(marks, size, pattern = 'line') {
+  return winTargets(size, pattern).find((line) => line.every((i) => marks[i])) ?? null;
+}
+
+/** Fewest squares still missing for the pattern (0 means bingo). */
+export function squaresAway(marks, size, pattern = 'line') {
+  return Math.min(...winTargets(size, pattern).map((line) => line.filter((i) => !marks[i]).length));
 }
 
 export function sameValue(a, b) {
@@ -140,10 +165,10 @@ export function canDaub(cells, index, called) {
   return called.some((c) => sameValue(c, v));
 }
 
-/** A claim is valid only when a full line is daubed AND every daub was called. */
-export function validateClaim(cells, marks, size, called) {
+/** A claim is valid only when the pattern is daubed AND every daub was called. */
+export function validateClaim(cells, marks, size, called, pattern = 'line') {
   const honest = marks.map((m, i) => m && canDaub(cells, i, called));
-  return findWin(honest, size);
+  return findWin(honest, size, pattern);
 }
 
 /** Mark everything already called (used when auto-daub is on). */

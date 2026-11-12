@@ -700,3 +700,12 @@ button.bcell:active { transform: scale(0.94); }
 /* Confirm dialogs */
 .modal-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; margin-top: 6px; }
 .home-btn.is-danger { background: #ff6b6b; }
+
+/* Win patterns */
+.pattern-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.pattern-preview { display: grid; grid-template-columns: repeat(5, 9px); gap: 2px; padding: 4px; background: var(--bg-darker); border-radius: 6px; }
+.pattern-preview span { width: 9px; height: 9px; border-radius: 2px; background: rgba(255, 255, 255, 0.12); }
+.pattern-preview span.is-on { background: var(--accent-color); }
+.pattern-preview span.is-free { background: rgba(85, 239, 196, 0.45); }
+.bcell.is-target:not(.is-daubed):not(.is-free) { box-shadow: inset 0 0 0 3px var(--accent-color); }
+.pattern-tag { margin-left: auto; font-size: 12px; }

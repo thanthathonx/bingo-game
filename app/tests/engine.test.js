@@ -5,12 +5,11 @@ import {
   canDaub, FREE, winningLines, parseItems, makeDrawOrder, letterFor, autoMarks, placeItems, itemsNeeded,
 } from '../src/bingo/engine.js';
 
-test('5x5 classic card uses column bands and a free centre', () => {
+test('5x5 classic card uses column bands and has no free square', () => {
   const card = makeClassicCard(5);
   assert.equal(card.length, 25);
-  assert.equal(card[12], FREE);
+  assert.ok(!card.includes(FREE));
   for (let i = 0; i < 25; i += 1) {
-    if (i === 12) continue;
     const col = i % 5;
     assert.ok(card[i] >= col * 15 + 1 && card[i] <= col * 15 + 15);
   }
@@ -57,10 +56,12 @@ test('custom cards draw unique items', () => {
   const items = parseItems('a\nb\nc\nd\ne\nf\ng\nh\ni\na');
   assert.equal(items.length, 9);
   const card = makeCustomCard(items, 3);
-  assert.equal(card[4], FREE);
+  assert.ok(!card.includes(FREE)); // no free square: all 9 squares are items
   assert.equal(new Set(card).size, 9);
+  assert.equal(itemsNeeded(3), 9);
   assert.equal(itemsNeeded(4), 16);
-  assert.equal(placeItems(['x'], 3)[4], FREE);
+  assert.equal(itemsNeeded(5), 25);
+  assert.equal(placeItems(['x'], 3)[4], null);
 });
 
 test('draw order covers every number once', () => {

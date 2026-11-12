@@ -241,3 +241,38 @@ test('the lobby says when the host has no room left, so an extra guest can be to
   assert.equal(readRoom(wireRoom(room, 'p-host', []), ME).full, false);
   assert.ok(MAX_ROOM_PLAYERS > 350); // above the Realtime connection cap, so that limit comes first
 });
+// ----- Win patterns -----
+import { findWin, squaresAway as away5, patternOf, winTargets, validateClaim as validate5 } from '../src/bingo/engine.js';
+
+test('square and heart are exact shapes on a 5x5 card; other sizes always use lines', () => {
+  const marks = (cells) => Array.from({ length: 25 }, (_, i) => cells.includes(i));
+  const heart = [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22];
+  const square = [0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 21, 22, 23, 24];
+  assert.deepEqual(findWin(marks(heart), 5, 'heart'), heart);
+  assert.equal(findWin(marks(heart.slice(1)), 5, 'heart'), null);
+  assert.equal(away5(marks(heart.slice(2)), 5, 'heart'), 2);
+  assert.deepEqual(findWin(marks(square), 5, 'square'), square);
+  assert.equal(findWin(marks([10, 11, 12, 13, 14]), 5, 'square'), null); // a row is not a square
+  assert.ok(findWin(marks([10, 11, 12, 13, 14]), 5, 'line'));
+  assert.equal(patternOf({ size: 5, pattern: 'heart' }), 'heart');
+  assert.equal(patternOf({ size: 4, pattern: 'heart' }), 'line');
+  assert.equal(patternOf({ size: 5, pattern: 'nope' }), 'line');
+  assert.equal(winTargets(3, 'heart').length, 8); // falls back to the 8 lines of a 3x3
+});
+
+test('a heart claim must have every heart square called', () => {
+  const cells = Array.from({ length: 25 }, (_, i) => (i === 12 ? FREE : i + 1));
+  const heart = [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22];
+  const marks = cells.map((_, i) => heart.includes(i) || i === 12);
+  const calledAll = heart.map((i) => cells[i]);
+  assert.ok(validate5(cells, marks, 5, calledAll, 'heart'));
+  assert.equal(validate5(cells, marks, 5, calledAll.slice(1), 'heart'), null);
+});
+
+test('the pattern travels in the lobby message; a heart win announcement is accepted', () => {
+  const room = { hostName: 'Host', bigScreen: false, settings: { ...SETTINGS, size: 5, pattern: 'heart' }, buddies: [], wins: {} };
+  assert.equal(readRoom(wireRoom(room, 'p-host', []), ME).settings.pattern, 'heart');
+  assert.equal(readRoom(wireRoom({ ...room, settings: { ...room.settings, pattern: 'star' } }, 'p-host', []), ME), null);
+  const heart = [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22];
+  assert.deepEqual(readWinner({ id: 'p-friend', line: heart, player: null }, 5, ME).winner.line, heart);
+});
