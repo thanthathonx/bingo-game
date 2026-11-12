@@ -119,12 +119,20 @@ export function winningLines(size) {
 
 // ----- Win patterns -----
 // 'line' = any row, column or diagonal (every card size). Shapes are 5×5 only (row-major cells).
-export const PATTERNS = ['line', 'square', 'heart'];
+export const PATTERNS = ['line', 'square', 'heart', 'smile', 'checker', 'candle', 'tree'];
 const SHAPES = {
   // big square: the outer edge
   square: [0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 21, 22, 23, 24],
   // heart outline:  ■ ■ · ■ ■ / ■ · ■ · ■ / ■ · · · ■ / · ■ · ■ · / · · ■ · ·
   heart: [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22],
+  // smiley face:    · ■ · ■ · / · · · · · / ■ · ■ · ■ / ■ · · · ■ / · ■ ■ ■ ·
+  smile: [1, 3, 10, 12, 14, 15, 19, 21, 22, 23],
+  // checkerboard:   ■ · ■ · ■ / · ■ · ■ · / ■ · ■ · ■ / · ■ · ■ · / ■ · ■ · ■
+  checker: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24],
+  // candlestick:    ■ · ■ · ■ / ■ · ■ · ■ / ■ ■ ■ ■ ■ / · · ■ · · / · · ■ · ·
+  candle: [0, 2, 4, 5, 7, 9, 10, 11, 12, 13, 14, 17, 22],
+  // christmas tree: · · ■ · · / · ■ ■ ■ · / · ■ ■ ■ · / ■ ■ ■ ■ ■ / · · ■ · ·
+  tree: [2, 6, 7, 8, 11, 12, 13, 15, 16, 17, 18, 19, 22],
 };
 
 /** The pattern that applies to these settings (shapes only exist on 5×5 cards). */

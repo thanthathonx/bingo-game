@@ -276,3 +276,22 @@ test('the pattern travels in the lobby message; a heart win announcement is acce
   const heart = [0, 1, 3, 4, 5, 7, 9, 10, 14, 16, 18, 22];
   assert.deepEqual(readWinner({ id: 'p-friend', line: heart, player: null }, 5, ME).winner.line, heart);
 });
+test('smiley and checkerboard shapes', () => {
+  const marks = (cells) => Array.from({ length: 25 }, (_, i) => cells.includes(i));
+  const smile = [1, 3, 10, 12, 14, 15, 19, 21, 22, 23];
+  const checker = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24];
+  assert.deepEqual(findWin(marks(smile), 5, 'smile'), smile);
+  assert.equal(away5(marks(smile.slice(1)), 5, 'smile'), 1);
+  assert.deepEqual(findWin(marks(checker), 5, 'checker'), checker);
+  assert.equal(findWin(marks(checker.filter((i) => i !== 12)), 5, 'checker'), null);
+  assert.equal(patternOf({ size: 5, pattern: 'checker' }), 'checker');
+});
+test('candlestick and christmas tree shapes', () => {
+  const marks = (cells) => Array.from({ length: 25 }, (_, i) => cells.includes(i));
+  const candle = [0, 2, 4, 5, 7, 9, 10, 11, 12, 13, 14, 17, 22];
+  const tree = [2, 6, 7, 8, 11, 12, 13, 15, 16, 17, 18, 19, 22];
+  assert.deepEqual(findWin(marks(candle), 5, 'candle'), candle);
+  assert.deepEqual(findWin(marks(tree), 5, 'tree'), tree);
+  assert.equal(findWin(marks(tree.filter((i) => i !== 12)), 5, 'tree'), null); // the centre counts now
+  assert.equal(away5(marks(candle.slice(3)), 5, 'candle'), 3);
+});
