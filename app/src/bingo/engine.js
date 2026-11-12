@@ -118,8 +118,10 @@ export function winningLines(size) {
 }
 
 // ----- Win patterns -----
-// 'line' = any row, column or diagonal (every card size). Shapes are 5×5 only (row-major cells).
-export const PATTERNS = ['line', 'square', 'heart', 'smile', 'checker', 'candle', 'tree'];
+// 'line' = any row, column or diagonal and 'blackout' = every square: both work on every card
+// size. The other shapes are 5×5 only (row-major cells).
+export const PATTERNS = ['line', 'blackout', 'square', 'heart', 'smile', 'checker', 'candle', 'tree'];
+export const ANY_SIZE_PATTERNS = ['line', 'blackout'];
 const SHAPES = {
   // big square: the outer edge
   square: [0, 1, 2, 3, 4, 5, 9, 10, 14, 15, 19, 20, 21, 22, 23, 24],
@@ -138,11 +140,13 @@ const SHAPES = {
 /** The pattern that applies to these settings (shapes only exist on 5×5 cards). */
 export function patternOf(settings) {
   const p = settings?.pattern;
+  if (p === 'blackout') return 'blackout';
   return settings?.size === 5 && SHAPES[p] ? p : 'line';
 }
 
-/** The sets of squares that win for a pattern: every line, or the one shape. */
+/** The sets of squares that win for a pattern: every line, the whole card, or the one shape. */
 export function winTargets(size, pattern = 'line') {
+  if (pattern === 'blackout') return [range(0, size * size - 1)];
   return size === 5 && SHAPES[pattern] ? [SHAPES[pattern]] : winningLines(size);
 }
 

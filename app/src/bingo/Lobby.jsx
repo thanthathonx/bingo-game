@@ -3,7 +3,7 @@ import Mascot from '../shared/Mascot.jsx';
 import { IconEye, IconPlus, IconMinus, IconCrown, IconTv, IconDoor, IconPlay, IconCopy } from '../shared/icons.jsx';
 import { encodeRoom } from './roomCode.js';
 import { useLang } from '../shared/i18n.js';
-import { itemsNeeded, PATTERNS, patternOf, winTargets } from './engine.js';
+import { itemsNeeded, PATTERNS, ANY_SIZE_PATTERNS, patternOf, winTargets } from './engine.js';
 import { settingsProblem, poolFor } from './gameState.js';
 import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
 import InviteCard from '../online/InviteCard.jsx';
@@ -166,15 +166,12 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
               options={[{ value: 'relaxed', label: t('skillRelaxed') }, { value: 'normal', label: t('skillNormal') }, { value: 'speedy', label: t('skillSpeedy') }]} />
           </Setting>
           <Setting label={t('winPattern')}>
-            {s.size === 5 ? (
-              <div className="pattern-pick">
-                <Segmented value={patternOf(s)} onChange={(pattern) => onSettings({ pattern })}
-                  options={PATTERNS.map((p) => ({ value: p, label: t(`pattern_${p}`) }))} />
-                <PatternPreview pattern={patternOf(s)} />
-              </div>
-            ) : (
-              <span className="setting-static">{t('anyLine')} · <small>{t('shapesNeed5')}</small></span>
-            )}
+            <div className="pattern-pick">
+              <Segmented value={patternOf(s)} onChange={(pattern) => onSettings({ pattern })}
+                options={(s.size === 5 ? PATTERNS : ANY_SIZE_PATTERNS).map((p) => ({ value: p, label: t(`pattern_${p}`) }))} />
+              <PatternPreview pattern={patternOf(s)} size={s.size} />
+            </div>
+            {s.size !== 5 && <p className="hint">{t('shapesNeed5')}</p>}
           </Setting>
           </fieldset>
         </section>
@@ -194,12 +191,13 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
   );
 }
 
-/** A 5×5 thumbnail of the squares a pattern needs ('line' shows the middle row as an example). */
-function PatternPreview({ pattern }) {
-  const on = new Set(pattern === 'line' ? [10, 11, 12, 13, 14] : winTargets(5, pattern)[0]);
+/** A thumbnail of the squares a pattern needs ('line' shows the middle row as an example). */
+function PatternPreview({ pattern, size = 5 }) {
+  const middleRow = Array.from({ length: size }, (_, c) => Math.floor(size / 2) * size + c);
+  const on = new Set(pattern === 'line' ? middleRow : winTargets(size, pattern)[0]);
   return (
-    <div className="pattern-preview" aria-hidden="true">
-      {Array.from({ length: 25 }, (_, i) => <span key={i} className={on.has(i) ? 'is-on' : ''} />)}
+    <div className="pattern-preview" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${size}, 9px)` }}>
+      {Array.from({ length: size * size }, (_, i) => <span key={i} className={on.has(i) ? 'is-on' : ''} />)}
     </div>
   );
 }

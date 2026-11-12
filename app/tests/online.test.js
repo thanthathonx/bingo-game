@@ -295,3 +295,14 @@ test('candlestick and christmas tree shapes', () => {
   assert.equal(findWin(marks(tree.filter((i) => i !== 12)), 5, 'tree'), null); // the centre counts now
   assert.equal(away5(marks(candle.slice(3)), 5, 'candle'), 3);
 });
+test('blackout needs every square, on any card size', () => {
+  for (const size of [3, 4, 5]) {
+    const n = size * size;
+    const all = Array.from({ length: n }, () => true);
+    assert.equal(findWin(all, size, 'blackout').length, n);
+    assert.equal(findWin(all.map((m, i) => i !== n - 1), size, 'blackout'), null);
+    assert.equal(away5(all.map((m, i) => i >= 2), size, 'blackout'), 2);
+    assert.equal(patternOf({ size, pattern: 'blackout' }), 'blackout');
+  }
+  assert.equal(patternOf({ size: 3, pattern: 'heart' }), 'line'); // shapes still 5x5 only
+});

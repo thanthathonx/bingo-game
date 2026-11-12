@@ -106,7 +106,7 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
             {myAway === 1 && <span className="flag-near">{t('oneAway')}</span>}
           </div>
           <Card cells={me.cells} marks={me.marks} size={settings.size} isText={isText}
-            target={patternOf(settings) === 'line' ? [] : winTargets(settings.size, patternOf(settings))[0]}
+            target={['line', 'blackout'].includes(patternOf(settings)) ? [] : winTargets(settings.size, patternOf(settings))[0]}
             onCell={(index) => dispatch({ type: 'DAUB', index, now: Date.now() })} />
           <button type="button" className={`bingo-btn${myAway === 0 ? ' is-ready' : ''}`} disabled={locked}
             onClick={onClaim ?? (() => dispatch({ type: 'CLAIM', id: YOU, now: Date.now() }))}>
