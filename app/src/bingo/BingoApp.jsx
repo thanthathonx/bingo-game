@@ -6,7 +6,7 @@ import { BuildView, PlayView, Results } from './Play.jsx';
 import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
 import {
-  reducer, newRound, withCard, SPEEDS, SKILLS, YOU, ROUNDS_PER_GAME, nextStage, patternForStage,
+  reducer, newRound, withCard, continueRound, SPEEDS, SKILLS, YOU, ROUNDS_PER_GAME, nextStage, patternForStage,
 } from './gameState.js';
 import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../online/session.js';
 import { cellIndexOf, squaresAway, validateClaim, patternOf } from './engine.js';
@@ -130,11 +130,12 @@ export default function BingoApp() {
   // A new round re-mounts GameScreens (via key) with a fresh reducer state.
   // r.roundNo is the round being started; the room then counts on to the next one.
   // r.resumeCard: a guest back after a reload gets their saved card instead of a new one.
+  // Rounds 2 and 3 of a game keep the cards, daubs and calls of the round before (carryRef).
   const startRound = useCallback((r) => {
     const { resumeCard, ...nextRoom } = r;
     clearTimers();
     const fresh = newRound(nextRoom);
-    setInitialGame(resumeCard ? withCard(fresh, resumeCard) : fresh);
+    setInitialGame(resumeCard ? withCard(fresh, resumeCard) : carryOn(fresh, nextRoom));
     setRoom({ ...nextRoom, roundNo: (nextRoom.roundNo ?? 0) + 1, inGame: true });
     setRound((n) => n + 1);
     setScreen('game');
@@ -143,6 +144,23 @@ export default function BingoApp() {
   // ----- Online session: survive a reload (see online/session.js) -----
   const sessionRef = useRef({});
   const resumeRef = useRef(null);
+  // The last finished round of this game, so the next round can carry on from it.
+  const carryRef = useRef(null);
+  const carryOn = (fresh, nextRoom) => {
+    const stage = nextRoom.stage ?? 1;
+    if (stage <= 1) return fresh;
+    const carry = carryRef.current;
+    if (carry && carry.stage === stage - 1) return continueRound(fresh, carry.game);
+    // A guest whose page reloaded between rounds: their saved card (with its daubs) is enough,
+    // the host's next state brings the calls.
+    const saved = sessionRef.current;
+    if (nextRoom.online && !nextRoom.online.isHost && saved?.card && saved.round === (nextRoom.roundNo ?? 0) - 1) {
+      return withCard(fresh, saved.card);
+    }
+    return fresh;
+  };
+  const roundOver = (game, stage) => { carryRef.current = { stage, game }; };
+
   const persist = (patch) => {
     sessionRef.current = { ...sessionRef.current, ...patch };
     saveSession(sessionRef.current);
@@ -158,6 +176,7 @@ export default function BingoApp() {
     sessionRef.current = {};
     resumeRef.current = null;
     clearSession();
+    carryRef.current = null;
   }, [clearTimers]);
   const online = useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom, resumeRef });
 
@@ -334,6 +353,7 @@ export default function BingoApp() {
         reconnecting={online.reconnecting}
         backHint={backHint}
         onPersistGame={persistGame}
+        onRoundOver={roundOver}
         onAction={(action) => {
           if (action !== 'join') {
             setModal(action);
@@ -363,11 +383,12 @@ export default function BingoApp() {
 /** Everything below the header that depends on the current round. Re-mounted per round via key. */
 function GameScreens({
   initial, screen, room, setRoom, name, prefs, now, setNow, later, clearTimers, claimed, onCreate, onStart, setScreen, lang,
-  onAction, joinError, online, peers, onlineStatus, onLeaveRoom, hostMissing, reconnecting, onPersistGame, backHint,
+  onAction, joinError, online, peers, onlineStatus, onLeaveRoom, hostMissing, reconnecting, onPersistGame, backHint, onRoundOver,
 }) {
   const { t } = useLang();
   const [game, dispatch] = useReducer(reducer, initial);
-  const lastCallCount = useRef(0);
+  // A round that carries on from the last one already has calls: don't announce the old ones.
+  const lastCallCount = useRef(initial?.called?.length ?? 0);
   const isGuest = Boolean(online && !online.isHost);
   useOnlineGame({ online, active: screen === 'game', game, dispatch });
 
@@ -480,6 +501,7 @@ function GameScreens({
     clearTimers();
     const ids = (game.winners ?? []).map((w) => w.id);
     playSfx(ids.includes(YOU) ? 'bingo' : 'lose');
+    if (!game.aborted) onRoundOver(game, room?.stage ?? 1);
     // Online, the host keeps the score and the history and shares them with the room.
     if (isGuest || game.aborted) return;
     setRoom((r) => {

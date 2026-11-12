@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  reducer, newRound, YOU, settingsProblem, CLAIM_WINDOW_MS, MAX_WINNERS, ROUNDS_PER_GAME, SHAPE_POOL, patternForStage, nextStage,
+  reducer, newRound, YOU, settingsProblem, continueRound, CLAIM_WINDOW_MS, MAX_WINNERS, ROUNDS_PER_GAME, SHAPE_POOL, patternForStage, nextStage,
 } from '../src/bingo/gameState.js';
 import { FREE, cellIndexOf, findWin, winningLines } from '../src/bingo/engine.js';
 
@@ -126,4 +126,26 @@ test('big screen mode has no card for the host', () => {
 test('custom mode needs enough items', () => {
   assert.deepEqual(settingsProblem({ ...baseSettings, mode: 'custom', itemsText: 'a\nb' }), { need: 25, have: 2 });
   assert.equal(settingsProblem(baseSettings), null);
+});
+
+test('rounds 2 and 3 keep the cards, the daubs and the calls of the round before', () => {
+  let g = newRound(room());
+  for (let i = 0; i < 10; i += 1) g = reducer(g, { type: 'CALL' });
+  const me = g.players[0];
+  const i0 = me.cells.findIndex((v) => g.called.includes(v));
+  if (i0 >= 0) g = reducer(g, { type: 'DAUB', index: i0, now: 1 });
+  const fresh = newRound(room({ pattern: 'heart' }));
+  const next = continueRound(fresh, g);
+  assert.equal(next.settings.pattern, 'heart');
+  assert.deepEqual(next.called, g.called);
+  assert.deepEqual(next.players[0].cells, me.cells);
+  assert.deepEqual(next.players[0].marks, g.players[0].marks);
+  assert.deepEqual(next.players[1].cells, g.players[1].cells);
+  assert.equal(next.phase, 'playing');
+  assert.deepEqual(next.winners, []);
+  const more = reducer(next, { type: 'CALL' });
+  assert.equal(more.called.length, 11);
+  assert.ok(!g.called.includes(more.called[10])); // nothing is called twice
+  assert.equal(continueRound(fresh, null), fresh);
+  assert.equal(continueRound(newRound(room({ size: 3 })), g).called.length, 0); // other card size: fresh
 });

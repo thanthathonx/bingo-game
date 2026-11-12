@@ -4,7 +4,7 @@ import { IconPause, IconPlay, IconShuffle, IconDoor } from '../shared/icons.jsx'
 import { useLang } from '../shared/i18n.js';
 import Card, { callText, letterColor } from './Card.jsx';
 import { squaresAway, maxNumber, range, sameValue, FREE, patternOf, winTargets } from './engine.js';
-import { YOU, ROUNDS_PER_GAME } from './gameState.js';
+import { YOU, ROUNDS_PER_GAME, CLAIM_WINDOW_MS } from './gameState.js';
 
 /**
  * Card-building phase for event cards.
@@ -51,6 +51,13 @@ export function BuildView({ game, dispatch, onLeave }) {
 /**
  * Main playing screen: caller, your card (unless Big Screen), and the bingo wall.
  */
+// Seconds left in the claim window. Read the clock here: the screen's 'now' can be a little stale
+// on the first frame, which once showed a guest '99s'.
+function claimSecondsLeft(until) {
+  const left = Math.ceil((until - Date.now()) / 1000);
+  return Math.min(CLAIM_WINDOW_MS / 1000, Math.max(0, left));
+}
+
 export function PlayView({
   game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0, board = null, stage = 1, claimWindow = null,
 }) {
@@ -71,7 +78,7 @@ export function PlayView({
           <p className="claim-banner" role="status">
             {t('claimWindow')
               .replace('{n}', claimWindow.count)
-              .replace('{s}', Math.max(0, Math.ceil((claimWindow.until - now) / 1000)))}
+              .replace('{s}', claimSecondsLeft(claimWindow.until))}
           </p>
         )}
         <div className="ball-wrap">

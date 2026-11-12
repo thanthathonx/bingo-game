@@ -103,6 +103,23 @@ export function newRound(room, rng = Math.random) {
 }
 
 /**
+ * Rounds 2 and 3 carry on from the round before: same cards, same daubs, and the calls go on
+ * from where they stopped (nothing is called again). Only the win pattern changes.
+ * A previous round whose cards don't fit (another card size) starts fresh instead.
+ */
+export function continueRound(fresh, prev) {
+  const n = fresh.settings.size * fresh.settings.size;
+  if (!prev || !Array.isArray(prev.players) || prev.players.some((p) => p.cells.length !== n)) return fresh;
+  return {
+    ...fresh,
+    pool: prev.pool,
+    order: prev.order,
+    called: prev.called,
+    players: prev.players.map((p) => ({ ...p, cells: [...p.cells], marks: [...p.marks] })),
+  };
+}
+
+/**
  * Put a saved card back on "you" (a guest who reloaded mid-round). A card that doesn't fit the
  * round is ignored. A ready card skips the build phase.
  */
