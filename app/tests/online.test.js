@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   MSG, makeOnlineCode, isOnlineCode, presencePlayers, readPlayer, wirePlayer, readCalls, readWinner,
-  readRoom, wireRoom, trustMessage, readProgress, leaderboard, wireState, readState, MAX_ROOM_PLAYERS,
+  readRoom, wireRoom, trustMessage, readProgress, leaderboard, wireState, readState, MAX_ROOM_PLAYERS, readFinish,
 } from '../src/online/protocol.js';
 import { progressOf, finishMessage, boardEntries } from '../src/online/useOnlineGame.js';
 import { reducer, newRound, YOU } from '../src/bingo/gameState.js';
@@ -135,11 +135,13 @@ test('the host builds the board from its own players and the guests\' reports fo
 });
 
 test('the finish message names the winner by wire id with their card', () => {
-  const game = { ...hostRound(), phase: 'finished', winner: { id: YOU, line: [0, 1, 2] } };
+  const game = { ...hostRound(), phase: 'finished', winners: [{ id: YOU, line: [0, 1, 2] }] };
   const msg = finishMessage(game, 'p-host');
-  assert.equal(msg.id, 'p-host');
-  assert.equal(msg.player.id, 'p-host');
-  assert.equal(finishMessage({ ...game, winner: { id: null, line: [] } }, 'p-host').id, null);
+  assert.equal(msg.winners.length, 1);
+  assert.equal(msg.winners[0].id, 'p-host');
+  assert.equal(msg.winners[0].player.id, 'p-host');
+  assert.equal(msg.aborted, false);
+  assert.deepEqual(finishMessage({ ...game, winners: [] }, 'p-host').winners, []);
 });
 
 // ----- reducer: online actions -----
@@ -156,7 +158,11 @@ test('the host accepts a claim only when the line was really called, even from a
   const friend = { ...readPlayer(card3(), 3, ME), marks: [true, true, true, false, true, false, false, false, false] };
   assert.equal(reducer(state, { type: 'REMOTE_CLAIM', player: friend }).phase, 'playing'); // 21 not called yet
   state = reducer(state, { type: 'SYNC_CALLS', called: [1, 11, 21] });
-  const done = reducer(state, { type: 'REMOTE_CLAIM', player: friend });
+  const open = reducer(state, { type: 'REMOTE_CLAIM', player: friend, now: 100 });
+  assert.equal(open.phase, 'playing'); // the claim window is open for others
+  assert.equal(open.winners.length, 1);
+  assert.ok(open.claimUntil > 100);
+  const done = reducer(open, { type: 'CLOSE_WINDOW' });
   assert.equal(done.phase, 'finished');
   assert.deepEqual(done.winner, { id: 'p-friend', line: [0, 1, 2] });
 });
@@ -178,9 +184,9 @@ test('a guest\'s good claim waits for the host; the host\'s result is final', ()
   assert.equal(pending.phase, 'playing');
   assert.equal(pending.claimPending, true);
   assert.equal(reducer(pending, { type: 'CLEAR_PENDING' }).claimPending, false);
-  const over = reducer(pending, { type: 'FINISH', winner: { id: YOU, line: [0, 1, 2] }, player: null });
+  const over = reducer(pending, { type: 'FINISH', winners: [{ id: YOU, line: [0, 1, 2] }], players: [] });
   assert.equal(over.winner.id, YOU);
-  assert.equal(reducer(over, { type: 'FINISH', winner: { id: null, line: [] }, player: null }).winner.id, YOU);
+  assert.equal(reducer(over, { type: 'FINISH', winners: [], players: [] }).winner.id, YOU);
 });
 
 test('a guest never ends the round on its own when the balls run out', () => {
@@ -188,8 +194,9 @@ test('a guest never ends the round on its own when the balls run out', () => {
   assert.equal(guest.referee, false);
   const out = reducer(guest, { type: 'SYNC_CALLS', called: Array.from({ length: 30 }, (_, i) => i + 1) });
   assert.equal(out.phase, 'playing');
-  const fixed = reducer({ ...out, phase: 'finished', winner: { id: null, line: [] } }, { type: 'FINISH', winner: { id: 'p-friend', line: [0, 1, 2] }, player: readPlayer(card3(), 3, ME) });
+  const fixed = reducer({ ...out, phase: 'finished', winner: { id: null, line: [] } }, { type: 'FINISH', winners: [{ id: 'p-friend', line: [0, 1, 2] }], players: [readPlayer(card3(), 3, ME)] });
   assert.equal(fixed.winner.id, 'p-friend');
+  assert.equal(fixed.winners.length, 1);
 });
 
 // ----- Resume after a reload -----
@@ -305,4 +312,39 @@ test('blackout needs every square, on any card size', () => {
     assert.equal(patternOf({ size, pattern: 'blackout' }), 'blackout');
   }
   assert.equal(patternOf({ size: 3, pattern: 'heart' }), 'line'); // shapes still 5x5 only
+});
+// ----- Three-round games: winners, claim window, history -----
+
+test('the host\'s finish message reads back with every winner, and junk is refused', () => {
+  const game = { ...hostRound(), phase: 'finished', winners: [{ id: YOU, line: [0, 1, 2] }] };
+  const wire = JSON.parse(JSON.stringify(finishMessage(game, 'p-host')));
+  const read = readFinish(wire, 3, ME);
+  assert.equal(read.winners.length, 1);
+  assert.equal(read.winners[0].id, 'p-host');
+  assert.equal(read.aborted, false);
+  assert.deepEqual(readFinish({ winners: [], aborted: true }, 3, ME), { winners: [], players: [], aborted: true });
+  assert.equal(readFinish({ winners: [wire.winners[0], wire.winners[0], wire.winners[0], wire.winners[0]] }, 3, ME), null); // more than 3
+  assert.equal(readFinish({ winners: 'x' }, 3, ME), null);
+});
+
+test('the claim countdown is passed on only when it makes sense', () => {
+  const base = { round: 1, called: [1, 2], paused: false, board: [], count: 2 };
+  assert.deepEqual(readState(wireState({ ...base, claim: { leftMs: 8000, count: 2 } }), 3, ME).claim, { leftMs: 8000, count: 2 });
+  assert.equal(readState(wireState({ ...base, claim: { leftMs: 999999, count: 1 } }), 3, ME).claim, null);
+  assert.equal(readState(wireState({ ...base, claim: { leftMs: 5000, count: 7 } }), 3, ME).claim, null);
+  assert.equal(readState(wireState(base), 3, ME).claim, null);
+});
+
+test('the lobby carries the game stage and the rounds already played', () => {
+  const room = {
+    hostName: 'Host', bigScreen: false, settings: { ...SETTINGS, pattern: 'line' }, buddies: [], wins: {}, roundNo: 2,
+    stage: 2, history: [{ stage: 1, pattern: 'line', winners: [{ id: YOU, name: 'Host' }, { id: 'p-friend', name: 'Ana' }] }],
+  };
+  const read = readRoom(JSON.parse(JSON.stringify(wireRoom(room, 'p-host', []))), ME);
+  assert.equal(read.stage, 2);
+  assert.equal(read.history.length, 1);
+  assert.deepEqual(read.history[0].winners.map((w) => w.id), ['p-host', 'p-friend']);
+  const bad = readRoom({ ...wireRoom(room, 'p-host', []), stage: 9, history: [{ stage: 1, pattern: 'nope', winners: [] }] }, ME);
+  assert.equal(bad.stage, 1);
+  assert.deepEqual(bad.history, []);
 });

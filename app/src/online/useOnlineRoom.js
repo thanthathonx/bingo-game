@@ -144,7 +144,7 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
       }
       case MSG.CLAIM: {
         const player = api && readPlayer(msg.player, size, myId);
-        if (player) api.dispatch({ type: 'REMOTE_CLAIM', player });
+        if (player) api.dispatch({ type: 'REMOTE_CLAIM', player, now: Date.now() });
         break;
       }
       case MSG.LEAVE:
@@ -204,8 +204,10 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
         if (!state) break;
         api.dispatch({ type: 'SYNC_CALLS', called: state.called });
         api.dispatch({ type: 'SET_PAUSE', paused: state.paused });
-        if (state.finish) api.dispatch({ type: 'FINISH', winner: state.finish.winner, player: state.finish.player });
-        setBoard({ round: state.round, entries: state.board, count: state.count });
+        if (state.finish) api.dispatch({ type: 'FINISH', ...state.finish });
+        // The claim window countdown, turned into a local deadline (clocks differ between devices).
+        const claim = state.claim ? { until: Date.now() + state.claim.leftMs, count: state.claim.count } : null;
+        setBoard({ round: state.round, entries: state.board, count: state.count, claim });
         break;
       }
       case MSG.CLOSED:
@@ -222,7 +224,7 @@ export function useOnlineRoom({ room, setRoom, name, myId, startRound, leaveRoom
   // Host: share lobby changes (settings, buddies, wins, name, in-game flag).
   useEffect(() => {
     if (isHost && status === 'live') scheduleRoom();
-  }, [isHost, status, room?.settings, room?.buddies, room?.wins, room?.hostName, room?.inGame]);
+  }, [isHost, status, room?.settings, room?.buddies, room?.wins, room?.hostName, room?.inGame, room?.history, room?.stage]);
 
   // Host: guests that stopped sending heartbeats have left.
   useEffect(() => {

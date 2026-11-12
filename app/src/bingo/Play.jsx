@@ -1,9 +1,10 @@
+import { useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import { IconPause, IconPlay, IconShuffle, IconDoor } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
 import Card, { callText, letterColor } from './Card.jsx';
 import { squaresAway, maxNumber, range, sameValue, FREE, patternOf, winTargets } from './engine.js';
-import { YOU } from './gameState.js';
+import { YOU, ROUNDS_PER_GAME } from './gameState.js';
 
 /**
  * Card-building phase for event cards.
@@ -50,7 +51,9 @@ export function BuildView({ game, dispatch, onLeave }) {
 /**
  * Main playing screen: caller, your card (unless Big Screen), and the bingo wall.
  */
-export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0, board = null }) {
+export function PlayView({
+  game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0, board = null, stage = 1, claimWindow = null,
+}) {
   const { t } = useLang();
   const { settings } = game;
   const me = game.players.find((p) => p.id === YOU);
@@ -63,7 +66,14 @@ export function PlayView({ game, dispatch, bigScreen, now, onLeave, onClaim, isG
   return (
     <div className={`play${bigScreen ? ' is-tv' : ''}`}>
       <section className="panel caller" aria-live="polite">
-        <span className="phase-chip">{t('callingChip')}</span>
+        <span className="phase-chip">{roundLabel(t, stage, patternOf(settings))}</span>
+        {claimWindow && (
+          <p className="claim-banner" role="status">
+            {t('claimWindow')
+              .replace('{n}', claimWindow.count)
+              .replace('{s}', Math.max(0, Math.ceil((claimWindow.until - now) / 1000)))}
+          </p>
+        )}
         <div className="ball-wrap">
           {last === undefined ? (
             <div className="ball is-idle"><span>?</span></div>
@@ -198,29 +208,66 @@ function CalledBoard({ game }) {
   );
 }
 
-/** Winner overlay. */
-export function Results({ game, onAgain, onLobby }) {
+const MEDALS = ['🥇', '🥈', '🥉'];
+
+/** "Round 2/3 · Heart" */
+function roundLabel(t, stage, pattern) {
+  return `${t('roundOf').replace('{n}', stage)} · ${t(`pattern_${pattern}`)}`;
+}
+
+/** End of a round: up to three winners in BINGO order; after round 3, the whole game. */
+export function Results({ game, stage = 1, history = [], onNext, onLobby }) {
   const { t } = useLang();
-  const winner = game.players.find((p) => p.id === game.winner?.id);
-  const youWon = winner?.id === YOU;
+  const [shown, setShown] = useState(0);
+  const winners = (game.winners ?? [])
+    .map((w) => ({ ...w, player: game.players.find((p) => p.id === w.id) }))
+    .filter((w) => w.player);
+  const youWon = winners.some((w) => w.id === YOU);
+  const lastRound = stage >= ROUNDS_PER_GAME;
+  const pick = winners[Math.min(shown, winners.length - 1)];
   return (
     <div className="results" role="dialog" aria-modal="true" aria-label={t('roundOver')}>
       {youWon && <Confetti />}
       <div className="results-card">
-        <span className="phase-chip">{t('gameOverChip')}</span>
-        {winner ? (
+        <span className="phase-chip">{roundLabel(t, stage, patternOf(game.settings))}</span>
+        {pick ? (
           <>
-            <Mascot size={96} tint={winner.isBot ? winner.color : undefined} prop={youWon ? 'star' : 'card'} />
-            <h2 className="results-title">{youWon ? t('youWin') : `${winner.name} — ${t('bingo')}`}</h2>
-            <Card cells={winner.cells} marks={winner.marks} size={game.settings.size} winLine={game.winner.line} isText={game.settings.mode === 'custom'} />
+            <h2 className="results-title">{youWon ? t('youWin') : t('bingo')}</h2>
+            <ol className="winner-list">
+              {winners.map((w, i) => (
+                <li key={w.id}>
+                  <button type="button" className={`winner-row${w === pick ? ' is-on' : ''}`} onClick={() => setShown(i)}>
+                    <span className="winner-medal">{MEDALS[i]}</span>
+                    <span className="winner-name">{w.player.name}{w.id === YOU && <em> ({t('you')})</em>}</span>
+                  </button>
+                </li>
+              ))}
+            </ol>
+            <Card cells={pick.player.cells} marks={pick.player.marks} size={game.settings.size} winLine={pick.line} isText={game.settings.mode === 'custom'} />
           </>
         ) : (
-          <h2 className="results-title">{t('nobodyWon')}</h2>
+          <>
+            <Mascot size={80} prop="card" />
+            <h2 className="results-title">{t('nobodyWon')}</h2>
+          </>
+        )}
+        {lastRound && history.length > 0 && (
+          <section className="game-summary" aria-label={t('gameSummary')}>
+            <h3>{t('gameSummary')}</h3>
+            {history.map((h) => (
+              <div key={h.stage} className="summary-row">
+                <span className="summary-round">{roundLabel(t, h.stage, h.pattern)}</span>
+                <span className="summary-winners">
+                  {h.winners.length ? h.winners.map((w, i) => `${MEDALS[i]} ${w.name}${w.id === YOU ? ` (${t('you')})` : ''}`).join('  ') : '—'}
+                </span>
+              </div>
+            ))}
+          </section>
         )}
         <div className="results-actions">
           <button type="button" className="ghost-btn" onClick={onLobby}>{t('backToLobby')}</button>
-          {onAgain
-            ? <button type="button" className="home-btn small" onClick={onAgain}>{t('playAgain')}</button>
+          {onNext
+            ? <button type="button" className="home-btn small" onClick={onNext}>{lastRound ? t('newGame') : t('nextRound').replace('{n}', stage + 1)}</button>
             : <span className="hint">{t('waitingHost')}</span>}
         </div>
       </div>

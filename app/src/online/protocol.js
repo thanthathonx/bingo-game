@@ -177,9 +177,21 @@ export function leaderboard(entries, limit = BOARD_SIZE) {
     .map(({ id, name, away, daubs, isBot }) => ({ id, name, away, daubs, isBot: Boolean(isBot) }));
 }
 
-/** The host's game state for everyone. */
-export function wireState({ round, called, paused, board, count, finish }) {
-  return { round, called, paused: Boolean(paused), board, count, finish: finish ?? null };
+/**
+ * The host's game state for everyone.
+ * finish: { winners: [{ id, line, player }] } once the round is over (no winners = nobody won).
+ * claim: { leftMs, count } while the claim window after the first BINGO is open.
+ */
+export function wireState({ round, called, paused, board, count, finish, claim }) {
+  return { round, called, paused: Boolean(paused), board, count, finish: finish ?? null, claim: claim ?? null };
+}
+
+/** The round's winners from the host (at most 3), in local ids. Null when it doesn't check out. */
+export function readFinish(raw, size, myId) {
+  if (!raw || !Array.isArray(raw.winners) || raw.winners.length > 3) return null;
+  const read = raw.winners.map((w) => readWinner(w, size, myId));
+  if (read.some((w) => !w || w.winner.id === null)) return null;
+  return { winners: read.map((w) => w.winner), players: read.map((w) => w.player).filter(Boolean), aborted: raw.aborted === true };
 }
 
 /** Game state from the host, checked, in local ids. */
@@ -192,7 +204,9 @@ export function readState(raw, size, myId) {
     .slice(0, BOARD_SIZE)
     .filter((e) => e && isId(e.id) && isCount(e.away, n) && isCount(e.daubs, n))
     .map((e) => ({ id: fromWireId(e.id, myId), name: cleanName(e.name), away: e.away, daubs: e.daubs, isBot: e.isBot === true }));
-  const finish = raw.finish ? readWinner(raw.finish, size, myId) : null;
+  const finish = raw.finish ? readFinish(raw.finish, size, myId) : null;
+  const claim = raw.claim && isCount(raw.claim.leftMs, 60000) && isCount(raw.claim.count, 3)
+    ? { leftMs: raw.claim.leftMs, count: raw.claim.count } : null;
   return {
     round: raw.round,
     called,
@@ -200,6 +214,7 @@ export function readState(raw, size, myId) {
     board,
     count: isCount(raw.count, MAX_ROOM_PLAYERS + 20) ? raw.count : board.length,
     finish,
+    claim,
   };
 }
 
@@ -215,7 +230,22 @@ export function wireRoom(room, myId, players, full = false) {
     roundNo: room.roundNo ?? 0,
     inGame: Boolean(room.inGame),
     players: players.map((p) => ({ id: p.id, name: p.name, isHost: Boolean(p.isHost) })),
+    stage: room.stage ?? 1,
+    history: (room.history ?? []).map((h) => ({
+      stage: h.stage, pattern: h.pattern, winners: h.winners.map((w) => ({ id: toWireId(w.id, myId), name: w.name })),
+    })),
   };
+}
+
+/** The rounds already played in this game: [{ stage, pattern, winners: [{ id, name }] }]. */
+function readHistory(raw, myId) {
+  return (Array.isArray(raw) ? raw : []).slice(0, 3)
+    .filter((h) => h && Number.isInteger(h.stage) && h.stage >= 1 && h.stage <= 3 && PATTERNS.includes(h.pattern) && Array.isArray(h.winners))
+    .map((h) => ({
+      stage: h.stage,
+      pattern: h.pattern,
+      winners: h.winners.slice(0, 3).filter((w) => w && isId(w.id)).map((w) => ({ id: fromWireId(w.id, myId), name: cleanName(w.name) })),
+    }));
 }
 
 const SETTING_RULES = {
@@ -260,5 +290,7 @@ export function readRoom(raw, myId) {
     inGame: raw.inGame === true,
     players,
     full: raw.full === true,
+    stage: Number.isInteger(raw.stage) && raw.stage >= 1 && raw.stage <= 3 ? raw.stage : 1,
+    history: readHistory(raw.history, myId),
   };
 }

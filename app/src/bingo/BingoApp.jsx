@@ -5,7 +5,9 @@ import Lobby from './Lobby.jsx';
 import { BuildView, PlayView, Results } from './Play.jsx';
 import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
-import { reducer, newRound, withCard, SPEEDS, SKILLS, YOU } from './gameState.js';
+import {
+  reducer, newRound, withCard, SPEEDS, SKILLS, YOU, ROUNDS_PER_GAME, nextStage, patternForStage,
+} from './gameState.js';
 import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../online/session.js';
 import { cellIndexOf, squaresAway, validateClaim, patternOf } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
@@ -169,7 +171,7 @@ export default function BingoApp() {
       sessionRef.current = { role: 'host', code: s.code, name: s.name, room: s.room, game: s.game };
       const restored = { ...s.room, online: { code: s.code, isHost: true }, connecting: false };
       if (s.game && s.room.inGame) {
-        setInitialGame(s.game);
+        setInitialGame({ winners: [], claimUntil: 0, aborted: false, ...s.game });
         setRound((n) => n + 1);
         setRoom(restored);
         setScreen('game');
@@ -246,9 +248,14 @@ export default function BingoApp() {
     if (me) persist({ round: roundUsed, seed: room.seed, card: { cells: me.cells, marks: me.marks, ready: me.ready !== false } });
   };
 
+  // The host starts round 1, 2 or 3 of a game (after round 3 a new game starts at round 1).
+  // The card is always 5×5 and the round decides the win pattern.
   const hostStartRound = (r) => {
-    if (r.online?.isHost) online.hostStart(r, r.roundNo ?? 0);
-    startRound(r);
+    const history = (r.history ?? []).length >= ROUNDS_PER_GAME ? [] : (r.history ?? []);
+    const stage = nextStage(history);
+    const next = { ...r, history, stage, settings: { ...r.settings, size: 5, pattern: patternForStage(stage) } };
+    if (next.online?.isHost) online.hostStart(next, next.roundNo ?? 0);
+    startRound(next);
   };
 
   const openRoom = ({ name: n, streamer, bigScreen, code }) => {
@@ -257,7 +264,8 @@ export default function BingoApp() {
     save('name', n);
     setJoinError('');
     const saved = load('room', null);
-    const base = { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}) };
+    // A game is three rounds on 5×5 cards (round 2 is a 5×5 shape), whatever was saved before.
+    const base = { ...DEFAULT_SETTINGS, ...(saved?.settings ?? {}), size: 5, pattern: 'line' };
     if (onlineEnabled) {
       sessionRef.current = {};
       resumeRef.current = null;
@@ -466,15 +474,40 @@ function GameScreens({
     return () => window.clearInterval(id);
   }, [game?.lockedUntil]);
 
-  // Round finished: sound + scoreboard.
+  // Round finished: sound, scoreboard and this round's line in the game history.
   useEffect(() => {
     if (game?.phase !== 'finished') return;
     clearTimers();
-    const winnerId = game.winner?.id;
-    playSfx(winnerId === YOU ? 'bingo' : 'lose');
-    // Online, the host keeps the score and shares it with the room.
-    if (winnerId && !isGuest) setRoom((r) => ({ ...r, wins: { ...r.wins, [winnerId]: (r.wins[winnerId] ?? 0) + 1 } }));
+    const ids = (game.winners ?? []).map((w) => w.id);
+    playSfx(ids.includes(YOU) ? 'bingo' : 'lose');
+    // Online, the host keeps the score and the history and shares them with the room.
+    if (isGuest || game.aborted) return;
+    setRoom((r) => {
+      const wins = { ...r.wins };
+      ids.forEach((id) => { wins[id] = (wins[id] ?? 0) + 1; });
+      const entry = {
+        stage: r.stage ?? 1,
+        pattern: patternOf(game.settings),
+        winners: ids.map((id) => ({ id, name: game.players.find((p) => p.id === id)?.name ?? '?' })),
+      };
+      return { ...r, wins, history: [...(r.history ?? []).filter((h) => h.stage !== entry.stage), entry] };
+    });
   }, [game?.phase]);
+
+  // After the first good BINGO, others have CLAIM_WINDOW_MS to claim too; then the round ends.
+  useEffect(() => {
+    if (!game?.claimUntil || game.phase !== 'playing' || isGuest) return undefined;
+    const id = window.setTimeout(() => dispatch({ type: 'CLOSE_WINDOW' }), Math.max(0, game.claimUntil - Date.now()));
+    return () => window.clearTimeout(id);
+  }, [game?.claimUntil, game?.phase]);
+  const claimWindow = isGuest
+    ? (online?.board?.round === online?.round ? online.board?.claim : null)
+    : (game?.phase === 'playing' && game.claimUntil ? { until: game.claimUntil, count: game.winners.length } : null);
+  useEffect(() => {
+    if (!claimWindow || game?.phase !== 'playing') return undefined;
+    const id = window.setInterval(() => setNow(Date.now()), 250);
+    return () => window.clearInterval(id);
+  }, [claimWindow?.until, game?.phase]);
 
   // Host: guests' reports land in the roster (not React state), so redraw the board every 2 s
   // even when nothing else changes (e.g. while paused).
@@ -520,10 +553,9 @@ function GameScreens({
     clearTimers();
     // Host leaving a round that is still going: end it for everyone, with no winner.
     if (online?.isHost && game && game.phase !== 'finished') {
-      const nobody = { id: null, line: [] };
-      dispatch({ type: 'FINISH', winner: nobody, player: null });
+      dispatch({ type: 'FINISH', winners: [], players: [], aborted: true });
       online.broadcast(MSG.STATE, wireState({
-        round: online.round, called: game.called, paused: false, board: [], count: 0, finish: { ...nobody, player: null },
+        round: online.round, called: game.called, paused: false, board: [], count: 0, finish: { winners: [], aborted: true },
       }));
     }
     if (!isGuest) setRoom((r) => (r ? { ...r, inGame: false } : r));
@@ -552,10 +584,12 @@ function GameScreens({
           {screen === 'game' && game?.phase === 'build' && <BuildView game={game} dispatch={dispatch} onLeave={toLobby} />}
           {screen === 'game' && game && game.phase !== 'build' && (
             <PlayView game={game} dispatch={dispatch} bigScreen={room.bigScreen} now={now} onLeave={toLobby}
-              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} board={board} />
+              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} board={board}
+              stage={room.stage ?? 1} claimWindow={claimWindow} />
           )}
           {screen === 'game' && game?.phase === 'finished' && (
-            <Results game={game} onAgain={isGuest ? null : () => onStart(room)} onLobby={toLobby} />
+            <Results game={game} stage={room.stage ?? 1} history={room.history ?? []}
+              onNext={isGuest ? null : () => onStart(room)} onLobby={toLobby} />
           )}
         </main>
       </div>

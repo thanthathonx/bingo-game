@@ -11,6 +11,27 @@ export const PENALTY_MS = 3000;
 
 export const SPEEDS = { slow: 7000, normal: 5000, fast: 3000 };
 
+// ----- A game is three rounds -----
+// Round 1: any line · Round 2: one shape picked at random · Round 3: blackout.
+// The first good BINGO opens a short window for others who completed it too; at most
+// MAX_WINNERS win a round, in the order they pressed BINGO.
+export const ROUNDS_PER_GAME = 3;
+export const SHAPE_POOL = ['square', 'heart', 'smile', 'checker', 'candle'];
+export const MAX_WINNERS = 3;
+export const CLAIM_WINDOW_MS = 10000;
+
+/** The win pattern for round 1, 2 or 3 of a game (round 2 is drawn at random). */
+export function patternForStage(stage, rng = Math.random) {
+  if (stage === 1) return 'line';
+  if (stage === ROUNDS_PER_GAME) return 'blackout';
+  return SHAPE_POOL[Math.floor(rng() * SHAPE_POOL.length)];
+}
+
+/** Which round of the game comes next, given the rounds already played. */
+export function nextStage(history = []) {
+  return history.length >= ROUNDS_PER_GAME ? 1 : history.length + 1;
+}
+
 export const SKILLS = {
   relaxed: { daub: [1500, 4000], claim: [1800, 3800], miss: 0.15 },
   normal: { daub: [900, 2500], claim: [900, 2400], miss: 0.05 },
@@ -70,7 +91,10 @@ export function newRound(room, rng = Math.random) {
     order: makeDrawOrder(settings.mode, settings.size, pool, drawRng),
     called: [],
     paused: false,
-    winner: null,
+    winner: null, // the first winner (kept for older code paths); see winners
+    winners: [], // up to MAX_WINNERS { id, line }, in the order they pressed BINGO
+    claimUntil: 0, // while the claim window is open: no calls, others may still claim
+    aborted: false,
     lockedUntil: 0,
     notice: null,
     referee: runsBuddies,
@@ -97,6 +121,24 @@ const updatePlayer = (state, id, fn) => ({
   players: state.players.map((p) => (p.id === id ? fn(p) : p)),
 });
 
+/** End the round with these winners (possibly none). */
+function finishRound(state, winners) {
+  return {
+    ...state, phase: 'finished', winners, winner: winners[0] ?? { id: null, line: [] }, claimUntil: 0, claimPending: false,
+  };
+}
+
+/**
+ * A good BINGO. The first one opens the claim window; each later one (until the window closes)
+ * joins the winners, and the round ends as soon as there are MAX_WINNERS.
+ */
+function acceptWin(state, id, line, now) {
+  if (state.phase !== 'playing' || state.winners.some((w) => w.id === id)) return state;
+  const winners = [...state.winners, { id, line }];
+  if (winners.length >= MAX_WINNERS) return finishRound(state, winners);
+  return { ...state, winners, winner: winners[0], claimUntil: state.claimUntil || now + CLAIM_WINDOW_MS };
+}
+
 function applyCall(state, value) {
   const called = [...state.called, value];
   const order = state.order.filter((v) => !sameValue(v, value));
@@ -105,9 +147,9 @@ function applyCall(state, value) {
     next = updatePlayer(next, YOU, (p) => ({ ...p, marks: autoMarks(p.cells, called) }));
   }
   // Out of balls with no line: only the referee (offline, or the online host) ends the round.
-  if (order.length === 0 && !next.winner && state.referee !== false) {
+  if (order.length === 0 && state.winners.length === 0 && state.referee !== false) {
     const anyWin = next.players.some((p) => validateClaim(p.cells, autoMarks(p.cells, called), state.settings.size, called, patternOf(state.settings)));
-    if (!anyWin) return { ...next, phase: 'finished', winner: { id: null, line: [] } };
+    if (!anyWin) return finishRound(next, []);
   }
   return next;
 }
@@ -153,7 +195,8 @@ export function reducer(state, action) {
       return { ...next, phase: 'playing' };
     }
     case 'CALL': {
-      if (state.phase !== 'playing' || state.order.length === 0) return state;
+      // no new balls while others still have time to claim the same BINGO
+      if (state.phase !== 'playing' || state.order.length === 0 || state.claimUntil) return state;
       return applyCall(state, action.value ?? state.order[0]);
     }
     case 'DAUB': {
@@ -180,7 +223,7 @@ export function reducer(state, action) {
       const line = validateClaim(p.cells, p.marks, state.settings.size, state.called, patternOf(state.settings));
       // Online guests don't decide the win themselves: the host confirms it (see FINISH).
       if (line && action.deferWin) return { ...state, claimPending: true };
-      if (line) return { ...state, phase: 'finished', winner: { id: p.id, line } };
+      if (line) return acceptWin(state, p.id, line, action.now ?? Date.now());
       if (action.id === YOU) return { ...state, lockedUntil: action.now + PENALTY_MS, notice: { kind: 'falseBingo', at: action.now } };
       return state;
     }
@@ -208,13 +251,16 @@ export function reducer(state, action) {
       const next = reducer(state, { type: 'UPSERT_PLAYER', player: action.player });
       if (!next.players.some((p) => p.id === action.player.id && p.isRemote)) return state;
       const line = validateClaim(action.player.cells, action.player.marks, state.settings.size, state.called, patternOf(state.settings));
-      return line ? { ...next, phase: 'finished', winner: { id: action.player.id, line } } : next;
+      return line ? acceptWin(next, action.player.id, line, action.now ?? Date.now()) : next;
     }
+    case 'CLOSE_WINDOW':
+      // the claim window ran out: the winners so far are final
+      return state.phase === 'playing' && state.claimUntil ? finishRound(state, state.winners) : state;
     case 'FINISH': {
-      // The host's result wins over anything this device decided on its own, except a real winner.
-      if (state.phase === 'finished' && state.winner?.id != null) return state;
-      const next = action.player ? reducer(state, { type: 'UPSERT_PLAYER', player: action.player }) : state;
-      return { ...next, phase: 'finished', winner: action.winner, claimPending: false };
+      // The host's result wins over anything this device decided on its own, except real winners.
+      if (state.phase === 'finished' && state.winners.length > 0) return state;
+      const next = (action.players ?? []).reduce((s, player) => reducer(s, { type: 'UPSERT_PLAYER', player }), state);
+      return { ...finishRound(next, action.winners ?? []), aborted: Boolean(action.aborted) };
     }
     case 'RENAME': {
       const name = String(action.name ?? '').trim().slice(0, 20);

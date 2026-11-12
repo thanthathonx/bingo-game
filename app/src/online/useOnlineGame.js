@@ -19,14 +19,13 @@ export function progressOf(player, size, pattern = 'line') {
   };
 }
 
-/** The host's result message for a finished round. */
+/** The host's result message for a finished round: every winner (in BINGO order) with their card. */
 export function finishMessage(game, myId) {
-  const winner = game.players.find((p) => p.id === game.winner?.id);
-  return {
-    id: winner ? (winner.id === YOU ? myId : winner.id) : null,
-    line: winner ? game.winner.line : [],
-    player: winner ? wirePlayer(winner, myId) : null,
-  };
+  const winners = (game.winners ?? [])
+    .map((w) => ({ w, player: game.players.find((p) => p.id === w.id) }))
+    .filter(({ player }) => player)
+    .map(({ w, player }) => ({ id: w.id === YOU ? myId : w.id, line: w.line, player: wirePlayer(player, myId) }));
+  return { winners, aborted: Boolean(game.aborted) };
 }
 
 /** Leaderboard entries from the host's own players (itself and buddies) plus the guests' reports. */
@@ -78,10 +77,12 @@ export function useOnlineGame({ online, active, game, dispatch }) {
       board: leaderboard(entries),
       count,
       finish: g.phase === 'finished' ? finishMessage(g, online.myId) : null,
+      claim: g.phase === 'playing' && g.claimUntil
+        ? { leftMs: Math.max(0, Math.round(g.claimUntil - Date.now())), count: g.winners.length } : null,
     }));
   };
   const calledCount = game?.called.length ?? 0;
-  useEffect(sendState, [calledCount, game?.paused, game?.phase, live]);
+  useEffect(sendState, [calledCount, game?.paused, game?.phase, game?.winners?.length, game?.claimUntil, live]);
   useEffect(() => {
     if (!live || !isHost) return undefined;
     const id = window.setInterval(sendState, STATE_EVERY_MS);

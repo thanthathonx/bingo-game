@@ -3,8 +3,8 @@ import Mascot from '../shared/Mascot.jsx';
 import { IconEye, IconPlus, IconMinus, IconCrown, IconTv, IconDoor, IconPlay, IconCopy } from '../shared/icons.jsx';
 import { encodeRoom } from './roomCode.js';
 import { useLang } from '../shared/i18n.js';
-import { itemsNeeded, PATTERNS, ANY_SIZE_PATTERNS, patternOf, winTargets } from './engine.js';
-import { settingsProblem, poolFor } from './gameState.js';
+import { itemsNeeded, winTargets } from './engine.js';
+import { settingsProblem, poolFor, nextStage } from './gameState.js';
 import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
 import InviteCard from '../online/InviteCard.jsx';
 
@@ -132,10 +132,6 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
             <Segmented value={s.mode} onChange={(mode) => onSettings({ mode })}
               options={[{ value: 'classic', label: t('modeClassic') }, { value: 'custom', label: t('modeCustom') }]} />
           </Setting>
-          <Setting label={t('cardSize')}>
-            <Segmented value={s.size} onChange={(size) => onSettings({ size })}
-              options={[3, 4, 5].map((n) => ({ value: n, label: `${n}×${n}`, sub: n === 5 ? t('full') : t('quick') }))} />
-          </Setting>
           {s.mode === 'custom' && (
             <Setting label={`${t('items')} (${poolFor(s).length}/${itemsNeeded(s.size)}+)`}>
               <div className="preset-row">
@@ -165,13 +161,13 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
             <Segmented value={s.skill} onChange={(skill) => onSettings({ skill })}
               options={[{ value: 'relaxed', label: t('skillRelaxed') }, { value: 'normal', label: t('skillNormal') }, { value: 'speedy', label: t('skillSpeedy') }]} />
           </Setting>
-          <Setting label={t('winPattern')}>
-            <div className="pattern-pick">
-              <Segmented value={patternOf(s)} onChange={(pattern) => onSettings({ pattern })}
-                options={(s.size === 5 ? PATTERNS : ANY_SIZE_PATTERNS).map((p) => ({ value: p, label: t(`pattern_${p}`) }))} />
-              <PatternPreview pattern={patternOf(s)} size={s.size} />
-            </div>
-            {s.size !== 5 && <p className="hint">{t('shapesNeed5')}</p>}
+          <Setting label={t('gamePlan')}>
+            <ol className="round-plan">
+              <li><PatternPreview pattern="line" /> <span>{t('roundOf').replace('{n}', 1)} · {t('pattern_line')}</span></li>
+              <li><PatternPreview pattern="random" /> <span>{t('roundOf').replace('{n}', 2)} · {t('randomShape')}</span></li>
+              <li><PatternPreview pattern="blackout" /> <span>{t('roundOf').replace('{n}', 3)} · {t('pattern_blackout')}</span></li>
+            </ol>
+            <p className="hint">{t('winnersRule')}</p>
           </Setting>
           </fieldset>
         </section>
@@ -183,7 +179,7 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           <p className="hint" role="status">{t('waitingHost')}</p>
         ) : (
           <button type="button" className="home-btn lobby-start" onClick={onStart} disabled={Boolean(problem) || nobodyToPlay}>
-            <IconPlay size={22} /> {t('startGame')}
+            <IconPlay size={22} /> {t('startRound').replace('{n}', nextStage(room.history))}
           </button>
         )}
       </div>
@@ -191,10 +187,18 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
   );
 }
 
-/** A thumbnail of the squares a pattern needs ('line' shows the middle row as an example). */
+/**
+ * A thumbnail of the squares a pattern needs ('line' shows the middle row as an example,
+ * 'random' a question mark-ish shape for the round whose shape is drawn at random).
+ */
 function PatternPreview({ pattern, size = 5 }) {
   const middleRow = Array.from({ length: size }, (_, c) => Math.floor(size / 2) * size + c);
-  const on = new Set(pattern === 'line' ? middleRow : winTargets(size, pattern)[0]);
+  const QUESTION = [1, 2, 3, 8, 12, 17, 22];
+  let cells;
+  if (pattern === 'line') cells = middleRow;
+  else if (pattern === 'random') cells = QUESTION;
+  else cells = winTargets(size, pattern)[0];
+  const on = new Set(cells);
   return (
     <div className="pattern-preview" aria-hidden="true" style={{ gridTemplateColumns: `repeat(${size}, 9px)` }}>
       {Array.from({ length: size * size }, (_, i) => <span key={i} className={on.has(i) ? 'is-on' : ''} />)}

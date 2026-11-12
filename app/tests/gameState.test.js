@@ -1,6 +1,8 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { reducer, newRound, YOU, settingsProblem } from '../src/bingo/gameState.js';
+import {
+  reducer, newRound, YOU, settingsProblem, CLAIM_WINDOW_MS, MAX_WINNERS, ROUNDS_PER_GAME, SHAPE_POOL, patternForStage, nextStage,
+} from '../src/bingo/gameState.js';
 import { FREE, cellIndexOf, findWin, winningLines } from '../src/bingo/engine.js';
 
 const baseSettings = {
@@ -39,8 +41,43 @@ test('calling, daubing and a valid bingo finishes the round', () => {
   g = reducer(g, { type: 'CLAIM', id: YOU, now: 500 }); // still locked
   assert.equal(g.phase, 'playing');
   g = reducer(g, { type: 'CLAIM', id: YOU, now: 99999 });
+  // a good BINGO opens the claim window; the round ends when it closes
+  assert.equal(g.phase, 'playing');
+  assert.equal(g.winners[0].id, YOU);
+  assert.equal(g.claimUntil, 99999 + CLAIM_WINDOW_MS);
+  assert.equal(reducer(g, { type: 'CALL', value: g.order[0] }), g); // no calls during the window
+  g = reducer(g, { type: 'CLOSE_WINDOW' });
   assert.equal(g.phase, 'finished');
   assert.equal(g.winner.id, YOU);
+});
+
+test('a third winner ends the round at once; repeats are ignored', () => {
+  let g = newRound(room());
+  g = { ...g, players: [0, 1, 2, 3].map((n) => ({ ...g.players[0], id: `p${n}`, marks: g.players[0].cells.map(() => true) })) };
+  g = { ...g, called: [...g.players[0].cells] };
+  g = reducer(g, { type: 'CLAIM', id: 'p0', now: 10 });
+  g = reducer(g, { type: 'CLAIM', id: 'p0', now: 11 });
+  assert.equal(g.winners.length, 1);
+  g = reducer(g, { type: 'CLAIM', id: 'p1', now: 12 });
+  assert.equal(g.claimUntil, 10 + CLAIM_WINDOW_MS); // the window does not restart
+  g = reducer(g, { type: 'CLAIM', id: 'p2', now: 13 });
+  assert.equal(g.phase, 'finished');
+  assert.deepEqual(g.winners.map((w) => w.id), ['p0', 'p1', 'p2']);
+  assert.equal(MAX_WINNERS, 3);
+  assert.equal(reducer(g, { type: 'CLAIM', id: 'p3', now: 14 }).winners.length, 3);
+});
+
+test('three rounds: any line, a random shape, then blackout', () => {
+  assert.equal(ROUNDS_PER_GAME, 3);
+  assert.equal(patternForStage(1), 'line');
+  assert.equal(patternForStage(3), 'blackout');
+  assert.equal(patternForStage(2, () => 0), SHAPE_POOL[0]);
+  assert.equal(patternForStage(2, () => 0.999), SHAPE_POOL[SHAPE_POOL.length - 1]);
+  assert.deepEqual(SHAPE_POOL, ['square', 'heart', 'smile', 'checker', 'candle']);
+  assert.equal(nextStage([]), 1);
+  assert.equal(nextStage([{}]), 2);
+  assert.equal(nextStage([{}, {}]), 3);
+  assert.equal(nextStage([{}, {}, {}]), 1);
 });
 
 test('bots win when their marks form a line', () => {
