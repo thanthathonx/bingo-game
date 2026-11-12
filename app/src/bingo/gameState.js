@@ -95,6 +95,7 @@ export function newRound(room, rng = Math.random) {
     winners: [], // up to MAX_WINNERS { id, line }, in the order they pressed BINGO
     claimUntil: 0, // while the claim window is open: no calls, others may still claim
     aborted: false,
+    youClaimed: false,
     lockedUntil: 0,
     notice: null,
     referee: runsBuddies,
@@ -239,8 +240,10 @@ export function reducer(state, action) {
       if (action.id !== YOU && state.paused) return state; // buddies wait for the game to resume
       const line = validateClaim(p.cells, p.marks, state.settings.size, state.called, patternOf(state.settings));
       // Online guests don't decide the win themselves: the host confirms it (see FINISH).
-      if (line && action.deferWin) return { ...state, claimPending: true };
-      if (line) return acceptWin(state, p.id, line, action.now ?? Date.now());
+      // youClaimed: you pressed a good BINGO (to tell you, if 3 others got in first).
+      const mine = action.id === YOU ? { youClaimed: true } : {};
+      if (line && action.deferWin) return { ...state, ...mine, claimPending: true };
+      if (line) return { ...acceptWin(state, p.id, line, action.now ?? Date.now()), ...mine };
       if (action.id === YOU) return { ...state, lockedUntil: action.now + PENALTY_MS, notice: { kind: 'falseBingo', at: action.now } };
       return state;
     }

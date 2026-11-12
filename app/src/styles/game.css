@@ -722,3 +722,15 @@ button.bcell:active { transform: scale(0.94); }
 .game-summary h3 { margin: 0 0 4px; font: 800 15px var(--font-read); }
 .summary-row { display: grid; gap: 2px; font: 600 13px var(--font-read); }
 .summary-round { color: var(--text-muted); }
+
+/* You pressed a good BINGO, but three others got in first. */
+.late-bingo {
+  margin: -4px 0 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255, 209, 102, 0.14);
+  border: 1px solid rgba(255, 209, 102, 0.5);
+  color: #ffd166;
+  font-weight: 600;
+  text-align: center;
+}

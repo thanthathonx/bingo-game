@@ -240,6 +240,7 @@ export function Results({ game, stage = 1, history = [], onNext, onLobby }) {
         {pick ? (
           <>
             <h2 className="results-title">{youWon ? t('youWin') : t('bingo')}</h2>
+            {!youWon && game.youClaimed && <p className="late-bingo" role="status">{t('lateBingo')}</p>}
             <ol className="winner-list">
               {winners.map((w, i) => (
                 <li key={w.id}>

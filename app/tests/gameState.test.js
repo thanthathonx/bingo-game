@@ -149,3 +149,14 @@ test('rounds 2 and 3 keep the cards, the daubs and the calls of the round before
   assert.equal(continueRound(fresh, null), fresh);
   assert.equal(continueRound(newRound(room({ size: 3 })), g).called.length, 0); // other card size: fresh
 });
+
+test('a good BINGO from you is remembered, so a late one can be told apart', () => {
+  let g = newRound(room());
+  assert.equal(g.youClaimed, false);
+  g = { ...g, called: [...g.players[0].cells], players: g.players.map((p, i) => (i === 0 ? { ...p, marks: p.cells.map(() => true) } : p)) };
+  const pending = reducer(g, { type: 'CLAIM', id: YOU, now: 5, deferWin: true });
+  assert.equal(pending.youClaimed, true);
+  const over = reducer(pending, { type: 'FINISH', winners: [{ id: 'x1', line: [0] }, { id: 'x2', line: [0] }, { id: 'x3', line: [0] }], players: [] });
+  assert.equal(over.youClaimed, true);
+  assert.ok(!over.winners.some((w) => w.id === YOU));
+});
