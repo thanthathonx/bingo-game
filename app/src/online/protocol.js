@@ -17,6 +17,8 @@ export const NAME_MAX = 20;
 // A guest the host can't fit is told the room is full (see `full` in the lobby message).
 export const MAX_ROOM_PLAYERS = 500;
 export const BOARD_SIZE = 10;
+/** Phones get a shorter leaderboard: the 5 closest players. */
+export const PHONE_BOARD_SIZE = 5;
 const ID_MAX = 40;
 const ITEM_MAX = 40;
 const MAX_CALLS = 200;
@@ -231,7 +233,7 @@ export function readState(raw, size, myId) {
   if (!called) return null;
   const n = size * size;
   const board = (Array.isArray(raw.board) ? raw.board : [])
-    .slice(0, BOARD_SIZE)
+    .slice(0, PHONE_BOARD_SIZE)
     .filter((e) => e && isId(e.id) && isCount(e.away, n) && isCount(e.daubs, n))
     .map((e) => ({ id: fromWireId(e.id, myId), name: cleanName(e.name), away: e.away, daubs: e.daubs, isBot: e.isBot === true }));
   const finish = raw.finish ? readFinish(raw.finish, size, myId) : null;

@@ -4,7 +4,7 @@
 import { useEffect, useRef } from 'react';
 import { YOU } from '../bingo/gameState.js';
 import { squaresAway, FREE, patternOf } from '../bingo/engine.js';
-import { MSG, wirePlayer, wireState, leaderboard, marksToBits } from './protocol.js';
+import { MSG, wirePlayer, wireState, leaderboard, marksToBits, PHONE_BOARD_SIZE } from './protocol.js';
 
 const STATE_EVERY_MS = 5000; // host: repeat the state this often, so a lost message heals quickly
 const PROGRESS_DEBOUNCE_MS = 1000; // guest: daubs within this window go out as one report
@@ -77,7 +77,7 @@ export function useOnlineGame({ online, active, game, dispatch }) {
       round: online.round,
       called: g.called,
       paused: g.paused,
-      board: leaderboard(entries),
+      board: leaderboard(entries, PHONE_BOARD_SIZE),
       count,
       finish: g.phase === 'finished' ? finishMessage(g, online.myId) : null,
       claim: g.phase === 'playing' && g.claimUntil

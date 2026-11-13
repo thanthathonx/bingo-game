@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   MSG, makeOnlineCode, isOnlineCode, presencePlayers, readPlayer, wirePlayer, readCalls, readWinner,
-  readRoom, wireRoom, trustMessage, readProgress, marksToBits, bitsToMarks, topCards, leaderboard, wireState, readState, MAX_ROOM_PLAYERS, readFinish,
+  readRoom, wireRoom, trustMessage, readProgress, marksToBits, bitsToMarks, topCards, PHONE_BOARD_SIZE, leaderboard, wireState, readState, MAX_ROOM_PLAYERS, readFinish,
 } from '../src/online/protocol.js';
 import { progressOf, finishMessage, boardEntries } from '../src/online/useOnlineGame.js';
 import { reducer, newRound, YOU } from '../src/bingo/gameState.js';
@@ -99,10 +99,12 @@ test('the leaderboard puts the closest players first and keeps only the top 10',
 
 test('a 200-player game state stays small and round-trips', () => {
   const entries = Array.from({ length: 200 }, (_, i) => ({ id: `p-${i}`, name: `Player ${i}`, away: 3, daubs: 2 }));
-  const wire = wireState({ round: 4, called: [1, 2, 3, 4, 5], paused: false, board: leaderboard(entries), count: 201, finish: null });
-  assert.ok(JSON.stringify(wire).length < 2000);
+  const wire = wireState({ round: 4, called: [1, 2, 3, 4, 5], paused: false, board: leaderboard(entries, PHONE_BOARD_SIZE), count: 201, finish: null });
+  assert.ok(JSON.stringify(wire).length < 1000);
   const back = readState(wire, 3, 'p-3');
-  assert.equal(back.board.length, 10);
+  assert.equal(back.board.length, 5); // phones show the 5 closest players
+  // a longer list from an older host is cut to 5 too
+  assert.equal(readState(wireState({ round: 4, called: [], board: leaderboard(entries), count: 201 }), 3, 'p-3').board.length, 5);
   assert.equal(back.count, 201);
   assert.equal(readState({ ...wire, called: 'x' }, 3, ME), null);
 });
