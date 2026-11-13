@@ -707,7 +707,8 @@ button.bcell:active { transform: scale(0.94); }
 .pattern-preview span { width: 9px; height: 9px; border-radius: 2px; background: rgba(255, 255, 255, 0.12); }
 .pattern-preview span.is-on { background: var(--accent-color); }
 .pattern-preview span.is-free { background: rgba(85, 239, 196, 0.45); }
-.bcell.is-target:not(.is-daubed):not(.is-free) { box-shadow: inset 0 0 0 3px var(--accent-color); }
+.bcell.is-target:not(.is-free) { box-shadow: inset 0 0 0 3px var(--accent-color); }
+.bcell.is-target.is-daubed { background: var(--bg-darker); }
 .pattern-tag { margin-left: auto; font-size: 12px; }
 
 /* Three-round game */
