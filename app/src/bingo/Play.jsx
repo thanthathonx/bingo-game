@@ -61,6 +61,7 @@ function claimSecondsLeft(until) {
 
 export function PlayView({
   game, dispatch, bigScreen, now, onLeave, onClaim, isGuest = false, waitingFor = 0, board = null, stage = 1, claimWindow = null,
+  spotlight = null,
 }) {
   const { t } = useLang();
   const { settings } = game;
@@ -72,7 +73,7 @@ export function PlayView({
   const myAway = me ? squaresAway(me.marks, settings.size, patternOf(settings)) : null;
 
   return (
-    <div className={`play${bigScreen ? ' is-tv' : ''}`}>
+    <div className={`play${bigScreen ? ' is-tv' : ''}${bigScreen && spotlight ? ' has-spotlight' : ''}`}>
       <section className="panel caller" aria-live="polite">
         <span className="phase-chip">{roundLabel(t, stage, patternOf(settings))}</span>
         {claimWindow && (
@@ -137,6 +138,8 @@ export function PlayView({
         </section>
       )}
 
+      {bigScreen && spotlight && <Spotlight cards={spotlight} settings={settings} />}
+
       {board ? <Leaderboard board={board} /> : (
       <section className="panel wall" aria-label={t('bingoWall')}>
         <h2 className="panel-title">{t('playersTitle')}</h2>
@@ -166,6 +169,33 @@ export function PlayView({
 }
 
 /** Online rooms: the players closest to BINGO (the host shares the top 10). */
+/** Big screen: the cards of the players closest to BINGO, with their daubs and the shape to make. */
+function Spotlight({ cards, settings }) {
+  const { t } = useLang();
+  const pattern = patternOf(settings);
+  const target = ['line', 'blackout'].includes(pattern) ? [] : winTargets(settings.size, pattern)[0];
+  return (
+    <section className="panel spotlight" aria-label={t('spotlightTitle')}>
+      <h2 className="panel-title">{t('spotlightTitle')}</h2>
+      {cards.length === 0 && <p className="hint">{t('connecting')}</p>}
+      <ol className="spotlight-grid">
+        {cards.map((c, i) => (
+          <li key={c.id} className={`spotlight-card${c.away === 0 ? ' is-bingo' : ''}`}>
+            <div className="spotlight-head">
+              <span className="board-rank">{i + 1}</span>
+              <span className="spotlight-name">{c.name}</span>
+              {c.away === 0 && <span className="flag-bingo">{t('bingo')}</span>}
+              {c.away === 1 && <span className="flag-near">{t('oneAway')}</span>}
+              {c.away > 1 && <span className="wall-daubs">{t('toGo').replace('{n}', c.away)}</span>}
+            </div>
+            <Card cells={c.cells} marks={c.marks} size={settings.size} isText={settings.mode === 'custom'} target={target} />
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 function Leaderboard({ board }) {
   const { t } = useLang();
   return (

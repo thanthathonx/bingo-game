@@ -748,3 +748,18 @@ button.bcell:active { transform: scale(0.94); }
 @media (max-width: 700px) {
   .play:not(.is-tv) .pattern-showcase { display: none; }
 }
+
+/* Big screen: the five cards closest to BINGO sit between the caller and the leaderboard. */
+@media (min-width: 1024px) {
+  .play.is-tv.has-spotlight { max-width: 1880px; grid-template-columns: minmax(0, 0.9fr) minmax(0, 2fr) minmax(0, 0.75fr); }
+  .is-tv .spotlight-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.spotlight-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.spotlight-card { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: var(--radius-md); background: var(--panel-row); }
+.spotlight-card.is-bingo { box-shadow: 0 0 0 3px var(--gb-gold); }
+.spotlight-head { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.spotlight-name { flex: 1; min-width: 0; font: 700 15px var(--font-read); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.spotlight .bcard { max-width: none; padding: 5px; border-width: 2px; border-radius: 10px; box-shadow: none; }
+.spotlight .bcard-head { font-size: 14px; }
+.spotlight .bcell { font-size: 15px; border-width: 1px; border-radius: 5px; }
+.spotlight .bcard.is-text .bcell { font-size: 9px; }

@@ -163,16 +163,46 @@ export function readWinner(raw, size, myId) {
 export function readProgress(raw, size) {
   const n = size * size;
   if (!raw || !Number.isInteger(raw.round) || !isCount(raw.away, n) || !isCount(raw.daubs, n)) return null;
-  return { round: raw.round, away: raw.away, daubs: raw.daubs, ready: raw.ready !== false };
+  return { round: raw.round, away: raw.away, daubs: raw.daubs, ready: raw.ready !== false, card: readCardBits(raw, n) };
+}
+
+/** Marks as one number (bit i = square i daubed), so a progress report stays small. */
+export function marksToBits(marks) {
+  return marks.reduce((bits, m, i) => (m ? bits + 2 ** i : bits), 0);
+}
+
+export function bitsToMarks(bits, n) {
+  return Array.from({ length: n }, (_, i) => Math.floor(bits / 2 ** i) % 2 === 1);
+}
+
+/** The card a progress report carries (for the big screen), or null when absent or malformed. */
+function readCardBits(raw, n) {
+  if (!Array.isArray(raw.cells) || raw.cells.length !== n || !raw.cells.every(isCell)) return null;
+  if (!Number.isInteger(raw.marks) || raw.marks < 0 || raw.marks >= 2 ** n) return null;
+  return { cells: [...raw.cells], marks: bitsToMarks(raw.marks, n) };
 }
 
 /**
  * The leaderboard: closest to BINGO first, then most daubs, then name.
  * @param {Array<{id:string,name:string,away:number,daubs:number,isBot?:boolean}>} entries
  */
+const byClosest = (a, b) => (a.away - b.away) || (b.daubs - a.daubs) || a.name.localeCompare(b.name);
+
+/** How many cards the big screen shows: the players closest to BINGO. */
+export const SPOTLIGHT_SIZE = 5;
+
+/** The cards of the players closest to BINGO (only entries whose card the host knows). */
+export function topCards(entries, limit = SPOTLIGHT_SIZE) {
+  return entries
+    .filter((e) => Array.isArray(e.cells) && Array.isArray(e.marks))
+    .sort(byClosest)
+    .slice(0, limit)
+    .map(({ id, name, away, daubs, cells, marks }) => ({ id, name, away, daubs, cells, marks }));
+}
+
 export function leaderboard(entries, limit = BOARD_SIZE) {
   return [...entries]
-    .sort((a, b) => (a.away - b.away) || (b.daubs - a.daubs) || a.name.localeCompare(b.name))
+    .sort(byClosest)
     .slice(0, limit)
     .map(({ id, name, away, daubs, isBot }) => ({ id, name, away, daubs, isBot: Boolean(isBot) }));
 }

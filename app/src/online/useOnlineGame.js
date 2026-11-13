@@ -4,7 +4,7 @@
 import { useEffect, useRef } from 'react';
 import { YOU } from '../bingo/gameState.js';
 import { squaresAway, FREE, patternOf } from '../bingo/engine.js';
-import { MSG, wirePlayer, wireState, leaderboard } from './protocol.js';
+import { MSG, wirePlayer, wireState, leaderboard, marksToBits } from './protocol.js';
 
 const STATE_EVERY_MS = 5000; // host: repeat the state this often, so a lost message heals quickly
 const PROGRESS_DEBOUNCE_MS = 1000; // guest: daubs within this window go out as one report
@@ -33,10 +33,13 @@ export function boardEntries(game, round, roster, myId) {
   const size = game.settings.size;
   const own = game.players
     .filter((p) => !p.isRemote)
-    .map((p) => ({ id: p.id === YOU ? myId : p.id, name: p.name, isBot: Boolean(p.isBot), ...progressOf(p, size, patternOf(game.settings)) }));
+    .map((p) => ({
+      id: p.id === YOU ? myId : p.id, name: p.name, isBot: Boolean(p.isBot), ...progressOf(p, size, patternOf(game.settings)),
+      cells: p.cells, marks: p.marks,
+    }));
   const guests = [...roster.values()]
     .filter((g) => g.progress?.round === round)
-    .map((g) => ({ id: g.id, name: g.name, away: g.progress.away, daubs: g.progress.daubs }));
+    .map((g) => ({ id: g.id, name: g.name, away: g.progress.away, daubs: g.progress.daubs, ...g.progress.card }));
   return { entries: [...own, ...guests], count: own.length + guests.length }; // players in this round
 }
 
@@ -97,7 +100,7 @@ export function useOnlineGame({ online, active, game, dispatch }) {
   const urgent = progress ? progress.away <= 1 || !progress.ready : false;
   useEffect(() => {
     if (!live || isHost || !progress) return undefined;
-    const report = { round: online.round, ...progress };
+    const report = { round: online.round, ...progress, cells: me.cells, marks: marksToBits(me.marks) };
     online.progressRef.current = report;
     const id = window.setTimeout(() => online.toHost(MSG.PROGRESS, report), urgent ? 0 : PROGRESS_DEBOUNCE_MS);
     return () => window.clearTimeout(id);

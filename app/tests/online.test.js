@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   MSG, makeOnlineCode, isOnlineCode, presencePlayers, readPlayer, wirePlayer, readCalls, readWinner,
-  readRoom, wireRoom, trustMessage, readProgress, leaderboard, wireState, readState, MAX_ROOM_PLAYERS, readFinish,
+  readRoom, wireRoom, trustMessage, readProgress, marksToBits, bitsToMarks, topCards, leaderboard, wireState, readState, MAX_ROOM_PLAYERS, readFinish,
 } from '../src/online/protocol.js';
 import { progressOf, finishMessage, boardEntries } from '../src/online/useOnlineGame.js';
 import { reducer, newRound, YOU } from '../src/bingo/gameState.js';
@@ -83,7 +83,7 @@ test('the host acts only on inbox messages; claims need a roster member with the
 // ----- big rooms: progress, leaderboard, state, roster -----
 
 test('progress reports are checked against the card size', () => {
-  assert.deepEqual(readProgress({ round: 2, away: 1, daubs: 3, ready: true }, 3), { round: 2, away: 1, daubs: 3, ready: true });
+  assert.deepEqual(readProgress({ round: 2, away: 1, daubs: 3, ready: true }, 3), { round: 2, away: 1, daubs: 3, ready: true, card: null });
   assert.equal(readProgress({ round: 2, away: 12, daubs: 3 }, 3), null);
   assert.equal(readProgress({ away: 1, daubs: 3 }, 3), null);
 });
@@ -355,4 +355,38 @@ test('the "new card each round" choice travels in the lobby message; an older ho
   const older = { ...room, settings: { ...SETTINGS } };
   assert.equal(readRoom(wireRoom(older, 'p-host', []), ME).settings.newCardEachRound, undefined);
   assert.equal(readRoom(wireRoom({ ...room, settings: { ...SETTINGS, newCardEachRound: 'yes' } }, 'p-host', []), ME), null);
+});
+
+test('a progress report can carry the card: daubs travel as one number and come back the same', () => {
+  const marks = Array.from({ length: 25 }, (_, i) => i % 3 === 0 || i === 24);
+  assert.deepEqual(bitsToMarks(marksToBits(marks), 25), marks);
+  const cells = Array.from({ length: 25 }, (_, i) => i + 1);
+  const read = readProgress({ round: 2, away: 3, daubs: 9, cells, marks: marksToBits(marks) }, 5);
+  assert.deepEqual(read.card, { cells, marks });
+  // no card, or a broken one: the progress still counts, just without a card
+  assert.equal(readProgress({ round: 2, away: 3, daubs: 9 }, 5).card, null);
+  assert.equal(readProgress({ round: 2, away: 3, daubs: 9, cells: cells.slice(1), marks: 1 }, 5).card, null);
+  assert.equal(readProgress({ round: 2, away: 3, daubs: 9, cells, marks: 2 ** 25 }, 5).card, null);
+  assert.equal(readProgress({ round: 2, away: 3, daubs: 9, cells, marks: -1 }, 5).card, null);
+});
+
+test('the big screen shows the five closest cards, skipping players whose card it has not got', () => {
+  const card = { cells: Array(25).fill(1), marks: Array(25).fill(false) };
+  const entries = [
+    { id: 'a', name: 'Ann', away: 3, daubs: 5, ...card },
+    { id: 'b', name: 'Bo', away: 1, daubs: 4, ...card },
+    { id: 'c', name: 'Cy', away: 0, daubs: 6 }, // no card known yet
+    { id: 'd', name: 'Dee', away: 1, daubs: 7, ...card },
+    { id: 'e', name: 'Eve', away: 2, daubs: 2, ...card },
+    { id: 'f', name: 'Fay', away: 4, daubs: 9, ...card },
+    { id: 'g', name: 'Gus', away: 5, daubs: 1, ...card },
+  ];
+  const top = topCards(entries);
+  assert.deepEqual(top.map((c) => c.id), ['d', 'b', 'e', 'a', 'f']);
+  assert.ok(top.every((c) => c.cells.length === 25 && c.marks.length === 25));
+});
+
+test('the leaderboard sent to every phone never includes the cards', () => {
+  const entries = [{ id: 'a', name: 'Ann', away: 1, daubs: 3, cells: Array(25).fill(1), marks: Array(25).fill(false) }];
+  assert.deepEqual(Object.keys(leaderboard(entries)[0]).sort(), ['away', 'daubs', 'id', 'isBot', 'name']);
 });

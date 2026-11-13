@@ -12,7 +12,7 @@ import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../onl
 import { cellIndexOf, squaresAway, validateClaim, patternOf } from './engine.js';
 import { randomSeed, decodeRoom } from './roomCode.js';
 import { onlineEnabled } from '../online/client.js';
-import { MSG, makeOnlineCode, makeClientId, wirePlayer, wireState, leaderboard } from '../online/protocol.js';
+import { MSG, makeOnlineCode, makeClientId, wirePlayer, wireState, leaderboard, topCards } from '../online/protocol.js';
 import { useOnlineRoom } from '../online/useOnlineRoom.js';
 import { useOnlineGame, boardEntries } from '../online/useOnlineGame.js';
 import { callText } from './Card.jsx';
@@ -544,11 +544,13 @@ function GameScreens({
   // Online, the wall is a leaderboard (top 10) instead of every card: guests get it from the
   // host, the host builds it from its own players and the guests' reports.
   let board = null;
+  let spotlight = null; // big screen: the cards of the players closest to BINGO
   if (online && game && isGuest) {
     board = online.board?.round === online.round ? online.board : { entries: [], count: 0 };
   } else if (online && game) {
     const { entries, count } = boardEntries(game, online.round, online.rosterRef.current, online.myId);
     board = { entries: leaderboard(entries).map((e) => ({ ...e, id: e.id === online.myId ? YOU : e.id })), count };
+    if (room?.bigScreen) spotlight = topCards(entries);
   }
 
   // BINGO! Online guests ask the host to confirm a good line instead of deciding it themselves.
@@ -607,7 +609,7 @@ function GameScreens({
           {screen === 'game' && game?.phase === 'build' && <BuildView game={game} dispatch={dispatch} onLeave={toLobby} />}
           {screen === 'game' && game && game.phase !== 'build' && (
             <PlayView game={game} dispatch={dispatch} bigScreen={room.bigScreen} now={now} onLeave={toLobby}
-              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} board={board}
+              onClaim={claim} isGuest={isGuest} waitingFor={waitForBuilders ? stillBuilding : 0} board={board} spotlight={spotlight}
               stage={room.stage ?? 1} claimWindow={claimWindow} />
           )}
           {screen === 'game' && game?.phase === 'finished' && (
