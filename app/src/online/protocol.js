@@ -13,6 +13,8 @@ import { CARD_SIZES, FREE, PATTERNS } from '../bingo/engine.js';
 export const CODE_ALPHABET = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 export const ONLINE_CODE_LENGTH = 6;
 export const NAME_MAX = 20;
+/** Most buddies a room can have (a name list from a file can add up to 200). */
+export const MAX_ROOM_BUDDIES = 200;
 // Above the Realtime connection cap (350), so in practice the project limit is reached first.
 // A guest the host can't fit is told the room is full (see `full` in the lobby message).
 export const MAX_ROOM_PLAYERS = 500;
@@ -303,10 +305,10 @@ export function readRoom(raw, myId) {
   }
   const buddies = (Array.isArray(raw.buddies) ? raw.buddies : [])
     .filter((b) => b && isId(b.id))
-    .slice(0, 20)
+    .slice(0, MAX_ROOM_BUDDIES)
     .map((b) => ({ id: b.id, name: cleanName(b.name), color: COLOR_RE.test(b.color ?? '') ? b.color : '#a29bfe' }));
   const wins = {};
-  Object.entries(raw.wins ?? {}).slice(0, MAX_ROOM_PLAYERS + 20).forEach(([id, n]) => {
+  Object.entries(raw.wins ?? {}).slice(0, MAX_ROOM_PLAYERS + MAX_ROOM_BUDDIES).forEach(([id, n]) => {
     if (isId(id) && Number.isInteger(n) && n >= 0) wins[fromWireId(id, myId)] = n;
   });
   const players = (Array.isArray(raw.players) ? raw.players : [])

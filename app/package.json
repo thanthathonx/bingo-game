@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "test": "node --test tests/engine.test.js tests/gameState.test.js tests/roomCode.test.js tests/online.test.js"
+    "test": "node --test tests/engine.test.js tests/gameState.test.js tests/roomCode.test.js tests/online.test.js tests/importNames.test.js"
   },
   "dependencies": {
     "@fontsource-variable/fredoka": "^5.1.0",

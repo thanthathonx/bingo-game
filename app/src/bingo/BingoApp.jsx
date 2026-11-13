@@ -46,6 +46,16 @@ function makeBuddy(existing) {
   return { id, name: BUDDY_NAMES[i % BUDDY_NAMES.length], color: BUDDY_COLORS[i % BUDDY_COLORS.length] };
 }
 
+/** Buddies named from an imported list (replacing the room's buddies). */
+function namedBuddies(names) {
+  const stamp = Date.now().toString(36);
+  return names.map((name, i) => ({
+    id: `bot-n${i}-${stamp}-${Math.floor(Math.random() * 1e6).toString(36)}`,
+    name,
+    color: BUDDY_COLORS[i % BUDDY_COLORS.length],
+  }));
+}
+
 /** This tab's player id. Kept for the tab's lifetime, so a guest who reloads and rejoins keeps their wins. */
 function clientIdForTab() {
   const KEY = 'bingo-friends-client-id';
@@ -605,6 +615,8 @@ function GameScreens({
               online={online} peers={peers} onlineStatus={onlineStatus}
               onAddBuddy={() => setRoom((r) => (r.buddies.length >= MAX_BUDDIES ? r : { ...r, buddies: [...r.buddies, makeBuddy(r.buddies)] }))}
               onRemoveBuddy={(id) => setRoom((r) => ({ ...r, buddies: r.buddies.filter((b) => b.id !== id) }))}
+              onImportBuddies={(names) => setRoom((r) => ({ ...r, buddies: namedBuddies(names) }))}
+              onClearBuddies={() => setRoom((r) => ({ ...r, buddies: [] }))}
               onStart={() => onStart(room)}
               onLeave={online ? onLeaveRoom : () => setScreen('home')} />
           )}

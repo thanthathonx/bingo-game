@@ -770,3 +770,8 @@ button.bcell:active { transform: scale(0.94); }
 @media (min-width: 1024px) {
   .is-tv .wall.is-full { position: sticky; top: 16px; }
 }
+
+/* Lobby: add / import / remove buddies, wrapping on phones. */
+.buddy-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.import-note { order: 1; flex-basis: 100%; margin: 0; }
+.import-note.is-bad { color: var(--danger); }

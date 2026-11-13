@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import { IconEye, IconPlus, IconMinus, IconCrown, IconTv, IconDoor, IconPlay, IconCopy } from '../shared/icons.jsx';
 import { encodeRoom } from './roomCode.js';
@@ -7,12 +7,15 @@ import { itemsNeeded, winTargets } from './engine.js';
 import { settingsProblem, poolFor, nextStage } from './gameState.js';
 import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
 import InviteCard from '../online/InviteCard.jsx';
+import { decodeNames, parseNames, MAX_IMPORTED } from './importNames.js';
 
 /**
  * @param {{ room: object, onChange: (patch: object) => void, onSettings: (patch: object) => void,
  *   onAddBuddy: () => void, onRemoveBuddy: (id: string) => void, onStart: () => void, onLeave: () => void }} props
  */
-export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onStart, onLeave, online = null, peers = [], onlineStatus = 'idle' }) {
+export default function Lobby({
+  room, onSettings, onAddBuddy, onRemoveBuddy, onImportBuddies, onClearBuddies, onStart, onLeave, online = null, peers = [], onlineStatus = 'idle',
+}) {
   const { t } = useLang();
   const [showCode, setShowCode] = useState(!room.streamer);
   const s = room.settings;
@@ -117,9 +120,17 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
             ))}
           </ul>
           {!isGuest && (
-            <button type="button" className="ghost-btn" onClick={onAddBuddy} disabled={room.buddies.length >= MAX_BUDDIES}>
-              <IconPlus size={18} /> {t('addBuddy')}
-            </button>
+            <div className="buddy-actions">
+              <button type="button" className="ghost-btn" onClick={onAddBuddy} disabled={room.buddies.length >= MAX_BUDDIES}>
+                <IconPlus size={18} /> {t('addBuddy')}
+              </button>
+              {onImportBuddies && <ImportNames onImport={onImportBuddies} />}
+              {onClearBuddies && room.buddies.length > 0 && (
+                <button type="button" className="ghost-btn" onClick={onClearBuddies}>
+                  <IconMinus size={18} /> {t('clearBuddies')}
+                </button>
+              )}
+            </div>
           )}
           <p className="hint">{online && !isGuest ? t('inviteHint') : t('buddiesHint')}</p>
         </section>
@@ -188,6 +199,47 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
         )}
       </div>
     </div>
+  );
+}
+
+/**
+ * "Import names" button: reads a CSV / text file (first column) and replaces the buddies with
+ * those names, then says how many were added and what was left out.
+ */
+function ImportNames({ onImport }) {
+  const { t } = useLang();
+  const inputRef = useRef(null);
+  const [note, setNote] = useState(null);
+  const read = async (file) => {
+    if (!file) return;
+    try {
+      const { names, duplicates, shortened, overLimit } = parseNames(decodeNames(await file.arrayBuffer()));
+      if (names.length === 0) {
+        setNote({ bad: true, text: t('importNone') });
+        return;
+      }
+      onImport(names);
+      const extras = [
+        duplicates > 0 && t('importDuplicates').replace('{n}', duplicates),
+        shortened > 0 && t('importShortened').replace('{n}', shortened),
+        overLimit > 0 && t('importOverLimit').replace('{n}', overLimit).replace('{max}', MAX_IMPORTED),
+      ].filter(Boolean);
+      setNote({ bad: false, text: [t('importDone').replace('{n}', names.length), ...extras].join(' ') });
+    } catch {
+      setNote({ bad: true, text: t('importFailed') });
+    } finally {
+      if (inputRef.current) inputRef.current.value = ''; // the same file can be picked again
+    }
+  };
+  return (
+    <>
+      <button type="button" className="ghost-btn" onClick={() => inputRef.current?.click()}>
+        <IconPlus size={18} /> {t('importNames')}
+      </button>
+      <input ref={inputRef} type="file" accept=".csv,.txt,text/csv,text/plain" hidden aria-label={t('importNames')}
+        onChange={(e) => read(e.target.files?.[0])} />
+      {note && <p className={`hint import-note${note.bad ? ' is-bad' : ''}`} role="status">{note.text}</p>}
+    </>
   );
 }
 
