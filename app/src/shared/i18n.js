@@ -48,6 +48,7 @@ const en = {
   interactiveDaub: 'Tap to daub',
   newCardEachRound: 'New card each round',
   spotlightTitle: 'Top 5 cards',
+  allPlayers: 'All players',
   toGo: '{n} to go',
   newCardOn: 'Every round starts with a new card and a fresh draw.',
   newCardOff: 'Rounds 2 and 3 keep the same card, daubs and called numbers.',

@@ -763,3 +763,10 @@ button.bcell:active { transform: scale(0.94); }
 .spotlight .bcard-head { font-size: 14px; }
 .spotlight .bcell { font-size: 15px; border-width: 1px; border-radius: 5px; }
 .spotlight .bcard.is-text .bcell { font-size: 9px; }
+
+/* Big screen: every player in one list that scrolls inside the panel (auto-scroll in Play.jsx). */
+.wall.is-full { display: flex; flex-direction: column; }
+.wall.is-full .board-list { overflow-y: auto; max-height: calc(100vh - 190px); max-height: calc(100dvh - 190px); padding-right: 4px; overscroll-behavior: contain; }
+@media (min-width: 1024px) {
+  .is-tv .wall.is-full { position: sticky; top: 16px; }
+}

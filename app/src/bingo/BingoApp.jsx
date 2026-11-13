@@ -549,7 +549,9 @@ function GameScreens({
     board = online.board?.round === online.round ? online.board : { entries: [], count: 0 };
   } else if (online && game) {
     const { entries, count } = boardEntries(game, online.round, online.rosterRef.current, online.myId);
-    board = { entries: leaderboard(entries).map((e) => ({ ...e, id: e.id === online.myId ? YOU : e.id })), count };
+    // The big screen lists every player (scrolling); the host's own screen keeps the top 10.
+    const rows = room?.bigScreen ? leaderboard(entries, entries.length) : leaderboard(entries);
+    board = { entries: rows.map((e) => ({ ...e, id: e.id === online.myId ? YOU : e.id })), count };
     if (room?.bigScreen) spotlight = topCards(entries);
   }
 

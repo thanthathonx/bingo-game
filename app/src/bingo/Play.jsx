@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import { IconPause, IconPlay, IconShuffle, IconDoor } from '../shared/icons.jsx';
 import { useLang } from '../shared/i18n.js';
@@ -140,7 +140,7 @@ export function PlayView({
 
       {bigScreen && spotlight && <Spotlight cards={spotlight} settings={settings} />}
 
-      {board ? <Leaderboard board={board} /> : (
+      {board ? <Leaderboard board={board} full={bigScreen} /> : (
       <section className="panel wall" aria-label={t('bingoWall')}>
         <h2 className="panel-title">{t('playersTitle')}</h2>
         <div className="wall-grid">
@@ -196,20 +196,61 @@ function Spotlight({ cards, settings }) {
   );
 }
 
-function Leaderboard({ board }) {
+/** Big screen list: pixels per tick, tick length, and the pause at each end before it moves on. */
+const SCROLL_STEP_PX = 1;
+const SCROLL_TICK_MS = 40;
+const SCROLL_PAUSE_MS = 3000;
+
+/**
+ * Slowly scrolls a list down and back to the top, for a screen nobody touches. Stops while the
+ * mouse is over it (so the host can scroll by hand) and when the viewer asked for less motion.
+ */
+function useAutoScroll(ref, enabled) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!enabled || !el) return undefined;
+    if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return undefined;
+    let hovering = false;
+    let holdUntil = Date.now() + SCROLL_PAUSE_MS;
+    const enter = () => { hovering = true; };
+    const leave = () => { hovering = false; holdUntil = Date.now() + SCROLL_PAUSE_MS; };
+    el.addEventListener('pointerenter', enter);
+    el.addEventListener('pointerleave', leave);
+    const id = window.setInterval(() => {
+      if (hovering || Date.now() < holdUntil || el.scrollHeight <= el.clientHeight) return;
+      if (el.scrollTop + el.clientHeight >= el.scrollHeight - 1) {
+        el.scrollTop = 0; // back to the leaders after a pause at the bottom
+        holdUntil = Date.now() + SCROLL_PAUSE_MS;
+        return;
+      }
+      el.scrollTop += SCROLL_STEP_PX;
+      if (el.scrollTop + el.clientHeight >= el.scrollHeight - 1) holdUntil = Date.now() + SCROLL_PAUSE_MS;
+    }, SCROLL_TICK_MS);
+    return () => {
+      window.clearInterval(id);
+      el.removeEventListener('pointerenter', enter);
+      el.removeEventListener('pointerleave', leave);
+    };
+  }, [ref, enabled]);
+}
+
+/** Leaderboard. full (big screen): every player, scrolling, with how many squares each still needs. */
+function Leaderboard({ board, full = false }) {
   const { t } = useLang();
+  const listRef = useRef(null);
+  useAutoScroll(listRef, full);
   return (
-    <section className="panel wall" aria-label={t('leaderboard')}>
-      <h2 className="panel-title">{t('leaderboard')} <span className="count">{board.count}</span></h2>
+    <section className={`panel wall${full ? ' is-full' : ''}`} aria-label={t('leaderboard')}>
+      <h2 className="panel-title">{full ? t('allPlayers') : t('leaderboard')} <span className="count">{board.count}</span></h2>
       {board.entries.length === 0 && <p className="hint">{t('connecting')}</p>}
-      <ol className="board-list">
+      <ol className="board-list" ref={listRef}>
         {board.entries.map((e, i) => (
           <li key={e.id} className={`board-row${e.id === YOU ? ' is-me' : ''}`}>
             <span className="board-rank">{i + 1}</span>
             <span className="board-name">{e.name}{e.id === YOU && <em> ({t('you')})</em>}</span>
             {e.away === 0 && <span className="flag-bingo">{t('bingo')}</span>}
             {e.away === 1 && <span className="flag-near">{t('oneAway')}</span>}
-            {e.away > 1 && <span className="wall-daubs">{e.daubs} ✓</span>}
+            {e.away > 1 && <span className="wall-daubs">{full ? t('toGo').replace('{n}', e.away) : `${e.daubs} ✓`}</span>}
           </li>
         ))}
       </ol>
