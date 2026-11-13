@@ -47,7 +47,7 @@ const en = {
   callSpeed: 'Call speed',
   interactiveDaub: 'Tap to daub',
   newCardEachRound: 'New card each round',
-  spotlightTitle: 'Top 5 cards',
+  spotlightTitle: 'Top 6 cards',
   allPlayers: 'All players',
   toGo: '{n} to go',
   newCardOn: 'Every round starts with a new card and a fresh draw.',

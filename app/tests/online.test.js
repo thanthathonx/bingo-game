@@ -372,7 +372,7 @@ test('a progress report can carry the card: daubs travel as one number and come 
   assert.equal(readProgress({ round: 2, away: 3, daubs: 9, cells, marks: -1 }, 5).card, null);
 });
 
-test('the big screen shows the five closest cards, skipping players whose card it has not got', () => {
+test('the big screen shows the six closest cards, skipping players whose card it has not got', () => {
   const card = { cells: Array(25).fill(1), marks: Array(25).fill(false) };
   const entries = [
     { id: 'a', name: 'Ann', away: 3, daubs: 5, ...card },
@@ -384,7 +384,7 @@ test('the big screen shows the five closest cards, skipping players whose card i
     { id: 'g', name: 'Gus', away: 5, daubs: 1, ...card },
   ];
   const top = topCards(entries);
-  assert.deepEqual(top.map((c) => c.id), ['d', 'b', 'e', 'a', 'f']);
+  assert.deepEqual(top.map((c) => c.id), ['d', 'b', 'e', 'a', 'f', 'g']);
   assert.ok(top.every((c) => c.cells.length === 25 && c.marks.length === 25));
 });
 

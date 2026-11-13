@@ -191,7 +191,7 @@ function readCardBits(raw, n) {
 const byClosest = (a, b) => (a.away - b.away) || (b.daubs - a.daubs) || a.name.localeCompare(b.name);
 
 /** How many cards the big screen shows: the players closest to BINGO. */
-export const SPOTLIGHT_SIZE = 5;
+export const SPOTLIGHT_SIZE = 6;
 
 /** The cards of the players closest to BINGO (only entries whose card the host knows). */
 export function topCards(entries, limit = SPOTLIGHT_SIZE) {
