@@ -75,7 +75,7 @@ export default function Home({ initialName, onCreate, error = '' }) {
           <div className="home-hero">
             <span className="home-mascot-wrap">
               <span className="home-mascot-halo" aria-hidden="true" />
-              <img src="/logo-512.png" width="512" height="512" alt="Bingo Friends robot" className="home-mascot" decoding="async" />
+              <img src="/logo-512.png" width="512" height="512" alt="Ananda Bingo mascot" className="home-mascot" decoding="async" />
             </span>
             <h1 className="home-title">
               Bingo<span className="home-title-accent"> Friends</span>

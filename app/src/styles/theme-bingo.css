@@ -111,7 +111,7 @@ body.bingo-body { background: var(--bg-dark); }
 .home-mascot { width: 240px; height: 240px; }
 .home-mascot-halo { border: 0; background: radial-gradient(circle, rgba(0, 50, 200, 0.12) 0 45%, transparent 70%); }
 .home-mascot-halo::after { display: none; }
-.rh-logo { object-fit: contain; background: #fff; border-radius: 12px; padding: 3px; }
+.rh-logo { object-fit: contain; }
 @media (max-width: 700px) {
   .home-mascot-wrap { width: 128px; height: 128px; }
   .home-mascot { width: 120px; height: 120px; }
