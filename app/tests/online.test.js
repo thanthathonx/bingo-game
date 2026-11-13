@@ -348,3 +348,11 @@ test('the lobby carries the game stage and the rounds already played', () => {
   assert.equal(bad.stage, 1);
   assert.deepEqual(bad.history, []);
 });
+
+test('the "new card each round" choice travels in the lobby message; an older host without it still works', () => {
+  const room = { hostName: 'Host', bigScreen: false, settings: { ...SETTINGS, newCardEachRound: true }, buddies: [], wins: {} };
+  assert.equal(readRoom(wireRoom(room, 'p-host', []), ME).settings.newCardEachRound, true);
+  const older = { ...room, settings: { ...SETTINGS } };
+  assert.equal(readRoom(wireRoom(older, 'p-host', []), ME).settings.newCardEachRound, undefined);
+  assert.equal(readRoom(wireRoom({ ...room, settings: { ...SETTINGS, newCardEachRound: 'yes' } }, 'p-host', []), ME), null);
+});

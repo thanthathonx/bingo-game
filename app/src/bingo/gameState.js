@@ -108,6 +108,11 @@ export function newRound(room, rng = Math.random) {
  * from where they stopped (nothing is called again). Only the win pattern changes.
  * A previous round whose cards don't fit (another card size) starts fresh instead.
  */
+/** False when the host chose a new card each round; otherwise rounds 2 and 3 carry on the same card. */
+export function keepsCard(settings) {
+  return !settings?.newCardEachRound;
+}
+
 export function continueRound(fresh, prev) {
   const n = fresh.settings.size * fresh.settings.size;
   if (!prev || !Array.isArray(prev.players) || prev.players.some((p) => p.cells.length !== n)) return fresh;

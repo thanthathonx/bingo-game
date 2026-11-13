@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  reducer, newRound, YOU, settingsProblem, continueRound, CLAIM_WINDOW_MS, MAX_WINNERS, ROUNDS_PER_GAME, SHAPE_POOL, patternForStage, nextStage,
+  reducer, newRound, YOU, settingsProblem, continueRound, keepsCard, CLAIM_WINDOW_MS, MAX_WINNERS, ROUNDS_PER_GAME, SHAPE_POOL, patternForStage, nextStage,
 } from '../src/bingo/gameState.js';
 import { FREE, cellIndexOf, findWin, winningLines } from '../src/bingo/engine.js';
 
@@ -159,4 +159,11 @@ test('a good BINGO from you is remembered, so a late one can be told apart', () 
   const over = reducer(pending, { type: 'FINISH', winners: [{ id: 'x1', line: [0] }, { id: 'x2', line: [0] }, { id: 'x3', line: [0] }], players: [] });
   assert.equal(over.youClaimed, true);
   assert.ok(!over.winners.some((w) => w.id === YOU));
+});
+
+test('rounds keep the same card unless the host picked a new card each round', () => {
+  assert.equal(keepsCard({}), true);
+  assert.equal(keepsCard({ newCardEachRound: false }), true);
+  assert.equal(keepsCard({ newCardEachRound: true }), false);
+  assert.equal(keepsCard(undefined), true);
 });

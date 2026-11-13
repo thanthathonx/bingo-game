@@ -6,7 +6,7 @@ import { BuildView, PlayView, Results } from './Play.jsx';
 import Modals from './Modals.jsx';
 import Backdrop from './Backdrop.jsx';
 import {
-  reducer, newRound, withCard, continueRound, SPEEDS, SKILLS, YOU, ROUNDS_PER_GAME, nextStage, patternForStage,
+  reducer, newRound, withCard, continueRound, keepsCard, SPEEDS, SKILLS, YOU, ROUNDS_PER_GAME, nextStage, patternForStage,
 } from './gameState.js';
 import { loadSession, saveSession, clearSession, hostRoomSnapshot } from '../online/session.js';
 import { cellIndexOf, squaresAway, validateClaim, patternOf } from './engine.js';
@@ -29,6 +29,7 @@ const DEFAULT_SETTINGS = {
   autoCall: true,
   speed: 'normal',
   interactiveDaub: true,
+  newCardEachRound: false,
   skill: 'normal',
   presetId: 'party',
   itemsText: presetText('party'),
@@ -148,7 +149,7 @@ export default function BingoApp() {
   const carryRef = useRef(null);
   const carryOn = (fresh, nextRoom) => {
     const stage = nextRoom.stage ?? 1;
-    if (stage <= 1) return fresh;
+    if (stage <= 1 || !keepsCard(nextRoom.settings)) return fresh;
     const carry = carryRef.current;
     if (carry && carry.stage === stage - 1) return continueRound(fresh, carry.game);
     // A guest whose page reloaded between rounds: their saved card (with its daubs) is enough,

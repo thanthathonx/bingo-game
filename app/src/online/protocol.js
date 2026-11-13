@@ -254,6 +254,7 @@ const SETTING_RULES = {
   autoCall: (v) => typeof v === 'boolean',
   speed: (v) => ['slow', 'normal', 'fast'].includes(v),
   interactiveDaub: (v) => typeof v === 'boolean',
+  newCardEachRound: (v) => v === undefined || typeof v === 'boolean',
   skill: (v) => ['relaxed', 'normal', 'speedy'].includes(v),
   presetId: (v) => v === null || typeof v === 'string',
   itemsText: (v) => typeof v === 'string' && v.length <= 4000,

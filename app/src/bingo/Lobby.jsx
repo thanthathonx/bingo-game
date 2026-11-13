@@ -157,6 +157,10 @@ export default function Lobby({ room, onSettings, onAddBuddy, onRemoveBuddy, onS
           <Setting label={t('interactiveDaub')}>
             <Toggle on={s.interactiveDaub} onChange={(interactiveDaub) => onSettings({ interactiveDaub })} t={t} />
           </Setting>
+          <Setting label={t('newCardEachRound')}>
+            <Toggle on={Boolean(s.newCardEachRound)} onChange={(newCardEachRound) => onSettings({ newCardEachRound })} t={t} />
+            <p className="hint">{t(s.newCardEachRound ? 'newCardOn' : 'newCardOff')}</p>
+          </Setting>
           <Setting label={t('buddySkill')}>
             <Segmented value={s.skill} onChange={(skill) => onSettings({ skill })}
               options={[{ value: 'relaxed', label: t('skillRelaxed') }, { value: 'normal', label: t('skillNormal') }, { value: 'speedy', label: t('skillSpeedy') }]} />
