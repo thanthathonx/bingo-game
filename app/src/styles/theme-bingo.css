@@ -1,0 +1,118 @@
+/* Blue (#0032c8) & white bingo theme, matching the robot logo. Loaded after the other styles: it swaps the design
+   tokens to a light page with blue accents, then patches the few rules that hard-code colours. */
+:root {
+  --rw-main: #0032c8;
+  --rw-main-dark: #00248f;
+  --rw-main-soft: #e3eaff;
+  --rw-main-wash: #f3f6ff;
+  --rw-ink: #0a1640;
+
+  --accent-color: var(--rw-main);
+  --accent-hover: #2a55e0;
+  --bg-card: #ffffff;
+  --bg-card-hover: var(--rw-main-wash);
+  --bg-dark: #f7f9ff;
+  --bg-darker: var(--rw-main-soft);
+  --bg-tertiary: var(--rw-main-wash);
+  --border-color: #b3c4f0;
+  --galaxy-lavender: #3b5bdb;
+  --galaxy-mint: #2a9d6f;
+  --galaxy-pink: var(--rw-main);
+  --galaxy-violet: var(--rw-main-dark);
+  --gb-cream: var(--rw-ink);
+  --gb-cyan: var(--rw-main);
+  --gb-gold: #f5b700;
+  /* Ball colours alternate blue, white and light blue like a bingo blower. */
+  --bingo-b: #5b7cff;
+  --bingo-i: #ffffff;
+  --bingo-n: #8fa8ff;
+  --bingo-g: #5b7cff;
+  --bingo-o: #ffffff;
+  --danger: #c1121f;
+  --text-primary: var(--rw-ink);
+  --text-secondary: #3b4a75;
+  --text-muted: #6a789e;
+  --gbd-ink: #0a1640;
+  --gbd-purple: var(--rw-main);
+  --gbd-gold: #f5b700;
+  --gbd-t1: var(--rw-ink);
+  --gbd-t2: #3b4a75;
+  --key-bg: #ffffff;
+  --key-rim: #a9bcef;
+  --header-bg: var(--rw-main);
+  --panel-bg: #ffffff;
+  --panel-rim: var(--rw-main);
+  --panel-row: var(--rw-main-wash);
+  --panel-rule: #c6d3f3;
+  --shadow-sm: 3px 3px 0 rgba(0, 30, 110, 0.22);
+  --shadow-md: 5px 5px 0 rgba(0, 30, 110, 0.22);
+}
+
+/* ---------- Page backdrop: white with soft blue polka dots ---------- */
+body.bingo-body { background: var(--bg-dark); }
+.gb-backdrop {
+  background:
+    radial-gradient(circle at 12px 12px, rgba(0, 50, 200, 0.07) 3px, transparent 3.5px) 0 0 / 34px 34px,
+    linear-gradient(180deg, #ffffff 0%, #f2f5ff 100%);
+}
+.gb-stars, .gb-neb, .gb-dots { display: none; }
+.gb-spark { color: var(--rw-main) !important; opacity: 0.35; }
+
+/* ---------- Header: solid blue bar with white text ---------- */
+.rh { color: #fff; border-bottom-color: var(--rw-main-dark) !important; }
+.rh-title, .rh-title b { color: #fff; }
+.rh-key { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+.rh-key.is-cta { background: #fff; color: var(--rw-main); border-color: #fff; }
+
+/* ---------- Titles and shadows that assumed a dark page ---------- */
+.home-title, .lobby-title { text-shadow: 3px 4px 0 var(--rw-main-soft); }
+.results-title { text-shadow: 2px 2px 0 var(--rw-main-dark); }
+.home-btn { border-color: var(--rw-main-dark); color: #fff; }
+.home-btn:not(:disabled):hover { box-shadow: 4px 4px 0 rgba(0, 30, 110, 0.3); }
+.home-btn:not(:disabled):active { box-shadow: 1px 1px 0 rgba(0, 30, 110, 0.3); }
+.home-btn.is-danger { background: var(--danger); }
+.join-error, .error-box { color: var(--danger); }
+
+/* ---------- Bingo card: blue header strip, white squares, blue daubs ---------- */
+.bcard { box-shadow: 0 4px 0 var(--rw-main-dark), 0 10px 18px rgba(0, 30, 110, 0.18); border-color: var(--rw-main); }
+.bcard-head { background: var(--rw-main); border-radius: 8px; padding: 2px 0; }
+.bcard-head span { color: #fff !important; }
+.bcell { border-color: #c9d5f3; background: #fff; color: var(--rw-ink); }
+.bcard { background: #fff; }
+.bcell.is-daubed { color: #fff; }
+.bcell.is-daubed::after {
+  background: radial-gradient(circle at 35% 35%, rgba(90, 130, 255, 0.95), rgba(0, 50, 200, 0.92) 60%, rgba(0, 36, 143, 0.92));
+}
+.bcell.is-win { background: #fff2c4; }
+
+/* ---------- Caller, balls and the called-number board ---------- */
+.ball.is-idle { --ball: #d3dcf6; }
+.ball, .recent-ball { color: var(--rw-ink); }
+.recent-ball { box-shadow: inset 0 0 0 2px var(--rw-main); }
+.bingo-btn { color: #fff; }
+.bingo-btn.is-ready { color: var(--rw-ink); }
+.segmented button.is-on { color: #fff; }
+.segmented button.is-on small { color: #e3eaff; }
+.setting { border-top-color: var(--panel-rule); }
+.called-board span { background: var(--rw-main-wash); color: #9aa8cc; }
+.called-board span.is-hit { background: var(--rw-main) !important; color: #fff; }
+.pattern-showcase-grid { background: var(--rw-main-wash); }
+.pattern-showcase-grid span { background: #d9e2fa; }
+.pattern-showcase-grid span.is-on { box-shadow: 0 0 10px rgba(0, 50, 200, 0.45); }
+.pattern-preview span { background: #d9e2fa; }
+
+/* ---------- Overlays ---------- */
+.results, .modal-scrim { background: rgba(5, 15, 60, 0.6); }
+.net-banner, .claim-banner { color: var(--rw-ink); }
+.late-bingo { background: #fff6d6; border-color: #f5b700; color: #6b4b00; }
+
+/* ---------- Robot logo: a detailed picture, so it gets more room than the old cat ---------- */
+.home-mascot-wrap { width: 260px; height: 260px; }
+.home-mascot { width: 240px; height: 240px; }
+.home-mascot-halo { border: 0; background: radial-gradient(circle, rgba(0, 50, 200, 0.12) 0 45%, transparent 70%); }
+.home-mascot-halo::after { display: none; }
+.rh-logo { object-fit: contain; background: #fff; border-radius: 12px; padding: 3px; }
+@media (max-width: 700px) {
+  .home-mascot-wrap { width: 128px; height: 128px; }
+  .home-mascot { width: 120px; height: 120px; }
+}
