@@ -83,7 +83,7 @@ function guestRoom(code, name, settings) {
 const startingBuddies = (n) => Array.from({ length: n }).reduce((list) => [...list, makeBuddy(list)], []);
 
 export default function BingoApp() {
-  const [lang, setLangState] = useState(() => load('lang', 'en'));
+  const lang = 'en';
   const [name, setName] = useState(() => load('name', ''));
   const [prefs, setPrefs] = useState(() => ({ reduceMotion: false, ...load('prefs', {}) }));
   const [screen, setScreen] = useState('home');
@@ -98,7 +98,7 @@ export default function BingoApp() {
   const langValue = useMemo(() => ({
     lang,
     t: translator(lang),
-    setLang: (code) => { setLangState(code); save('lang', code); },
+    setLang: () => {},
   }), [lang]);
 
   useEffect(() => {

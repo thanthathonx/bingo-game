@@ -206,14 +206,7 @@ body.bingo-body {
 .rh-menu { width: 96px; padding: 0 10px; }
 .rh-menu.is-icon { width: 96px; }
 
-.rh-flag {
-  display: inline-flex;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 0 0 2px var(--gbd-ink);
-}
 
-.rh-flag svg { display: block; }
 
 @media (min-width: 1024px) {
   .rh { height: 75px; padding: 0 16px; }
@@ -366,21 +359,8 @@ a.pm-item { text-decoration: none; }
 
 .pa-mute { margin-top: 4px; }
 
-.pl-item.is-active { background: var(--key-bg); }
 
-.pl-flag {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 2px solid var(--gbd-t1);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--key-bg);
-}
 
-.pl-name { flex: 1; }
-.pl-check { color: var(--gb-cyan); }
 
 .pm-profile {
   display: flex;

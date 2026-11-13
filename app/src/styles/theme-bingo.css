@@ -63,6 +63,7 @@ body.bingo-body { background: var(--bg-dark); }
 .rh-title, .rh-title b { color: #fff; }
 .rh-key { background: rgba(255, 255, 255, 0.14); border-color: rgba(255, 255, 255, 0.45); color: #fff; }
 .rh-key.is-cta { background: #fff; color: var(--rw-main); border-color: #fff; }
+.rh-panel .rh-key { background: var(--key-bg); border-color: var(--key-rim); color: var(--rw-ink); }
 
 /* ---------- Titles and shadows that assumed a dark page ---------- */
 .home-title, .lobby-title { text-shadow: 3px 4px 0 var(--rw-main-soft); }

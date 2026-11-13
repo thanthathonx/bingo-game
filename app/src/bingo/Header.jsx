@@ -2,17 +2,17 @@ import { useEffect, useRef, useState } from 'react';
 import Mascot from '../shared/Mascot.jsx';
 import {
   IconSpeaker, IconMuted, IconGear, IconMenu, IconClose, IconMusic, IconSparkles,
-  IconCheck, IconHelp, IconKey, Flag,
+  IconHelp, IconKey,
 } from '../shared/icons.jsx';
-import { LANGUAGES, useLang } from '../shared/i18n.js';
+import { useLang } from '../shared/i18n.js';
 import { getAudioSettings, onAudioChange, setAudioSettings, playSfx } from '../shared/audio.js';
 
 /**
- * Room header with the audio, language and menu panels.
+ * Room header with the audio and menu panels.
  * @param {{ onAction: (name: string) => void, name?: string }} props  name: the player's current name
  */
 export default function Header({ onAction, name = '' }) {
-  const { t, lang } = useLang();
+  const { t } = useLang();
   const [panel, setPanel] = useState(null);
   const [audio, setAudio] = useState(getAudioSettings());
   const panelRef = useRef(null);
@@ -67,10 +67,6 @@ export default function Header({ onAction, name = '' }) {
             onClick={() => act('settings')}>
             <IconGear />
           </button>
-          <button type="button" className={`${keyClass('language')} rh-language`} aria-label={`${t('language')}: ${LANGUAGES.find((l) => l.code === lang)?.label}`}
-            title={t('language')} aria-haspopup="dialog" aria-expanded={panel === 'language'} onClick={() => toggle('language')}>
-            <span className="rh-flag"><Flag code={lang} /></span>
-          </button>
           <button type="button" className="rh-key is-cta rh-signin" aria-label={t('gotCode')} title={t('gotCode')}
             onClick={() => act('join')}>
             <IconKey />
@@ -92,7 +88,6 @@ export default function Header({ onAction, name = '' }) {
             </button>
           </div>
           {panel === 'audio' && <AudioPanel audio={audio} t={t} />}
-          {panel === 'language' && <LanguagePanel onDone={() => setPanel(null)} />}
           {panel === 'menu' && <MenuPanel t={t} act={act} name={name} />}
         </div>
       )}
@@ -102,7 +97,6 @@ export default function Header({ onAction, name = '' }) {
 
 function panelTitle(panel, t) {
   if (panel === 'audio') return t('gameAudio');
-  if (panel === 'language') return t('language');
   return t('menu');
 }
 
@@ -133,23 +127,6 @@ function AudioPanel({ audio, t }) {
         <span className="pm-icon is-purple">{audio.muted ? <IconMuted /> : <IconSparkles />}</span>
         {audio.muted ? t('unmuteAudio') : t('muteAudio')}
       </button>
-    </div>
-  );
-}
-
-function LanguagePanel({ onDone }) {
-  const { lang, setLang } = useLang();
-  return (
-    <div className="rh-panel-body pl-list">
-      {LANGUAGES.map((l) => (
-        <button key={l.code} type="button" className={`pm-item pl-item${l.code === lang ? ' is-active' : ''}`}
-          aria-pressed={l.code === lang}
-          onClick={() => { setLang(l.code); onDone(); }}>
-          <span className="pl-flag"><Flag code={l.code} /></span>
-          <span className="pl-name">{l.label}</span>
-          {l.code === lang && <IconCheck className="pl-check" />}
-        </button>
-      ))}
     </div>
   );
 }
