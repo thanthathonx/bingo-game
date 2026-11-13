@@ -105,3 +105,14 @@ body.bingo-body { background: var(--bg-dark); }
 .results, .modal-scrim { background: rgba(70, 10, 20, 0.6); }
 .net-banner, .claim-banner { color: var(--rw-ink); }
 .late-bingo { background: #fff6d6; border-color: #f5b700; color: #6b4b00; }
+
+/* ---------- Robot logo: a detailed picture, so it gets more room than the old cat ---------- */
+.home-mascot-wrap { width: 260px; height: 260px; }
+.home-mascot { width: 240px; height: 240px; }
+.home-mascot-halo { border: 0; background: radial-gradient(circle, rgba(215, 38, 61, 0.12) 0 45%, transparent 70%); }
+.home-mascot-halo::after { display: none; }
+.rh-logo { object-fit: contain; }
+@media (max-width: 700px) {
+  .home-mascot-wrap { width: 128px; height: 128px; }
+  .home-mascot { width: 120px; height: 120px; }
+}

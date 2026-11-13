@@ -53,7 +53,7 @@ export default function Header({ onAction, name = '' }) {
     <header className="rh" data-world-ui="true">
       <div className="rh-row">
         <a className="rh-brand" href="/" aria-label="Bingo Friends">
-          <img src="/mascot.svg" width="46" height="46" alt="" className="rh-logo" />
+          <img src="/logo-128.png" width="46" height="46" alt="" className="rh-logo" />
           <span className="rh-title">
             <b>Bingo</b> Friends
           </span>
