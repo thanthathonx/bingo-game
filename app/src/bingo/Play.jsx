@@ -5,6 +5,7 @@ import { useLang } from '../shared/i18n.js';
 import Card, { callText, letterColor } from './Card.jsx';
 import { squaresAway, maxNumber, range, sameValue, FREE, patternOf, winTargets } from './engine.js';
 import { YOU, ROUNDS_PER_GAME, CLAIM_WINDOW_MS } from './gameState.js';
+import PatternShowcase from './PatternShowcase.jsx';
 
 /**
  * Card-building phase for event cards.
@@ -90,6 +91,7 @@ export function PlayView({
             </div>
           )}
         </div>
+        <PatternShowcase size={settings.size} pattern={patternOf(settings)} />
         {waitingFor > 0 && <p className="hint" role="status">{t('waitingCards')} ({waitingFor})</p>}
         <div className="caller-meta">{t('called')}:{game.called.length}/{game.called.length + game.order.length}</div>
         <div className="recent">

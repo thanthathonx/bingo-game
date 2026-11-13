@@ -76,3 +76,20 @@ test('autoMarks daubs everything called', () => {
   const cells = [1, 2, 3, 4, FREE, 6, 7, 8, 9];
   assert.deepEqual(autoMarks(cells, [1, 9]), [true, false, false, false, true, false, false, false, true]);
 });
+
+test('showcaseCells walks through every row, column and diagonal for "any line"', async () => {
+  const { showcaseCells, winningLines } = await import('../src/bingo/engine.js');
+  const lines = winningLines(5);
+  assert.equal(lines.length, 12);
+  lines.forEach((line, step) => assert.deepEqual(showcaseCells(5, 'line', step), line));
+  assert.deepEqual(showcaseCells(5, 'line', 12), lines[0]); // wraps around
+});
+
+test('showcaseCells shows the fixed shape for other patterns, whatever the step', async () => {
+  const { showcaseCells, winTargets } = await import('../src/bingo/engine.js');
+  for (const p of ['square', 'heart', 'smile', 'checker', 'candle', 'blackout']) {
+    assert.deepEqual(showcaseCells(5, p, 0), winTargets(5, p)[0]);
+    assert.deepEqual(showcaseCells(5, p, 7), winTargets(5, p)[0]);
+  }
+  assert.equal(showcaseCells(5, 'blackout').length, 25);
+});

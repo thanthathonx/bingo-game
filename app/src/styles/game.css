@@ -734,3 +734,16 @@ button.bcell:active { transform: scale(0.94); }
   font-weight: 600;
   text-align: center;
 }
+
+/* This round's winning pattern, big enough to read from across the room on the host's screen or TV. */
+.pattern-showcase { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.pattern-showcase-grid { --cell: 22px; display: grid; grid-template-columns: repeat(var(--n), var(--cell)); gap: 4px; padding: 8px; border-radius: var(--radius-md); background: var(--bg-darker); border: 2px solid var(--panel-rim); }
+.pattern-showcase-grid span { width: var(--cell); height: var(--cell); border-radius: 5px; background: rgba(255, 255, 255, 0.1); transition: background 0.25s ease, transform 0.25s var(--ease-pop); }
+.pattern-showcase-grid span.is-on { background: var(--accent-color); transform: scale(1.04); box-shadow: 0 0 10px rgba(253, 121, 168, 0.55); }
+.pattern-showcase figcaption { font: 600 13px var(--font-read); color: var(--text-secondary); }
+.pattern-showcase figcaption strong { color: var(--text-primary); }
+.is-tv .pattern-showcase-grid { --cell: 40px; gap: 6px; padding: 12px; }
+.is-tv .pattern-showcase figcaption { font-size: 20px; }
+@media (max-width: 700px) {
+  .play:not(.is-tv) .pattern-showcase { display: none; }
+}

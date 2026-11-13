@@ -150,6 +150,16 @@ export function winTargets(size, pattern = 'line') {
   return size === 5 && SHAPES[pattern] ? [SHAPES[pattern]] : winningLines(size);
 }
 
+/**
+ * The squares to light in a pattern picture at an animation step. 'line' walks through every
+ * row, column and diagonal one at a time (any of them wins); other patterns are one fixed shape.
+ */
+export function showcaseCells(size, pattern = 'line', step = 0) {
+  if (pattern !== 'line') return winTargets(size, pattern)[0];
+  const lines = winningLines(size);
+  return lines[((step % lines.length) + lines.length) % lines.length];
+}
+
 /** The first complete target (its squares), or null. */
 export function findWin(marks, size, pattern = 'line') {
   return winTargets(size, pattern).find((line) => line.every((i) => marks[i])) ?? null;
