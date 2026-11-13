@@ -36,3 +36,33 @@ test('a file with no names gives none', () => {
   assert.deepEqual(parseNames('\n  \nName\n').names, []);
   assert.deepEqual(parseNames('').names, []);
 });
+
+// ---------- Excel .xlsx (fixtures hold made-up names only) ----------
+import { readFileSync } from 'node:fs';
+import { looksLikeXlsx, readXlsxFirstColumn } from '../src/bingo/readXlsx.js';
+import { looksLikeOldXls } from '../src/bingo/importNames.js';
+
+const bytes = (name) => { const b = readFileSync(new URL(`./fixtures/${name}`, import.meta.url)); return b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength); };
+
+test('reads column A of the first sheet of an Excel-saved .xlsx (shared strings, compressed)', async () => {
+  const buffer = bytes('names-excel.xlsx');
+  assert.equal(looksLikeXlsx(buffer), true);
+  const r = parseNames(await readXlsxFirstColumn(buffer), MAX_IMPORTED, { plain: true });
+  // header skipped; commas and & kept; blank row skipped; repeat dropped; number kept as text; spaces tidied;
+  // the second sheet is ignored
+  assert.deepEqual(r.names, ['สมชาย ใจดี', 'Malee, K.', 'Tom & Jerry', '12345', 'Anna Lee']);
+  assert.equal(r.duplicates, 1);
+});
+
+test('reads an exported .xlsx with inline text and no compression (like an event system export)', async () => {
+  const r = parseNames(await readXlsxFirstColumn(bytes('names-export.xlsx')), MAX_IMPORTED, { plain: true });
+  assert.deepEqual(r.names, ['Alpha Tester One', 'pim Example', 'Thanakorn Sample Xyz']); // 20 letters: kept whole
+  assert.equal(r.shortened, 0);
+});
+
+test('tells a CSV, an .xlsx and an old .xls apart', () => {
+  const csv = new TextEncoder().encode('Ann\nBo').buffer;
+  assert.equal(looksLikeXlsx(csv), false);
+  assert.equal(looksLikeOldXls(csv), false);
+  assert.equal(looksLikeOldXls(new Uint8Array([0xd0, 0xcf, 0x11, 0xe0, 0xa1]).buffer), true);
+});

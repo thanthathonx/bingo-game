@@ -22,6 +22,12 @@ export function decodeNames(buffer) {
   }
 }
 
+/** True for an old binary Excel file (.xls), which this reader cannot open. */
+export function looksLikeOldXls(buffer) {
+  const b = new Uint8Array(buffer, 0, Math.min(4, buffer.byteLength));
+  return b.length === 4 && b[0] === 0xd0 && b[1] === 0xcf && b[2] === 0x11 && b[3] === 0xe0;
+}
+
 /** The delimiter the first line uses most: comma, semicolon or tab. */
 function delimiterOf(line) {
   const counts = [',', ';', '\t'].map((d) => [d, line.split(d).length - 1]);
@@ -44,9 +50,10 @@ function firstField(line, delimiter) {
 
 /**
  * Up to `max` distinct names from the file's first column.
+ * plain: each line is already one name (from a spreadsheet cell), so commas are kept.
  * @returns {{ names: string[], duplicates: number, shortened: number, overLimit: number }}
  */
-export function parseNames(text, max = MAX_IMPORTED) {
+export function parseNames(text, max = MAX_IMPORTED, { plain = false } = {}) {
   const lines = String(text ?? '').split(/\r\n|\n|\r/);
   const firstReal = lines.find((l) => l.trim() !== '') ?? '';
   const delimiter = delimiterOf(firstReal);
@@ -56,7 +63,7 @@ export function parseNames(text, max = MAX_IMPORTED) {
   let shortened = 0;
   let overLimit = 0;
   lines.forEach((line, i) => {
-    const raw = firstField(line, delimiter).replace(/\s+/g, ' ').trim();
+    const raw = (plain ? line : firstField(line, delimiter)).replace(/\s+/g, ' ').trim();
     if (!raw) return;
     if (i === lines.indexOf(firstReal) && HEADER_RE.test(raw)) return;
     const name = raw.length > NAME_MAX ? raw.slice(0, NAME_MAX).trim() : raw;

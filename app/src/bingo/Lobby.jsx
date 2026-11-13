@@ -7,7 +7,8 @@ import { itemsNeeded, winTargets } from './engine.js';
 import { settingsProblem, poolFor, nextStage } from './gameState.js';
 import { PRESETS, presetText, MAX_BUDDIES } from './presets.js';
 import InviteCard from '../online/InviteCard.jsx';
-import { decodeNames, parseNames, MAX_IMPORTED } from './importNames.js';
+import { decodeNames, parseNames, looksLikeOldXls, MAX_IMPORTED } from './importNames.js';
+import { looksLikeXlsx, readXlsxFirstColumn } from './readXlsx.js';
 
 /**
  * @param {{ room: object, onChange: (patch: object) => void, onSettings: (patch: object) => void,
@@ -203,8 +204,9 @@ export default function Lobby({
 }
 
 /**
- * "Import names" button: reads a CSV / text file (first column) and replaces the buddies with
- * those names, then says how many were added and what was left out.
+ * "Import names" button: reads an Excel .xlsx (column A of the first sheet) or a CSV / text
+ * file (first column) and replaces the buddies with those names, then says how many were added
+ * and what was left out.
  */
 function ImportNames({ onImport }) {
   const { t } = useLang();
@@ -213,7 +215,14 @@ function ImportNames({ onImport }) {
   const read = async (file) => {
     if (!file) return;
     try {
-      const { names, duplicates, shortened, overLimit } = parseNames(decodeNames(await file.arrayBuffer()));
+      const buffer = await file.arrayBuffer();
+      if (looksLikeOldXls(buffer)) {
+        setNote({ bad: true, text: t('importOldXls') });
+        return;
+      }
+      const { names, duplicates, shortened, overLimit } = looksLikeXlsx(buffer)
+        ? parseNames(await readXlsxFirstColumn(buffer), MAX_IMPORTED, { plain: true })
+        : parseNames(decodeNames(buffer));
       if (names.length === 0) {
         setNote({ bad: true, text: t('importNone') });
         return;
@@ -236,7 +245,7 @@ function ImportNames({ onImport }) {
       <button type="button" className="ghost-btn" onClick={() => inputRef.current?.click()}>
         <IconPlus size={18} /> {t('importNames')}
       </button>
-      <input ref={inputRef} type="file" accept=".csv,.txt,text/csv,text/plain" hidden aria-label={t('importNames')}
+      <input ref={inputRef} type="file" accept=".xlsx,.csv,.txt,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,text/csv,text/plain" hidden aria-label={t('importNames')}
         onChange={(e) => read(e.target.files?.[0])} />
       {note && <p className={`hint import-note${note.bad ? ' is-bad' : ''}`} role="status">{note.text}</p>}
     </>
