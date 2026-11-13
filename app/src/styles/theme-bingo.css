@@ -117,3 +117,10 @@ body.bingo-body { background: var(--bg-dark); }
   .home-mascot-wrap { width: 128px; height: 128px; }
   .home-mascot { width: 120px; height: 120px; }
 }
+
+/* ---------- Pattern highlight: orange, so the shape stands out from the blue card ---------- */
+:root { --hl: #ff8a00; --hl-soft: #ffe6c7; }
+.bcell.is-target:not(.is-free) { box-shadow: inset 0 0 0 3px var(--hl); }
+.bcell.is-target.is-daubed { background: var(--hl-soft); }
+.pattern-showcase-grid span.is-on { background: var(--hl); box-shadow: 0 0 10px rgba(255, 138, 0, 0.5); }
+.pattern-preview span.is-on { background: var(--hl); }
